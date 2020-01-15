@@ -5,3 +5,26 @@
 #include <iostream.h>
 
 #include "../include/Menu.h"
+#include <MLV/MLV_all.h>
+
+
+class Menu {
+private:
+    vector<Button> buttons;
+public:
+    Menu::main_loop() {
+        int x, y;
+
+        // get_click()
+
+        for (auto b: buttons) {
+            if (b.click_in_button(x, y)) {
+                b.click(0);
+            }
+        }
+    }
+
+    Menu::draw() {
+
+    }
+};

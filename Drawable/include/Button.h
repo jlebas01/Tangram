@@ -6,8 +6,23 @@
 #define TANGRAM_BUTTON_H
 
 
-class Button {
+typedef int (button_callback*) (int);
 
+class Button {
+private:
+    int x;
+    int y;
+    int w;
+    int h;
+
+    button_callback callback;
+
+public:
+    Button(int x, int y, int w, int h);
+    void Button::set_callback(button_callback);
+    bool Button::click_in_button(int, int);
+    int Button::click();
+    void Button::draw();
 };
 
 

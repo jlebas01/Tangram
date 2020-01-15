@@ -6,9 +6,15 @@
 #define TANGRAM_MENU_H
 
 #include "Button.h"
+#include <vector>
+
 
 class Menu {
-
+    private:
+        vector<Button> buttons;
+    public:
+        Menu::main_loop();
+        Menu::draw();
 };
 
 
