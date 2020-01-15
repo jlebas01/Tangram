@@ -4,27 +4,22 @@
 
 #include <iostream>
 
-#include "../../include/drawable/Menu.h"
+#include <drawable/Menu.hpp>
 #include <MLV/MLV_all.h>
 
 
-class Menu {
-private:
-    vector<Button> buttons;
-public:
-    Menu::main_loop() {
-        int x, y;
+void Menu::main_loop() {
+    int x = 0, y = 0;
 
-        // get_click()
+    // get_click()
 
-        for (auto b: buttons) {
-            if (b.click_in_button(x, y)) {
-                b.click(0);
-            }
+    for (auto b: buttons) {
+        if (b.click_in_button(x, y)) {
+            b.click(0);
         }
     }
+}
 
-    Menu::draw() {
+void Menu::draw() {
 
-    }
-};
+}

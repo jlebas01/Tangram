@@ -5,16 +5,15 @@
 #ifndef TANGRAM_MENU_H
 #define TANGRAM_MENU_H
 
-#include <tangram/drawable/Button>
+#include <drawable/Button.hpp>
 #include <vector>
-
 
 class Menu {
     private:
-        vector<Button> buttons;
+        std::vector<Button> buttons;
     public:
-        Menu::main_loop();
-        Menu::draw();
+        void main_loop();
+        void draw();
 };
 
 

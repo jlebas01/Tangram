@@ -4,4 +4,4 @@
 
 #include <iostream>
 
-#include "../../include/shape/GTriangle.h"
+#include <shape/GTriangle.hpp>

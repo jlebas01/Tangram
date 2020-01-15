@@ -4,4 +4,4 @@
 
 #include <iostream>
 
-#include "../../include/game/Objective.h"
+#include <game/Objective.hpp>

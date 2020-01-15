@@ -4,4 +4,4 @@
 
 #include <iostream>
 
-#include "../../include/shape/STriangle.h"
+#include <shape/STriangle.hpp>

@@ -3,8 +3,8 @@
 //
 
 #include <iostream>
+#include <shape/Square.hpp>
 
-#include "../../include/shape/Square.h"
 
 using namespace std;
 

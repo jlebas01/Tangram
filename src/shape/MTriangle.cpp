@@ -4,4 +4,4 @@
 
 #include <iostream>
 
-#include "../../include/shape/MTriangle.h"
+#include <shape/MTriangle.hpp>

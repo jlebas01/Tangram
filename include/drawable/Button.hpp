@@ -6,7 +6,7 @@
 #define TANGRAM_BUTTON_H
 
 
-typedef int (button_callback*) (int);
+typedef int (*button_callback) (int);
 
 class Button {
 private:
@@ -14,15 +14,18 @@ private:
     int y;
     int w;
     int h;
+    char * text;
 
     button_callback callback;
 
 public:
-    Button(int x, int y, int w, int h);
-    void Button::set_callback(button_callback);
-    bool Button::click_in_button(int, int);
-    int Button::click();
-    void Button::draw();
+    ~Button();
+    Button(int x, int y, int w, int h, char * text);
+    Button(int x, int y, int w, int h, char * text, button_callback callback);
+    void set_callback(button_callback);
+    bool click_in_button(int, int);
+    int click(int);
+    void draw();
 };
 
 

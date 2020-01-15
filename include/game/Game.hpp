@@ -5,7 +5,7 @@
 #ifndef TANGRAM_GAME_H
 #define TANGRAM_GAME_H
 
-#include <tangram/game/Objective>
+#include <game/Objective.hpp>
 
 class Game {
 

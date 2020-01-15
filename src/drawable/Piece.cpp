@@ -4,5 +4,5 @@
 
 #include <iostream>
 
-#include "../../include/drawable/Piece.h"
+#include <drawable/Piece.hpp>
 

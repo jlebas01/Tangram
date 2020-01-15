@@ -3,37 +3,45 @@
 //
 
 #include <iostream>
+#include <string>
+#include <string.h>
 
-#include "../../include/drawable/Button.h"
+#include <drawable/Button.hpp>
 
-class Button {
-    Button(const int x, const int y, const int w, const int h) {
-        this->x = x;
-        this->y = y;
-        this->w = w;
-        this->h = h;
-    }
+Button::~Button() {
+    delete text;
+}
 
-    Button(const int x, const int y, const int w, const int h, button_callback callback) {
-        this->x = x;
-        this->y = y;
-        this->w = w;
-        this->h = h;
-        this->callback = callback;
-    }
+Button::Button(int x, int y, int w, int h, char * text) {
+    this->x = x;
+    this->y = y;
+    this->w = w;
+    this->h = h;
+    this->text = strdup(text);
+    this->callback = nullptr;
+}
 
-    void Button::set_callback(button_callback) {
-        this->callback = button_callback;
-    }
+Button::Button(int x, int y, int w, int h, char* text, button_callback callback) {
+    this->x = x;
+    this->y = y;
+    this->w = w;
+    this->h = h;
+    this->text = strdup(text);
+    this->callback = callback;
+}
 
-    bool Button::click_in_button(int a, int b) {
-        if (a >= x && a <= x + w && b >= y && b <= y + h) {
-            return true;
-        }
-        return false;
-    }
+void Button::set_callback(button_callback callback) {
+    this->callback = callback;
+}
 
-    int Button::click(int val) {
-        return callback(val);
-    }
-};
+bool Button::click_in_button(int a, int b) {
+    return a >= x && a <= x + w && b >= y && b <= y + h;
+}
+
+int Button::click(int val) {
+    return callback(val);
+}
+
+void Button::draw() {
+    return; // todo
+}

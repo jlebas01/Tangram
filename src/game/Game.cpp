@@ -4,4 +4,4 @@
 
 #include <iostream>
 
-#include "../../include/game/Game.h"
+#include <game/Game.hpp>

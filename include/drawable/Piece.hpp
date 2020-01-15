@@ -5,11 +5,11 @@
 #ifndef TANGRAM_PIECE_H
 #define TANGRAM_PIECE_H
 
-#include <tangram/shape/Square>
-#include <tangram/shape/STriangle>
-#include <tangram/shape/MTriangle>
-#include <tangram/shape/GTriangle>
-#include <tangram/shape/Paralellogram>
+#include <shape/Square.hpp>
+#include <shape/STriangle.hpp>
+#include <shape/MTriangle.hpp>
+#include <shape/GTriangle.hpp>
+#include <shape/Paralellogram.hpp>
 
 
 
