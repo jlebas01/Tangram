@@ -6,16 +6,22 @@
 #define TANGRAM_GTRIANGLE_H
 
 
-class GTriangle {
+#include <drawable/Piece.hpp>
+
+class GTriangle : public Piece {
 private:
-    std::pair<int,int> p1;
-    std::pair<int,int> p2;
-    std::pair<int,int> p3;
+    std::pair<double,double> p1;
+    std::pair<double,double> p2;
+    std::pair<double,double> p3;
 
 public:
     ~GTriangle();
-    GTriangle(std::pair<int,int>, std::pair<int,int>, std::pair<int,int>);
-
+    GTriangle(std::pair<double,double>, std::pair<double,double>, std::pair<double,double>);
+    void move(std::pair<double,double>) override;
+    void rotate(double angular) override;
+    void flip() override;
+    double getPerimeter() override;
+    std::vector<std::pair<double,double>> getPoints() override;
 };
 
 

@@ -6,18 +6,22 @@
 #define TANGRAM_SQUARE_H
 
 #include <utility>
+#include <drawable/Piece.hpp>
 
-class Square {
+class Square : public Piece {
 private:
 
-    std::pair <int,int> p1;
-    std::pair <int,int> p2;
-    std::pair <int,int> p3;
-    std::pair <int,int> p4;
+    std::pair <double,double> p1; //left-top side
+    std::pair <double,double> p2; //right-bot side
 
 public:
     ~Square();
-    Square(std::pair <int,int>,std::pair<int,int>,std::pair<int,int>,std::pair<int,int>);
+    Square(std::pair <double,double>,std::pair<double,double>);
+    void move(std::pair<double,double>) override;
+    void rotate(double angular) override;
+    void flip() override;
+    double getPerimeter() override;
+    std::vector<std::pair<double,double>> getPoints() override;
 
 };
 
