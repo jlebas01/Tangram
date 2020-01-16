@@ -9,12 +9,13 @@
 
 
 void Menu::main_loop() {
-    int x = 0, y = 0;
+    std::pair <int,int> click;
+    click = std::make_pair(0,0);
 
     // get_click()
 
     for (auto b: buttons) {
-        if (b.click_in_button(x, y)) {
+        if (b.click_in_button(click)) {
             b.click(0);
         }
     }

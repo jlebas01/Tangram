@@ -10,20 +10,17 @@ typedef int (*button_callback) (int);
 
 class Button {
 private:
-    int x;
-    int y;
-    int w;
-    int h;
+    std::pair<int,int> point; // <x,y>
+    std::pair<int,int> sizing; // <width, height>
     char * text;
-
     button_callback callback;
 
 public:
     ~Button();
-    Button(int x, int y, int w, int h, char * text);
-    Button(int x, int y, int w, int h, char * text, button_callback callback);
+    Button(std::pair<int,int> point, std::pair<int,int> sizing, const char * text);
+    Button(std::pair<int,int> point, std::pair<int,int> sizing, const char * text, button_callback callback);
     void set_callback(button_callback);
-    bool click_in_button(int, int);
+    bool click_in_button(std::pair<int,int> click);
     int click(int);
     void draw();
 };

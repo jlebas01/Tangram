@@ -7,6 +7,14 @@
 
 
 class STriangle {
+private:
+    std::pair<int,int> p1;
+    std::pair<int,int> p2;
+    std::pair<int,int> p3;
+
+public:
+    ~STriangle();
+    STriangle(std::pair<int,int>, std::pair<int,int>, std::pair<int,int>);
 
 };
 

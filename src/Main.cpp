@@ -8,6 +8,6 @@ using namespace std;
 
 int main (int argc, char *argv[]) {
 
-
-    return 0;
+    std::cout << "end of the game" << std::endl;
+    std::exit(EXIT_SUCCESS);
 }

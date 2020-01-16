@@ -16,9 +16,8 @@ private:
     std::pair <int,int> p4;
 
 public:
-    void init(std::pair <int,int>, std::pair<int,int>, std::pair<int,int>, std::pair<int,int>);
-
-
+    ~Square();
+    Square(std::pair <int,int>,std::pair<int,int>,std::pair<int,int>,std::pair<int,int>);
 
 };
 
