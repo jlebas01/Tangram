@@ -17,6 +17,7 @@ private:
 public:
     ~Square();
     Square(std::pair <double,double>,std::pair<double,double>);
+    std::string toString() override;
     void move(std::pair<double,double>) override;
     void rotate(double angular) override;
     void flip() override;

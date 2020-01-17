@@ -22,6 +22,7 @@ public:
     void flip() override;
     double getPerimeter() override;
     std::vector<std::pair<double,double>> getPoints() override;
+    std::string toString() override;
 };
 
 

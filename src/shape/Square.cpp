@@ -46,3 +46,9 @@ std::vector<std::pair<double, double>> Square::getPoints() {
     std::vector<std::pair<double, double>> points = {p1,p3,p2,p4};
     return points;
 }
+
+std::string Square::toString(){
+    std::string point1 = std::string("Point 1\nx : ") + std::to_string(p1.first) + std::string(" y : ") + std::to_string(p1.second) + std::string("\n");
+    std::string point2 = std::string("Point 2\nx : ") + std::to_string(p2.first) + std::string(" y : ") + std::to_string(p2.second) + std::string("\n");
+    return point1 + point2;
+}

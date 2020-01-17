@@ -43,3 +43,10 @@ std::vector<std::pair<double, double>> MTriangle::getPoints() {
     std::vector<std::pair<double, double>> points = {p1,p2,p3};
     return points;
 }
+
+std::string MTriangle::toString(){
+    std::string point1 = std::string("Point 1\nx : ") + std::to_string(p1.first) + std::string(" y : ") + std::to_string(p1.second) + std::string("\n");
+    std::string point2 = std::string("Point 2\nx : ") + std::to_string(p2.first) + std::string(" y : ") + std::to_string(p2.second) + std::string("\n");
+    std::string point3 = std::string("Point 3\nx : ") + std::to_string(p3.first) + std::string(" y : ") + std::to_string(p3.second) + std::string("\n");
+    return point1 + point2 + point3;
+}
