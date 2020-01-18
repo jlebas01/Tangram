@@ -6,8 +6,14 @@
 #define TANGRAM_OBJECTIVE_H
 
 
-class Objective {
+#include <drawable/Piece.hpp>
 
+class Objective {
+private:
+    std::vector<Piece> piece;
+public:
+    bool boardCompleted(std::vector<Piece> objective, std::vector<Piece> game);
+    double computePerimeterAllShape(std::vector<Piece> pieces);
 };
 
 

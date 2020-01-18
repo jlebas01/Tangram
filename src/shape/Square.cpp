@@ -5,50 +5,60 @@
 #include <iostream>
 #include <utility>
 #include <cmath>
+#include <tuple>
 
 #include <shape/Square.hpp>
 
 
 Square::~Square()= default;
 
-Square::Square(const std::pair <double,double> point1, const std::pair <double,double> point2){
-    this->p1 = std::make_pair(point1.first, point1.second);
-    this->p2 = std::make_pair(point2.first, point2.second);
+Square::Square(std::vector<STriangle> triangles){
+    for(auto & it : triangles) {
+        this->triangle.push_back(it);
+    }
 }
 
+Square::Square() {
+    this->triangle.emplace_back(STriangle(std::pair <double,double>(0.0,0.0), std::pair <double,double>(0.0,2.0), std::pair <double,double>(2.0,0.0)));
+    this->triangle.emplace_back(STriangle(std::pair <double,double>(2.0,0.0), std::pair <double,double>(2.0,2.0), std::pair <double,double>(0.0,2.0)));
+}
+
+
 void Square::move(std::pair<double,double> translation) {
-    p1.operator=(std::pair<double,double>(p1.first+translation.first,p1.second+translation.second));
-    p2.operator=(std::pair<double,double>(p2.first+translation.first,p2.second+translation.second));
+    for(auto & it : triangle) {
+        it.move(translation);
+    }
 }
 
 void Square::rotate(double angular) {
-    p1.operator=(std::pair<double,double>(p1.first * cos(angular) - p1.second * sin(angular),p1.second * cos(angular) + p1.first * sin(angular)));
-    p2.operator=(std::pair<double,double>(p2.first * cos(angular) - p2.second * sin(angular),p2.second * cos(angular) + p2.first * sin(angular)));
+    for(auto & it : triangle) {
+        it.rotate(angular);
+    }
 }
 
 void Square::flip() {
-    p1.operator=(std::pair<double,double>(p1.second,p1.first));
-    p2.operator=(std::pair<double,double>(p2.second,p2.first));
-
+    for(auto & it : triangle) {
+        it.flip();
+    }
 }
 
-double Square::getPerimeter() {
-    std::pair<double,double> p3, p4;
-    p3 = std::make_pair(p1.first,p2.second);
-    p4 = std::make_pair( p2.first, p1.second);
-    return computeDistance(p1,p3) + computeDistance(p3,p2) + computeDistance(p2,p4) + computeDistance(p4,p1);
-}
+
 
 std::vector<std::pair<double, double>> Square::getPoints() {
-    std::pair<double,double> p3, p4;
-    p3 = std::make_pair(p1.first,p2.second);
-    p4 = std::make_pair( p2.first, p1.second);
-    std::vector<std::pair<double, double>> points = {p1,p3,p2,p4};
+    std::vector<std::pair<double, double>> points;
+    for(auto & it : triangle) {
+        points.insert(points.end(), it.getPoints().begin(), it.getPoints().end()); //add all points of vector triangle n in vector points
+    }
     return points;
 }
 
 std::string Square::toString(){
-    std::string point1 = std::string("Point 1\nx : ") + std::to_string(p1.first) + std::string(" y : ") + std::to_string(p1.second) + std::string("\n");
-    std::string point2 = std::string("Point 2\nx : ") + std::to_string(p2.first) + std::string(" y : ") + std::to_string(p2.second) + std::string("\n");
-    return point1 + point2;
+
+    std::string t = std::string("");
+
+    for(auto [it,i] = std::tuple{triangle.begin(), 0} ; it != triangle.end() ; i++, it++){
+        t+=std::string("Triangle ") + std::to_string(i) + std::string(" :\n")+it->toString();
+    }
+    return t;
 }
+

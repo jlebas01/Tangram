@@ -8,21 +8,23 @@
 
 #include <drawable/Piece.hpp>
 
-class STriangle : public Piece{
+class STriangle{
 private:
     std::pair<double,double> p1;
     std::pair<double,double> p2;
     std::pair<double,double> p3;
+    std::pair<double,double> center;
 
 public:
     ~STriangle();
+    STriangle();
     STriangle(std::pair<double,double>, std::pair<double,double>, std::pair<double,double>);
-    void move(std::pair<double,double>) override;
-    void rotate(double angular) override;
-    void flip() override;
-    double getPerimeter() override;
-    std::vector<std::pair<double,double>> getPoints() override;
-    std::string toString() override;
+    std::pair<double,double> center_point();
+    void move(std::pair<double,double>);
+    void rotate(double angular);
+    void flip();
+    std::vector<std::pair<double,double>> getPoints();
+    std::string toString();
 };
 
 

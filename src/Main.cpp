@@ -4,17 +4,18 @@
 
 #include <iostream>
 #include <cmath>
+#include <shape/STriangle.hpp>
 #include <shape/Square.hpp>
 
 using namespace std;
 
 int main (int argc, char *argv[]) {
-    Square square(std::pair(1,2),std::pair(2,1));
+    STriangle triangle;
+    Square square;
     std::cout << square.toString() << std::endl;
-    square.rotate(M_PI/4);
+    square.rotate(2*M_PI);
+    std::cout << "\n----------------------\n" << std::endl;
     std::cout << square.toString() << std::endl;
-    square.flip();
-    std::cout << square.toString() << std::endl;
-    std::cout << "end of the game" << std::endl;
+
     std::exit(EXIT_SUCCESS);
 }
