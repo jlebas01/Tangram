@@ -2,25 +2,25 @@
 // Created by jlebas01 on 15/01/2020.
 //
 
-#ifndef TANGRAM_GTRIANGLE_H
-#define TANGRAM_GTRIANGLE_H
+#ifndef TANGRAM_PARALELLOGRAM_H
+#define TANGRAM_PARALELLOGRAM_H
 
 #include <vector>
 
 #include <shape/STriangle.hpp>
 #include <drawable/Piece.hpp>
 
-class GTriangle : Piece {
+class Parallelogram : Piece {
 private:
 
     std::vector<STriangle> triangle;
 
 public:
-    ~GTriangle() override;
+    ~Parallelogram() override;
 
-    explicit GTriangle(const std::vector<STriangle> &triangle);
+    explicit Parallelogram(const std::vector<STriangle> &triangle);
 
-    GTriangle();
+    Parallelogram();
 
     void move(std::pair<double, double>) override;
 
@@ -34,4 +34,4 @@ public:
 
 };
 
-#endif //TANGRAM_GTRIANGLE_H
+#endif //TANGRAM_PARALELLOGRAM_H
