@@ -79,4 +79,8 @@ std::string STriangle::toString(){
     return points;
 }
 
+double STriangle::computeDistance(std::pair<double, double> point1, std::pair<double, double> point2) {
+    return sqrt(pow(point2.first - point1.first, 2) + pow(point2.second - point1.second, 2));
+}
+
 

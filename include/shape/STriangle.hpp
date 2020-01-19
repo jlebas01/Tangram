@@ -7,9 +7,9 @@
 
 #include <vector>
 
-#include <drawable/Piece.hpp>
+#include <drawable/Shape.hpp>
 
-class STriangle : Piece {
+class STriangle : public Shape {
 private:
 
     std::vector<std::pair<double, double>> point;
@@ -35,6 +35,8 @@ public:
     std::vector<std::pair<double, double>> getPoints() override;
 
     std::string toString() override;
+
+    double computeDistance(std::pair<double, double> point1, std::pair<double, double> point2);
 };
 
 #endif //TANGRAM_STRIANGLE_H

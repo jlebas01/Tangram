@@ -8,9 +8,9 @@
 #include <vector>
 
 #include <shape/STriangle.hpp>
-#include <drawable/Piece.hpp>
+#include <drawable/Shape.hpp>
 
-class Parallelogram : Piece {
+class Parallelogram : public Shape {
 private:
 
     std::vector<STriangle> triangle;

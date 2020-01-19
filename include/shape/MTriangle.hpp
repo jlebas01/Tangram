@@ -8,9 +8,9 @@
 #include <vector>
 
 #include <shape/STriangle.hpp>
-#include <drawable/Piece.hpp>
+#include <drawable/Shape.hpp>
 
-class MTriangle : Piece {
+class MTriangle : public Shape {
 private:
 
     std::vector<STriangle> triangle;

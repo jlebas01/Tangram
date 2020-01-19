@@ -7,10 +7,10 @@
 
 #include <vector>
 
-class Piece {
+class Shape {
 public :
 
-    virtual ~Piece() = 0;
+    virtual ~Shape() = 0;
 
     virtual void move(std::pair<double, double> translation) = 0;
 
@@ -22,7 +22,6 @@ public :
 
     virtual std::string toString() = 0;
 
-    static double computeDistance(std::pair<double, double> point1, std::pair<double, double> point2);
 };
 
 #endif //TANGRAM_PIECE_H
