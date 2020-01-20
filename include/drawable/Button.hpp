@@ -5,15 +5,16 @@
 #ifndef TANGRAM_BUTTON_H
 #define TANGRAM_BUTTON_H
 
+#include <utility>
 
 typedef int (*button_callback) (int);
 
 class Button {
 private:
-    std::pair<int,int> point; // <x,y>
-    std::pair<int,int> sizing; // <width, height>
-    char * text;
-    button_callback callback;
+    std::pair<int,int> b_point; // <x,y>
+    std::pair<int,int> b_sizing; // <width, height>
+    char * b_text;
+    button_callback b_callback;
 
 public:
     ~Button();

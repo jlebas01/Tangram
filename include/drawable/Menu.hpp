@@ -11,9 +11,10 @@
 class Menu {
     private:
         std::vector<Button> buttons;
-    public:
-        void main_loop();
         void draw();
+    public:
+        void add_button(Button);
+        void main_loop();
 };
 
 
