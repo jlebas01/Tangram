@@ -7,8 +7,14 @@
 #include <game/Objective.hpp>
 #include <algorithm>
 
-bool Objective::boardCompleted(std::vector<Shape> objective, std::vector<Shape> game) {
-    //ToFix
-    // return std::is_permutation(objective.begin(), objective.end(), game.begin(), game.end());
-    return false;
+bool Objective::boardCompleted( std::vector<Shape> objective, std::vector<Shape> game) {
+    std::vector<std::pair<double, double>> points_objective;
+    std::vector<std::pair<double,double>> points_game;
+    for (auto &it : objective){
+        points_objective.insert(points_objective.end(), it.getPoints().begin(), it.getPoints().end());
+    }
+    for (auto &it : objective){
+        points_game.insert(points_game.end(), it.getPoints().begin(), it.getPoints().end());
+    }
+    return std::is_permutation( points_objective.begin(), points_objective.end(), points_game.begin(), points_game.end());
 }
