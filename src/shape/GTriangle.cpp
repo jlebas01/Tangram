@@ -67,6 +67,14 @@ void GTriangle::draw() {
     MLV_draw_filled_polygon(x_points, y_points, static_cast<int>(list_points.size()),MLV_COLOR_RED);
 }
 
+bool GTriangle::is_in_shape(const Point<double> click) {
+    for(auto &it : triangle){
+        if (it.is_in_triangle(click)){
+            return true;
+        }
+    }
+    return false;
+}
 
 std::vector<Point<double>> GTriangle::getPoints() {
     std::vector<Point<double>> points;

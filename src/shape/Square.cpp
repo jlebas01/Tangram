@@ -62,6 +62,15 @@ void Square::draw() {
 
 }
 
+bool Square::is_in_shape(const Point<double> click) {
+    for(auto &it : triangle){
+        if (it.is_in_triangle(click)){
+            return true;
+        }
+    }
+    return false;
+}
+
 
 std::vector<Point<double>> Square::getPoints() {
     std::vector<Point<double>> points;

@@ -101,6 +101,31 @@ double STriangle::computeDistance(Point<double> point1, Point<double> point2) {
     return sqrt(pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2));
 }
 
+bool STriangle::is_in_shape(const Point<double> click) {
 
+    return this->is_in_triangle(click);
+}
 
+bool STriangle::is_in_triangle(const Point<double> click) {
+
+    double d1, d2, d3;
+    bool has_neg, has_pos;
+
+    d1 = (this->sign)(click, points.at(0), points.at(1));
+    d2 = (this->sign)(click, points.at(1), points.at(2));
+    d3 = (this->sign)(click, points.at(2), points.at(0));
+
+    //    d1 = sign(pt, v1, v2);
+    //    d2 = sign(pt, v2, v3);
+    //    d3 = sign(pt, v3, v1);
+
+    has_neg = (d1 < 0) || (d2 < 0) || (d3 < 0);
+    has_pos = (d1 > 0) || (d2 > 0) || (d3 > 0);
+
+    return !(has_neg && has_pos);
+}
+
+double STriangle::sign (Point<double> p1, Point<double> p2, Point<double> p3){
+    return (p1.x - p3.x) * (p2.y - p3.y) - (p2.x - p3.x) * (p1.y - p3.y);
+}
 

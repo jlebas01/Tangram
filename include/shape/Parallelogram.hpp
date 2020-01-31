@@ -31,6 +31,8 @@ public:
 
     void draw() override;
 
+    bool is_in_shape(Point<double> click) override;
+
     std::vector<Point<double>> getPoints() override;
 
     std::string toString() override;

@@ -34,11 +34,19 @@ public:
 
     void draw() override;
 
+    bool is_in_shape(Point<double> click) override;
+
     std::vector<Point<double>> getPoints() override;
 
     std::string toString() override;
 
     double computeDistance(Point<double> point1, Point<double> point2);
+
+    double sign(Point<double> p1, Point<double> p2, Point<double> p3);
+
+    bool is_in_triangle(Point<double> click);
+
+
 };
 
 #endif //TANGRAM_STRIANGLE_H

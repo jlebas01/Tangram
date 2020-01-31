@@ -61,6 +61,15 @@ void Parallelogram::draw() {
 
 }
 
+bool Parallelogram::is_in_shape(const Point<double> click) {
+    for(auto &it : triangle){
+        if (it.is_in_triangle(click)){
+            return true;
+        }
+    }
+    return false;
+}
+
 std::vector<Point<double>> Parallelogram::getPoints() {
     std::vector<Point<double>> points;
     for (auto &it : triangle) {

@@ -23,6 +23,8 @@ public :
 
     virtual std::string toString() = 0;
 
+    virtual bool is_in_shape(Point<double> point) = 0;
+
 };
 
 #endif //TANGRAM_SHAPE_H
