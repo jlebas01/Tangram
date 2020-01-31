@@ -8,8 +8,8 @@
 #include <algorithm>
 
 bool Objective::boardCompleted( std::vector<Shape> objective, std::vector<Shape> game) {
-    std::vector<std::pair<double, double>> points_objective;
-    std::vector<std::pair<double,double>> points_game;
+    std::vector<Point<double>> points_objective;
+    std::vector<Point<double>> points_game;
     for (auto &it : objective){
         points_objective.insert(points_objective.end(), it.getPoints().begin(), it.getPoints().end());
     }

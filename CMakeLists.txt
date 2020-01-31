@@ -34,6 +34,7 @@ TARGET_COMPILE_OPTIONS(
 TARGET_COMPILE_OPTIONS(
     ${TARGET_NAME} PRIVATE
     -Wno-unused-parameter
+    -Wno-float-equal
     -Wno-effc++
     -Wno-shadow
     -Wno-c++98-compat
