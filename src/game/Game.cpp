@@ -8,6 +8,10 @@
 #include <shape/STriangle.hpp>
 #include <MLV/MLV_all.h>
 
+static int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
 Game::Game(const int w, const int h) {
     this->w = w;
     this->h = h;
@@ -20,7 +24,7 @@ Game::Game(const int w, const int h) {
 void Game::draw() {
     MLV_clear_window(MLV_COLOR_BLACK);
 
-    for (auto & shape : shapes) {
+    for (auto &shape : shapes) {
         shape->draw();
     }
 
@@ -29,6 +33,7 @@ void Game::draw() {
 
 void Game::main_loop() {
     bool exit = false;
+    Shape *selected = nullptr;
     Point<int> cur_click;
     Point<int> prev_click;
 
@@ -53,8 +58,8 @@ void Game::main_loop() {
         prev_mouse_button = cur_mouse_button;
         prev_modifier = cur_modifier;
         prev_button = cur_button;
-        MLV_get_event(&cur_button, &cur_modifier, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
-                      &cur_mouse_button, &cur_state);
+        MLV_wait_event(&cur_button, &cur_modifier, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
+                       &cur_mouse_button, &cur_state);
 
         if (prev_click != cur_click || prev_state != cur_state || prev_mouse_button != cur_mouse_button ||
             prev_modifier != cur_modifier || prev_button != cur_button) {
@@ -63,12 +68,23 @@ void Game::main_loop() {
 
         if (prev_state != cur_state) {
             if (cur_state == MLV_PRESSED) {
-                // SELECT
+                for (auto &shape: shapes) {
+                    if (shape->is_in_shape({cur_click.x, cur_click.y})) {
+                        selected = shape;
+                    }
+                }
             } else if (cur_state == MLV_RELEASED) {
-                // RELEASE
+                selected = nullptr;
+            }
+        } else {
+            if (selected && prev_mouse_button == cur_mouse_button && cur_mouse_button == MLV_BUTTON_LEFT) {
+                selected->move({cur_click.x - prev_click.x, cur_click.y - prev_click.y});
+            }
+            if (selected && prev_mouse_button == cur_mouse_button && cur_mouse_button == MLV_BUTTON_RIGHT) {
+                int dx = cur_click.x - prev_click.x;
+                int dy = cur_click.y - prev_click.y;
+                selected->rotate(static_cast<double> (max(dx, dy)) / 1000);
             }
         }
-        printf("(%d %d) state : %d, button : %d, mouse : %d\n", cur_click.x, cur_click.y, cur_state, cur_button,
-               cur_mouse_button);
     }
 }
