@@ -8,6 +8,7 @@
 #include <vector>
 
 #include <drawable/Shape.hpp>
+#include <MLV/MLV_shape.h>
 
 class STriangle : public Shape {
 private:
@@ -30,6 +31,8 @@ public:
     void rotate(double angular) override;
 
     void flip() override;
+
+    void draw() override;
 
     std::vector<Point<double>> getPoints() override;
 

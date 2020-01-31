@@ -57,13 +57,11 @@ void Game::main_loop() {
         if (prev_state != cur_state) {
             if (cur_state == MLV_PRESSED) {
                 // SELECT
-            }
-            else if (cur_state == MLV_RELEASED) {
+            } else if (cur_state == MLV_RELEASED) {
                 // RELEASE
             }
         }
-        printf("(%d %d) state : %d, button : %d, mouse : %d\n", cur_click.x, cur_click.y, cur_state, cur_button, cur_mouse_button);
-
-
+        printf("(%d %d) state : %d, button : %d, mouse : %d\n", cur_click.x, cur_click.y, cur_state, cur_button,
+               cur_mouse_button);
     }
 }

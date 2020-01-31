@@ -46,6 +46,21 @@ void Parallelogram::flip() {
     }
 }
 
+void Parallelogram::draw() {
+    std::vector<Point<double>> list_points = this->getPoints();
+    int * x_points = new int[list_points.size()];
+    int * y_points = new int[list_points.size()];
+    int i = 0;
+    for(auto & it: list_points){
+        x_points[i] = static_cast<int>(it.x);
+        y_points[i] = static_cast<int>(it.y);
+        i++;
+    }
+
+    MLV_draw_polygon(x_points, y_points, static_cast<int>(list_points.size()),MLV_COLOR_GREEN);
+
+}
+
 std::vector<Point<double>> Parallelogram::getPoints() {
     std::vector<Point<double>> points;
     for (auto &it : triangle) {
