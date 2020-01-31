@@ -11,5 +11,17 @@ void Game::draw() {
 }
 
 void Game::main_loop() {
+    bool exit = false;
 
+
+    while (!exit) {
+
+
+
+    }
+}
+
+Game::Game() {
+    this->shapes.push_back(STriangle());
+    this->shapes.push_back(STriangle());
 }

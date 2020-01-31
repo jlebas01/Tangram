@@ -6,6 +6,7 @@
 #define TANGRAM_GAME_H
 
 #include <game/Objective.hpp>
+#include <shape/STriangle.hpp>
 
 class Game {
 private:
@@ -16,6 +17,7 @@ private:
 public:
     void main_loop();
 
+    Game();
 
 };
 
