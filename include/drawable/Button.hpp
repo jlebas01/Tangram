@@ -6,24 +6,31 @@
 #define TANGRAM_BUTTON_H
 
 #include <utility>
+#include <utils/Point.hpp>
+#include <functional>
 
-typedef int (*button_callback) (int);
 
 class Button {
 private:
-    std::pair<int,int> b_point; // <x,y>
-    std::pair<int,int> b_sizing; // <width, height>
-    char * b_text;
-    button_callback b_callback;
+    Point<int> b_point; // <x,y>
+    Point<int> b_sizing; // <width, height>
+    std::string b_text;
+    std::function<int(int)> b_callback;
 
 public:
     ~Button();
-    Button(std::pair<int,int> point, std::pair<int,int> sizing, const char * text);
-    Button(std::pair<int,int> point, std::pair<int,int> sizing, const char * text, button_callback callback);
-    void set_callback(button_callback);
-    bool click_in_button(std::pair<int,int> click);
+
+    Button(Point<int> point, Point<int> sizing, std::string text);
+
+    Button(Point<int> point, Point<int> sizing, std::string text, std::function<int(int)> callback);
+
+    bool click_in_button(const Point<int> &click);
+
     int click(int);
+
     void draw();
+
+    void set_callback(std::function<int(int)> callback);
 };
 
 

@@ -3,6 +3,7 @@
 //
 
 #include <drawable/Menu.hpp>
+#include <utils/Point.hpp>
 #include <MLV/MLV_all.h>
 #include <iostream>
 
@@ -22,7 +23,7 @@ void Menu::main_loop() {
         std::cout << x << ", " << y << std::endl;
 
         for (auto b: buttons) {
-            if (b.click_in_button(std::make_pair(x,y))) {
+            if (b.click_in_button(Point<int>(x, y))) {
                 if (!b.click(0)) {
                     exit = true;
                 }

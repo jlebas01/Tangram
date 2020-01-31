@@ -9,78 +9,82 @@
 #include <shape/STriangle.hpp>
 
 
-STriangle::~STriangle(){
-    point.clear(); //delete all elements in vector triangle (calling destructor of any elements in this vector)
+STriangle::~STriangle() {
+    points.clear(); //delete all elements in vector triangle (calling destructor of any elements in this vector)
     // create a new (temporary) vector and swap its contents with triangle. The temporary vector is then destroyed, freeing the memory along with it.
-    std::vector<std::pair<double, double >>().swap(point);
+    std::vector<Point<double>>().swap(points);
 }
 
-STriangle::STriangle(const std::pair<double,double> point1, const std::pair<double,double> point2, const std::pair<double,double> point3){
-    this->point.emplace_back(std::make_pair(point1.first, point1.second));
-    this->point.emplace_back(std::make_pair(point2.first, point2.second));
-    this->point.emplace_back(std::make_pair(point3.first, point3.second));
-    this->center.operator=(this->center_point());
+STriangle::STriangle(const Point<double> point1, const Point<double> point2, const Point<double> point3) {
+    this->points.emplace_back(point1.x, point1.y);
+    this->points.emplace_back(point2.x, point2.y);
+    this->points.emplace_back(point3.x, point3.y);
+    this->center = this->center_point();
 }
 
-STriangle::STriangle(const std::vector<std::pair<double,double>>& points){
-    for (auto & it : points){
-        this->point.push_back(it);
+STriangle::STriangle(const std::vector<Point<double>> &points) {
+    for (auto &it : points) {
+        this->points.push_back(it);
     }
-    this->center.operator=(this->center_point());
+    this->center = this->center_point();
 }
 
-STriangle::STriangle(){
-    this->point.emplace_back( std::make_pair(0.0, 0.0));
-    this->point.emplace_back( std::make_pair(2.0,0.0));
-    this->point.emplace_back( std::make_pair(0.0, 2.0));
-    this->center.operator=(this->center_point());
+STriangle::STriangle() {
+    this->points.emplace_back(0.0, 0.0);
+    this->points.emplace_back(2.0, 0.0);
+    this->points.emplace_back(0.0, 2.0);
+    this->center = this->center_point();
 }
 
-std::pair<double,double> STriangle::center_point(){
+Point<double> STriangle::center_point() {
     double sumx = 0.0, sumy = 0.0;
-    for (auto & it : point){
-        sumx += it.first;
-        sumy += it.second;
+    for (auto &it : points) {
+        sumx += it.x;
+        sumy += it.y;
     }
-    return std::make_pair(sumx/3, sumy/3);
+    return Point<double>(sumx / 3., sumy / 3);
 }
-void STriangle::move(std::pair<double,double> translation) {
-    for (auto & it : point){
-        it.operator=(std::pair<double,double>(it.first + translation.first, it.second + translation.second));
+
+void STriangle::move(Point<double> translation) {
+    for (auto &it : points) {
+        it.operator=(Point<double>(it.x + translation.x, it.y + translation.y));
     }
     center.operator=(this->center_point());
 }
 
 void STriangle::rotate(double angular) {
-    for(auto & it : point){
-        it.operator=( std::pair<double,double>((it.first-center.first) * cos(angular) - (it.second-center.second) * sin(angular) +center.first,(it.second-center.second) * cos(angular) + (it.first-center.second) * sin(angular) +center.second));
+    for (auto &it : points) {
+        it.operator=(Point<double>((it.x - center.x) * cos(angular) - (it.y - center.y) * sin(angular) + center.x,
+                                   (it.y - center.y) * cos(angular) + (it.x - center.y) * sin(angular) + center.y));
     }
     center.operator=(this->center_point());
 }
 
 void STriangle::flip() {
-    for(auto & it : point){
-        it.operator=( std::pair<double,double>(it.second,it.first));
+    for (auto &it : points) {
+        it.operator=(Point<double>(it.y, it.x));
     }
     center.operator=(this->center_point());
 }
 
-std::vector<std::pair<double, double>> STriangle::getPoints() {
-    std::vector<std::pair<double,double>> const points = { point };
+std::vector<Point<double>> STriangle::getPoints() {
+    std::vector<Point<double>> const points = {this->points};
     return points;
 }
 
-std::string STriangle::toString(){
+std::string STriangle::toString() {
     std::string points;
-    for (auto[it, i] = std::tuple{point.begin(), 1}; it != point.end(); i++, it++) {
-        points+= std::string("Point ") + std::to_string(i) + std::string("\nx : ") + std::to_string(it->first) + std::string(" y : ") + std::to_string(it->second) + std::string("\n");
+    for (auto[it, i] = std::tuple{this->points.begin(), 1}; it != this->points.end(); i++, it++) {
+        points += std::string("Point ") + std::to_string(i) + std::string(" (x : ") + std::to_string(it->x) +
+                  std::string(" y : ") + std::to_string(it->y) + std::string(")\n");
     }
-    points += std::string("Center\nx : ") + std::to_string(center.first) + std::string(" y : ") + std::to_string(center.second) + std::string("\n");
+    points += std::string("Center\nx : ") + std::to_string(center.x) + std::string(" y : ") +
+              std::to_string(center.y) + std::string("\n");
     return points;
 }
 
-double STriangle::computeDistance(std::pair<double, double> point1, std::pair<double, double> point2) {
-    return sqrt(pow(point2.first - point1.first, 2) + pow(point2.second - point1.second, 2));
+double STriangle::computeDistance(Point<double> point1, Point<double> point2) {
+    return sqrt(pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2));
 }
 
 

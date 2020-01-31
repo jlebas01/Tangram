@@ -8,6 +8,14 @@
 #include <game/Objective.hpp>
 
 class Game {
+private:
+    std::vector<Shape> shapes;
+
+    void draw();
+
+public:
+    void main_loop();
+
 
 };
 

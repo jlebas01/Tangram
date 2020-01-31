@@ -35,9 +35,9 @@ static int settings_button_callback(int val) {
 static Menu create_main_menu() {
     Menu menu;
 
-    menu.add_button(Button(std::make_pair(W_WIDTH/3, W_HEIGHT/6), std::make_pair(W_WIDTH/3, W_HEIGHT/6), "Launch", launch_game_button_callback));
-    menu.add_button(Button(std::make_pair(W_WIDTH/6, 4*W_HEIGHT/6), std::make_pair(W_WIDTH/6, W_HEIGHT/6), "Settings", settings_button_callback));
-    menu.add_button(Button(std::make_pair(4*W_WIDTH/6, 4*W_HEIGHT/6), std::make_pair(W_WIDTH/6, W_HEIGHT/6), "Exit", exit_button_callback));
+    menu.add_button(Button({W_WIDTH/3, W_HEIGHT/6}, {W_WIDTH/3, W_HEIGHT/6}, "Launch", launch_game_button_callback));
+    menu.add_button(Button({W_WIDTH/6, 4*W_HEIGHT/6}, {W_WIDTH/6, W_HEIGHT/6}, "Settings", settings_button_callback));
+    menu.add_button(Button({4*W_WIDTH/6, 4*W_HEIGHT/6}, {W_WIDTH/6, W_HEIGHT/6}, "Exit", exit_button_callback));
 
     return menu;
 }
@@ -48,16 +48,6 @@ int main(int argc, char *argv[]) {
     MLV_create_window("Tangram", nullptr,  W_WIDTH, W_HEIGHT);
     m.main_loop();
 
-    /*
-    Parallelogram triangle;
-    Shape &piece = triangle;
-    std::cout << "square : \n" << std::endl;
-    Square square;
-
-    std::cout << piece.toString() << std::endl;
-    triangle.rotate(2 * M_PI);
-    std::cout << "\n----------------------\n" << std::endl;
-    std::cout << triangle.toString() << std::endl; */
     MLV_free_window();
     std::exit(EXIT_SUCCESS);
 }

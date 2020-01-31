@@ -11,32 +11,31 @@
 
 class STriangle : public Shape {
 private:
+    std::vector<Point<double>> points;
+    Point<double> center = center_point();
 
-    std::vector<std::pair<double, double>> point;
-    std::pair<double, double> center;
-
-    std::pair<double, double> center_point();
+    Point<double> center_point();
 
 public:
     ~STriangle() override;
 
-    explicit STriangle(const std::vector<std::pair<double, double>> &points);
+    explicit STriangle(const std::vector<Point<double>> &points);
 
     STriangle();
 
-    STriangle(std::pair<double, double>, std::pair<double, double>, std::pair<double, double>);
+    STriangle(Point<double>, Point<double>, Point<double>);
 
-    void move(std::pair<double, double>) override;
+    void move(Point<double>) override;
 
     void rotate(double angular) override;
 
     void flip() override;
 
-    std::vector<std::pair<double, double>> getPoints() override;
+    std::vector<Point<double>> getPoints() override;
 
     std::string toString() override;
 
-    double computeDistance(std::pair<double, double> point1, std::pair<double, double> point2);
+    double computeDistance(Point<double> point1, Point<double> point2);
 };
 
 #endif //TANGRAM_STRIANGLE_H

@@ -6,19 +6,20 @@
 #define TANGRAM_PIECE_H
 
 #include <vector>
+#include <utils/Point.hpp>
 
 class Shape {
 public :
 
     virtual ~Shape() = 0;
 
-    virtual void move(std::pair<double, double> translation) = 0;
+    virtual void move(Point<double> translation) = 0;
 
     virtual void rotate(double angular) = 0;
 
     virtual void flip() = 0;
 
-    virtual std::vector<std::pair<double, double>> getPoints() = 0;
+    virtual std::vector<Point<double>> getPoints() = 0;
 
     virtual std::string toString() = 0;
 

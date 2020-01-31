@@ -21,14 +21,14 @@ Parallelogram::Parallelogram(const std::vector<STriangle> &triangles) {
 }
 
 Parallelogram::Parallelogram() {
-    this->triangle.emplace_back(STriangle(std::pair<double, double>(2.0, 0.0), std::pair<double, double>(2.0, 2.0),
-                                          std::pair<double, double>(0.0, 2.0)));
-    this->triangle.emplace_back(STriangle(std::pair<double, double>(0.0, 2.0), std::pair<double, double>(2.0, 2.0),
-                                          std::pair<double, double>(0.0, 4.0)));
+    this->triangle.emplace_back(STriangle(Point<double>(2.0, 0.0), Point<double>(2.0, 2.0),
+                                          Point<double>(0.0, 2.0)));
+    this->triangle.emplace_back(STriangle(Point<double>(0.0, 2.0), Point<double>(2.0, 2.0),
+                                          Point<double>(0.0, 4.0)));
 }
 
 
-void Parallelogram::move(std::pair<double, double> translation) {
+void Parallelogram::move(Point<double> translation) {
     for (auto &it : triangle) {
         it.move(translation);
     }
@@ -46,8 +46,8 @@ void Parallelogram::flip() {
     }
 }
 
-std::vector<std::pair<double, double>> Parallelogram::getPoints() {
-    std::vector<std::pair<double, double>> points;
+std::vector<Point<double>> Parallelogram::getPoints() {
+    std::vector<Point<double>> points;
     for (auto &it : triangle) {
         //add all points of vector triangle n in vector points
         points.insert(points.end(), it.getPoints().begin(), it.getPoints().end());

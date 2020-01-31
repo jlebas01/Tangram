@@ -22,13 +22,13 @@ public:
 
     Parallelogram();
 
-    void move(std::pair<double, double>) override;
+    void move(Point<double>) override;
 
     void rotate(double angular) override;
 
     void flip() override;
 
-    std::vector<std::pair<double, double>> getPoints() override;
+    std::vector<Point<double>> getPoints() override;
 
     std::string toString() override;
 

@@ -5,3 +5,11 @@
 #include <iostream>
 
 #include <game/Game.hpp>
+
+void Game::draw() {
+
+}
+
+void Game::main_loop() {
+
+}

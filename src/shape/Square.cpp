@@ -22,14 +22,14 @@ Square::Square(const std::vector<STriangle> &triangles) {
 }
 
 Square::Square() {
-    this->triangle.emplace_back(STriangle(std::pair<double, double>(0.0, 0.0), std::pair<double, double>(0.0, 2.0),
-                                          std::pair<double, double>(2.0, 0.0)));
-    this->triangle.emplace_back(STriangle(std::pair<double, double>(2.0, 0.0), std::pair<double, double>(2.0, 2.0),
-                                          std::pair<double, double>(0.0, 2.0)));
+    this->triangle.emplace_back(STriangle(Point<double>(0.0, 0.0), Point<double>(0.0, 2.0),
+                                          Point<double>(2.0, 0.0)));
+    this->triangle.emplace_back(STriangle(Point<double>(2.0, 0.0), Point<double>(2.0, 2.0),
+                                          Point<double>(0.0, 2.0)));
 }
 
 
-void Square::move(std::pair<double, double> translation) {
+void Square::move(Point<double> translation) {
     for (auto &it : triangle) {
         it.move(translation);
     }
@@ -48,8 +48,8 @@ void Square::flip() {
 }
 
 
-std::vector<std::pair<double, double>> Square::getPoints() {
-    std::vector<std::pair<double, double>> points;
+std::vector<Point<double>> Square::getPoints() {
+    std::vector<Point<double>> points;
     for (auto &it : triangle) {
         //add all points of vector triangle n in vector points
         points.insert(points.end(), it.getPoints().begin(), it.getPoints().end());
