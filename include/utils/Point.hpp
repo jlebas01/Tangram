@@ -8,6 +8,8 @@ public:
     T x;
     T y;
 
+    Point() : x(0), y(0) {}
+
     Point(const T x, const T y) {
         this->x = x;
         this->y = y;
@@ -17,10 +19,14 @@ public:
         return this->x == p.x && this->y == p.y;
     }
 
-    Point& operator=(const Point<T> p) {
+    Point &operator=(const Point<T> p) {
         this->x = p.x;
         this->y = p.y;
         return *this;
+    }
+
+    bool operator!=(const Point<T> p) const {
+        return this->x != p.x || this->y != p.y;
     }
 };
 

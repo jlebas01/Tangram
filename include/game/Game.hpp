@@ -6,18 +6,20 @@
 #define TANGRAM_GAME_H
 
 #include <game/Objective.hpp>
-#include <shape/STriangle.hpp>
+#include <drawable/Shape.hpp>
 
 class Game {
 private:
     std::vector<Shape> shapes;
+    int w;
+    int h;
 
     void draw();
 
 public:
     void main_loop();
 
-    Game();
+    Game(int w, int h);
 
 };
 
