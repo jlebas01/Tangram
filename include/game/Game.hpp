@@ -6,7 +6,7 @@
 #define TANGRAM_GAME_H
 
 #include <game/Objective.hpp>
-#include <shape/STriangle.hpp>
+#include <drawable/Shape.hpp>
 
 class Game {
 private:

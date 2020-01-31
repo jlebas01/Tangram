@@ -22,6 +22,5 @@ void Game::main_loop() {
 }
 
 Game::Game() {
-    this->shapes.push_back(STriangle());
-    this->shapes.push_back(STriangle());
+
 }

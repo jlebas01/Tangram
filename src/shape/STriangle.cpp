@@ -67,6 +67,21 @@ void STriangle::flip() {
     center.operator=(this->center_point());
 }
 
+void STriangle::draw() {
+    std::vector<Point<double>> list_points = this->getPoints();
+    int * x_points = new int[list_points.size()];
+    int * y_points = new int[list_points.size()];
+    int i = 0;
+    for(auto & it: list_points){
+        x_points[i] = static_cast<int>(it.x);
+        y_points[i] = static_cast<int>(it.y);
+        i++;
+    }
+
+    MLV_draw_polygon(x_points, y_points, static_cast<int>(list_points.size()),MLV_COLOR_GREEN);
+
+}
+
 std::vector<Point<double>> STriangle::getPoints() {
     std::vector<Point<double>> const points = {this->points};
     return points;
@@ -86,5 +101,7 @@ std::string STriangle::toString() {
 double STriangle::computeDistance(Point<double> point1, Point<double> point2) {
     return sqrt(pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2));
 }
+
+
 
 

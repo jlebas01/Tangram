@@ -1,14 +1,14 @@
 //
 // Created by jlebas01 on 15/01/2020.
 //
-
-#ifndef TANGRAM_PIECE_H
-#define TANGRAM_PIECE_H
+#ifndef TANGRAM_SHAPE_H
+#define TANGRAM_SHAPE_H
 
 #include <vector>
 #include <utils/Point.hpp>
+#include <drawable/Drawable.h>
 
-class Shape {
+class Shape : public Drawable {
 public :
 
     virtual ~Shape() = 0;
@@ -25,4 +25,4 @@ public :
 
 };
 
-#endif //TANGRAM_PIECE_H
+#endif //TANGRAM_SHAPE_H

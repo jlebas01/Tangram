@@ -9,6 +9,7 @@
 
 #include <shape/STriangle.hpp>
 #include <drawable/Shape.hpp>
+#include <MLV/MLV_shape.h>
 
 class Square : public Shape {
 private:
@@ -27,6 +28,8 @@ public:
     void rotate(double angular) override;
 
     void flip() override;
+
+    void draw() override;
 
     std::vector<Point<double>> getPoints() override;
 
