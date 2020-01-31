@@ -59,7 +59,7 @@ void MTriangle::draw() {
         i++;
     }
 
-    MLV_draw_polygon(x_points, y_points, static_cast<int>(list_points.size()),MLV_COLOR_GREEN);
+    MLV_draw_filled_polygon(x_points, y_points, static_cast<int>(list_points.size()),MLV_COLOR_PINK);
 
 }
 

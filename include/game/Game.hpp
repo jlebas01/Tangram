@@ -10,7 +10,8 @@
 
 class Game {
 private:
-    std::vector<Shape> shapes;
+    std::vector<Shape*> shapes;
+    //std::vector <std::tr1::shared_ptr<Shape> >
     int w;
     int h;
 

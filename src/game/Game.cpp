@@ -5,17 +5,24 @@
 #include <iostream>
 
 #include <game/Game.hpp>
+#include <shape/STriangle.hpp>
 #include <MLV/MLV_all.h>
 
 Game::Game(const int w, const int h) {
     this->w = w;
     this->h = h;
+
+    //ajouter toutes les formes
+    (this->shapes).push_back(new STriangle());
+
 }
 
 void Game::draw() {
     MLV_clear_window(MLV_COLOR_BLACK);
 
-    // shapes
+    for (auto & shape : shapes) {
+        shape->draw();
+    }
 
     MLV_actualise_window();
 }

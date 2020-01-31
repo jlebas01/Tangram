@@ -31,8 +31,8 @@ STriangle::STriangle(const std::vector<Point<double>> &points) {
 
 STriangle::STriangle() {
     this->points.emplace_back(0.0, 0.0);
-    this->points.emplace_back(2.0, 0.0);
-    this->points.emplace_back(0.0, 2.0);
+    this->points.emplace_back(100.0, 0.0);
+    this->points.emplace_back(0.0, 100.0);
     this->center = this->center_point();
 }
 
@@ -78,8 +78,7 @@ void STriangle::draw() {
         i++;
     }
 
-    MLV_draw_polygon(x_points, y_points, static_cast<int>(list_points.size()),MLV_COLOR_GREEN);
-
+    MLV_draw_filled_polygon(x_points, y_points, static_cast<int>(list_points.size()),MLV_COLOR_GREEN);
 }
 
 std::vector<Point<double>> STriangle::getPoints() {
