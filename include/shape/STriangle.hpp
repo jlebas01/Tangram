@@ -12,10 +12,13 @@
 
 class STriangle : public Shape {
 private:
+
     std::vector<Point<double>> points;
     Point<double> center = center_point();
 
     Point<double> center_point();
+
+    void parameter(Point<double> origin, double angular);
 
 public:
     ~STriangle() override;
@@ -23,6 +26,8 @@ public:
     explicit STriangle(const std::vector<Point<double>> &points);
 
     STriangle();
+
+    explicit STriangle(Point<double> origin, double angular = 0.0);
 
     STriangle(Point<double>, Point<double>, Point<double>);
 
@@ -43,7 +48,6 @@ public:
     double sign(Point<double> p1, Point<double> p2, Point<double> p3);
 
     bool is_in_triangle(Point<double> click);
-
 
     void draw(MLV_Color Color);
 

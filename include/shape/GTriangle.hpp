@@ -16,10 +16,14 @@ private:
 
     std::vector<STriangle> triangle;
 
+    void parameter(Point<double> origin, double angular);
+
 public:
     ~GTriangle() override;
 
     explicit GTriangle(const std::vector<STriangle> &triangle);
+
+    explicit GTriangle(Point<double> origin, double angular = 0.0);
 
     GTriangle();
 

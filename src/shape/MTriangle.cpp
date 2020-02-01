@@ -29,6 +29,15 @@ MTriangle::MTriangle() {
                                           Point<double>(100.0, 100.0)));
 }
 
+MTriangle::MTriangle(const Point<double> origin, const double angular) : MTriangle() {
+    parameter(origin, angular);
+}
+
+void MTriangle::parameter(const Point<double> origin, const double angular = 0.0) {
+    rotate(angular);
+    move({origin.x - triangle.at(0).get_Points().at(0).x, origin.y - triangle.at(0).get_Points().at(0).y});
+}
+
 
 void MTriangle::move(Point<double> translation) {
     for (auto &it : triangle) {

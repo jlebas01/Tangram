@@ -16,10 +16,14 @@ private:
 
     std::vector<STriangle> triangle;
 
+    void parameter(Point<double> origin, double angular);
+
 public:
     ~Parallelogram() override;
 
     explicit Parallelogram(const std::vector<STriangle> &triangle);
+
+    explicit Parallelogram(Point<double> origin, double angular = 0.0);
 
     Parallelogram();
 

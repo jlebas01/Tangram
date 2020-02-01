@@ -18,7 +18,7 @@ Game::Game(const int w, const int h) {
     this->h = h;
 
     //ajouter toutes les formes
-    (this->shapes).push_back(new GTriangle());
+    (this->shapes).push_back(new STriangle({50.0,50.0},50.0));
 
 }
 

@@ -35,6 +35,15 @@ GTriangle::GTriangle() {
                                           Point<double>(100.0, 100.0)));
 }
 
+GTriangle::GTriangle(const Point<double> origin, const double angular) : GTriangle() {
+    parameter(origin, angular);
+}
+
+void GTriangle::parameter(const Point<double> origin, const double angular = 0.0) {
+    rotate(angular);
+    move({origin.x - triangle.at(0).get_Points().at(0).x, origin.y - triangle.at(0).get_Points().at(0).y});
+}
+
 
 void GTriangle::move(Point<double> translation) {
     for (auto &it : triangle) {
@@ -47,7 +56,7 @@ void GTriangle::rotate(double angular) {
         it.rotate(angular);
     }
     Point<double> translate1 = {triangle.at(0).get_Points().at(1).x - triangle.at(1).get_Points().at(1).x,
-                               triangle.at(0).get_Points().at(1).y - triangle.at(1).get_Points().at(1).y};
+                                triangle.at(0).get_Points().at(1).y - triangle.at(1).get_Points().at(1).y};
 
     triangle.at(1).move(translate1);
 

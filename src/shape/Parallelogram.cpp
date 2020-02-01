@@ -26,6 +26,15 @@ Parallelogram::Parallelogram() {
                                           Point<double>(0.0, 100.0)));
 }
 
+Parallelogram::Parallelogram(const Point<double> origin, const double angular) : Parallelogram() {
+    parameter(origin, angular);
+}
+
+void Parallelogram::parameter(const Point<double> origin, const double angular = 0.0) {
+    rotate(angular);
+    move({origin.x - triangle.at(0).get_Points().at(0).x, origin.y - triangle.at(0).get_Points().at(0).y});
+}
+
 
 void Parallelogram::move(Point<double> translation) {
     for (auto &it : triangle) {

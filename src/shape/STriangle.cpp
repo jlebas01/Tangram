@@ -29,6 +29,15 @@ STriangle::STriangle(const std::vector<Point<double>> &points) {
     this->center = this->center_point();
 }
 
+STriangle::STriangle(const Point<double> origin, const double angular) : STriangle() {
+    parameter(origin, angular);
+}
+
+void STriangle::parameter(const Point<double> origin, const double angular = 0.0) {
+    rotate(angular);
+    move({origin.x - points.at(0).x, origin.y - points.at(0).y});
+}
+
 STriangle::STriangle() {
     this->points.emplace_back(0.0, 0.0);
     this->points.emplace_back(100.0, 0.0);
@@ -107,9 +116,9 @@ double STriangle::computeDistance(Point<double> point1, Point<double> point2) {
     return sqrt(pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2));
 }
 
-std::vector<Point<double>> STriangle::get_Points(){
-   std::vector<Point<double>> const vec_points = {this->points};
-   return vec_points;
+std::vector<Point<double>> STriangle::get_Points() {
+    std::vector<Point<double>> const vec_points = {this->points};
+    return vec_points;
 }
 
 bool STriangle::is_in_shape(const Point<double> click) {

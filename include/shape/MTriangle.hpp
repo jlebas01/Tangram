@@ -16,10 +16,14 @@ private:
 
     std::vector<STriangle> triangle;
 
+    void parameter(Point<double> origin, double angular);
+
 public:
     ~MTriangle() override;
 
     explicit MTriangle(const std::vector<STriangle> &triangle);
+
+    explicit MTriangle(Point<double> origin, double angular = 0.0);
 
     MTriangle();
 

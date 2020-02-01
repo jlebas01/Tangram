@@ -16,10 +16,14 @@ private:
 
     std::vector<STriangle> triangle;
 
+    void parameter(Point<double> origin, double angular);
+
 public:
     ~Square() override;
 
     explicit Square(const std::vector<STriangle> &triangle);
+
+    explicit Square(Point<double> origin, double angular = 0);
 
     Square();
 
@@ -34,7 +38,6 @@ public:
     bool is_in_shape(Point<double> click) override;
 
     std::string toString() override;
-
 };
 
 #endif //TANGRAM_SQUARE_H
