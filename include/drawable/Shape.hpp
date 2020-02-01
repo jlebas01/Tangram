@@ -19,8 +19,6 @@ public :
 
     virtual void flip() = 0;
 
-    virtual std::vector<Point<double>> getPoints() = 0;
-
     virtual std::string toString() = 0;
 
     virtual bool is_in_shape(Point<double> point) = 0;
