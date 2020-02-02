@@ -38,6 +38,8 @@ public:
     bool is_in_shape(Point<double> click) override;
 
     std::string toString() override;
+
+    Point<double> center_shape();
 };
 
 #endif //TANGRAM_SQUARE_H

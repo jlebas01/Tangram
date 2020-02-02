@@ -5,8 +5,8 @@
 #include <iostream>
 
 #include <game/Game.hpp>
-#include <shape/STriangle.hpp>
 #include <shape/GTriangle.hpp>
+#include <shape/STriangle.hpp>
 #include <MLV/MLV_all.h>
 
 static int max(int a, int b) {

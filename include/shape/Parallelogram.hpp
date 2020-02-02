@@ -39,6 +39,7 @@ public:
 
     std::string toString() override;
 
+    Point<double> center_shape();
 };
 
 #endif //TANGRAM_PARALELLOGRAM_H

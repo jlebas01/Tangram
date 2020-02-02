@@ -44,6 +44,14 @@ void GTriangle::parameter(const Point<double> origin, const double angular = 0.0
     move({origin.x - triangle.at(0).get_Points().at(0).x, origin.y - triangle.at(0).get_Points().at(0).y});
 }
 
+Point<double> GTriangle::center_shape() {
+    std::vector<Point<double>> center_points;
+    for (auto &it : triangle) {
+        center_points.push_back(it.get_center_point());
+    }
+    Point<double> const point_rotate = STriangle::center_point(center_points);
+    return point_rotate;
+}
 
 void GTriangle::move(Point<double> translation) {
     for (auto &it : triangle) {
@@ -52,23 +60,10 @@ void GTriangle::move(Point<double> translation) {
 }
 
 void GTriangle::rotate(double angular) {
+    Point<double> const point_rotate = center_shape();
     for (auto &it : triangle) {
-        it.rotate(angular);
+        it.rotate(angular, point_rotate);
     }
-    Point<double> translate1 = {triangle.at(0).get_Points().at(1).x - triangle.at(1).get_Points().at(1).x,
-                                triangle.at(0).get_Points().at(1).y - triangle.at(1).get_Points().at(1).y};
-
-    triangle.at(1).move(translate1);
-
-    Point<double> translate2 = {triangle.at(1).get_Points().at(0).x - triangle.at(2).get_Points().at(0).x,
-                                triangle.at(1).get_Points().at(0).y - triangle.at(2).get_Points().at(0).y};
-
-    triangle.at(2).move(translate2);
-
-    Point<double> translate3 = {triangle.at(2).get_Points().at(1).x - triangle.at(3).get_Points().at(1).x,
-                                triangle.at(2).get_Points().at(1).y - triangle.at(3).get_Points().at(1).y};
-
-    triangle.at(3).move(translate3);
 }
 
 void GTriangle::flip() {

@@ -45,35 +45,70 @@ STriangle::STriangle() {
     this->center = this->center_point();
 }
 
+Point<double> STriangle::center_point(const std::vector<Point<double>> &list_points) {
+
+    double sumx = 0.0, sumy = 0.0;
+
+    if (!list_points.empty()) {
+        for (auto &it : list_points) {
+            sumx += it.x;
+            sumy += it.y;
+        }
+        return Point<double>(sumx / list_points.size(), sumy / list_points.size());
+    }
+
+    return Point<double>(-1, -1); //error case
+}
+
 Point<double> STriangle::center_point() {
     double sumx = 0.0, sumy = 0.0;
     for (auto &it : points) {
         sumx += it.x;
         sumy += it.y;
     }
-    return Point<double>(sumx / 3., sumy / 3);
+    return Point<double>(sumx / points.size(), sumy / points.size());
+}
+
+Point<double> STriangle::get_center_point() {
+    center = this->center_point();
+    Point<double> const center_point = center;
+    return {center_point};
 }
 
 void STriangle::move(Point<double> translation) {
-    for (auto &it : points) {
-        it.operator=(Point<double>(it.x + translation.x, it.y + translation.y));
-    }
     center.operator=(this->center_point());
+    for (auto &it : points) {
+        it = Point<double>(it.x + translation.x, it.y + translation.y);
+    }
+    center = this->center_point();
 }
 
 void STriangle::rotate(double angular) {
-    for (auto &it : points) {
-        it.operator=(Point<double>((it.x - center.x) * cos(angular) - (it.y - center.y) * sin(angular) + center.x,
-                                   (it.y - center.y) * cos(angular) + (it.x - center.y) * sin(angular) + center.y));
-    }
     center.operator=(this->center_point());
+    for (auto &it : points) {
+        /*it = Point<double>((it.x - center.x) * cos(angular) - (it.y - center.y) * sin(angular) + center.x,
+                           (it.y - center.y) * sin(angular) + (it.x - center.y) * cos(angular) + center.y);*/
+        it = Point<double>((cos(angular) * (it.x - center.x)) - (sin(angular) * (it.y - center.y)) + center.x,
+                           (sin(angular) * (it.x - center.x)) + (cos(angular) * (it.y - center.y)) + center.y);
+        /*newx = (cos(angular) * (it.x - center.x)) - (sin(angular) * (it.y - center.y)) + center.x;
+        newy = (sin(angular) * (it.x - center.x)) + (cos(angular) * (it.y - center.y)) + center.y;*/
+    }
+    center = this->center_point();
+}
+
+void STriangle::rotate(double angular, Point<double> center_point) {
+    for (auto &it : points) {
+        it = Point<double>((cos(angular) * (it.x - center_point.x)) - (sin(angular) * (it.y - center_point.y)) + center_point.x,
+                           (sin(angular) * (it.x - center_point.x)) + (cos(angular) * (it.y - center_point.y)) + center_point.y);
+    }
+    center = this->center_point();
 }
 
 void STriangle::flip() {
     for (auto &it : points) {
-        it.operator=(Point<double>(it.y, it.x));
+        it = Point<double>(it.y, it.x);
     }
-    center.operator=(this->center_point());
+    center = this->center_point();
 }
 
 void STriangle::draw() {

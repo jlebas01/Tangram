@@ -14,11 +14,12 @@ class STriangle : public Shape {
 private:
 
     std::vector<Point<double>> points;
-    Point<double> center = center_point();
 
-    Point<double> center_point();
+    Point<double> center;
 
     void parameter(Point<double> origin, double angular);
+
+    Point<double> center_point();
 
 public:
     ~STriangle() override;
@@ -34,6 +35,8 @@ public:
     void move(Point<double>) override;
 
     void rotate(double angular) override;
+
+    void rotate(double angular, Point<double> center_point);
 
     void flip() override;
 
@@ -52,6 +55,10 @@ public:
     void draw(MLV_Color Color);
 
     std::vector<Point<double>> get_Points();
+
+    static Point<double> center_point(const std::vector<Point<double>> &list_points);
+
+    Point<double> get_center_point();
 };
 
 #endif //TANGRAM_STRIANGLE_H

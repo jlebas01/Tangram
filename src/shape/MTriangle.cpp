@@ -38,6 +38,15 @@ void MTriangle::parameter(const Point<double> origin, const double angular = 0.0
     move({origin.x - triangle.at(0).get_Points().at(0).x, origin.y - triangle.at(0).get_Points().at(0).y});
 }
 
+Point<double> MTriangle::center_shape() {
+    std::vector<Point<double>> center_points;
+    for (auto &it : triangle) {
+        center_points.push_back(it.get_center_point());
+    }
+    Point<double> const point_rotate = STriangle::center_point(center_points);
+    return point_rotate;
+}
+
 
 void MTriangle::move(Point<double> translation) {
     for (auto &it : triangle) {
@@ -46,12 +55,10 @@ void MTriangle::move(Point<double> translation) {
 }
 
 void MTriangle::rotate(double angular) {
+    Point<double> const point_rotate = center_shape();
     for (auto &it : triangle) {
-        it.rotate(angular);
+        it.rotate(angular, point_rotate);
     }
-    Point<double> translate = {triangle.at(0).get_Points().at(1).x - triangle.at(1).get_Points().at(1).x,
-                               triangle.at(0).get_Points().at(1).y - triangle.at(1).get_Points().at(1).y};
-    triangle.at(1).move(translate);
 }
 
 void MTriangle::flip() {
