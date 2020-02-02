@@ -35,7 +35,7 @@ STriangle::STriangle(const Point<double> origin, const double angular) : STriang
 
 void STriangle::parameter(const Point<double> origin, const double angular = 0.0) {
     rotate(angular);
-    move({origin.x - points.at(0).x, origin.y - points.at(0).y});
+    move({origin.x, origin.y});
 }
 
 STriangle::STriangle() {

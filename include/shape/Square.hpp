@@ -18,14 +18,16 @@ private:
 
     void parameter(Point<double> origin, double angular);
 
+    Point<double> center_shape();
+
 public:
     ~Square() override;
+
+    Square();
 
     explicit Square(const std::vector<STriangle> &triangle);
 
     explicit Square(Point<double> origin, double angular = 0);
-
-    Square();
 
     void move(Point<double>) override;
 
@@ -39,7 +41,6 @@ public:
 
     std::string toString() override;
 
-    Point<double> center_shape();
 };
 
 #endif //TANGRAM_SQUARE_H

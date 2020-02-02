@@ -24,13 +24,13 @@ private:
 public:
     ~STriangle() override;
 
-    explicit STriangle(const std::vector<Point<double>> &points);
-
     STriangle();
 
-    explicit STriangle(Point<double> origin, double angular = 0.0);
-
     STriangle(Point<double>, Point<double>, Point<double>);
+
+    explicit STriangle(const std::vector<Point<double>> &points);
+
+    explicit STriangle(Point<double> origin, double angular = 0.0);
 
     void move(Point<double>) override;
 
@@ -42,17 +42,17 @@ public:
 
     void draw() override;
 
+    void draw(MLV_Color Color);
+
     bool is_in_shape(Point<double> click) override;
+
+    bool is_in_triangle(Point<double> click);
+
+    double sign(Point<double> p1, Point<double> p2, Point<double> p3);
 
     std::string toString() override;
 
     double computeDistance(Point<double> point1, Point<double> point2);
-
-    double sign(Point<double> p1, Point<double> p2, Point<double> p3);
-
-    bool is_in_triangle(Point<double> click);
-
-    void draw(MLV_Color Color);
 
     std::vector<Point<double>> get_Points();
 

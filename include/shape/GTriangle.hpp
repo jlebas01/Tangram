@@ -18,14 +18,16 @@ private:
 
     void parameter(Point<double> origin, double angular);
 
+    Point<double> center_shape();
+
 public:
     ~GTriangle() override;
+
+    GTriangle();
 
     explicit GTriangle(const std::vector<STriangle> &triangle);
 
     explicit GTriangle(Point<double> origin, double angular = 0.0);
-
-    GTriangle();
 
     void move(Point<double>) override;
 
@@ -38,8 +40,6 @@ public:
     bool is_in_shape(Point<double> click) override;
 
     std::string toString() override;
-
-    Point<double> center_shape();
 };
 
 #endif //TANGRAM_GTRIANGLE_H

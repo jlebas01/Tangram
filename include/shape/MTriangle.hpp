@@ -18,14 +18,16 @@ private:
 
     void parameter(Point<double> origin, double angular);
 
+    Point<double> center_shape();
+
 public:
     ~MTriangle() override;
+
+    MTriangle();
 
     explicit MTriangle(const std::vector<STriangle> &triangle);
 
     explicit MTriangle(Point<double> origin, double angular = 0.0);
-
-    MTriangle();
 
     void move(Point<double>) override;
 
@@ -38,8 +40,6 @@ public:
     bool is_in_shape(Point<double> click) override;
 
     std::string toString() override;
-
-    Point<double> center_shape();
 };
 
 #endif //TANGRAM_MTRIANGLE_H

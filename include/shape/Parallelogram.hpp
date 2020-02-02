@@ -18,14 +18,16 @@ private:
 
     void parameter(Point<double> origin, double angular);
 
+    Point<double> center_shape();
+
 public:
     ~Parallelogram() override;
+
+    Parallelogram();
 
     explicit Parallelogram(const std::vector<STriangle> &triangle);
 
     explicit Parallelogram(Point<double> origin, double angular = 0.0);
-
-    Parallelogram();
 
     void move(Point<double>) override;
 
@@ -39,7 +41,6 @@ public:
 
     std::string toString() override;
 
-    Point<double> center_shape();
 };
 
 #endif //TANGRAM_PARALELLOGRAM_H
