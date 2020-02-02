@@ -6,10 +6,10 @@
 #define TANGRAM_STRIANGLE_H
 
 /*!
- * \file MTriangle.hpp
- * \brief Shape of Small Triangle
- * \author Jérémie LE BASTARD
- * \version 1.0
+ * @file MTriangle.hpp
+ * @brief Shape of Small Triangle
+ * @author Jérémie LE BASTARD
+ * @version 1.0
  */
 
 #include <vector>
@@ -18,8 +18,8 @@
 #include <MLV/MLV_shape.h>
 
 /*!
- * \class STriangle
- * \brief Class of the small triangle
+ * @class STriangle
+ * @brief Class of the small triangle
  *
  * This class manage everything about the small triangle
  */
@@ -32,7 +32,7 @@ private:
     Point<double> center; /*!< STriangle has a center point*/
 
     /*!
-     * \brief Parameter the constructor
+     * @brief Parameter the constructor
      * @param origin : shifts the figure of a translation of the origin
      * @param angular : rotate the figure with an angular
      */
@@ -40,14 +40,14 @@ private:
     void parameter(Point<double> origin, double angular);
 
     /*!
-     * \brief Compute the center point only for the STriangle
+     * @brief Compute the center point only for the STriangle
      * @return Return the center point of a STriangle
      */
 
     Point<double> center_point();
 
     /*!
-     * \brief Compute the sign about a two reference point and another point, used by is_in_triangle()
+     * @brief Compute the sign about a two reference point and another point, used by is_in_triangle()
      * @param p1 : Another point
      * @param p2 : 1th point reference
      * @param p3 : 2nd point reference
@@ -57,7 +57,7 @@ private:
     double sign(Point<double> p1, Point<double> p2, Point<double> p3);
 
     /*!
-     * \brief Rotate the STriangle with specified angular
+     * @brief Rotate the STriangle with specified angular
      * @param angular : This angular should be between (0, 2PI)
      */
 
@@ -66,19 +66,19 @@ private:
 public:
 
     /*!
-     * \brief Destructor of STriangle
+     * @brief Destructor of STriangle
      */
 
     ~STriangle() override;
 
     /*!
-     * \brief Constructor by default of MTriangle, make a STriangle as default
+     * @brief Constructor by default of MTriangle, make a STriangle as default
      */
 
     STriangle();
 
     /*!
-     * \brief Constructor of STriangle, requires 3 points
+     * @brief Constructor of STriangle, requires 3 points
      * @param p1 : First point of the STriangle
      * @param p2 : Second point of the STriangle
      * @param p3 : Third point of the STriangle
@@ -87,14 +87,14 @@ public:
     STriangle(Point<double> p1, Point<double> p2, Point<double> p3);
 
     /*!
-     * \brief Constructor of STriangle, requires a vector of 3 points
+     * @brief Constructor of STriangle, requires a vector of 3 points
      * @param points : vector of 3 points
      */
 
     explicit STriangle(const std::vector<Point<double>> &points);
 
     /*!
-     * \brief Constructor of STriangle, calls the deleguate Default Constructor
+     * @brief Constructor of STriangle, calls the deleguate Default Constructor
      * @param origin : shifts the figure of a translation of the origin
      * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
      */
@@ -102,14 +102,14 @@ public:
     explicit STriangle(Point<double> origin, double angular = 0.0);
 
     /*!
-     * \brief Move the MTriangle by point translation
+     * @brief Move the MTriangle by point translation
      * @param translation : Every points of this shape will be translate by this parameter
      */
 
     void move(Point<double> translation) override;
 
     /*!
-     * \brief Rotate an STriangle with specified angular, used only for an other shape
+     * @brief Rotate an STriangle with specified angular, used only for an other shape
      * @param angular : This angular should be between (0, 2PI)
      * @param center_point : Rotate an STriangle around this point
      */
@@ -117,26 +117,26 @@ public:
     void rotate(double angular, Point<double> center_point);
 
     /*!
-     * \brief Flip the figure as symmetry
+     * @brief Flip the figure as symmetry
      */
 
     void flip() override;
 
     /*!
-     * \brief Draw this shape on IHM
+     * @brief Draw this shape on IHM
      */
 
     void draw() override;
 
     /*!
-     * \brief Draw this shape on IHM with specific color
+     * @brief Draw this shape on IHM with specific color
      * @param Color : Color from the graphic library MLV like MLV_COLOR_XXX
      */
 
     void draw(MLV_Color Color);
 
     /*!
-    * \brief Check if a point is in this shape
+    * @brief Check if a point is in this shape
     * @param click : Point to check
     * @return true if click is in this shape, false if not
     */
@@ -144,7 +144,7 @@ public:
     bool is_in_shape(Point<double> click) override;
 
     /*!
-     * \brief Check if a point is in this STriangle
+     * @brief Check if a point is in this STriangle
      * @param click : Point to check
      * @return true if click is in this shape, false if not
      */
@@ -152,14 +152,14 @@ public:
     bool is_in_triangle(Point<double> click);
 
     /*!
-     * \brief Convert all data of MTriangle in a string
+     * @brief Convert all data of MTriangle in a string
      * @return Return a string which contains every points of this shape
      */
 
     std::string toString() override;
 
     /*!
-     * \brief Compute distance between 2 points
+     * @brief Compute distance between 2 points
      * @param point1 : First point
      * @param point2 : Second point
      * @return Return the distance between these two points
@@ -168,14 +168,14 @@ public:
     double computeDistance(Point<double> point1, Point<double> point2);
 
     /*!
-     * \brief Get every points of this STriangle
+     * @brief Get every points of this STriangle
      * @return Return a vector of these points
      */
 
     std::vector<Point<double>> get_Points();
 
     /*!
-     * \brief Compute the center point of N points
+     * @brief Compute the center point of N points
      * @param list_points : vector of N points
      * @return Return the center point of these N points
      */
@@ -183,7 +183,7 @@ public:
     static Point<double> center_point(const std::vector<Point<double>> &list_points);
 
     /*!
-     * \brief Get the current center point of this STriangle
+     * @brief Get the current center point of this STriangle
      * @return Return the current center point of this STriangle
      */
 

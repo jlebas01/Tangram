@@ -1,0 +1,182 @@
+\hypertarget{classSquare}{}\section{Square Class Reference}
+\label{classSquare}\index{Square@{Square}}
+
+
+Class of the square.  
+
+
+
+
+{\ttfamily \#include $<$Square.\+hpp$>$}
+
+
+
+Inheritance diagram for Square\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classSquare__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Square\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classSquare__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSquare_ab0677a46d02aa78bc0b7be8c06f9dc37}\label{classSquare_ab0677a46d02aa78bc0b7be8c06f9dc37}} 
+\hyperlink{classSquare_ab0677a46d02aa78bc0b7be8c06f9dc37}{$\sim$\+Square} () override
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classSquare}{Square}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_a3dc7ff9aefc2725172b5d3153973d243}\label{classSquare_a3dc7ff9aefc2725172b5d3153973d243}} 
+\hyperlink{classSquare_a3dc7ff9aefc2725172b5d3153973d243}{Square} ()
+\begin{DoxyCompactList}\small\item\em Constructor by default of \hyperlink{classSquare}{Square}, make a \hyperlink{classSquare}{Square} as default. \end{DoxyCompactList}\item 
+\hyperlink{classSquare_ad5556d633716f2daa1f2f7e3b52073cc}{Square} (const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&triangle)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classSquare}{Square}, requires a vector of S\+Triangles. \end{DoxyCompactList}\item 
+\hyperlink{classSquare_a5e485c4484e9f56fefbdd47bc7f203f1}{Square} (\hyperlink{classPoint}{Point}$<$ double $>$ origin, double angular=0.\+0)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classSquare}{Square}, calls the deleguate Default Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classSquare_a6be02369ff07934179f6bfd6360fb9d3}{move} (\hyperlink{classPoint}{Point}$<$ double $>$ translation) override
+\begin{DoxyCompactList}\small\item\em Move the \hyperlink{classSquare}{Square} by point translation. \end{DoxyCompactList}\item 
+void \hyperlink{classSquare_a5714e182c30f996b78e74e1badd054a2}{rotate} (double angular) override
+\begin{DoxyCompactList}\small\item\em Rotate the \hyperlink{classSquare}{Square} with specified angular. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_a2d56ff842244af8f2fdc85b7e5ce76f3}\label{classSquare_a2d56ff842244af8f2fdc85b7e5ce76f3}} 
+void \hyperlink{classSquare_a2d56ff842244af8f2fdc85b7e5ce76f3}{flip} () override
+\begin{DoxyCompactList}\small\item\em Flip the figure as symmetry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_a4edbdf9ae0519cc1823f4dbbaa6bbf4c}\label{classSquare_a4edbdf9ae0519cc1823f4dbbaa6bbf4c}} 
+void \hyperlink{classSquare_a4edbdf9ae0519cc1823f4dbbaa6bbf4c}{draw} () override
+\begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
+bool \hyperlink{classSquare_a18b130131d969c53f3dfbe2b753a28d4}{is\+\_\+in\+\_\+shape} (\hyperlink{classPoint}{Point}$<$ double $>$ click) override
+\begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classSquare_aa5d7db8004bba3c400f57513d93b21d4}{to\+String} () override
+\begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classSquare}{Square} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class of the square. 
+
+This class manage everything about the \hyperlink{classSquare}{Square} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSquare_ad5556d633716f2daa1f2f7e3b52073cc}\label{classSquare_ad5556d633716f2daa1f2f7e3b52073cc}} 
+\index{Square@{Square}!Square@{Square}}
+\index{Square@{Square}!Square@{Square}}
+\subsubsection{\texorpdfstring{Square()}{Square()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of \hyperlink{classSquare}{Square}, requires a vector of S\+Triangles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em triangle} & \+: The \hyperlink{classSquare}{Square} will created with a vector of \hyperlink{classSTriangle}{S\+Triangle} (4) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSquare_a5e485c4484e9f56fefbdd47bc7f203f1}\label{classSquare_a5e485c4484e9f56fefbdd47bc7f203f1}} 
+\index{Square@{Square}!Square@{Square}}
+\index{Square@{Square}!Square@{Square}}
+\subsubsection{\texorpdfstring{Square()}{Square()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of \hyperlink{classSquare}{Square}, calls the deleguate Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & \+: shifts the figure of a translation of the origin \\
+\hline
+{\em angular} & \+: Optional parameter (angular=0.\+0 as default), rotate the figure with an angular \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSquare_a18b130131d969c53f3dfbe2b753a28d4}\label{classSquare_a18b130131d969c53f3dfbe2b753a28d4}} 
+\index{Square@{Square}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
+\index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!Square@{Square}}
+\subsubsection{\texorpdfstring{is\+\_\+in\+\_\+shape()}{is\_in\_shape()}}
+{\footnotesize\ttfamily bool Square\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if a point is in this shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em click} & \+: \hyperlink{classPoint}{Point} to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if click is in this shape, false if not 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_abcce23128cd35989468a88a7194152af}{Shape}.
+
+\mbox{\Hypertarget{classSquare_a6be02369ff07934179f6bfd6360fb9d3}\label{classSquare_a6be02369ff07934179f6bfd6360fb9d3}} 
+\index{Square@{Square}!move@{move}}
+\index{move@{move}!Square@{Square}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Square\+::move (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Move the \hyperlink{classSquare}{Square} by point translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & \+: Every points of this shape will be translate by this parameter \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classShape_a52649731b2cb7b67315882d5e005f7e8}{Shape}.
+
+\mbox{\Hypertarget{classSquare_a5714e182c30f996b78e74e1badd054a2}\label{classSquare_a5714e182c30f996b78e74e1badd054a2}} 
+\index{Square@{Square}!rotate@{rotate}}
+\index{rotate@{rotate}!Square@{Square}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Square\+::rotate (\begin{DoxyParamCaption}\item[{double}]{angular }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Rotate the \hyperlink{classSquare}{Square} with specified angular. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angular} & \+: This angular should be between (0, 2\+PI) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classShape_a2dea8616fd40f2d69fd208715921982a}{Shape}.
+
+\mbox{\Hypertarget{classSquare_aa5d7db8004bba3c400f57513d93b21d4}\label{classSquare_aa5d7db8004bba3c400f57513d93b21d4}} 
+\index{Square@{Square}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Square@{Square}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily std\+::string Square\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Convert all data of \hyperlink{classSquare}{Square} in a string. 
+
+\begin{DoxyReturn}{Returns}
+Return a string which contains every points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}{Shape}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/shape/\hyperlink{Square_8hpp}{Square.\+hpp}\item 
+src/shape/Square.\+cpp\end{DoxyCompactItemize}
