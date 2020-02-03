@@ -2,10 +2,10 @@
 A student project about the tangram's game
 
 ## How to run 
-When you're in the repository <br/>;
-`cd cmake-build-debug` <br/>;
-`make` <br/>;
-`./tangram`<br/>;
+When you're in the repository <br/>
+`cd cmake-build-debug` <br/>
+`make` <br/>
+`./tangram`
 
 ## Documentation
 Here there is HTML files, LaTeX files and PDF.
@@ -19,8 +19,9 @@ Here there is HTML files, LaTeX files and PDF.
 
 ## Regenerate Documentation
 You can generate this document as you wish. If you're updating the code and the doc, you should do :
-
+<br/>
 In the root directory of this project :
-`doxygen config-file`
-`cd doc/latex`
-`make`
+<br/>
+`doxygen config-file`<br/>
+`cd doc/latex`<br/>
+`make`<br/>
