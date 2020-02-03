@@ -3,10 +3,11 @@
 <area shape="rect" id="node4" href="$Shape_8hpp.html" title="Abstract Class Shape of every shape in Tangram. " alt="" coords="415,80,600,107"/>
 <area shape="rect" id="node3" href="$Menu_8hpp.html" title="Menu of the Tangram&#39;s Game. " alt="" coords="5,155,185,181"/>
 <area shape="rect" id="node5" href="$Game_8hpp.html" title="Main Game of the Tangram. " alt="" coords="125,229,287,256"/>
-<area shape="rect" id="node6" href="$Objective_8hpp.html" title="Objective of the Tangram&#39;s board. " alt="" coords="261,155,444,181"/>
-<area shape="rect" id="node7" href="$GTriangle_8hpp.html" title="Shape of Great Triangle. " alt="" coords="957,229,1143,256"/>
-<area shape="rect" id="node8" href="$MTriangle_8hpp.html" title="Shape of Medium Triangle. " alt="" coords="312,229,500,256"/>
-<area shape="rect" id="node9" href="$Parallelogram_8hpp.html" title="Shape of Parallelogram. " alt="" coords="525,229,735,256"/>
-<area shape="rect" id="node10" href="$Square_8hpp.html" title="Shape of Square. " alt="" coords="760,229,932,256"/>
-<area shape="rect" id="node11" href="$STriangle_8hpp_source.html" title="include/shape/STriangle.hpp" alt="" coords="570,155,757,181"/>
+<area shape="rect" id="node7" href="$Objective_8hpp.html" title="Objective of the Tangram&#39;s board. " alt="" coords="261,155,444,181"/>
+<area shape="rect" id="node8" href="$GTriangle_8hpp.html" title="Shape of Great Triangle. " alt="" coords="957,229,1143,256"/>
+<area shape="rect" id="node9" href="$MTriangle_8hpp.html" title="Shape of Medium Triangle. " alt="" coords="312,229,500,256"/>
+<area shape="rect" id="node10" href="$Parallelogram_8hpp.html" title="Shape of Parallelogram. " alt="" coords="525,229,735,256"/>
+<area shape="rect" id="node11" href="$Square_8hpp.html" title="Shape of Square. " alt="" coords="760,229,932,256"/>
+<area shape="rect" id="node12" href="$STriangle_8hpp_source.html" title="include/shape/STriangle.hpp" alt="" coords="570,155,757,181"/>
+<area shape="rect" id="node6" href="$Loader_8hpp.html" title="Load a board of Tangram. " alt="" coords="121,304,291,331"/>
 </map>

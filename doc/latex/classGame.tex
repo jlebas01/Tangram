@@ -16,7 +16,12 @@ Class of the main \hyperlink{classGame}{Game}.
 void \hyperlink{classGame_a9e9a77d478f0c0bfb9b61fb1a6556e15}{main\+\_\+loop} ()
 \begin{DoxyCompactList}\small\item\em Main loop of the game. \end{DoxyCompactList}\item 
 \hyperlink{classGame_a2b0cb8af7b823a6d595eef9c9641f806}{Game} (int w, int h)
-\begin{DoxyCompactList}\small\item\em Initialize the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructor of the game, initialize a game with an sizing. \end{DoxyCompactList}\item 
+void \hyperlink{classGame_a4c5fae4c7855b0a391c7190889db25d7}{add\+\_\+shape} (\hyperlink{classShape}{Shape} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Add a shape in the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a8ba8d7bcda356ed584dc445184320ff7}\label{classGame_a8ba8d7bcda356ed584dc445184320ff7}} 
+void \hyperlink{classGame_a8ba8d7bcda356ed584dc445184320ff7}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear the game / the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -33,13 +38,31 @@ This class manage everything about the main game
 
 
 
-Initialize the game. 
+Constructor of the game, initialize a game with an sizing. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em w} & \+: Width of the window \\
 \hline
 {\em h} & \+: Height of the window \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_a4c5fae4c7855b0a391c7190889db25d7}\label{classGame_a4c5fae4c7855b0a391c7190889db25d7}} 
+\index{Game@{Game}!add\+\_\+shape@{add\+\_\+shape}}
+\index{add\+\_\+shape@{add\+\_\+shape}!Game@{Game}}
+\subsubsection{\texorpdfstring{add\+\_\+shape()}{add\_shape()}}
+{\footnotesize\ttfamily void Game\+::add\+\_\+shape (\begin{DoxyParamCaption}\item[{\hyperlink{classShape}{Shape} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Add a shape in the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \+: \hyperlink{classShape}{Shape} to add \\
 \hline
 \end{DoxyParams}
 

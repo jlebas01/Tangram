@@ -2,6 +2,49 @@
 \label{classLoader}\index{Loader@{Loader}}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Class of the main \hyperlink{classLoader}{Loader}.  
+
+
+
+
+{\ttfamily \#include $<$Loader.\+hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-include/parser/Loader.\+hpp\end{DoxyCompactItemize}
+static bool \hyperlink{classLoader_a22ccbf4c21a330d16e37b99948d43ddb}{parse\+\_\+file} (const std\+::string \&filename, \hyperlink{classGame}{Game} \&game)
+\begin{DoxyCompactList}\small\item\em Parse a file to make a board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class of the main \hyperlink{classLoader}{Loader}. 
+
+This class manage everything about the loader 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoader_a22ccbf4c21a330d16e37b99948d43ddb}\label{classLoader_a22ccbf4c21a330d16e37b99948d43ddb}} 
+\index{Loader@{Loader}!parse\+\_\+file@{parse\+\_\+file}}
+\index{parse\+\_\+file@{parse\+\_\+file}!Loader@{Loader}}
+\subsubsection{\texorpdfstring{parse\+\_\+file()}{parse\_file()}}
+{\footnotesize\ttfamily bool Loader\+::parse\+\_\+file (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{\hyperlink{classGame}{Game} \&}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse a file to make a board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \+: name of the file \\
+\hline
+{\em game} & \+: The current game / board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the game has been created, false if not 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/parser/\hyperlink{Loader_8hpp}{Loader.\+hpp}\item 
+src/parser/Loader.\+cpp\end{DoxyCompactItemize}

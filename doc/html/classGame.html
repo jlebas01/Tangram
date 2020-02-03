@@ -78,8 +78,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a9e9a77d478f0c0bfb9b61fb1a6556e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main loop of the game. <br /></td></tr>
 <tr class="separator:a9e9a77d478f0c0bfb9b61fb1a6556e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0cb8af7b823a6d595eef9c9641f806"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a2b0cb8af7b823a6d595eef9c9641f806">Game</a> (int w, int h)</td></tr>
-<tr class="memdesc:a2b0cb8af7b823a6d595eef9c9641f806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the game.  <a href="#a2b0cb8af7b823a6d595eef9c9641f806">More...</a><br /></td></tr>
+<tr class="memdesc:a2b0cb8af7b823a6d595eef9c9641f806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the game, initialize a game with an sizing.  <a href="#a2b0cb8af7b823a6d595eef9c9641f806">More...</a><br /></td></tr>
 <tr class="separator:a2b0cb8af7b823a6d595eef9c9641f806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5fae4c7855b0a391c7190889db25d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a4c5fae4c7855b0a391c7190889db25d7">add_shape</a> (<a class="el" href="classShape.html">Shape</a> *s)</td></tr>
+<tr class="memdesc:a4c5fae4c7855b0a391c7190889db25d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a shape in the game.  <a href="#a4c5fae4c7855b0a391c7190889db25d7">More...</a><br /></td></tr>
+<tr class="separator:a4c5fae4c7855b0a391c7190889db25d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba8d7bcda356ed584dc445184320ff7"><td class="memItemLeft" align="right" valign="top"><a id="a8ba8d7bcda356ed584dc445184320ff7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a8ba8d7bcda356ed584dc445184320ff7">clear</a> ()</td></tr>
+<tr class="memdesc:a8ba8d7bcda356ed584dc445184320ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the game / the board. <br /></td></tr>
+<tr class="separator:a8ba8d7bcda356ed584dc445184320ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class of the main <a class="el" href="classGame.html" title="Class of the main Game. ">Game</a>. </p>
@@ -111,11 +118,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the game. </p>
+<p>Constructor of the game, initialize a game with an sizing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">w</td><td>: Width of the window </td></tr>
     <tr><td class="paramname">h</td><td>: Height of the window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4c5fae4c7855b0a391c7190889db25d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5fae4c7855b0a391c7190889db25d7">&#9670;&nbsp;</a></span>add_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::add_shape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classShape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a shape in the game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>: <a class="el" href="classShape.html" title="Abstract Class of every Shape. ">Shape</a> to add </td></tr>
   </table>
   </dd>
 </dl>
