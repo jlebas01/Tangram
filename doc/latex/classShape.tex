@@ -11,8 +11,7 @@ Abstract Class of every \hyperlink{classShape}{Shape}.
 
 
 
-Inheritance diagram for Shape\+:
-\nopagebreak
+Inheritance diagram for Shape\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Shape\+:
 \end{figure}
 
 
-Collaboration diagram for Shape\+:
-\nopagebreak
+Collaboration diagram for Shape\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -44,6 +42,8 @@ virtual void \hyperlink{classShape_a5a1607f7dc4908225f97aeadb449636d}{flip} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Flip the figure as symmetry. \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classShape_abcce23128cd35989468a88a7194152af}{is\+\_\+in\+\_\+shape} (\hyperlink{classPoint}{Point}$<$ double $>$ point)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Check if a point is in this shape. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{get\+\_\+\+Points} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
 virtual std\+::string \hyperlink{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}{to\+String} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Convert all data of \hyperlink{classGTriangle}{G\+Triangle} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -54,6 +54,23 @@ Abstract Class of every \hyperlink{classShape}{Shape}.
 This class manage everything other shape (\hyperlink{classSTriangle}{S\+Triangle}, \hyperlink{classMTriangle}{M\+Triangle}, \hyperlink{classGTriangle}{G\+Triangle}, \hyperlink{classSquare}{Square}, \hyperlink{classParallelogram}{Parallelogram}) 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classShape_add74a5c682840fa4a519242b1ddbd0b5}\label{classShape_add74a5c682840fa4a519242b1ddbd0b5}} 
+\index{Shape@{Shape}!get\+\_\+\+Points@{get\+\_\+\+Points}}
+\index{get\+\_\+\+Points@{get\+\_\+\+Points}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Points()}{get\_Points()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{classPoint}{Point}$<$double$>$ $>$ Shape\+::get\+\_\+\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function. Get all points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classSTriangle_a08f667453619b506b5c16745a9aa5ecf}{S\+Triangle}, \hyperlink{classGTriangle_add4581d1b52836142de5817de4d52d17}{G\+Triangle}, \hyperlink{classMTriangle_a90351a097a20d35f9d6c4d05ad881e48}{M\+Triangle}, \hyperlink{classParallelogram_a17c9986712806a8b07d90e444e0a543d}{Parallelogram}, and \hyperlink{classSquare_a2a8fb1bfd2f3464cee813ec8b277506e}{Square}.
+
 \mbox{\Hypertarget{classShape_abcce23128cd35989468a88a7194152af}\label{classShape_abcce23128cd35989468a88a7194152af}} 
 \index{Shape@{Shape}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
 \index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!Shape@{Shape}}

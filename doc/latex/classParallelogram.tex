@@ -11,8 +11,7 @@ Class of the parallelogram.
 
 
 
-Inheritance diagram for Parallelogram\+:
-\nopagebreak
+Inheritance diagram for Parallelogram\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Parallelogram\+:
 \end{figure}
 
 
-Collaboration diagram for Parallelogram\+:
-\nopagebreak
+Collaboration diagram for Parallelogram\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -54,6 +52,8 @@ void \hyperlink{classParallelogram_a73e3657bf024787b57ccdd8035a6fdef}{draw} () o
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
 bool \hyperlink{classParallelogram_a9ba441d86d6311bba489e998c87dddf6}{is\+\_\+in\+\_\+shape} (\hyperlink{classPoint}{Point}$<$ double $>$ click) override
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classParallelogram_a17c9986712806a8b07d90e444e0a543d}{get\+\_\+\+Points} () override
+\begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classParallelogram_a9caae0044f23d8a1e87b1a78d852c37f}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classParallelogram}{Parallelogram} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -99,6 +99,23 @@ Constructor of \hyperlink{classParallelogram}{Parallelogram}, calls the deleguat
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classParallelogram_a17c9986712806a8b07d90e444e0a543d}\label{classParallelogram_a17c9986712806a8b07d90e444e0a543d}} 
+\index{Parallelogram@{Parallelogram}!get\+\_\+\+Points@{get\+\_\+\+Points}}
+\index{get\+\_\+\+Points@{get\+\_\+\+Points}!Parallelogram@{Parallelogram}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Points()}{get\_Points()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ Parallelogram\+::get\+\_\+\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{Shape}.
+
 \mbox{\Hypertarget{classParallelogram_a9ba441d86d6311bba489e998c87dddf6}\label{classParallelogram_a9ba441d86d6311bba489e998c87dddf6}} 
 \index{Parallelogram@{Parallelogram}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
 \index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!Parallelogram@{Parallelogram}}

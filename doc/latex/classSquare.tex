@@ -11,8 +11,7 @@ Class of the square.
 
 
 
-Inheritance diagram for Square\+:
-\nopagebreak
+Inheritance diagram for Square\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Square\+:
 \end{figure}
 
 
-Collaboration diagram for Square\+:
-\nopagebreak
+Collaboration diagram for Square\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -54,6 +52,8 @@ void \hyperlink{classSquare_a4edbdf9ae0519cc1823f4dbbaa6bbf4c}{draw} () override
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
 bool \hyperlink{classSquare_a18b130131d969c53f3dfbe2b753a28d4}{is\+\_\+in\+\_\+shape} (\hyperlink{classPoint}{Point}$<$ double $>$ click) override
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classSquare_a2a8fb1bfd2f3464cee813ec8b277506e}{get\+\_\+\+Points} () override
+\begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classSquare_aa5d7db8004bba3c400f57513d93b21d4}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classSquare}{Square} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -99,6 +99,23 @@ Constructor of \hyperlink{classSquare}{Square}, calls the deleguate Default Cons
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSquare_a2a8fb1bfd2f3464cee813ec8b277506e}\label{classSquare_a2a8fb1bfd2f3464cee813ec8b277506e}} 
+\index{Square@{Square}!get\+\_\+\+Points@{get\+\_\+\+Points}}
+\index{get\+\_\+\+Points@{get\+\_\+\+Points}!Square@{Square}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Points()}{get\_Points()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ Square\+::get\+\_\+\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{Shape}.
+
 \mbox{\Hypertarget{classSquare_a18b130131d969c53f3dfbe2b753a28d4}\label{classSquare_a18b130131d969c53f3dfbe2b753a28d4}} 
 \index{Square@{Square}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
 \index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!Square@{Square}}

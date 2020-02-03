@@ -11,8 +11,7 @@ Class of the greatest triangle.
 
 
 
-Inheritance diagram for G\+Triangle\+:
-\nopagebreak
+Inheritance diagram for G\+Triangle\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for G\+Triangle\+:
 \end{figure}
 
 
-Collaboration diagram for G\+Triangle\+:
-\nopagebreak
+Collaboration diagram for G\+Triangle\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -54,6 +52,8 @@ void \hyperlink{classGTriangle_adb7a211b65860ce4dfcc13275cd5052d}{draw} () overr
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
 bool \hyperlink{classGTriangle_a7e5d4eefbb2e42b9c3142096a23dcb19}{is\+\_\+in\+\_\+shape} (\hyperlink{classPoint}{Point}$<$ double $>$ click) override
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classGTriangle_add4581d1b52836142de5817de4d52d17}{get\+\_\+\+Points} () override
+\begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classGTriangle_a8381aeea39fac0d52ad9e0d45b791b3b}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classGTriangle}{G\+Triangle} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -99,6 +99,23 @@ Constructor of \hyperlink{classGTriangle}{G\+Triangle}, calls the deleguate Defa
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGTriangle_add4581d1b52836142de5817de4d52d17}\label{classGTriangle_add4581d1b52836142de5817de4d52d17}} 
+\index{G\+Triangle@{G\+Triangle}!get\+\_\+\+Points@{get\+\_\+\+Points}}
+\index{get\+\_\+\+Points@{get\+\_\+\+Points}!G\+Triangle@{G\+Triangle}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Points()}{get\_Points()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ G\+Triangle\+::get\+\_\+\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{Shape}.
+
 \mbox{\Hypertarget{classGTriangle_a7e5d4eefbb2e42b9c3142096a23dcb19}\label{classGTriangle_a7e5d4eefbb2e42b9c3142096a23dcb19}} 
 \index{G\+Triangle@{G\+Triangle}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
 \index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!G\+Triangle@{G\+Triangle}}

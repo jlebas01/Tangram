@@ -11,8 +11,7 @@ Class of the medium triangle.
 
 
 
-Inheritance diagram for M\+Triangle\+:
-\nopagebreak
+Inheritance diagram for M\+Triangle\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for M\+Triangle\+:
 \end{figure}
 
 
-Collaboration diagram for M\+Triangle\+:
-\nopagebreak
+Collaboration diagram for M\+Triangle\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -54,6 +52,8 @@ void \hyperlink{classMTriangle_a7801818e2188f39ba89a2a82df8fa5fe}{draw} () overr
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
 bool \hyperlink{classMTriangle_a8d3d737a903823bf1a631cbb004a799c}{is\+\_\+in\+\_\+shape} (\hyperlink{classPoint}{Point}$<$ double $>$ click) override
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classMTriangle_a90351a097a20d35f9d6c4d05ad881e48}{get\+\_\+\+Points} () override
+\begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classMTriangle_a7d1fd825592dffa6ac05b3398a8c105a}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classMTriangle}{M\+Triangle} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -99,6 +99,23 @@ Constructor of \hyperlink{classMTriangle}{M\+Triangle}, calls the deleguate Defa
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMTriangle_a90351a097a20d35f9d6c4d05ad881e48}\label{classMTriangle_a90351a097a20d35f9d6c4d05ad881e48}} 
+\index{M\+Triangle@{M\+Triangle}!get\+\_\+\+Points@{get\+\_\+\+Points}}
+\index{get\+\_\+\+Points@{get\+\_\+\+Points}!M\+Triangle@{M\+Triangle}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Points()}{get\_Points()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ M\+Triangle\+::get\+\_\+\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{Shape}.
+
 \mbox{\Hypertarget{classMTriangle_a8d3d737a903823bf1a631cbb004a799c}\label{classMTriangle_a8d3d737a903823bf1a631cbb004a799c}} 
 \index{M\+Triangle@{M\+Triangle}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
 \index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!M\+Triangle@{M\+Triangle}}

@@ -1,0 +1,195 @@
+\begin{theindex}
+
+  \item {add\+\_\+button}
+    \subitem {Menu}, \hyperpage{18}
+
+  \indexspace
+
+  \item {board\+Completed}
+    \subitem {Objective}, \hyperpage{23}
+  \item {Button}, \hyperpage{9}
+    \subitem {Button}, \hyperpage{9, 10}
+    \subitem {click}, \hyperpage{10}
+    \subitem {click\+\_\+in\+\_\+button}, \hyperpage{10}
+    \subitem {set\+\_\+callback}, \hyperpage{11}
+
+  \indexspace
+
+  \item {center\+\_\+point}
+    \subitem {S\+Triangle}, \hyperpage{42}
+  \item {click}
+    \subitem {Button}, \hyperpage{10}
+  \item {click\+\_\+in\+\_\+button}
+    \subitem {Button}, \hyperpage{10}
+  \item {compute\+Distance}
+    \subitem {S\+Triangle}, \hyperpage{43}
+
+  \indexspace
+
+  \item {draw}
+    \subitem {S\+Triangle}, \hyperpage{43}
+  \item {Drawable}, \hyperpage{11}
+
+  \indexspace
+
+  \item {G\+Triangle}, \hyperpage{13}
+    \subitem {G\+Triangle}, \hyperpage{15}
+    \subitem {get\+\_\+\+Points}, \hyperpage{16}
+    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{16}
+    \subitem {move}, \hyperpage{16}
+    \subitem {rotate}, \hyperpage{17}
+    \subitem {to\+String}, \hyperpage{17}
+  \item {Game}, \hyperpage{12}
+    \subitem {Game}, \hyperpage{13}
+  \item {get\+\_\+\+Points}
+    \subitem {G\+Triangle}, \hyperpage{16}
+    \subitem {M\+Triangle}, \hyperpage{21}
+    \subitem {Parallelogram}, \hyperpage{26}
+    \subitem {S\+Triangle}, \hyperpage{44}
+    \subitem {Shape}, \hyperpage{33}
+    \subitem {Square}, \hyperpage{37}
+  \item {get\+\_\+center\+\_\+point}
+    \subitem {S\+Triangle}, \hyperpage{43}
+
+  \indexspace
+
+  \item {include/drawable/\+Button.\+hpp}, \hyperpage{47}
+  \item {include/drawable/\+Menu.\+hpp}, \hyperpage{48}
+  \item {include/drawable/\+Shape.\+hpp}, \hyperpage{49}
+  \item {include/game/\+Game.\+hpp}, \hyperpage{50}
+  \item {include/game/\+Objective.\+hpp}, \hyperpage{51}
+  \item {include/shape/\+G\+Triangle.\+hpp}, \hyperpage{52}
+  \item {include/shape/\+M\+Triangle.\+hpp}, \hyperpage{53}
+  \item {include/shape/\+Parallelogram.\+hpp}, \hyperpage{54}
+  \item {include/shape/\+Square.\+hpp}, \hyperpage{55}
+  \item {include/utils/\+Point.\+hpp}, \hyperpage{56}
+  \item {is\+\_\+in\+\_\+shape}
+    \subitem {G\+Triangle}, \hyperpage{16}
+    \subitem {M\+Triangle}, \hyperpage{21}
+    \subitem {Parallelogram}, \hyperpage{26}
+    \subitem {S\+Triangle}, \hyperpage{44}
+    \subitem {Shape}, \hyperpage{33}
+    \subitem {Square}, \hyperpage{37}
+  \item {is\+\_\+in\+\_\+triangle}
+    \subitem {S\+Triangle}, \hyperpage{44}
+
+  \indexspace
+
+  \item {Loader}, \hyperpage{17}
+
+  \indexspace
+
+  \item {M\+Triangle}, \hyperpage{18}
+    \subitem {get\+\_\+\+Points}, \hyperpage{21}
+    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{21}
+    \subitem {M\+Triangle}, \hyperpage{20}
+    \subitem {move}, \hyperpage{21}
+    \subitem {rotate}, \hyperpage{22}
+    \subitem {to\+String}, \hyperpage{22}
+  \item {Menu}, \hyperpage{18}
+    \subitem {add\+\_\+button}, \hyperpage{18}
+  \item {move}
+    \subitem {G\+Triangle}, \hyperpage{16}
+    \subitem {M\+Triangle}, \hyperpage{21}
+    \subitem {Parallelogram}, \hyperpage{26}
+    \subitem {S\+Triangle}, \hyperpage{45}
+    \subitem {Shape}, \hyperpage{33}
+    \subitem {Square}, \hyperpage{37}
+
+  \indexspace
+
+  \item {Objective}, \hyperpage{22}
+    \subitem {board\+Completed}, \hyperpage{23}
+  \item {operator!=}
+    \subitem {Point}, \hyperpage{29}
+  \item {operator$<$}
+    \subitem {Point}, \hyperpage{29}
+  \item {operator$>$}
+    \subitem {Point}, \hyperpage{30}
+  \item {operator=}
+    \subitem {Point}, \hyperpage{29}
+  \item {operator==}
+    \subitem {Point}, \hyperpage{30}
+
+  \indexspace
+
+  \item {Parallelogram}, \hyperpage{23}
+    \subitem {get\+\_\+\+Points}, \hyperpage{26}
+    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{26}
+    \subitem {move}, \hyperpage{26}
+    \subitem {Parallelogram}, \hyperpage{25}
+    \subitem {rotate}, \hyperpage{27}
+    \subitem {to\+String}, \hyperpage{27}
+  \item {Point}
+    \subitem {operator!=}, \hyperpage{29}
+    \subitem {operator$<$}, \hyperpage{29}
+    \subitem {operator$>$}, \hyperpage{30}
+    \subitem {operator=}, \hyperpage{29}
+    \subitem {operator==}, \hyperpage{30}
+    \subitem {Point}, \hyperpage{28}
+    \subitem {x}, \hyperpage{31}
+    \subitem {y}, \hyperpage{31}
+  \item {Point$<$ T $>$}, \hyperpage{27}
+
+  \indexspace
+
+  \item {rotate}
+    \subitem {G\+Triangle}, \hyperpage{17}
+    \subitem {M\+Triangle}, \hyperpage{22}
+    \subitem {Parallelogram}, \hyperpage{27}
+    \subitem {S\+Triangle}, \hyperpage{45}
+    \subitem {Shape}, \hyperpage{34}
+    \subitem {Square}, \hyperpage{39}
+
+  \indexspace
+
+  \item {S\+Triangle}, \hyperpage{40}
+    \subitem {center\+\_\+point}, \hyperpage{42}
+    \subitem {compute\+Distance}, \hyperpage{43}
+    \subitem {draw}, \hyperpage{43}
+    \subitem {get\+\_\+\+Points}, \hyperpage{44}
+    \subitem {get\+\_\+center\+\_\+point}, \hyperpage{43}
+    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{44}
+    \subitem {is\+\_\+in\+\_\+triangle}, \hyperpage{44}
+    \subitem {move}, \hyperpage{45}
+    \subitem {rotate}, \hyperpage{45}
+    \subitem {S\+Triangle}, \hyperpage{41, 42}
+    \subitem {to\+String}, \hyperpage{45}
+  \item {Save}, \hyperpage{31}
+  \item {set\+\_\+callback}
+    \subitem {Button}, \hyperpage{11}
+  \item {Shape}, \hyperpage{31}
+    \subitem {get\+\_\+\+Points}, \hyperpage{33}
+    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{33}
+    \subitem {move}, \hyperpage{33}
+    \subitem {rotate}, \hyperpage{34}
+    \subitem {to\+String}, \hyperpage{34}
+  \item {Square}, \hyperpage{35}
+    \subitem {get\+\_\+\+Points}, \hyperpage{37}
+    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{37}
+    \subitem {move}, \hyperpage{37}
+    \subitem {rotate}, \hyperpage{39}
+    \subitem {Square}, \hyperpage{36}
+    \subitem {to\+String}, \hyperpage{39}
+
+  \indexspace
+
+  \item {to\+String}
+    \subitem {G\+Triangle}, \hyperpage{17}
+    \subitem {M\+Triangle}, \hyperpage{22}
+    \subitem {Parallelogram}, \hyperpage{27}
+    \subitem {S\+Triangle}, \hyperpage{45}
+    \subitem {Shape}, \hyperpage{34}
+    \subitem {Square}, \hyperpage{39}
+
+  \indexspace
+
+  \item {x}
+    \subitem {Point}, \hyperpage{31}
+
+  \indexspace
+
+  \item {y}
+    \subitem {Point}, \hyperpage{31}
+
+\end{theindex}
