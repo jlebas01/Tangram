@@ -7,16 +7,21 @@
 #include <game/Objective.hpp>
 #include <algorithm>
 
-bool Objective::boardCompleted( std::vector<Shape> objective, std::vector<Shape> game) {
+bool Objective::boardCompleted( std::vector<Shape*> objective, std::vector<Shape*> game) {
     std::vector<Point<double>> points_objective;
     std::vector<Point<double>> points_game;
-    //ToDo
-   /* for (auto &it : objective){
-        points_objective.insert(points_objective.end(), it.getPoints().begin(), it.getPoints().end());
-    }
+
     for (auto &it : objective){
-        points_game.insert(points_game.end(), it.getPoints().begin(), it.getPoints().end());
-    }*/
+        for (auto &it2 : it->get_Points()){
+            points_objective.push_back(it2);
+        }
+    }
+
+    for (auto &it : game){
+        for (auto &it2 : it->get_Points()){
+            points_game.push_back(it2);
+        }
+    }
 
     return std::is_permutation( points_objective.begin(), points_objective.end(), points_game.begin(), points_game.end());
 }

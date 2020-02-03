@@ -109,6 +109,13 @@ class MTriangle : public Shape {
         bool is_in_shape(Point<double> click) override;
 
         /*!
+         * @brief Get points of this shape
+         * @return Return a vector of points of this shape
+         */
+
+        std::vector<Point<double>> get_Points() override;
+
+        /*!
          * @brief Convert all data of MTriangle in a string
          * @return Return a string which contains every points of this shape
          */

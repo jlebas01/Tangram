@@ -8,7 +8,6 @@
 
 #include <shape/STriangle.hpp>
 
-
 STriangle::~STriangle() {
     points.clear(); //delete all elements in vector triangle (calling destructor of any elements in this vector)
     // create a new (temporary) vector and swap its contents with triangle. The temporary vector is then destroyed, freeing the memory along with it.
