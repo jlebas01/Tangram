@@ -14,8 +14,8 @@ Here there is HTML files, LaTeX files and PDF.
 ### LaTeX
 `cd doc/latex`
 ### PDF
-`cd doc/latex`
-`./refman.pdf
+`cd doc/latex`<br/>
+`./refman.pdf`
 
 ## Regenerate Documentation
 You can generate this document as you wish. If you're updating the code and the doc, you should do :
