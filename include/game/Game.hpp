@@ -44,14 +44,23 @@ public:
     void main_loop();
 
     /*!
-     * @brief Initialize the game
+     * @brief Constructor of the game, initialize a game with an sizing
      * @param w : Width of the window
      * @param h : Height of the window
      */
 
     Game(int w, int h);
 
+    /*!
+     * @brief Add a shape in the game
+     * @param s : Shape to add
+     */
+
     void add_shape(Shape* s);
+
+    /*!
+     * @brief Clear the game / the board
+     */
 
     void clear();
 };
