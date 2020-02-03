@@ -4,10 +4,8 @@
 
 #include <tuple>
 #include <string>
-#include <utility>
 
 #include <shape/GTriangle.hpp>
-
 
 GTriangle::~GTriangle() {
     triangle.clear(); //delete all elements in vector triangle (calling destructor of any elements in this vector)
@@ -22,17 +20,36 @@ GTriangle::GTriangle(const std::vector<STriangle> &triangles) {
 }
 
 GTriangle::GTriangle() {
-    this->triangle.emplace_back(STriangle(Point<double>(0.0, 0.0), Point<double>(2.0, 0.0),
-                                          Point<double>(2.0, 2.0)));
-    this->triangle.emplace_back(STriangle(Point<double>(2.0, 0.0), Point<double>(2.0, 2.0),
-                                          Point<double>(4.0, 0.0)));
+    this->triangle.emplace_back(STriangle(Point<double>(0.0, 0.0), Point<double>(100.0, 0.0),
+                                          Point<double>(100.0, 100.0)));
 
-    this->triangle.emplace_back(STriangle(Point<double>(4.0, 0.0), Point<double>(4.0, 2.0),
-                                          Point<double>(2.0, 2.0)));
-    this->triangle.emplace_back(STriangle(Point<double>(2.0, 2.0), Point<double>(4.0, 2.0),
-                                          Point<double>(4.0, 4.0)));
+    this->triangle.emplace_back(STriangle(Point<double>(200.0, 0.0), Point<double>(100.0, 0.0),
+                                          Point<double>(100.0, 100.0)));
+
+    this->triangle.emplace_back(STriangle(Point<double>(200.0, 0.0), Point<double>(200.0, 100.0),
+                                          Point<double>(100.0, 100.0)));
+
+    this->triangle.emplace_back(STriangle(Point<double>(200.0, 200.0), Point<double>(200.0, 100.0),
+                                          Point<double>(100.0, 100.0)));
 }
 
+GTriangle::GTriangle(const Point<double> origin, const double angular) : GTriangle() {
+    parameter(origin, angular);
+}
+
+void GTriangle::parameter(const Point<double> origin, const double angular = 0.0) {
+    rotate(angular);
+    move({origin.x, origin.y});
+}
+
+Point<double> GTriangle::center_shape() {
+    std::vector<Point<double>> center_points;
+    for (auto &it : triangle) {
+        center_points.push_back(it.get_center_point());
+    }
+    Point<double> const point_rotate = STriangle::center_point(center_points);
+    return point_rotate;
+}
 
 void GTriangle::move(Point<double> translation) {
     for (auto &it : triangle) {
@@ -41,8 +58,9 @@ void GTriangle::move(Point<double> translation) {
 }
 
 void GTriangle::rotate(double angular) {
+    Point<double> const point_rotate = center_shape();
     for (auto &it : triangle) {
-        it.rotate(angular);
+        it.rotate(angular, point_rotate);
     }
 }
 
@@ -53,36 +71,18 @@ void GTriangle::flip() {
 }
 
 void GTriangle::draw() {
-    std::vector<Point<double>> list_points = this->getPoints();
-    int * x_points = new int[list_points.size()];
-    int * y_points = new int[list_points.size()];
-    int i = 0;
-    for(auto & it: list_points){
-        x_points[i] = static_cast<int>(it.x);
-        y_points[i] = static_cast<int>(it.y);
-        i++;
+    for (auto &it : triangle) {
+        it.draw(MLV_COLOR_RED);
     }
-
-
-    MLV_draw_filled_polygon(x_points, y_points, static_cast<int>(list_points.size()),MLV_COLOR_RED);
 }
 
 bool GTriangle::is_in_shape(const Point<double> click) {
-    for(auto &it : triangle){
-        if (it.is_in_triangle(click)){
+    for (auto &it : triangle) {
+        if (it.is_in_triangle(click)) {
             return true;
         }
     }
     return false;
-}
-
-std::vector<Point<double>> GTriangle::getPoints() {
-    std::vector<Point<double>> points;
-    for (auto &it : triangle) {
-        //add all points of vector triangle n in vector points
-        points.insert(points.end(), it.getPoints().begin(), it.getPoints().end());
-    }
-    return points;
 }
 
 std::string GTriangle::toString() {

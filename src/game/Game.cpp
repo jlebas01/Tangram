@@ -6,6 +6,10 @@
 
 #include <game/Game.hpp>
 #include <shape/STriangle.hpp>
+#include <shape/MTriangle.hpp>
+#include <shape/GTriangle.hpp>
+#include <shape/Parallelogram.hpp>
+#include <shape/Square.hpp>
 #include <MLV/MLV_all.h>
 
 static int max(int a, int b) {
@@ -17,7 +21,7 @@ Game::Game(const int w, const int h) {
     this->h = h;
 
     //ajouter toutes les formes
-    (this->shapes).push_back(new STriangle());
+    (this->shapes).push_back(new Parallelogram({50.0, 50.0}, 0.0));
 
 }
 
@@ -27,7 +31,6 @@ void Game::draw() {
     for (auto &shape : shapes) {
         shape->draw();
     }
-
     MLV_actualise_window();
 }
 

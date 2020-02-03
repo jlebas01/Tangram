@@ -5,38 +5,115 @@
 #ifndef TANGRAM_SQUARE_H
 #define TANGRAM_SQUARE_H
 
+/*!
+ * @file Square.hpp
+ * @brief Shape of Square
+ * @author Jérémie LE BASTARD
+ * @version 1.0
+ */
+
 #include <vector>
 
 #include <shape/STriangle.hpp>
 #include <drawable/Shape.hpp>
 #include <MLV/MLV_shape.h>
 
+/*!
+ * @class Square
+ * @brief Class of the square
+ *
+ * This class manage everything about the Square
+ */
+
 class Square : public Shape {
 private:
 
-    std::vector<STriangle> triangle;
+    std::vector<STriangle> triangle; /*!< Square is make by multiple triangles*/
+
+    /*!
+     * @brief Parameter the constructor
+     * @param origin : shifts the figure of a translation of the origin
+     * @param angular : rotate the figure with an angular
+     */
+
+    void parameter(Point<double> origin, double angular);
+
+    /*!
+     * @brief Compute the center of this shape
+     * @return Return a point which is the center of this shape
+     */
+
+    Point<double> center_shape();
 
 public:
+
+    /*!
+     * @brief Destructor of Square
+     */
+
     ~Square() override;
 
-    explicit Square(const std::vector<STriangle> &triangle);
+    /*!
+     * @brief Constructor by default of Square, make a Square as default
+     */
 
     Square();
 
-    void move(Point<double>) override;
+    /*!
+     * @brief Constructor of Square, requires a vector of STriangles
+     * @param triangle : The Square will created with a vector of STriangle (4)
+     */
+
+    explicit Square(const std::vector<STriangle> &triangle);
+
+    /*!
+     * @brief Constructor of Square, calls the deleguate Default Constructor
+     * @param origin : shifts the figure of a translation of the origin
+     * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
+     */
+
+    explicit Square(Point<double> origin, double angular = 0.0);
+
+    /*!
+     * @brief Move the Square by point translation
+     * @param translation : Every points of this shape will be translate by this parameter
+     */
+
+    void move(Point<double> translation) override;
+
+    /*!
+     * @brief Rotate the Square with specified angular
+     * @param angular : This angular should be between (0, 2PI)
+     */
 
     void rotate(double angular) override;
 
+    /*!
+     * @brief Flip the figure as symmetry
+     */
+
     void flip() override;
+
+    /*!
+     * @brief Draw this shape on IHM
+     */
 
     void draw() override;
 
+    /*!
+     * @brief Check if a point is in this shape
+     * @param click : Point to check
+     * @return true if click is in this shape, false if not
+     */
+
     bool is_in_shape(Point<double> click) override;
 
-    std::vector<Point<double>> getPoints() override;
+    /*!
+     * @brief Convert all data of Square in a string
+     * @return Return a string which contains every points of this shape
+     */
 
     std::string toString() override;
-
 };
 
 #endif //TANGRAM_SQUARE_H

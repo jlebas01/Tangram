@@ -1,0 +1,8 @@
+<map id="Shape" name="Shape">
+<area shape="rect" id="node3" href="$classGTriangle.html" title="Class of the greatest triangle. " alt="" coords="5,155,84,181"/>
+<area shape="rect" id="node4" href="$classMTriangle.html" title="Class of the medium triangle. " alt="" coords="108,155,187,181"/>
+<area shape="rect" id="node5" href="$classParallelogram.html" title="Class of the parallelogram. " alt="" coords="211,155,313,181"/>
+<area shape="rect" id="node6" href="$classSquare.html" title="Class of the square. " alt="" coords="337,155,400,181"/>
+<area shape="rect" id="node7" href="$classSTriangle.html" title="Class of the small triangle. " alt="" coords="425,155,502,181"/>
+<area shape="rect" id="node2" href="$classDrawable.html" title="Drawable is everything to draw. " alt="" coords="223,5,301,32"/>
+</map>

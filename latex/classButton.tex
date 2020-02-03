@@ -1,0 +1,133 @@
+\hypertarget{classButton}{}\section{Button Class Reference}
+\label{classButton}\index{Button@{Button}}
+
+
+\hyperlink{classButton}{Button} of the \hyperlink{classMenu}{Menu}.  
+
+
+
+
+{\ttfamily \#include $<$Button.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classButton_a2a001eb9c3cc8ae54768a850dd345002}\label{classButton_a2a001eb9c3cc8ae54768a850dd345002}} 
+\hyperlink{classButton_a2a001eb9c3cc8ae54768a850dd345002}{$\sim$\+Button} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{classButton}{Button}. \end{DoxyCompactList}\item 
+\hyperlink{classButton_ab418fa07a8ea3f68f8e97e7d1021e0b6}{Button} (\hyperlink{classPoint}{Point}$<$ int $>$ point, \hyperlink{classPoint}{Point}$<$ int $>$ sizing, std\+::string text)
+\begin{DoxyCompactList}\small\item\em Constructor of a \hyperlink{classButton}{Button}. \end{DoxyCompactList}\item 
+\hyperlink{classButton_a3010396eab6c85e7193e159fccb056f9}{Button} (\hyperlink{classPoint}{Point}$<$ int $>$ point, \hyperlink{classPoint}{Point}$<$ int $>$ sizing, std\+::string text, std\+::function$<$ int(int)$>$ callback)
+\begin{DoxyCompactList}\small\item\em Constructor of a \hyperlink{classButton}{Button}. \end{DoxyCompactList}\item 
+bool \hyperlink{classButton_acf7ec691fccf7fc66863a6bb24d31ce5}{click\+\_\+in\+\_\+button} (const \hyperlink{classPoint}{Point}$<$ int $>$ \&\hyperlink{classButton_af6a02022f77e1809a90cb6159c1a1536}{click})
+\begin{DoxyCompactList}\small\item\em Check if a click is in the button. \end{DoxyCompactList}\item 
+int \hyperlink{classButton_af6a02022f77e1809a90cb6159c1a1536}{click} (int)
+\begin{DoxyCompactList}\small\item\em Define a value about a click. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a0380207dc9e4edcd0272207a39c7cdeb}\label{classButton_a0380207dc9e4edcd0272207a39c7cdeb}} 
+void \hyperlink{classButton_a0380207dc9e4edcd0272207a39c7cdeb}{draw} ()
+\begin{DoxyCompactList}\small\item\em Draw the button. \end{DoxyCompactList}\item 
+void \hyperlink{classButton_aff79964a98ce6c76d0ece8502a830985}{set\+\_\+callback} (std\+::function$<$ int(int)$>$ callback)
+\begin{DoxyCompactList}\small\item\em Set a callback for a button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classButton}{Button} of the \hyperlink{classMenu}{Menu}. 
+
+This class manage all buttons of the menu 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classButton_ab418fa07a8ea3f68f8e97e7d1021e0b6}\label{classButton_ab418fa07a8ea3f68f8e97e7d1021e0b6}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ int $>$}]{point,  }\item[{\hyperlink{classPoint}{Point}$<$ int $>$}]{sizing,  }\item[{std\+::string}]{text }\end{DoxyParamCaption})}
+
+
+
+Constructor of a \hyperlink{classButton}{Button}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \+: Top left point position of the button \\
+\hline
+{\em sizing} & \+: Sizing of the button, (width , height) \\
+\hline
+{\em text} & \+: Text of the button \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classButton_a3010396eab6c85e7193e159fccb056f9}\label{classButton_a3010396eab6c85e7193e159fccb056f9}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ int $>$}]{point,  }\item[{\hyperlink{classPoint}{Point}$<$ int $>$}]{sizing,  }\item[{std\+::string}]{text,  }\item[{std\+::function$<$ int(int)$>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Constructor of a \hyperlink{classButton}{Button}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \+: Top left point position of the button \\
+\hline
+{\em sizing} & \+: Sizing of the button, (width , height) \\
+\hline
+{\em text} & \+: Text of the button \\
+\hline
+{\em callback} & \+: Pointer of function for callback \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classButton_af6a02022f77e1809a90cb6159c1a1536}\label{classButton_af6a02022f77e1809a90cb6159c1a1536}} 
+\index{Button@{Button}!click@{click}}
+\index{click@{click}!Button@{Button}}
+\subsubsection{\texorpdfstring{click()}{click()}}
+{\footnotesize\ttfamily int Button\+::click (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Define a value about a click. 
+
+\begin{DoxyReturn}{Returns}
+Return a value about a click 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classButton_acf7ec691fccf7fc66863a6bb24d31ce5}\label{classButton_acf7ec691fccf7fc66863a6bb24d31ce5}} 
+\index{Button@{Button}!click\+\_\+in\+\_\+button@{click\+\_\+in\+\_\+button}}
+\index{click\+\_\+in\+\_\+button@{click\+\_\+in\+\_\+button}!Button@{Button}}
+\subsubsection{\texorpdfstring{click\+\_\+in\+\_\+button()}{click\_in\_button()}}
+{\footnotesize\ttfamily bool Button\+::click\+\_\+in\+\_\+button (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ int $>$ \&}]{click }\end{DoxyParamCaption})}
+
+
+
+Check if a click is in the button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em click} & \+: \hyperlink{classPoint}{Point} to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the click is in this button, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classButton_aff79964a98ce6c76d0ece8502a830985}\label{classButton_aff79964a98ce6c76d0ece8502a830985}} 
+\index{Button@{Button}!set\+\_\+callback@{set\+\_\+callback}}
+\index{set\+\_\+callback@{set\+\_\+callback}!Button@{Button}}
+\subsubsection{\texorpdfstring{set\+\_\+callback()}{set\_callback()}}
+{\footnotesize\ttfamily void Button\+::set\+\_\+callback (\begin{DoxyParamCaption}\item[{std\+::function$<$ int(int)$>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Set a callback for a button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & \+: Requires a pointer of function for set the callback \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/drawable/\hyperlink{Button_8hpp}{Button.\+hpp}\item 
+src/drawable/Button.\+cpp\end{DoxyCompactItemize}

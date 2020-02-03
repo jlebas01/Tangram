@@ -29,11 +29,35 @@ STriangle::STriangle(const std::vector<Point<double>> &points) {
     this->center = this->center_point();
 }
 
+STriangle::STriangle(const Point<double> origin, const double angular) : STriangle() {
+    parameter(origin, angular);
+}
+
+void STriangle::parameter(const Point<double> origin, const double angular = 0.0) {
+    rotate(angular);
+    move({origin.x, origin.y});
+}
+
 STriangle::STriangle() {
     this->points.emplace_back(0.0, 0.0);
     this->points.emplace_back(100.0, 0.0);
     this->points.emplace_back(0.0, 100.0);
     this->center = this->center_point();
+}
+
+Point<double> STriangle::center_point(const std::vector<Point<double>> &list_points) {
+
+    double sumx = 0.0, sumy = 0.0;
+
+    if (!list_points.empty()) {
+        for (auto &it : list_points) {
+            sumx += it.x;
+            sumy += it.y;
+        }
+        return Point<double>(sumx / list_points.size(), sumy / list_points.size());
+    }
+
+    return Point<double>(-1, -1); //error case
 }
 
 Point<double> STriangle::center_point() {
@@ -42,48 +66,74 @@ Point<double> STriangle::center_point() {
         sumx += it.x;
         sumy += it.y;
     }
-    return Point<double>(sumx / 3., sumy / 3);
+    return Point<double>(sumx / points.size(), sumy / points.size());
+}
+
+Point<double> STriangle::get_center_point() {
+    center = this->center_point();
+    Point<double> const center_point = center;
+    return {center_point};
 }
 
 void STriangle::move(Point<double> translation) {
-    for (auto &it : points) {
-        it.operator=(Point<double>(it.x + translation.x, it.y + translation.y));
-    }
     center.operator=(this->center_point());
+    for (auto &it : points) {
+        it = Point<double>(it.x + translation.x, it.y + translation.y);
+    }
+    center = this->center_point();
 }
 
 void STriangle::rotate(double angular) {
-    for (auto &it : points) {
-        it.operator=(Point<double>((it.x - center.x) * cos(angular) - (it.y - center.y) * sin(angular) + center.x,
-                                   (it.y - center.y) * cos(angular) + (it.x - center.y) * sin(angular) + center.y));
-    }
     center.operator=(this->center_point());
+    for (auto &it : points) {
+        /*it = Point<double>((it.x - center.x) * cos(angular) - (it.y - center.y) * sin(angular) + center.x,
+                           (it.y - center.y) * sin(angular) + (it.x - center.y) * cos(angular) + center.y);*/
+        it = Point<double>((cos(angular) * (it.x - center.x)) - (sin(angular) * (it.y - center.y)) + center.x,
+                           (sin(angular) * (it.x - center.x)) + (cos(angular) * (it.y - center.y)) + center.y);
+        /*newx = (cos(angular) * (it.x - center.x)) - (sin(angular) * (it.y - center.y)) + center.x;
+        newy = (sin(angular) * (it.x - center.x)) + (cos(angular) * (it.y - center.y)) + center.y;*/
+    }
+    center = this->center_point();
+}
+
+void STriangle::rotate(double angular, Point<double> center_point) {
+    for (auto &it : points) {
+        it = Point<double>((cos(angular) * (it.x - center_point.x)) - (sin(angular) * (it.y - center_point.y)) + center_point.x,
+                           (sin(angular) * (it.x - center_point.x)) + (cos(angular) * (it.y - center_point.y)) + center_point.y);
+    }
+    center = this->center_point();
 }
 
 void STriangle::flip() {
     for (auto &it : points) {
-        it.operator=(Point<double>(it.y, it.x));
+        it = Point<double>(it.y, it.x);
     }
-    center.operator=(this->center_point());
+    center = this->center_point();
 }
 
 void STriangle::draw() {
-    std::vector<Point<double>> list_points = this->getPoints();
-    int * x_points = new int[list_points.size()];
-    int * y_points = new int[list_points.size()];
+    int *x_points = new int[this->points.size()];
+    int *y_points = new int[this->points.size()];
     int i = 0;
-    for(auto & it: list_points){
+    for (auto &it: this->points) {
         x_points[i] = static_cast<int>(it.x);
         y_points[i] = static_cast<int>(it.y);
         i++;
     }
 
-    MLV_draw_filled_polygon(x_points, y_points, static_cast<int>(list_points.size()),MLV_COLOR_GREEN);
+    MLV_draw_filled_polygon(x_points, y_points, static_cast<int>(points.size()), MLV_COLOR_GREEN);
 }
 
-std::vector<Point<double>> STriangle::getPoints() {
-    std::vector<Point<double>> const points = {this->points};
-    return points;
+void STriangle::draw(MLV_Color Color) {
+    int *x_points = new int[this->points.size()];
+    int *y_points = new int[this->points.size()];
+    int i = 0;
+    for (auto &it: this->points) {
+        x_points[i] = static_cast<int>(it.x);
+        y_points[i] = static_cast<int>(it.y);
+        i++;
+    }
+    MLV_draw_filled_polygon(x_points, y_points, static_cast<int>(this->points.size()), Color);
 }
 
 std::string STriangle::toString() {
@@ -99,6 +149,11 @@ std::string STriangle::toString() {
 
 double STriangle::computeDistance(Point<double> point1, Point<double> point2) {
     return sqrt(pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2));
+}
+
+std::vector<Point<double>> STriangle::get_Points() {
+    std::vector<Point<double>> const vec_points = {this->points};
+    return vec_points;
 }
 
 bool STriangle::is_in_shape(const Point<double> click) {
@@ -125,7 +180,10 @@ bool STriangle::is_in_triangle(const Point<double> click) {
     return !(has_neg && has_pos);
 }
 
-double STriangle::sign (Point<double> p1, Point<double> p2, Point<double> p3){
+double STriangle::sign(Point<double> p1, Point<double> p2, Point<double> p3) {
     return (p1.x - p3.x) * (p2.y - p3.y) - (p2.x - p3.x) * (p1.y - p3.y);
 }
+
+
+
 

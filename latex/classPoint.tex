@@ -1,0 +1,190 @@
+\hypertarget{classPoint}{}\section{Point$<$ T $>$ Class Template Reference}
+\label{classPoint}\index{Point$<$ T $>$@{Point$<$ T $>$}}
+
+
+Class of a \hyperlink{classPoint}{Point}.  
+
+
+
+
+{\ttfamily \#include $<$Point.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoint_aea76b1130f1a203722d8f2254ced8e66}\label{classPoint_aea76b1130f1a203722d8f2254ced8e66}} 
+\hyperlink{classPoint_aea76b1130f1a203722d8f2254ced8e66}{Point} ()
+\begin{DoxyCompactList}\small\item\em Constructor for a point with initialisation list. \end{DoxyCompactList}\item 
+\hyperlink{classPoint_acfb36323391d7fe1e451137f8c39cde7}{Point} (const T \hyperlink{classPoint_a401d07562afaf0079121218025e66b76}{x}, const T \hyperlink{classPoint_a65146418a33ebb2cd9acb85cade60ac9}{y})
+\begin{DoxyCompactList}\small\item\em Constructor for a point. Requires a X and a Y coordinate. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \& \hyperlink{classPoint_a42cf65d5594e882fc05a25fb344618fb}{operator=} (const \hyperlink{classPoint}{Point}$<$ T $>$ p)
+\begin{DoxyCompactList}\small\item\em Operator = of a point. \end{DoxyCompactList}\item 
+bool \hyperlink{classPoint_a63bcffe1a385653e0dd7d3a39c06a631}{operator==} (const \hyperlink{classPoint}{Point}$<$ T $>$ p) const
+\begin{DoxyCompactList}\small\item\em Operator == of a point. \end{DoxyCompactList}\item 
+bool \hyperlink{classPoint_accaa0100c0c631ad03280446a0b05339}{operator!=} (const \hyperlink{classPoint}{Point}$<$ T $>$ p) const
+\begin{DoxyCompactList}\small\item\em Operator != of a point. \end{DoxyCompactList}\item 
+bool \hyperlink{classPoint_ac6b57554a6941b07668b52c66fe20fae}{operator$<$} (const \hyperlink{classPoint}{Point}$<$ T $>$ p) const
+\begin{DoxyCompactList}\small\item\em Operator $<$ of a point. \end{DoxyCompactList}\item 
+bool \hyperlink{classPoint_ade386be90f64de342ada7165415daf07}{operator$>$} (const \hyperlink{classPoint}{Point}$<$ T $>$ p) const
+\begin{DoxyCompactList}\small\item\em Operator $>$ of a point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{classPoint_a401d07562afaf0079121218025e66b76}{x}
+\item 
+T \hyperlink{classPoint_a65146418a33ebb2cd9acb85cade60ac9}{y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Point$<$ T $>$}
+
+Class of a \hyperlink{classPoint}{Point}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \+: Template parameter This class manage everything about a point \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoint_acfb36323391d7fe1e451137f8c39cde7}\label{classPoint_acfb36323391d7fe1e451137f8c39cde7}} 
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classPoint}{Point}$<$ T $>$\+::\hyperlink{classPoint}{Point} (\begin{DoxyParamCaption}\item[{const T}]{x,  }\item[{const T}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for a point. Requires a X and a Y coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: Template X coordinate \\
+\hline
+{\em y} & \+: Template Y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoint_accaa0100c0c631ad03280446a0b05339}\label{classPoint_accaa0100c0c631ad03280446a0b05339}} 
+\index{Point@{Point}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Point@{Point}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classPoint}{Point}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ T $>$}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator != of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classPoint}{Point} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return True if the point is different, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint_ac6b57554a6941b07668b52c66fe20fae}\label{classPoint_ac6b57554a6941b07668b52c66fe20fae}} 
+\index{Point@{Point}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Point@{Point}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classPoint}{Point}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ T $>$}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator $<$ of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classPoint}{Point} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return True if the point is strictly weaker, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint_a42cf65d5594e882fc05a25fb344618fb}\label{classPoint_a42cf65d5594e882fc05a25fb344618fb}} 
+\index{Point@{Point}!operator=@{operator=}}
+\index{operator=@{operator=}!Point@{Point}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classPoint}{Point}\& \hyperlink{classPoint}{Point}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ T $>$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator = of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classPoint}{Point} to \char`\"{}copy\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return a reference to a point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint_a63bcffe1a385653e0dd7d3a39c06a631}\label{classPoint_a63bcffe1a385653e0dd7d3a39c06a631}} 
+\index{Point@{Point}!operator==@{operator==}}
+\index{operator==@{operator==}!Point@{Point}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classPoint}{Point}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ T $>$}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator == of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classPoint}{Point} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return True if the point is the same, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint_ade386be90f64de342ada7165415daf07}\label{classPoint_ade386be90f64de342ada7165415daf07}} 
+\index{Point@{Point}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Point@{Point}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classPoint}{Point}$<$ T $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ T $>$}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator $>$ of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classPoint}{Point} to comapre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return True if the point is strictly greater, false if not 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classPoint_a401d07562afaf0079121218025e66b76}\label{classPoint_a401d07562afaf0079121218025e66b76}} 
+\index{Point@{Point}!x@{x}}
+\index{x@{x}!Point@{Point}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classPoint}{Point}$<$ T $>$\+::x}
+
+Template x for a point \mbox{\Hypertarget{classPoint_a65146418a33ebb2cd9acb85cade60ac9}\label{classPoint_a65146418a33ebb2cd9acb85cade60ac9}} 
+\index{Point@{Point}!y@{y}}
+\index{y@{y}!Point@{Point}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classPoint}{Point}$<$ T $>$\+::y}
+
+Template y for a point 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/utils/\hyperlink{Point_8hpp}{Point.\+hpp}\end{DoxyCompactItemize}
