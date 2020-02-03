@@ -20,8 +20,6 @@ void Menu::main_loop() {
         draw();
         MLV_wait_mouse(&x, &y);
 
-        std::cout << x << ", " << y << std::endl;
-
         for (auto b: buttons) {
             if (b.click_in_button(Point<int>(x, y))) {
                 if (!b.click(0)) {

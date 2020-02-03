@@ -12,8 +12,8 @@
 #include <shape/Square.hpp>
 #include <MLV/MLV_all.h>
 
-static int max(int a, int b) {
-    return (a > b) ? a : b;
+static int abso(int x) {
+    return x < 0 ? -x : x;
 }
 
 Game::Game(const int w, const int h) {
@@ -22,6 +22,10 @@ Game::Game(const int w, const int h) {
 
     //ajouter toutes les formes
     (this->shapes).push_back(new Parallelogram({50.0, 50.0}, 0.0));
+    (this->shapes).push_back(new STriangle({50.0, 50.0}, 0.0));
+    (this->shapes).push_back(new GTriangle({50.0, 50.0}, 0.0));
+    (this->shapes).push_back(new MTriangle({50.0, 50.0}, 0.0));
+    (this->shapes).push_back(new Square({50.0, 50.0}, 0.0));
 
 }
 
@@ -52,8 +56,8 @@ void Game::main_loop() {
     MLV_Keyboard_button cur_button;
     MLV_Keyboard_button prev_button;
 
-    MLV_get_event(&cur_button, &cur_modifier, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
-                  &cur_mouse_button, &cur_state);
+    MLV_wait_event(&cur_button, &cur_modifier, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
+                   &cur_mouse_button, &cur_state);
 
     while (!exit) {
         prev_click = cur_click;
@@ -61,13 +65,12 @@ void Game::main_loop() {
         prev_mouse_button = cur_mouse_button;
         prev_modifier = cur_modifier;
         prev_button = cur_button;
+
         MLV_wait_event(&cur_button, &cur_modifier, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
                        &cur_mouse_button, &cur_state);
 
-        if (prev_click != cur_click || prev_state != cur_state || prev_mouse_button != cur_mouse_button ||
-            prev_modifier != cur_modifier || prev_button != cur_button) {
-            draw();
-        }
+
+        draw();
 
         if (prev_state != cur_state) {
             if (cur_state == MLV_PRESSED) {
@@ -86,7 +89,11 @@ void Game::main_loop() {
             if (selected && prev_mouse_button == cur_mouse_button && cur_mouse_button == MLV_BUTTON_RIGHT) {
                 int dx = cur_click.x - prev_click.x;
                 int dy = cur_click.y - prev_click.y;
-                selected->rotate(static_cast<double> (max(dx, dy)) / 1000);
+                if (abso(dx) > abso(dy)) {
+                    selected->rotate(static_cast<double>(dx) / 250.);
+                } else {
+                    selected->rotate(static_cast<double>(dy) / 250.);
+                }
             }
         }
     }
