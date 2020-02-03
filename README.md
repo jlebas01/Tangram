@@ -2,10 +2,10 @@
 A student project about the tangram's game
 
 ## How to run 
-When you're in the repository
-`cd cmake-build-debug` 
-`make`
-`./tangram`
+When you're in the repository <br/>;
+`cd cmake-build-debug` <br/>;
+`make` <br/>;
+`./tangram`<br/>;
 
 ## Documentation
 Here there is HTML files, LaTeX files and PDF.
