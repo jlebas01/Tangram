@@ -6,7 +6,7 @@
 #define TANGRAM_STRIANGLE_H
 
 /*!
- * @file MTriangle.hpp
+ * @file STriangle.hpp
  * @brief Shape of Small Triangle
  * @author Jérémie LE BASTARD
  * @version 1.0

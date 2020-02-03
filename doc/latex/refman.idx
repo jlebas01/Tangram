@@ -149,6 +149,7 @@
 \indexentry{include/parser/\+Save.\+hpp@{include/parser/\+Save.\+hpp}|hyperpage}{56}
 \indexentry{include/shape/\+G\+Triangle.\+hpp@{include/shape/\+G\+Triangle.\+hpp}|hyperpage}{56}
 \indexentry{include/shape/\+M\+Triangle.\+hpp@{include/shape/\+M\+Triangle.\+hpp}|hyperpage}{57}
-\indexentry{include/shape/\+Parallelogram.\+hpp@{include/shape/\+Parallelogram.\+hpp}|hyperpage}{59}
-\indexentry{include/shape/\+Square.\+hpp@{include/shape/\+Square.\+hpp}|hyperpage}{60}
-\indexentry{include/utils/\+Point.\+hpp@{include/utils/\+Point.\+hpp}|hyperpage}{61}
+\indexentry{include/shape/\+Parallelogram.\+hpp@{include/shape/\+Parallelogram.\+hpp}|hyperpage}{58}
+\indexentry{include/shape/\+Square.\+hpp@{include/shape/\+Square.\+hpp}|hyperpage}{59}
+\indexentry{include/shape/\+S\+Triangle.\+hpp@{include/shape/\+S\+Triangle.\+hpp}|hyperpage}{60}
+\indexentry{include/utils/\+Point.\+hpp@{include/utils/\+Point.\+hpp}|hyperpage}{62}

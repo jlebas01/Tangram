@@ -1,5 +1,5 @@
 <map id="include/shape/Square.hpp" name="include/shape/Square.hpp">
-<area shape="rect" id="node3" href="$STriangle_8hpp_source.html" title="shape/STriangle.hpp" alt="" coords="64,80,205,107"/>
+<area shape="rect" id="node3" href="$STriangle_8hpp.html" title="Shape of Small Triangle. " alt="" coords="64,80,205,107"/>
 <area shape="rect" id="node4" href="$Shape_8hpp.html" title="Abstract Class Shape of every shape in Tangram. " alt="" coords="90,155,230,181"/>
 <area shape="rect" id="node5" href="$Point_8hpp.html" title="Point for every shape and menu. " alt="" coords="257,229,362,256"/>
 <area shape="rect" id="node6" href="$Drawable_8h_source.html" title="drawable/Drawable.h" alt="" coords="88,229,232,256"/>
