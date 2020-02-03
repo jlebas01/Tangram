@@ -134,4 +134,4 @@
 \contentsline {subsection}{\numberline {6.9.1}Detailed Description}{56}{subsection.6.9.1}% 
 \contentsline {section}{\numberline {6.10}include/utils/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Point.hpp File Reference}{56}{section.6.10}% 
 \contentsline {subsection}{\numberline {6.10.1}Detailed Description}{56}{subsection.6.10.1}% 
-\contentsline {chapter}{Index}{57}{section*.58}% 
+\contentsline {chapter}{Index}{57}{section*.59}% 
