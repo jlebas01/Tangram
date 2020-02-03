@@ -7,10 +7,19 @@
 #include <drawable/Button.hpp>
 #include <MLV/MLV_all.h>
 #include <game/Game.hpp>
+#include <parser/Loader.hpp>
 
 #define W_WIDTH 1000
 #define W_HEIGHT 800
 
+static int load_callback(int v) {
+    Loader loader;
+    Game g(W_WIDTH, W_HEIGHT);
+
+    loader.parse_file("test.txt", g);
+    // g.main_loop();
+    return 1;
+}
 
 static int exit_button_callback(int val) {
     return 0;
@@ -34,6 +43,8 @@ static Menu create_main_menu() {
 
     menu.add_button(
             Button({W_WIDTH / 3, W_HEIGHT / 6}, {W_WIDTH / 3, W_HEIGHT / 6}, "Launch", launch_game_button_callback));
+    menu.add_button(
+            Button({W_WIDTH / 3, static_cast<int>(W_HEIGHT / 2.5)}, {W_WIDTH / 3, W_HEIGHT / 6}, "Load", load_callback));
     menu.add_button(
             Button({W_WIDTH / 6, 4 * W_HEIGHT / 6}, {W_WIDTH / 6, W_HEIGHT / 6}, "Settings", settings_button_callback));
     menu.add_button(

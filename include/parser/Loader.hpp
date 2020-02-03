@@ -6,8 +6,12 @@
 #define TANGRAM_LOADER_H
 
 
+#include <game/Game.hpp>
+
 class Loader {
 
+public:
+    static bool parse_file(const std::string &filename, Game &game);
 };
 
 

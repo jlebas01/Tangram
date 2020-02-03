@@ -22,6 +22,9 @@ public:
 
     Game(int w, int h);
 
+    void add_shape(Shape* s);
+
+    void clear();
 };
 
 

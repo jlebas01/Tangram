@@ -88,3 +88,12 @@ void Game::main_loop() {
         }
     }
 }
+
+
+void Game::add_shape(Shape *s) {
+    shapes.push_back(s);
+}
+
+void Game::clear() {
+    shapes.clear();
+}
