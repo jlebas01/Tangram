@@ -80,6 +80,16 @@ bool Square::is_in_shape(const Point<double> click) {
     return false;
 }
 
+std::vector<Point<double>> Square::get_Points() {
+    std::vector<Point<double>> list_points;
+    for (auto &it: triangle){
+        for (auto &it2 : it.get_Points()){
+            list_points.push_back(it2);
+        }
+    }
+    return list_points;
+}
+
 std::string Square::toString() {
     std::string t;
     for (auto[it, i] = std::tuple{triangle.begin(), 1}; it != triangle.end(); i++, it++) {

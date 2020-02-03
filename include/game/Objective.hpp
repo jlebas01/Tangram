@@ -33,7 +33,7 @@ public:
      * @return True if the board is completed, false if not
      */
 
-    bool boardCompleted(std::vector<Shape> objective, std::vector<Shape> game);
+    bool boardCompleted(std::vector<Shape*> objective, std::vector<Shape*> game);
 };
 
 

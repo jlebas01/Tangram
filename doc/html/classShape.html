@@ -111,6 +111,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:abcce23128cd35989468a88a7194152af"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShape.html#abcce23128cd35989468a88a7194152af">is_in_shape</a> (<a class="el" href="classPoint.html">Point</a>&lt; double &gt; point)=0</td></tr>
 <tr class="memdesc:abcce23128cd35989468a88a7194152af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Check if a point is in this shape.  <a href="#abcce23128cd35989468a88a7194152af">More...</a><br /></td></tr>
 <tr class="separator:abcce23128cd35989468a88a7194152af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add74a5c682840fa4a519242b1ddbd0b5"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShape.html#add74a5c682840fa4a519242b1ddbd0b5">get_Points</a> ()=0</td></tr>
+<tr class="memdesc:add74a5c682840fa4a519242b1ddbd0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Get all points of this shape.  <a href="#add74a5c682840fa4a519242b1ddbd0b5">More...</a><br /></td></tr>
+<tr class="separator:add74a5c682840fa4a519242b1ddbd0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98fa87c6dc4c7045fd6897a8f3bc186c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShape.html#a98fa87c6dc4c7045fd6897a8f3bc186c">toString</a> ()=0</td></tr>
 <tr class="memdesc:a98fa87c6dc4c7045fd6897a8f3bc186c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Convert all data of <a class="el" href="classGTriangle.html" title="Class of the greatest triangle. ">GTriangle</a> in a string.  <a href="#a98fa87c6dc4c7045fd6897a8f3bc186c">More...</a><br /></td></tr>
 <tr class="separator:a98fa87c6dc4c7045fd6897a8f3bc186c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +127,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="textblock"><p>Abstract Class of every <a class="el" href="classShape.html" title="Abstract Class of every Shape. ">Shape</a>. </p>
 <p>This class manage everything other shape (<a class="el" href="classSTriangle.html" title="Class of the small triangle. ">STriangle</a>, <a class="el" href="classMTriangle.html" title="Class of the medium triangle. ">MTriangle</a>, <a class="el" href="classGTriangle.html" title="Class of the greatest triangle. ">GTriangle</a>, <a class="el" href="classSquare.html" title="Class of the square. ">Square</a>, <a class="el" href="classParallelogram.html" title="Class of the parallelogram. ">Parallelogram</a>) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="add74a5c682840fa4a519242b1ddbd0b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add74a5c682840fa4a519242b1ddbd0b5">&#9670;&nbsp;</a></span>get_Points()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;<a class="el" href="classPoint.html">Point</a>&lt;double&gt; &gt; Shape::get_Points </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pure virtual function. Get all points of this shape. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return a vector of points of this shape </dd></dl>
+
+<p>Implemented in <a class="el" href="classSTriangle.html#a08f667453619b506b5c16745a9aa5ecf">STriangle</a>, <a class="el" href="classGTriangle.html#add4581d1b52836142de5817de4d52d17">GTriangle</a>, <a class="el" href="classMTriangle.html#a90351a097a20d35f9d6c4d05ad881e48">MTriangle</a>, <a class="el" href="classParallelogram.html#a17c9986712806a8b07d90e444e0a543d">Parallelogram</a>, and <a class="el" href="classSquare.html#a2a8fb1bfd2f3464cee813ec8b277506e">Square</a>.</p>
+
+</div>
+</div>
 <a id="abcce23128cd35989468a88a7194152af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcce23128cd35989468a88a7194152af">&#9670;&nbsp;</a></span>is_in_shape()</h2>
 

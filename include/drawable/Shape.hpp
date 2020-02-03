@@ -59,6 +59,12 @@ public :
 
     virtual bool is_in_shape(Point<double> point) = 0;
 
+    /*!
+     * @brief Pure virtual function. Get all points of this shape
+     * @return Return a vector of points of this shape
+     */
+
+    virtual std::vector<Point<double>> get_Points() = 0;
 
     /*!
      * @brief Pure virtual function. Convert all data of GTriangle in a string

@@ -172,7 +172,7 @@ public:
      * @return Return a vector of these points
      */
 
-    std::vector<Point<double>> get_Points();
+    std::vector<Point<double>> get_Points() override;
 
     /*!
      * @brief Compute the center point of N points
