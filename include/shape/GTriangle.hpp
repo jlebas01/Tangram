@@ -57,6 +57,7 @@ public:
 
     /*!
      * @brief Constructor by default of GTriangle, make a triangle as default
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit GTriangle(MLV_Color color = MLV_COLOR_RED);
@@ -64,6 +65,7 @@ public:
     /*!
      * @brief Constructor of GTriangle, requires a vector of triangles
      * @param triangle : The GTriangle will created with a vector of STriangle (4)
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit GTriangle(const std::vector<STriangle> &triangle, MLV_Color color = MLV_COLOR_RED);
@@ -72,6 +74,7 @@ public:
      * @brief Constructor of GTriangle, calls the deleguate Default Constructor
      * @param origin : shifts the figure of a translation of the origin
      * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit GTriangle(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_RED);

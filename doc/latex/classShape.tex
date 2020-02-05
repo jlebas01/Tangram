@@ -33,14 +33,14 @@ Collaboration diagram for Shape\+:\nopagebreak
 \mbox{\Hypertarget{classShape_a39fe45638d872f0ce9670d7f85290161}\label{classShape_a39fe45638d872f0ce9670d7f85290161}} 
 virtual \hyperlink{classShape_a39fe45638d872f0ce9670d7f85290161}{$\sim$\+Shape} ()=0
 \begin{DoxyCompactList}\small\item\em Destructor of Abstract \hyperlink{classShape}{Shape}. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classShape_a52649731b2cb7b67315882d5e005f7e8}{move} (\hyperlink{classPoint}{Point}$<$ double $>$ translation)=0
+virtual void \hyperlink{classShape_a1f447acd6219cb10b9b7a40371519c46}{move} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&translation)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Move the \hyperlink{classShape}{Shape} by point translation. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classShape_a2dea8616fd40f2d69fd208715921982a}{rotate} (double angular)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Rotate the \hyperlink{classGTriangle}{G\+Triangle} with specified angular. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classShape_a5a1607f7dc4908225f97aeadb449636d}\label{classShape_a5a1607f7dc4908225f97aeadb449636d}} 
 virtual void \hyperlink{classShape_a5a1607f7dc4908225f97aeadb449636d}{flip} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Flip the figure as symmetry. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classShape_abcce23128cd35989468a88a7194152af}{is\+\_\+in\+\_\+shape} (\hyperlink{classPoint}{Point}$<$ double $>$ point)=0
+virtual bool \hyperlink{classShape_aa09a621da090e42840b4bec7ffb27620}{is\+\_\+in\+\_\+shape} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&point)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Check if a point is in this shape. \end{DoxyCompactList}\item 
 virtual std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{get\+\_\+\+Points} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
@@ -71,11 +71,11 @@ Return a vector of points of this shape
 
 Implemented in \hyperlink{classSTriangle_a08f667453619b506b5c16745a9aa5ecf}{S\+Triangle}, \hyperlink{classGTriangle_add4581d1b52836142de5817de4d52d17}{G\+Triangle}, \hyperlink{classMTriangle_a90351a097a20d35f9d6c4d05ad881e48}{M\+Triangle}, \hyperlink{classParallelogram_a17c9986712806a8b07d90e444e0a543d}{Parallelogram}, and \hyperlink{classSquare_a2a8fb1bfd2f3464cee813ec8b277506e}{Square}.
 
-\mbox{\Hypertarget{classShape_abcce23128cd35989468a88a7194152af}\label{classShape_abcce23128cd35989468a88a7194152af}} 
+\mbox{\Hypertarget{classShape_aa09a621da090e42840b4bec7ffb27620}\label{classShape_aa09a621da090e42840b4bec7ffb27620}} 
 \index{Shape@{Shape}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
 \index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!Shape@{Shape}}
 \subsubsection{\texorpdfstring{is\+\_\+in\+\_\+shape()}{is\_in\_shape()}}
-{\footnotesize\ttfamily virtual bool Shape\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual bool Shape\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -91,13 +91,13 @@ true if click is in this shape, false if not
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classSTriangle_a122eba5ec56c5f1707d53aea5be0b69c}{S\+Triangle}, \hyperlink{classGTriangle_a7e5d4eefbb2e42b9c3142096a23dcb19}{G\+Triangle}, \hyperlink{classMTriangle_a8d3d737a903823bf1a631cbb004a799c}{M\+Triangle}, \hyperlink{classParallelogram_a9ba441d86d6311bba489e998c87dddf6}{Parallelogram}, and \hyperlink{classSquare_a18b130131d969c53f3dfbe2b753a28d4}{Square}.
+Implemented in \hyperlink{classSTriangle_a5b55df6eb4af922521da69f69df77b42}{S\+Triangle}, \hyperlink{classGTriangle_abb6f7243155483cc6de301931e87475a}{G\+Triangle}, \hyperlink{classMTriangle_a4cc4cd63537ead67a0b68d1ab25111b4}{M\+Triangle}, \hyperlink{classParallelogram_a585b14ca0f65ed3a5007e8c1df3c6bc4}{Parallelogram}, and \hyperlink{classSquare_ada046df2d9fb92286d106d4b3475980a}{Square}.
 
-\mbox{\Hypertarget{classShape_a52649731b2cb7b67315882d5e005f7e8}\label{classShape_a52649731b2cb7b67315882d5e005f7e8}} 
+\mbox{\Hypertarget{classShape_a1f447acd6219cb10b9b7a40371519c46}\label{classShape_a1f447acd6219cb10b9b7a40371519c46}} 
 \index{Shape@{Shape}!move@{move}}
 \index{move@{move}!Shape@{Shape}}
 \subsubsection{\texorpdfstring{move()}{move()}}
-{\footnotesize\ttfamily virtual void Shape\+::move (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Shape\+::move (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -110,7 +110,7 @@ Pure virtual function. Move the \hyperlink{classShape}{Shape} by point translati
 \end{DoxyParams}
 
 
-Implemented in \hyperlink{classSTriangle_a9cd1c7e14501b314405745dcc296ee63}{S\+Triangle}, \hyperlink{classGTriangle_a89910a7f176743473d3bfd15de01377d}{G\+Triangle}, \hyperlink{classMTriangle_a1b029feefcf7e3febcdae179557b4c2e}{M\+Triangle}, \hyperlink{classParallelogram_a982287c8d16ec47951db62b07eb77feb}{Parallelogram}, and \hyperlink{classSquare_a6be02369ff07934179f6bfd6360fb9d3}{Square}.
+Implemented in \hyperlink{classSTriangle_ac72888032cde56407193da9435e2fcc0}{S\+Triangle}, \hyperlink{classGTriangle_a6675f3448fca16c1afec576145a9b139}{G\+Triangle}, \hyperlink{classMTriangle_aa21f0514a8af2beba5ecf2ea5a22a4ef}{M\+Triangle}, \hyperlink{classParallelogram_ae8d51f9b629160df31c8a12c28da279e}{Parallelogram}, and \hyperlink{classSquare_a75b2fd22fc3895b83bc20728afb20b10}{Square}.
 
 \mbox{\Hypertarget{classShape_a2dea8616fd40f2d69fd208715921982a}\label{classShape_a2dea8616fd40f2d69fd208715921982a}} 
 \index{Shape@{Shape}!rotate@{rotate}}

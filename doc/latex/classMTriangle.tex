@@ -33,14 +33,13 @@ Collaboration diagram for M\+Triangle\+:\nopagebreak
 \mbox{\Hypertarget{classMTriangle_aad494b73728c03ca00e728b0c505a88f}\label{classMTriangle_aad494b73728c03ca00e728b0c505a88f}} 
 \hyperlink{classMTriangle_aad494b73728c03ca00e728b0c505a88f}{$\sim$\+M\+Triangle} () override
 \begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classMTriangle}{M\+Triangle}. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classMTriangle_adca17cfca7632c5967437a7c7e292598}\label{classMTriangle_adca17cfca7632c5967437a7c7e292598}} 
-\hyperlink{classMTriangle_adca17cfca7632c5967437a7c7e292598}{M\+Triangle} ()
+\hyperlink{classMTriangle_aa3d177f785a15aee1416d5b0382b2f23}{M\+Triangle} (M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+O\+R\+A\+N\+GE)
 \begin{DoxyCompactList}\small\item\em Constructor by default of \hyperlink{classMTriangle}{M\+Triangle}, make a \hyperlink{classMTriangle}{M\+Triangle} as default. \end{DoxyCompactList}\item 
-\hyperlink{classMTriangle_a428bc13e1f5299369e5c78602aae544b}{M\+Triangle} (const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&triangle)
+\hyperlink{classMTriangle_ab611bdde6afe8f0ab0b3308d36b2416c}{M\+Triangle} (const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&triangle, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+O\+R\+A\+N\+GE)
 \begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classMTriangle}{M\+Triangle}, requires a vector of S\+Triangles. \end{DoxyCompactList}\item 
-\hyperlink{classMTriangle_aaf64b05da66c9196dcddbd0e4791096f}{M\+Triangle} (\hyperlink{classPoint}{Point}$<$ double $>$ origin, double angular=0.\+0)
+\hyperlink{classMTriangle_a3c0ffb582fd22a3a673ec13e6575da28}{M\+Triangle} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&origin, double angular=0.\+0, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+O\+R\+A\+N\+GE)
 \begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classMTriangle}{M\+Triangle}, calls the deleguate Default Constructor. \end{DoxyCompactList}\item 
-void \hyperlink{classMTriangle_a1b029feefcf7e3febcdae179557b4c2e}{move} (\hyperlink{classPoint}{Point}$<$ double $>$ translation) override
+void \hyperlink{classMTriangle_aa21f0514a8af2beba5ecf2ea5a22a4ef}{move} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&translation) override
 \begin{DoxyCompactList}\small\item\em Move the \hyperlink{classMTriangle}{M\+Triangle} by point translation. \end{DoxyCompactList}\item 
 void \hyperlink{classMTriangle_a4be29553eeddf99c367b1ec220bc102b}{rotate} (double angular) override
 \begin{DoxyCompactList}\small\item\em Rotate the \hyperlink{classMTriangle}{M\+Triangle} with specified angular. \end{DoxyCompactList}\item 
@@ -50,7 +49,7 @@ void \hyperlink{classMTriangle_a6258b96b57c1892098f84a5a5fa0f976}{flip} () overr
 \mbox{\Hypertarget{classMTriangle_a7801818e2188f39ba89a2a82df8fa5fe}\label{classMTriangle_a7801818e2188f39ba89a2a82df8fa5fe}} 
 void \hyperlink{classMTriangle_a7801818e2188f39ba89a2a82df8fa5fe}{draw} () override
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
-bool \hyperlink{classMTriangle_a8d3d737a903823bf1a631cbb004a799c}{is\+\_\+in\+\_\+shape} (\hyperlink{classPoint}{Point}$<$ double $>$ click) override
+bool \hyperlink{classMTriangle_a4cc4cd63537ead67a0b68d1ab25111b4}{is\+\_\+in\+\_\+shape} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&click) override
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
 std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classMTriangle_a90351a097a20d35f9d6c4d05ad881e48}{get\+\_\+\+Points} () override
 \begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
@@ -64,11 +63,26 @@ Class of the medium triangle.
 This class manage everything about the medium triangle 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classMTriangle_a428bc13e1f5299369e5c78602aae544b}\label{classMTriangle_a428bc13e1f5299369e5c78602aae544b}} 
+\mbox{\Hypertarget{classMTriangle_aa3d177f785a15aee1416d5b0382b2f23}\label{classMTriangle_aa3d177f785a15aee1416d5b0382b2f23}} 
 \index{M\+Triangle@{M\+Triangle}!M\+Triangle@{M\+Triangle}}
 \index{M\+Triangle@{M\+Triangle}!M\+Triangle@{M\+Triangle}}
-\subsubsection{\texorpdfstring{M\+Triangle()}{MTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily M\+Triangle\+::\+M\+Triangle (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{M\+Triangle()}{MTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily M\+Triangle\+::\+M\+Triangle (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+ORANGE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor by default of \hyperlink{classMTriangle}{M\+Triangle}, make a \hyperlink{classMTriangle}{M\+Triangle} as default. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \+: Optional parameter, color of this shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMTriangle_ab611bdde6afe8f0ab0b3308d36b2416c}\label{classMTriangle_ab611bdde6afe8f0ab0b3308d36b2416c}} 
+\index{M\+Triangle@{M\+Triangle}!M\+Triangle@{M\+Triangle}}
+\index{M\+Triangle@{M\+Triangle}!M\+Triangle@{M\+Triangle}}
+\subsubsection{\texorpdfstring{M\+Triangle()}{MTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily M\+Triangle\+::\+M\+Triangle (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&}]{triangle,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+ORANGE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -78,12 +92,14 @@ Constructor of \hyperlink{classMTriangle}{M\+Triangle}, requires a vector of S\+
 \begin{DoxyParams}{Parameters}
 {\em triangle} & \+: The \hyperlink{classMTriangle}{M\+Triangle} will created with a vector of \hyperlink{classSTriangle}{S\+Triangle} (4) \\
 \hline
+{\em color} & \+: Optional parameter, color of this shape \\
+\hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classMTriangle_aaf64b05da66c9196dcddbd0e4791096f}\label{classMTriangle_aaf64b05da66c9196dcddbd0e4791096f}} 
+\mbox{\Hypertarget{classMTriangle_a3c0ffb582fd22a3a673ec13e6575da28}\label{classMTriangle_a3c0ffb582fd22a3a673ec13e6575da28}} 
 \index{M\+Triangle@{M\+Triangle}!M\+Triangle@{M\+Triangle}}
 \index{M\+Triangle@{M\+Triangle}!M\+Triangle@{M\+Triangle}}
-\subsubsection{\texorpdfstring{M\+Triangle()}{MTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily M\+Triangle\+::\+M\+Triangle (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{M\+Triangle()}{MTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily M\+Triangle\+::\+M\+Triangle (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0},  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+ORANGE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -94,6 +110,8 @@ Constructor of \hyperlink{classMTriangle}{M\+Triangle}, calls the deleguate Defa
 {\em origin} & \+: shifts the figure of a translation of the origin \\
 \hline
 {\em angular} & \+: Optional parameter (angular=0.\+0 as default), rotate the figure with an angular \\
+\hline
+{\em color} & \+: Optional parameter, color of this shape \\
 \hline
 \end{DoxyParams}
 
@@ -116,11 +134,11 @@ Return a vector of points of this shape
 
 Implements \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{Shape}.
 
-\mbox{\Hypertarget{classMTriangle_a8d3d737a903823bf1a631cbb004a799c}\label{classMTriangle_a8d3d737a903823bf1a631cbb004a799c}} 
+\mbox{\Hypertarget{classMTriangle_a4cc4cd63537ead67a0b68d1ab25111b4}\label{classMTriangle_a4cc4cd63537ead67a0b68d1ab25111b4}} 
 \index{M\+Triangle@{M\+Triangle}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
 \index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!M\+Triangle@{M\+Triangle}}
 \subsubsection{\texorpdfstring{is\+\_\+in\+\_\+shape()}{is\_in\_shape()}}
-{\footnotesize\ttfamily bool M\+Triangle\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool M\+Triangle\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -136,13 +154,13 @@ true if click is in this shape, false if not
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classShape_abcce23128cd35989468a88a7194152af}{Shape}.
+Implements \hyperlink{classShape_aa09a621da090e42840b4bec7ffb27620}{Shape}.
 
-\mbox{\Hypertarget{classMTriangle_a1b029feefcf7e3febcdae179557b4c2e}\label{classMTriangle_a1b029feefcf7e3febcdae179557b4c2e}} 
+\mbox{\Hypertarget{classMTriangle_aa21f0514a8af2beba5ecf2ea5a22a4ef}\label{classMTriangle_aa21f0514a8af2beba5ecf2ea5a22a4ef}} 
 \index{M\+Triangle@{M\+Triangle}!move@{move}}
 \index{move@{move}!M\+Triangle@{M\+Triangle}}
 \subsubsection{\texorpdfstring{move()}{move()}}
-{\footnotesize\ttfamily void M\+Triangle\+::move (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void M\+Triangle\+::move (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -155,7 +173,7 @@ Move the \hyperlink{classMTriangle}{M\+Triangle} by point translation.
 \end{DoxyParams}
 
 
-Implements \hyperlink{classShape_a52649731b2cb7b67315882d5e005f7e8}{Shape}.
+Implements \hyperlink{classShape_a1f447acd6219cb10b9b7a40371519c46}{Shape}.
 
 \mbox{\Hypertarget{classMTriangle_a4be29553eeddf99c367b1ec220bc102b}\label{classMTriangle_a4be29553eeddf99c367b1ec220bc102b}} 
 \index{M\+Triangle@{M\+Triangle}!rotate@{rotate}}

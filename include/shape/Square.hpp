@@ -57,6 +57,7 @@ public:
 
     /*!
      * @brief Constructor by default of Square, make a Square as default
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit Square(MLV_Color color = MLV_COLOR_PINK);
@@ -64,6 +65,7 @@ public:
     /*!
      * @brief Constructor of Square, requires a vector of STriangles
      * @param triangle : The Square will created with a vector of STriangle (4)
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit Square(const std::vector<STriangle> &triangle, MLV_Color color = MLV_COLOR_PINK);
@@ -72,6 +74,7 @@ public:
      * @brief Constructor of Square, calls the deleguate Default Constructor
      * @param origin : shifts the figure of a translation of the origin
      * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit Square(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_PINK);

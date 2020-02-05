@@ -25,6 +25,7 @@
 class Game {
 private:
     std::vector<Shape *> shapes; /*!< Game main loop requires a vector of Shape - Abstract Class*/
+    Objective objective; /*!< Objective of the game */
     //std::vector <std::tr1::shared_ptr<Shape> >
     int w; /*!< Width of the window*/
     int h; /*!< Height of the window*/

@@ -5,6 +5,7 @@
 #include <iostream>
 
 #include <game/Game.hpp>
+#include <game/Objective.hpp>
 #include <shape/STriangle.hpp>
 #include <shape/MTriangle.hpp>
 #include <shape/GTriangle.hpp>
@@ -30,11 +31,17 @@ Game::Game(const int w, const int h) {
 }
 
 void Game::draw() {
+    std::vector<Shape *> const vec_objective = objective.get_Objective();
     MLV_clear_window(MLV_COLOR_BLACK);
+
+    for (auto &shape : vec_objective){
+        shape->draw();
+    }
 
     for (auto &shape : shapes) {
         shape->draw();
     }
+
     MLV_actualise_window();
 }
 
@@ -71,6 +78,12 @@ void Game::main_loop() {
 
 
         draw();
+
+        if (Objective::boardCompleted(objective.get_Objective(),shapes )){
+            exit = true;
+            MLV_wait_seconds(3);
+            continue;
+        }
 
         if (prev_state != cur_state) {
             if (cur_state == MLV_PRESSED) {

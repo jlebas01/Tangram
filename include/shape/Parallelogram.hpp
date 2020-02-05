@@ -57,6 +57,7 @@ public:
 
     /*!
      * @brief Constructor by default of Parallelogram, make a Parallelogram as default
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit Parallelogram(MLV_Color color = MLV_COLOR_BLUE);
@@ -64,6 +65,7 @@ public:
     /*!
      * @brief Constructor of Parallelogram, requires a vector of STriangles
      * @param triangle : The Parallelogram will created with a vector of STriangle (4)
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit Parallelogram(const std::vector<STriangle> &triangle, MLV_Color color = MLV_COLOR_BLUE);
@@ -72,6 +74,7 @@ public:
      * @brief Constructor of Parallelogram, calls the deleguate Default Constructor
      * @param origin : shifts the figure of a translation of the origin
      * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit Parallelogram(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_BLUE);

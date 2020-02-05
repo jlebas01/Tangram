@@ -75,15 +75,17 @@ public:
 
     /*!
      * @brief Constructor by default of MTriangle, make a STriangle as default
+     * @param color : Optional parameter, color of this shape
      */
 
-    explicit STriangle(MLV_Color _color = MLV_COLOR_GREEN);
+    explicit STriangle(MLV_Color color = MLV_COLOR_GREEN);
 
     /*!
      * @brief Constructor of STriangle, requires 3 points
      * @param p1 : First point of the STriangle
      * @param p2 : Second point of the STriangle
      * @param p3 : Third point of the STriangle
+     * @param color : Optional parameter, color of this shape
      */
 
     STriangle(const Point<double> &p1, const Point<double> &p2, const Point<double> &p3, MLV_Color color = MLV_COLOR_GREEN);
@@ -91,6 +93,7 @@ public:
     /*!
      * @brief Constructor of STriangle, requires a vector of 3 points
      * @param points : vector of 3 points
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit STriangle(const std::vector<Point<double>> &points, MLV_Color color = MLV_COLOR_GREEN);
@@ -99,6 +102,7 @@ public:
      * @brief Constructor of STriangle, calls the deleguate Default Constructor
      * @param origin : shifts the figure of a translation of the origin
      * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
+     * @param color : Optional parameter, color of this shape
      */
 
     explicit STriangle(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_GREEN);

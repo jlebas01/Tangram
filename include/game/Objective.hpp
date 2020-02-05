@@ -24,8 +24,14 @@
 
 class Objective {
 private:
-    std::vector<Shape> piece; /*!< Objective requires a vector of Shape to check when the game end*/
+    std::vector<Shape *> shapes; /*!< Objective requires a vector of Shape to check when the game end*/
 public:
+
+    /*!
+     * @brief Constructor of an objective
+     */
+
+    Objective();
 
     /*!
      * @brief Check if the board is completed
@@ -34,7 +40,15 @@ public:
      * @return True if the board is completed, false if not
      */
 
-    bool boardCompleted(std::vector<Shape*> objective, std::vector<Shape*> game);
+    static bool boardCompleted(const std::vector<Shape *> &objective, const std::vector<Shape *> &game);
+
+    /*!
+     * @brief Get all shape of the objective
+     * @return Return a vector of shape of the objective
+     */
+
+    std::vector<Shape *> get_Objective();
+
 };
 
 

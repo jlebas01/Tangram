@@ -33,14 +33,13 @@ Collaboration diagram for Parallelogram\+:\nopagebreak
 \mbox{\Hypertarget{classParallelogram_ae3c14e58b92406f4679234817313a26c}\label{classParallelogram_ae3c14e58b92406f4679234817313a26c}} 
 \hyperlink{classParallelogram_ae3c14e58b92406f4679234817313a26c}{$\sim$\+Parallelogram} () override
 \begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classParallelogram}{Parallelogram}. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParallelogram_a42d1890b0805548b554abfcc90214f02}\label{classParallelogram_a42d1890b0805548b554abfcc90214f02}} 
-\hyperlink{classParallelogram_a42d1890b0805548b554abfcc90214f02}{Parallelogram} ()
+\hyperlink{classParallelogram_a2200aa50be9b13ccb40a371a3d2b119b}{Parallelogram} (M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+UE)
 \begin{DoxyCompactList}\small\item\em Constructor by default of \hyperlink{classParallelogram}{Parallelogram}, make a \hyperlink{classParallelogram}{Parallelogram} as default. \end{DoxyCompactList}\item 
-\hyperlink{classParallelogram_ac028ca113b67af9295c474a93bc13b86}{Parallelogram} (const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&triangle)
+\hyperlink{classParallelogram_ac60d6fc9e306b202e9c679d170d6d063}{Parallelogram} (const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&triangle, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+UE)
 \begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classParallelogram}{Parallelogram}, requires a vector of S\+Triangles. \end{DoxyCompactList}\item 
-\hyperlink{classParallelogram_afe4d20e613d01f409788d1875afcd8a8}{Parallelogram} (\hyperlink{classPoint}{Point}$<$ double $>$ origin, double angular=0.\+0)
+\hyperlink{classParallelogram_aeed0c83e942a4869b79d4baab00c2874}{Parallelogram} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&origin, double angular=0.\+0, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+UE)
 \begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classParallelogram}{Parallelogram}, calls the deleguate Default Constructor. \end{DoxyCompactList}\item 
-void \hyperlink{classParallelogram_a982287c8d16ec47951db62b07eb77feb}{move} (\hyperlink{classPoint}{Point}$<$ double $>$ translation) override
+void \hyperlink{classParallelogram_ae8d51f9b629160df31c8a12c28da279e}{move} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&translation) override
 \begin{DoxyCompactList}\small\item\em Move the \hyperlink{classParallelogram}{Parallelogram} by point translation. \end{DoxyCompactList}\item 
 void \hyperlink{classParallelogram_ac498f6a15dea236ecc49bece023d17b0}{rotate} (double angular) override
 \begin{DoxyCompactList}\small\item\em Rotate the \hyperlink{classParallelogram}{Parallelogram} with specified angular. \end{DoxyCompactList}\item 
@@ -50,7 +49,7 @@ void \hyperlink{classParallelogram_a51f002e90b7bf6c5d875cc094c22f7c1}{flip} () o
 \mbox{\Hypertarget{classParallelogram_a73e3657bf024787b57ccdd8035a6fdef}\label{classParallelogram_a73e3657bf024787b57ccdd8035a6fdef}} 
 void \hyperlink{classParallelogram_a73e3657bf024787b57ccdd8035a6fdef}{draw} () override
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
-bool \hyperlink{classParallelogram_a9ba441d86d6311bba489e998c87dddf6}{is\+\_\+in\+\_\+shape} (\hyperlink{classPoint}{Point}$<$ double $>$ click) override
+bool \hyperlink{classParallelogram_a585b14ca0f65ed3a5007e8c1df3c6bc4}{is\+\_\+in\+\_\+shape} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&click) override
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
 std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classParallelogram_a17c9986712806a8b07d90e444e0a543d}{get\+\_\+\+Points} () override
 \begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
@@ -64,11 +63,26 @@ Class of the parallelogram.
 This class manage everything about the \hyperlink{classParallelogram}{Parallelogram} 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classParallelogram_ac028ca113b67af9295c474a93bc13b86}\label{classParallelogram_ac028ca113b67af9295c474a93bc13b86}} 
+\mbox{\Hypertarget{classParallelogram_a2200aa50be9b13ccb40a371a3d2b119b}\label{classParallelogram_a2200aa50be9b13ccb40a371a3d2b119b}} 
 \index{Parallelogram@{Parallelogram}!Parallelogram@{Parallelogram}}
 \index{Parallelogram@{Parallelogram}!Parallelogram@{Parallelogram}}
-\subsubsection{\texorpdfstring{Parallelogram()}{Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Parallelogram\+::\+Parallelogram (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{Parallelogram()}{Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Parallelogram\+::\+Parallelogram (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+BLUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor by default of \hyperlink{classParallelogram}{Parallelogram}, make a \hyperlink{classParallelogram}{Parallelogram} as default. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \+: Optional parameter, color of this shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParallelogram_ac60d6fc9e306b202e9c679d170d6d063}\label{classParallelogram_ac60d6fc9e306b202e9c679d170d6d063}} 
+\index{Parallelogram@{Parallelogram}!Parallelogram@{Parallelogram}}
+\index{Parallelogram@{Parallelogram}!Parallelogram@{Parallelogram}}
+\subsubsection{\texorpdfstring{Parallelogram()}{Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Parallelogram\+::\+Parallelogram (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&}]{triangle,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+BLUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -78,12 +92,14 @@ Constructor of \hyperlink{classParallelogram}{Parallelogram}, requires a vector 
 \begin{DoxyParams}{Parameters}
 {\em triangle} & \+: The \hyperlink{classParallelogram}{Parallelogram} will created with a vector of \hyperlink{classSTriangle}{S\+Triangle} (4) \\
 \hline
+{\em color} & \+: Optional parameter, color of this shape \\
+\hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classParallelogram_afe4d20e613d01f409788d1875afcd8a8}\label{classParallelogram_afe4d20e613d01f409788d1875afcd8a8}} 
+\mbox{\Hypertarget{classParallelogram_aeed0c83e942a4869b79d4baab00c2874}\label{classParallelogram_aeed0c83e942a4869b79d4baab00c2874}} 
 \index{Parallelogram@{Parallelogram}!Parallelogram@{Parallelogram}}
 \index{Parallelogram@{Parallelogram}!Parallelogram@{Parallelogram}}
-\subsubsection{\texorpdfstring{Parallelogram()}{Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Parallelogram\+::\+Parallelogram (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{Parallelogram()}{Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Parallelogram\+::\+Parallelogram (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0},  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+BLUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -94,6 +110,8 @@ Constructor of \hyperlink{classParallelogram}{Parallelogram}, calls the deleguat
 {\em origin} & \+: shifts the figure of a translation of the origin \\
 \hline
 {\em angular} & \+: Optional parameter (angular=0.\+0 as default), rotate the figure with an angular \\
+\hline
+{\em color} & \+: Optional parameter, color of this shape \\
 \hline
 \end{DoxyParams}
 
@@ -116,11 +134,11 @@ Return a vector of points of this shape
 
 Implements \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{Shape}.
 
-\mbox{\Hypertarget{classParallelogram_a9ba441d86d6311bba489e998c87dddf6}\label{classParallelogram_a9ba441d86d6311bba489e998c87dddf6}} 
+\mbox{\Hypertarget{classParallelogram_a585b14ca0f65ed3a5007e8c1df3c6bc4}\label{classParallelogram_a585b14ca0f65ed3a5007e8c1df3c6bc4}} 
 \index{Parallelogram@{Parallelogram}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
 \index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!Parallelogram@{Parallelogram}}
 \subsubsection{\texorpdfstring{is\+\_\+in\+\_\+shape()}{is\_in\_shape()}}
-{\footnotesize\ttfamily bool Parallelogram\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Parallelogram\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -136,13 +154,13 @@ true if click is in this shape, false if not
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classShape_abcce23128cd35989468a88a7194152af}{Shape}.
+Implements \hyperlink{classShape_aa09a621da090e42840b4bec7ffb27620}{Shape}.
 
-\mbox{\Hypertarget{classParallelogram_a982287c8d16ec47951db62b07eb77feb}\label{classParallelogram_a982287c8d16ec47951db62b07eb77feb}} 
+\mbox{\Hypertarget{classParallelogram_ae8d51f9b629160df31c8a12c28da279e}\label{classParallelogram_ae8d51f9b629160df31c8a12c28da279e}} 
 \index{Parallelogram@{Parallelogram}!move@{move}}
 \index{move@{move}!Parallelogram@{Parallelogram}}
 \subsubsection{\texorpdfstring{move()}{move()}}
-{\footnotesize\ttfamily void Parallelogram\+::move (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ double $>$}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Parallelogram\+::move (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -155,7 +173,7 @@ Move the \hyperlink{classParallelogram}{Parallelogram} by point translation.
 \end{DoxyParams}
 
 
-Implements \hyperlink{classShape_a52649731b2cb7b67315882d5e005f7e8}{Shape}.
+Implements \hyperlink{classShape_a1f447acd6219cb10b9b7a40371519c46}{Shape}.
 
 \mbox{\Hypertarget{classParallelogram_ac498f6a15dea236ecc49bece023d17b0}\label{classParallelogram_ac498f6a15dea236ecc49bece023d17b0}} 
 \index{Parallelogram@{Parallelogram}!rotate@{rotate}}

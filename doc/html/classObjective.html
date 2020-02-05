@@ -60,6 +60,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classObjective-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Objective Class Reference</div>  </div>
@@ -73,30 +74,43 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a91feb56425727473a806419a45d600d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjective.html#a91feb56425727473a806419a45d600d6">boardCompleted</a> (std::vector&lt; <a class="el" href="classShape.html">Shape</a> *&gt; objective, std::vector&lt; <a class="el" href="classShape.html">Shape</a> *&gt; game)</td></tr>
-<tr class="memdesc:a91feb56425727473a806419a45d600d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the board is completed.  <a href="#a91feb56425727473a806419a45d600d6">More...</a><br /></td></tr>
-<tr class="separator:a91feb56425727473a806419a45d600d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadaa202961d23b2a6b36217104b79993"><td class="memItemLeft" align="right" valign="top"><a id="aadaa202961d23b2a6b36217104b79993"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjective.html#aadaa202961d23b2a6b36217104b79993">Objective</a> ()</td></tr>
+<tr class="memdesc:aadaa202961d23b2a6b36217104b79993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of an objective. <br /></td></tr>
+<tr class="separator:aadaa202961d23b2a6b36217104b79993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8549ee8afd9571567a12dc4ecfddbcc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classShape.html">Shape</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjective.html#af8549ee8afd9571567a12dc4ecfddbcc">get_Objective</a> ()</td></tr>
+<tr class="memdesc:af8549ee8afd9571567a12dc4ecfddbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all shape of the objective.  <a href="#af8549ee8afd9571567a12dc4ecfddbcc">More...</a><br /></td></tr>
+<tr class="separator:af8549ee8afd9571567a12dc4ecfddbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac7ad4e014ef1d141ab2102958d5ea2f6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjective.html#ac7ad4e014ef1d141ab2102958d5ea2f6">boardCompleted</a> (const std::vector&lt; <a class="el" href="classShape.html">Shape</a> *&gt; &amp;objective, const std::vector&lt; <a class="el" href="classShape.html">Shape</a> *&gt; &amp;game)</td></tr>
+<tr class="memdesc:ac7ad4e014ef1d141ab2102958d5ea2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the board is completed.  <a href="#ac7ad4e014ef1d141ab2102958d5ea2f6">More...</a><br /></td></tr>
+<tr class="separator:ac7ad4e014ef1d141ab2102958d5ea2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class of the board <a class="el" href="classObjective.html" title="Class of the board Objective. ">Objective</a>. </p>
 <p>This class manage everything about the objective </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a91feb56425727473a806419a45d600d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91feb56425727473a806419a45d600d6">&#9670;&nbsp;</a></span>boardCompleted()</h2>
+<a id="ac7ad4e014ef1d141ab2102958d5ea2f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7ad4e014ef1d141ab2102958d5ea2f6">&#9670;&nbsp;</a></span>boardCompleted()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Objective::boardCompleted </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classShape.html">Shape</a> *&gt;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classShape.html">Shape</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>objective</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classShape.html">Shape</a> *&gt;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classShape.html">Shape</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>game</em>&#160;</td>
         </tr>
         <tr>
@@ -105,6 +119,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Check if the board is completed. </p>
@@ -116,6 +135,26 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the board is completed, false if not </dd></dl>
+
+</div>
+</div>
+<a id="af8549ee8afd9571567a12dc4ecfddbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8549ee8afd9571567a12dc4ecfddbcc">&#9670;&nbsp;</a></span>get_Objective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classShape.html">Shape</a> * &gt; Objective::get_Objective </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all shape of the objective. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return a vector of shape of the objective </dd></dl>
 
 </div>
 </div>

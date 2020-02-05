@@ -12,7 +12,15 @@ Class of the board \hyperlink{classObjective}{Objective}.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{classObjective_a91feb56425727473a806419a45d600d6}{board\+Completed} (std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$$>$ objective, std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$$>$ game)
+\mbox{\Hypertarget{classObjective_aadaa202961d23b2a6b36217104b79993}\label{classObjective_aadaa202961d23b2a6b36217104b79993}} 
+\hyperlink{classObjective_aadaa202961d23b2a6b36217104b79993}{Objective} ()
+\begin{DoxyCompactList}\small\item\em Constructor of an objective. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$ $>$ \hyperlink{classObjective_af8549ee8afd9571567a12dc4ecfddbcc}{get\+\_\+\+Objective} ()
+\begin{DoxyCompactList}\small\item\em Get all shape of the objective. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classObjective_ac7ad4e014ef1d141ab2102958d5ea2f6}{board\+Completed} (const std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$$>$ \&objective, const std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$$>$ \&game)
 \begin{DoxyCompactList}\small\item\em Check if the board is completed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -22,11 +30,11 @@ Class of the board \hyperlink{classObjective}{Objective}.
 This class manage everything about the objective 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classObjective_a91feb56425727473a806419a45d600d6}\label{classObjective_a91feb56425727473a806419a45d600d6}} 
+\mbox{\Hypertarget{classObjective_ac7ad4e014ef1d141ab2102958d5ea2f6}\label{classObjective_ac7ad4e014ef1d141ab2102958d5ea2f6}} 
 \index{Objective@{Objective}!board\+Completed@{board\+Completed}}
 \index{board\+Completed@{board\+Completed}!Objective@{Objective}}
 \subsubsection{\texorpdfstring{board\+Completed()}{boardCompleted()}}
-{\footnotesize\ttfamily bool Objective\+::board\+Completed (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$$>$}]{objective,  }\item[{std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$$>$}]{game }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Objective\+::board\+Completed (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$$>$ \&}]{objective,  }\item[{const std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$$>$ \&}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -41,6 +49,19 @@ Check if the board is completed.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 True if the board is completed, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObjective_af8549ee8afd9571567a12dc4ecfddbcc}\label{classObjective_af8549ee8afd9571567a12dc4ecfddbcc}} 
+\index{Objective@{Objective}!get\+\_\+\+Objective@{get\+\_\+\+Objective}}
+\index{get\+\_\+\+Objective@{get\+\_\+\+Objective}!Objective@{Objective}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Objective()}{get\_Objective()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classShape}{Shape} $\ast$ $>$ Objective\+::get\+\_\+\+Objective (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all shape of the objective. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of shape of the objective 
 \end{DoxyReturn}
 
 
