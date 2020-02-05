@@ -13,6 +13,7 @@
  */
 
 #include <drawable/Shape.hpp>
+#include <string>
 
 /*!
  * @class Objective

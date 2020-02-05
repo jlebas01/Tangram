@@ -2,7 +2,7 @@
 // Created by jlebas01 on 15/01/2020.
 //
 
-
+#include <parser/Loader.hpp>
 #include <drawable/Menu.hpp>
 #include <drawable/Button.hpp>
 #include <MLV/MLV_all.h>
@@ -13,11 +13,10 @@
 #define W_HEIGHT 800
 
 static int load_callback(int v) {
-    Loader loader;
     Game g(W_WIDTH, W_HEIGHT);
 
-    loader.parse_file("test.txt", g);
-    // g.main_loop();
+    Loader::parse_file("test.txt", g);
+    g.main_loop();
     return 1;
 }
 

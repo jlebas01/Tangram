@@ -85,12 +85,8 @@ void STriangle::move(Point<double> translation) {
 void STriangle::rotate(double angular) {
     center.operator=(this->center_point());
     for (auto &it : points) {
-        /*it = Point<double>((it.x - center.x) * cos(angular) - (it.y - center.y) * sin(angular) + center.x,
-                           (it.y - center.y) * sin(angular) + (it.x - center.y) * cos(angular) + center.y);*/
         it = Point<double>((cos(angular) * (it.x - center.x)) - (sin(angular) * (it.y - center.y)) + center.x,
                            (sin(angular) * (it.x - center.x)) + (cos(angular) * (it.y - center.y)) + center.y);
-        /*newx = (cos(angular) * (it.x - center.x)) - (sin(angular) * (it.y - center.y)) + center.x;
-        newy = (sin(angular) * (it.x - center.x)) + (cos(angular) * (it.y - center.y)) + center.y;*/
     }
     center = this->center_point();
 }

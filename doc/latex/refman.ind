@@ -61,14 +61,14 @@
   \item {include/drawable/\+Shape.\+hpp}, \hyperpage{51}
   \item {include/game/\+Game.\+hpp}, \hyperpage{52}
   \item {include/game/\+Objective.\+hpp}, \hyperpage{53}
-  \item {include/parser/\+Loader.\+hpp}, \hyperpage{55}
-  \item {include/parser/\+Save.\+hpp}, \hyperpage{56}
+  \item {include/parser/\+Loader.\+hpp}, \hyperpage{54}
+  \item {include/parser/\+Save.\+hpp}, \hyperpage{55}
   \item {include/shape/\+G\+Triangle.\+hpp}, \hyperpage{56}
   \item {include/shape/\+M\+Triangle.\+hpp}, \hyperpage{57}
   \item {include/shape/\+Parallelogram.\+hpp}, \hyperpage{58}
   \item {include/shape/\+S\+Triangle.\+hpp}, \hyperpage{60}
   \item {include/shape/\+Square.\+hpp}, \hyperpage{59}
-  \item {include/utils/\+Point.\+hpp}, \hyperpage{62}
+  \item {include/utils/\+Point.\+hpp}, \hyperpage{61}
   \item {is\+\_\+in\+\_\+shape}
     \subitem {G\+Triangle}, \hyperpage{16}
     \subitem {M\+Triangle}, \hyperpage{23}

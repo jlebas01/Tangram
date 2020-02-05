@@ -1,0 +1,3 @@
+STriangle 50 50 25.5
+GTriangle 200 200 0
+Square 0 0 0

@@ -130,9 +130,9 @@
 \contentsline {subsection}{\numberline {6.4.1}Detailed Description}{53}{subsection.6.4.1}% 
 \contentsline {section}{\numberline {6.5}include/game/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Objective.hpp File Reference}{53}{section.6.5}% 
 \contentsline {subsection}{\numberline {6.5.1}Detailed Description}{54}{subsection.6.5.1}% 
-\contentsline {section}{\numberline {6.6}include/parser/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loader.hpp File Reference}{55}{section.6.6}% 
-\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{56}{subsection.6.6.1}% 
-\contentsline {section}{\numberline {6.7}include/parser/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Save.hpp File Reference}{56}{section.6.7}% 
+\contentsline {section}{\numberline {6.6}include/parser/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loader.hpp File Reference}{54}{section.6.6}% 
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{55}{subsection.6.6.1}% 
+\contentsline {section}{\numberline {6.7}include/parser/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Save.hpp File Reference}{55}{section.6.7}% 
 \contentsline {subsection}{\numberline {6.7.1}Detailed Description}{56}{subsection.6.7.1}% 
 \contentsline {section}{\numberline {6.8}include/shape/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Triangle.hpp File Reference}{56}{section.6.8}% 
 \contentsline {subsection}{\numberline {6.8.1}Detailed Description}{57}{subsection.6.8.1}% 
@@ -144,6 +144,6 @@
 \contentsline {subsection}{\numberline {6.11.1}Detailed Description}{60}{subsection.6.11.1}% 
 \contentsline {section}{\numberline {6.12}include/shape/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Triangle.hpp File Reference}{60}{section.6.12}% 
 \contentsline {subsection}{\numberline {6.12.1}Detailed Description}{61}{subsection.6.12.1}% 
-\contentsline {section}{\numberline {6.13}include/utils/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Point.hpp File Reference}{62}{section.6.13}% 
-\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{62}{subsection.6.13.1}% 
+\contentsline {section}{\numberline {6.13}include/utils/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Point.hpp File Reference}{61}{section.6.13}% 
+\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{61}{subsection.6.13.1}% 
 \contentsline {chapter}{Index}{63}{section*.67}% 

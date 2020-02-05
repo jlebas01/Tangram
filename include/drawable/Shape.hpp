@@ -12,6 +12,7 @@
  */
 
 #include <vector>
+#include <string>
 #include <utils/Point.hpp>
 #include <drawable/Drawable.h>
 
