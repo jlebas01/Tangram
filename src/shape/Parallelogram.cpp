@@ -13,24 +13,27 @@ Parallelogram::~Parallelogram() {
     std::vector<STriangle>().swap(triangle);
 }
 
-Parallelogram::Parallelogram(const std::vector<STriangle> &triangles) {
-    for (auto &it : triangles) {
+Parallelogram::Parallelogram(const MLV_Color _color) {
+    this->triangle.emplace_back(STriangle(Point<double>(100.0, 0.0), Point<double>(100.0, 100.0),
+                                          Point<double>(0.0, 100.0), _color));
+    this->triangle.emplace_back(STriangle(Point<double>(0.0, 200.0), Point<double>(100.0, 100.0),
+                                          Point<double>(0.0, 100.0), _color));
+    this->color = _color;
+}
+
+Parallelogram::Parallelogram(const std::vector<STriangle> &_triangle, const MLV_Color _color) {
+    for (auto &it : _triangle) {
         this->triangle.push_back(it);
     }
+    this->color = _color;
 }
 
-Parallelogram::Parallelogram() {
-    this->triangle.emplace_back(STriangle(Point<double>(100.0, 0.0), Point<double>(100.0, 100.0),
-                                          Point<double>(0.0, 100.0)));
-    this->triangle.emplace_back(STriangle(Point<double>(0.0, 200.0), Point<double>(100.0, 100.0),
-                                          Point<double>(0.0, 100.0)));
-}
-
-Parallelogram::Parallelogram(const Point<double> origin, const double angular) : Parallelogram() {
+Parallelogram::Parallelogram(const Point<double> &origin, const double angular, const MLV_Color _color) : Parallelogram() {
     parameter(origin, angular);
+    this->color = _color;
 }
 
-void Parallelogram::parameter(const Point<double> origin, const double angular = 0.0) {
+void Parallelogram::parameter(const Point<double> &origin, const double angular) {
     rotate(angular);
     move({origin.x, origin.y});
 }
@@ -44,13 +47,13 @@ Point<double> Parallelogram::center_shape() {
     return point_rotate;
 }
 
-void Parallelogram::move(Point<double> translation) {
+void Parallelogram::move(const Point<double> &translation) {
     for (auto &it : triangle) {
         it.move(translation);
     }
 }
 
-void Parallelogram::rotate(double angular) {
+void Parallelogram::rotate(const double angular) {
     Point<double> const point_rotate = center_shape();
     for (auto &it : triangle) {
         it.rotate(angular, point_rotate);
@@ -65,11 +68,11 @@ void Parallelogram::flip() {
 
 void Parallelogram::draw() {
     for (auto &it : triangle) {
-        it.draw(MLV_COLOR_BLUE);
+        it.draw(this->color);
     }
 }
 
-bool Parallelogram::is_in_shape(const Point<double> click) {
+bool Parallelogram::is_in_shape(const Point<double> &click) {
     for (auto &it : triangle) {
         if (it.is_in_triangle(click)) {
             return true;
@@ -80,8 +83,8 @@ bool Parallelogram::is_in_shape(const Point<double> click) {
 
 std::vector<Point<double>> Parallelogram::get_Points() {
     std::vector<Point<double>> list_points;
-    for (auto &it: triangle){
-        for (auto &it2 : it.get_Points()){
+    for (auto &it: triangle) {
+        for (auto &it2 : it.get_Points()) {
             list_points.push_back(it2);
         }
     }

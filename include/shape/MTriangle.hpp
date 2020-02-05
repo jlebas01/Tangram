@@ -30,13 +30,15 @@ class MTriangle : public Shape {
 
         std::vector<STriangle> triangle; /*!< MTriangle is make by multiple triangles*/
 
+        MLV_Color color; /*!< Color of the MTriangle */
+
         /*!
          * @brief Parameter the constructor
          * @param origin : shifts the figure of a translation of the origin
          * @param angular : rotate the figure with an angular
          */
 
-        void parameter(Point<double> origin, double angular);
+        void parameter(const Point<double> &origin, double angular = 0.0);
 
         /*!
          * @brief Compute the center of this shape
@@ -57,14 +59,14 @@ class MTriangle : public Shape {
          * @brief Constructor by default of MTriangle, make a MTriangle as default
          */
 
-        MTriangle();
+        explicit MTriangle(MLV_Color color = MLV_COLOR_ORANGE);
 
         /*!
          * @brief Constructor of MTriangle, requires a vector of STriangles
          * @param triangle : The MTriangle will created with a vector of STriangle (4)
          */
 
-        explicit MTriangle(const std::vector<STriangle> &triangle);
+        explicit MTriangle(const std::vector<STriangle> &triangle, MLV_Color color = MLV_COLOR_ORANGE);
 
         /*!
          * @brief Constructor of MTriangle, calls the deleguate Default Constructor
@@ -72,14 +74,14 @@ class MTriangle : public Shape {
          * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
          */
 
-        explicit MTriangle(Point<double> origin, double angular = 0.0);
+        explicit MTriangle(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_ORANGE);
 
         /*!
          * @brief Move the MTriangle by point translation
          * @param translation : Every points of this shape will be translate by this parameter
          */
 
-        void move(Point<double> translation) override;
+        void move(const Point<double> &translation) override;
 
         /*!
          * @brief Rotate the MTriangle with specified angular
@@ -106,7 +108,7 @@ class MTriangle : public Shape {
          * @return true if click is in this shape, false if not
          */
 
-        bool is_in_shape(Point<double> click) override;
+        bool is_in_shape(const Point<double> &click) override;
 
         /*!
          * @brief Get points of this shape

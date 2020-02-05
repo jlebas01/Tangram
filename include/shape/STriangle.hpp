@@ -31,13 +31,15 @@ private:
 
     Point<double> center; /*!< STriangle has a center point*/
 
+    MLV_Color color; /*!< Color of the STriangle */
+
     /*!
      * @brief Parameter the constructor
      * @param origin : shifts the figure of a translation of the origin
      * @param angular : rotate the figure with an angular
      */
 
-    void parameter(Point<double> origin, double angular);
+    void parameter(const Point<double> &origin, double angular = 0.0);
 
     /*!
      * @brief Compute the center point only for the STriangle
@@ -54,7 +56,7 @@ private:
      * @return Return a double signed (+ or -)
      */
 
-    double sign(Point<double> p1, Point<double> p2, Point<double> p3);
+    double sign(const Point<double> &p1, const Point<double> &p2, const Point<double> &p3);
 
     /*!
      * @brief Rotate the STriangle with specified angular
@@ -75,7 +77,7 @@ public:
      * @brief Constructor by default of MTriangle, make a STriangle as default
      */
 
-    STriangle();
+    explicit STriangle(MLV_Color _color = MLV_COLOR_GREEN);
 
     /*!
      * @brief Constructor of STriangle, requires 3 points
@@ -84,14 +86,14 @@ public:
      * @param p3 : Third point of the STriangle
      */
 
-    STriangle(Point<double> p1, Point<double> p2, Point<double> p3);
+    STriangle(const Point<double> &p1, const Point<double> &p2, const Point<double> &p3, MLV_Color color = MLV_COLOR_GREEN);
 
     /*!
      * @brief Constructor of STriangle, requires a vector of 3 points
      * @param points : vector of 3 points
      */
 
-    explicit STriangle(const std::vector<Point<double>> &points);
+    explicit STriangle(const std::vector<Point<double>> &points, MLV_Color color = MLV_COLOR_GREEN);
 
     /*!
      * @brief Constructor of STriangle, calls the deleguate Default Constructor
@@ -99,14 +101,14 @@ public:
      * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
      */
 
-    explicit STriangle(Point<double> origin, double angular = 0.0);
+    explicit STriangle(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_GREEN);
 
     /*!
      * @brief Move the MTriangle by point translation
      * @param translation : Every points of this shape will be translate by this parameter
      */
 
-    void move(Point<double> translation) override;
+    void move(const Point<double> &translation) override;
 
     /*!
      * @brief Rotate an STriangle with specified angular, used only for an other shape
@@ -114,7 +116,7 @@ public:
      * @param center_point : Rotate an STriangle around this point
      */
 
-    void rotate(double angular, Point<double> center_point);
+    void rotate(double angular, const Point<double> &center_point);
 
     /*!
      * @brief Flip the figure as symmetry
@@ -141,7 +143,7 @@ public:
     * @return true if click is in this shape, false if not
     */
 
-    bool is_in_shape(Point<double> click) override;
+    bool is_in_shape(const Point<double> &click) override;
 
     /*!
      * @brief Check if a point is in this STriangle
@@ -149,7 +151,7 @@ public:
      * @return true if click is in this shape, false if not
      */
 
-    bool is_in_triangle(Point<double> click);
+    bool is_in_triangle(const Point<double> &click);
 
     /*!
      * @brief Convert all data of MTriangle in a string
@@ -165,7 +167,7 @@ public:
      * @return Return the distance between these two points
      */
 
-    double computeDistance(Point<double> point1, Point<double> point2);
+    double computeDistance(const Point<double> &point1, const Point<double> &point2);
 
     /*!
      * @brief Get every points of this STriangle

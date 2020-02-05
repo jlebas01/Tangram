@@ -37,7 +37,7 @@ public :
      * @param translation : Every points of this shape will be translate by this parameter
      */
 
-    virtual void move(Point<double> translation) = 0;
+    virtual void move(const Point<double> &translation) = 0;
 
     /*!
      * @brief Pure virtual function. Rotate the GTriangle with specified angular
@@ -58,7 +58,7 @@ public :
      * @return true if click is in this shape, false if not
      */
 
-    virtual bool is_in_shape(Point<double> point) = 0;
+    virtual bool is_in_shape(const Point<double> &point) = 0;
 
     /*!
      * @brief Pure virtual function. Get all points of this shape

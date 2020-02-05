@@ -30,13 +30,15 @@ private:
 
     std::vector<STriangle> triangle; /*!< Parallelogram is make by multiple triangles*/
 
+    MLV_Color color; /*!< Color of the Parallelogram */
+
     /*!
      * @brief Parameter the constructor
      * @param origin : shifts the figure of a translation of the origin
      * @param angular : rotate the figure with an angular
      */
 
-    void parameter(Point<double> origin, double angular);
+    void parameter(const Point<double> &origin, double angular = 0.0);
 
     /*!
      * @brief Compute the center of this shape
@@ -57,14 +59,14 @@ public:
      * @brief Constructor by default of Parallelogram, make a Parallelogram as default
      */
 
-    Parallelogram();
+    explicit Parallelogram(MLV_Color color = MLV_COLOR_BLUE);
 
     /*!
      * @brief Constructor of Parallelogram, requires a vector of STriangles
      * @param triangle : The Parallelogram will created with a vector of STriangle (4)
      */
 
-    explicit Parallelogram(const std::vector<STriangle> &triangle);
+    explicit Parallelogram(const std::vector<STriangle> &triangle, MLV_Color color = MLV_COLOR_BLUE);
 
     /*!
      * @brief Constructor of Parallelogram, calls the deleguate Default Constructor
@@ -72,14 +74,14 @@ public:
      * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
      */
 
-    explicit Parallelogram(Point<double> origin, double angular = 0.0);
+    explicit Parallelogram(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_BLUE);
 
     /*!
      * @brief Move the Parallelogram by point translation
      * @param translation : Every points of this shape will be translate by this parameter
      */
 
-    void move(Point<double> translation) override;
+    void move(const Point<double> &translation) override;
 
     /*!
      * @brief Rotate the Parallelogram with specified angular
@@ -106,7 +108,7 @@ public:
      * @return true if click is in this shape, false if not
      */
 
-    bool is_in_shape(Point<double> click) override;
+    bool is_in_shape(const Point<double> &click) override;
 
     /*!
      * @brief Get points of this shape

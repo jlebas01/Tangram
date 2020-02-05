@@ -15,24 +15,27 @@ Square::~Square() {
     std::vector<STriangle>().swap(triangle);
 }
 
-Square::Square(const std::vector<STriangle> &triangles) {
-    for (auto &it : triangles) {
+Square::Square(const std::vector<STriangle> &_triangle, MLV_Color _color) {
+    for (auto &it : _triangle) {
         this->triangle.push_back(it);
     }
+    this->color = _color;
 }
 
-Square::Square() {
+Square::Square(MLV_Color _color) {
     this->triangle.emplace_back(STriangle(Point<double>(0.0, 0.0), Point<double>(0.0, 100.0),
-                                          Point<double>(100.0, 0.0)));
+                                          Point<double>(100.0, 0.0), _color));
     this->triangle.emplace_back(STriangle(Point<double>(100.0, 100.0), Point<double>(0.0, 100.0),
-                                          Point<double>(100.0, 0.0)));
+                                          Point<double>(100.0, 0.0), _color));
+    this->color = _color;
 }
 
-Square::Square(const Point<double> origin, const double angular) : Square() {
+Square::Square(const Point<double> &origin, const double angular, MLV_Color _color) : Square() {
     parameter(origin, angular);
+    this->color = _color;
 }
 
-void Square::parameter(const Point<double> origin, const double angular = 0.0) {
+void Square::parameter(const Point<double> &origin, const double angular) {
     rotate(angular);
     move({origin.x, origin.y});
 }
@@ -46,7 +49,7 @@ Point<double> Square::center_shape() {
     return point_rotate;
 }
 
-void Square::move(Point<double> translation) {
+void Square::move(const Point<double> &translation) {
     for (auto &it : triangle) {
         it.move(translation);
     }
@@ -67,11 +70,11 @@ void Square::flip() {
 
 void Square::draw() {
     for (auto &it : triangle) {
-        it.draw(MLV_COLOR_PINK);
+        it.draw(this->color);
     }
 }
 
-bool Square::is_in_shape(const Point<double> click) {
+bool Square::is_in_shape(const Point<double> &click) {
     for (auto &it : triangle) {
         if (it.is_in_triangle(click)) {
             return true;

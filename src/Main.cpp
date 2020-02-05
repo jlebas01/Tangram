@@ -7,15 +7,14 @@
 #include <drawable/Button.hpp>
 #include <MLV/MLV_all.h>
 #include <game/Game.hpp>
-#include <parser/Loader.hpp>
 
 #define W_WIDTH 1000
 #define W_HEIGHT 800
 
 static int load_callback(int v) {
     Game g(W_WIDTH, W_HEIGHT);
-
-    Loader::parse_file("test.txt", g);
+    std::string filename("test.txt");
+    Loader::parse_file(filename, g);
     g.main_loop();
     return 1;
 }
@@ -53,6 +52,7 @@ static Menu create_main_menu() {
 }
 
 int main(int argc, char *argv[]) {
+
     Menu m = create_main_menu();
 
     MLV_create_window("Tangram", nullptr, W_WIDTH, W_HEIGHT);
