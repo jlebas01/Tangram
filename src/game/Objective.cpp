@@ -11,11 +11,11 @@
 #include <algorithm>
 
 Objective::Objective(){
-    (this->shapes).push_back(new Parallelogram({50.0, 50.0}, 0.0, MLV_COLOR_GRAY70));
-    (this->shapes).push_back(new STriangle({50.0, 50.0}, 0.0, MLV_COLOR_GRAY70));
-    (this->shapes).push_back(new GTriangle({50.0, 50.0}, 0.0, MLV_COLOR_GRAY70));
-    (this->shapes).push_back(new MTriangle({100.0, 50.0}, 0.0, MLV_COLOR_GRAY70));
-    (this->shapes).push_back(new Square({100.0, 50.0}, 0.0, MLV_COLOR_GRAY70));
+    (this->shapes).push_back(new STriangle({250.0, 350.0}, 0.0, MLV_COLOR_GRAY70));
+    (this->shapes).push_back(new Parallelogram({350.0, 350.0}, 0.0, MLV_COLOR_GRAY70));
+   // (this->shapes).push_back(new GTriangle({50.0, 50.0}, 0.0, MLV_COLOR_GRAY70));
+   // (this->shapes).push_back(new MTriangle({100.0, 50.0}, 0.0, MLV_COLOR_GRAY70));
+   // (this->shapes).push_back(new Square({100.0, 50.0}, 0.0, MLV_COLOR_GRAY70));*/
 }
 
 bool Objective::boardCompleted(const std::vector<Shape*> &objective, const std::vector<Shape*> &game) {

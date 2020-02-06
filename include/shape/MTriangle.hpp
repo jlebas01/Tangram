@@ -120,6 +120,8 @@ class MTriangle : public Shape {
 
         std::vector<Point<double>> get_Points() override;
 
+        bool set_Points(const Point<double> &ref, const Point<double> &changed) override;
+
         /*!
          * @brief Convert all data of MTriangle in a string
          * @return Return a string which contains every points of this shape

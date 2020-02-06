@@ -6,6 +6,7 @@
 #include <tuple>
 
 #include <shape/STriangle.hpp>
+#include <iostream>
 
 STriangle::~STriangle() {
     points.clear(); //delete all elements in vector triangle (calling destructor of any elements in this vector)
@@ -147,13 +148,22 @@ std::string STriangle::toString() {
     return _points;
 }
 
-double STriangle::computeDistance(const Point<double> &point1, const Point<double> &point2) {
-    return sqrt(pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2));
-}
-
 std::vector<Point<double>> STriangle::get_Points() {
     std::vector<Point<double>> const vec_points = {this->points};
     return vec_points;
+}
+
+bool STriangle::set_Points(const Point<double> &ref, const Point<double> &changed) {
+    bool status = false;
+    for (auto &it : points) {
+        if (it == ref) {
+            it.x = changed.x;
+            it.y = changed.y;
+            //std::cout << toString() << std::endl;
+            status = true;
+        }
+    }
+    return status;
 }
 
 bool STriangle::is_in_shape(const Point<double> &click) {
@@ -183,7 +193,3 @@ bool STriangle::is_in_triangle(const Point<double> &click) {
 double STriangle::sign(const Point<double> &p1, const Point<double> &p2, const Point<double> &p3) {
     return (p1.x - p3.x) * (p2.y - p3.y) - (p2.x - p3.x) * (p1.y - p3.y);
 }
-
-
-
-

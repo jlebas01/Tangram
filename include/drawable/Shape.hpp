@@ -13,6 +13,7 @@
 
 #include <vector>
 #include <string>
+#include <cmath>
 #include <utils/Point.hpp>
 #include <drawable/Drawable.h>
 
@@ -31,6 +32,17 @@ public :
      */
 
     virtual ~Shape() = 0;
+
+    /*!
+     * @brief Compute distance between 2 points
+     * @param point1 : First point
+     * @param point2 : Second point
+     * @return Return the distance between these two points
+     */
+
+    static double computeDistance(const Point<double> &point1, const Point<double> &point2) {
+        return sqrt(pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2));
+    }
 
     /*!
      * @brief Pure virtual function. Move the Shape by point translation
@@ -66,6 +78,13 @@ public :
      */
 
     virtual std::vector<Point<double>> get_Points() = 0;
+
+    /*!
+     * @brief Pure virtual function. Get all points of this shape
+     * @return Return a vector of points of this shape
+     */
+
+    virtual bool set_Points(const Point<double> &ref, const Point<double> &changed) = 0;
 
     /*!
      * @brief Pure virtual function. Convert all data of GTriangle in a string

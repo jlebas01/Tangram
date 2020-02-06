@@ -98,6 +98,14 @@ std::vector<Point<double>> GTriangle::get_Points() {
     return list_points;
 }
 
+bool GTriangle::set_Points(const Point<double> &ref, const Point<double> &changed) {
+    bool status = false;
+    for (auto &it : triangle){
+        status |= it.set_Points(ref,changed);
+    }
+    return status;
+}
+
 std::string GTriangle::toString() {
     std::string t;
     for (auto[it, i] = std::tuple{triangle.begin(), 1}; it != triangle.end(); i++, it++) {
@@ -105,4 +113,3 @@ std::string GTriangle::toString() {
     }
     return t;
 }
-

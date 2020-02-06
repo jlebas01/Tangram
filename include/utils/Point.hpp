@@ -1,6 +1,7 @@
 #ifndef TANGRAM_POINT_H
 #define TANGRAM_POINT_H
 
+#include <functional>
 /*!
  * @file Point.hpp
  * @brief Point for every shape and menu
@@ -28,15 +29,16 @@ public:
 
     Point() : x(0), y(0) {}
 
+
     /*!
      * @brief Constructor for a point. Requires a X and a Y coordinate
-     * @param x : Template X coordinate
-     * @param y : Template Y coordinate
+     * @param _x : Template X coordinate
+     * @param _y : Template Y coordinate
      */
 
-    Point(const T x, const T y) {
-        this->x = x;
-        this->y = y;
+    Point(const T _x, const T _y) {
+        this->x = _x;
+        this->y = _y;
     }
 
     /*!
@@ -90,6 +92,18 @@ public:
     bool operator>(const Point<T> p) const {
         return this->x > p.x && this->y > p.y;
     }
+
+
+    struct hash_point {
+        std::size_t operator()(const Point<double> &p) const {
+            return std::hash<double>()(p.x) ^ std::hash<double>()(p.y);
+        }
+
+        bool operator()(const Point<double> &p1, const Point<double> &p2) const {
+            return p1.x == p2.x && p1.y == p2.y;
+        }
+    };
 };
+
 
 #endif

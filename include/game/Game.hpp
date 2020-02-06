@@ -14,6 +14,7 @@
 
 #include <game/Objective.hpp>
 #include <drawable/Shape.hpp>
+#include <functional>
 
 /*!
  * @class Game
@@ -64,6 +65,8 @@ public:
      */
 
     void clear();
+
+    void stick(Shape *shape);
 };
 
 

@@ -165,20 +165,13 @@ public:
     std::string toString() override;
 
     /*!
-     * @brief Compute distance between 2 points
-     * @param point1 : First point
-     * @param point2 : Second point
-     * @return Return the distance between these two points
-     */
-
-    double computeDistance(const Point<double> &point1, const Point<double> &point2);
-
-    /*!
      * @brief Get every points of this STriangle
      * @return Return a vector of these points
      */
 
     std::vector<Point<double>> get_Points() override;
+
+    bool set_Points(const Point<double> &ref, const Point<double> &changed) override;
 
     /*!
      * @brief Compute the center point of N points
