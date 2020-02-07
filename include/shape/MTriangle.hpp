@@ -30,6 +30,10 @@ class MTriangle : public Shape {
 
         std::vector<STriangle> triangle; /*!< MTriangle is make by multiple triangles*/
 
+        std::vector<Point<double>> points; /*!< MTriangle has multiple STriangle with multiple Point */
+
+        bool update; /*!< Boolean if vector points needs to be update */
+
         MLV_Color color; /*!< Color of the MTriangle */
 
         /*!

@@ -15,6 +15,7 @@
 #include <game/Objective.hpp>
 #include <drawable/Shape.hpp>
 #include <functional>
+#include <unordered_set>
 
 /*!
  * @class Game
@@ -27,6 +28,8 @@ class Game {
 private:
     std::vector<Shape *> shapes; /*!< Game main loop requires a vector of Shape - Abstract Class*/
     Objective objective; /*!< Objective of the game */
+    std::unordered_set<Point<double>, Point<double>::hash_point, std::equal_to<>> set_objective; /*!< Set of objective of the game */
+    std::vector<Shape *> objective_shape; /*!< Vector of objective shape */
     //std::vector <std::tr1::shared_ptr<Shape> >
     int w; /*!< Width of the window*/
     int h; /*!< Height of the window*/

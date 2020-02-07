@@ -18,6 +18,7 @@ GTriangle::GTriangle(const std::vector<STriangle> &_triangle, const MLV_Color _c
         this->triangle.push_back(it);
     }
     this->color = _color;
+    this->update = true;
 }
 
 GTriangle::GTriangle(const MLV_Color _color) {
@@ -33,11 +34,13 @@ GTriangle::GTriangle(const MLV_Color _color) {
     this->triangle.emplace_back(STriangle(Point<double>(200.0, 200.0), Point<double>(200.0, 100.0),
                                           Point<double>(100.0, 100.0), _color));
     this->color = _color;
+    this->update = true;
 }
 
 GTriangle::GTriangle(const Point<double> &origin, const double angular, const MLV_Color _color) : GTriangle() {
     parameter(origin, angular);
     this->color = _color;
+    this->update = true;
 }
 
 void GTriangle::parameter(const Point<double> &origin, const double angular) {
@@ -58,6 +61,7 @@ void GTriangle::move(const Point<double> &translation) {
     for (auto &it : triangle) {
         it.move(translation);
     }
+    update = true;
 }
 
 void GTriangle::rotate(const double angular) {
@@ -65,12 +69,14 @@ void GTriangle::rotate(const double angular) {
     for (auto &it : triangle) {
         it.rotate(angular, point_rotate);
     }
+    update = true;
 }
 
 void GTriangle::flip() {
     for (auto &it : triangle) {
         it.flip();
     }
+    update = true;
 }
 
 void GTriangle::draw() {
@@ -89,12 +95,16 @@ bool GTriangle::is_in_shape(const Point<double> &click) {
 }
 
 std::vector<Point<double>> GTriangle::get_Points() {
-    std::vector<Point<double>> list_points;
-    for (auto &it: triangle) {
-        for (auto &it2 : it.get_Points()) {
-            list_points.push_back(it2);
+    if (update){
+        points.clear();
+        update = false;
+        for (auto &it: triangle){
+            for (auto &it2 : it.get_Points()){
+                points.push_back(it2);
+            }
         }
     }
+    std::vector<Point<double>> const list_points = points;
     return list_points;
 }
 

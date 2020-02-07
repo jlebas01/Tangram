@@ -20,6 +20,7 @@ MTriangle::MTriangle(const std::vector<STriangle> &_triangle, const MLV_Color _c
         this->triangle.push_back(it);
     }
     this->color = _color;
+    this->update = true;
 }
 
 MTriangle::MTriangle(const MLV_Color _color) {
@@ -28,11 +29,13 @@ MTriangle::MTriangle(const MLV_Color _color) {
     this->triangle.emplace_back(STriangle(Point<double>(200.0, 0.0), Point<double>(100.0, 0.0),
                                           Point<double>(100.0, 100.0), _color));
     this->color = _color;
+    this->update = true;
 }
 
 MTriangle::MTriangle(const Point<double> &origin, const double angular, const MLV_Color _color) : MTriangle() {
     parameter(origin, angular);
     this->color = _color;
+    this->update = true;
 }
 
 void MTriangle::parameter(const Point<double> &origin, const double angular) {
@@ -54,6 +57,7 @@ void MTriangle::move(const Point<double> &translation) {
     for (auto &it : triangle) {
         it.move(translation);
     }
+    update = true;
 }
 
 void MTriangle::rotate(const double angular) {
@@ -61,12 +65,14 @@ void MTriangle::rotate(const double angular) {
     for (auto &it : triangle) {
         it.rotate(angular, point_rotate);
     }
+    update = true;
 }
 
 void MTriangle::flip() {
     for (auto &it : triangle) {
         it.flip();
     }
+    update = true;
 }
 
 void MTriangle::draw() {
@@ -85,19 +91,23 @@ bool MTriangle::is_in_shape(const Point<double> &click) {
 }
 
 std::vector<Point<double>> MTriangle::get_Points() {
-    std::vector<Point<double>> list_points;
-    for (auto &it: triangle){
-        for (auto &it2 : it.get_Points()){
-            list_points.push_back(it2);
+    if (update) {
+        points.clear();
+        update = false;
+        for (auto &it: triangle) {
+            for (auto &it2 : it.get_Points()) {
+                points.push_back(it2);
+            }
         }
     }
+    std::vector<Point<double>> const list_points = points;
     return list_points;
 }
 
 bool MTriangle::set_Points(const Point<double> &ref, const Point<double> &changed) {
     bool status = false;
-    for (auto &it : triangle){
-        status |= it.set_Points(ref,changed);
+    for (auto &it : triangle) {
+        status |= it.set_Points(ref, changed);
     }
     return status;
 }

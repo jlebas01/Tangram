@@ -30,6 +30,10 @@ private:
 
     std::vector<STriangle> triangle; /*!< Square is make by multiple triangles*/
 
+    std::vector<Point<double>> points; /*!< Square has multiple STriangle with multiple Point */
+
+    bool update; /*!< Boolean if vector points needs to be update */
+
     MLV_Color color; /*!< Color of the Square */
 
     /*!
