@@ -64,12 +64,31 @@ public:
     void add_shape(Shape* s);
 
     /*!
-     * @brief Clear the game / the board
+     * @brief Clear the game / the board and the objective
      */
 
     void clear();
 
+    /*!
+     * @brief Stick the shape to nearest objective points
+     * @param shape : Last shape rotated or moved
+     */
+
     void stick(Shape *shape);
+
+    /*!
+     * @brief Set the objective of the game
+     * @param vec_objective : Vector of Objective for new game;
+     */
+
+    void set_Objective(const std::vector<Shape*> &vec_objective);
+
+    /*!
+     * @brief Get the color of the objective of the game
+     * @return Return the color of the objective of the game
+     */
+
+    MLV_Color get_Objective_Color();
 };
 
 

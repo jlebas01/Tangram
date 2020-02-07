@@ -14,6 +14,7 @@
 
 #include <drawable/Shape.hpp>
 #include <string>
+#include <MLV/MLV_color.h>
 
 /*!
  * @class Objective
@@ -25,13 +26,23 @@
 class Objective {
 private:
     std::vector<Shape *> shapes; /*!< Objective requires a vector of Shape to check when the game end*/
+    MLV_Color color; /*!< Objective requires a color to draw these shapes */
 public:
 
     /*!
-     * @brief Constructor of an objective
+     * @brief Constructor of an objective, default constructor
+     * @param color : color of the objective shape
      */
 
-    Objective();
+    explicit Objective(MLV_Color color=MLV_COLOR_GRAY70);
+
+    /*!
+     * @brief Constructor of an objective
+     * @param objective : Objective requires a vector of Shape
+     * @param color : color of the objective shape
+     */
+
+    explicit Objective(std::vector<Shape*> objective, MLV_Color color = MLV_COLOR_GRAY70);
 
     /*!
      * @brief Check if the board is completed
@@ -49,6 +60,20 @@ public:
 
     std::vector<Shape *> get_Objective();
 
+    /*!
+     * @brief Set an Objective for a new game
+     * @param objective : Objective to update
+     * @param vec_objective :Vector of new Shape for the new Objective
+     */
+
+    static void set_Objective(Objective * objective, const std::vector<Shape*> &vec_objective);
+
+    /*!
+     * @brief Get the color of an Objective
+     * @return Return the color of an Objective
+     */
+
+    MLV_Color get_Color();
 };
 
 

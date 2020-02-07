@@ -26,9 +26,9 @@ Game::Game(const int _w, const int _h) {
     //ajouter toutes les formes
     (this->shapes).push_back(new STriangle({50.0, 50.0}, 0.0));
     (this->shapes).push_back(new Parallelogram({50.0, 50.0}, 0.0));
-    //(this->shapes).push_back(new GTriangle({50.0, 50.0}, 0.0));
-    //(this->shapes).push_back(new MTriangle({50.0, 50.0}, 0.0));
-    //(this->shapes).push_back(new Square({50.0, 50.0}, 0.0));*/
+  /*  (this->shapes).push_back(new GTriangle({50.0, 50.0}, 0.0));
+    (this->shapes).push_back(new MTriangle({50.0, 50.0}, 0.0));
+    (this->shapes).push_back(new Square({50.0, 50.0}, 0.0));*/
 
     for (auto &any_shape : objective.get_Objective()) {
         this->objective_shape.push_back(any_shape);
@@ -90,7 +90,7 @@ void Game::main_loop() {
 
         draw();
 
-        if (Objective::boardCompleted(objective.get_Objective(), shapes)) {
+        if (Objective::boardCompleted(objective_shape, shapes)) {
             exit = true;
             MLV_wait_seconds(3);
             continue;
@@ -129,6 +129,24 @@ void Game::main_loop() {
 
 void Game::add_shape(Shape *s) {
     shapes.push_back(s);
+}
+
+void Game::set_Objective(const std::vector<Shape*> &vec_objective){
+    objective_shape.clear();
+    set_objective.clear();
+    Objective::set_Objective(&objective, vec_objective);
+
+    objective_shape.insert(objective_shape.end(), vec_objective.begin(), vec_objective.end());
+
+    for (auto &any_shape : this->objective_shape) {
+        for (auto &point : any_shape->get_Points()) {
+            this->set_objective.insert(point);
+        }
+    }
+}
+
+MLV_Color Game::get_Objective_Color(){
+    return objective.get_Color();
 }
 
 void Game::clear() {
@@ -170,6 +188,7 @@ void Game::stick(Shape *shape) {
     if (map_distance.size() >= set_shape->size()) {
         for (auto &p_min : map_distance) {
             shape->set_Points(p_min.second.first, p_min.first);
+            shape->move(Point<double>(0.0,0.0));
         }
     }
 }
