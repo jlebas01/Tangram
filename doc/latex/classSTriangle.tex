@@ -59,10 +59,10 @@ bool \hyperlink{classSTriangle_a6824246f68484d8d8159a3315df257a4}{is\+\_\+in\+\_
 \begin{DoxyCompactList}\small\item\em Check if a point is in this \hyperlink{classSTriangle}{S\+Triangle}. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classSTriangle_a32e4cee65f52d9ee4121c78dc97d86ab}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classMTriangle}{M\+Triangle} in a string. \end{DoxyCompactList}\item 
-double \hyperlink{classSTriangle_af96113a4a0ecfbb8fabd8d23b6e3384a}{compute\+Distance} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&point1, const \hyperlink{classPoint}{Point}$<$ double $>$ \&point2)
-\begin{DoxyCompactList}\small\item\em Compute distance between 2 points. \end{DoxyCompactList}\item 
 std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classSTriangle_a08f667453619b506b5c16745a9aa5ecf}{get\+\_\+\+Points} () override
 \begin{DoxyCompactList}\small\item\em Get every points of this \hyperlink{classSTriangle}{S\+Triangle}. \end{DoxyCompactList}\item 
+bool \hyperlink{classSTriangle_acab6926951bd8f2558e4c658610c0e51}{set\+\_\+\+Points} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{Point}$<$ double $>$ \&changed) override
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
 \hyperlink{classPoint}{Point}$<$ double $>$ \hyperlink{classSTriangle_a61228a7f80ee90de80dff8c4e046f51f}{get\+\_\+center\+\_\+point} ()
 \begin{DoxyCompactList}\small\item\em Get the current center point of this \hyperlink{classSTriangle}{S\+Triangle}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
@@ -170,26 +170,6 @@ Compute the center point of N points.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Return the center point of these N points 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classSTriangle_af96113a4a0ecfbb8fabd8d23b6e3384a}\label{classSTriangle_af96113a4a0ecfbb8fabd8d23b6e3384a}} 
-\index{S\+Triangle@{S\+Triangle}!compute\+Distance@{compute\+Distance}}
-\index{compute\+Distance@{compute\+Distance}!S\+Triangle@{S\+Triangle}}
-\subsubsection{\texorpdfstring{compute\+Distance()}{computeDistance()}}
-{\footnotesize\ttfamily double S\+Triangle\+::compute\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{point1,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{point2 }\end{DoxyParamCaption})}
-
-
-
-Compute distance between 2 points. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em point1} & \+: First point \\
-\hline
-{\em point2} & \+: Second point \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Return the distance between these two points 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classSTriangle_a7eddfc5b9e5b2951ba71b085345d87d1}\label{classSTriangle_a7eddfc5b9e5b2951ba71b085345d87d1}} 
 \index{S\+Triangle@{S\+Triangle}!draw@{draw}}
@@ -312,6 +292,23 @@ Rotate an \hyperlink{classSTriangle}{S\+Triangle} with specified angular, used o
 {\em center\+\_\+point} & \+: Rotate an \hyperlink{classSTriangle}{S\+Triangle} around this point \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classSTriangle_acab6926951bd8f2558e4c658610c0e51}\label{classSTriangle_acab6926951bd8f2558e4c658610c0e51}} 
+\index{S\+Triangle@{S\+Triangle}!set\+\_\+\+Points@{set\+\_\+\+Points}}
+\index{set\+\_\+\+Points@{set\+\_\+\+Points}!S\+Triangle@{S\+Triangle}}
+\subsubsection{\texorpdfstring{set\+\_\+\+Points()}{set\_Points()}}
+{\footnotesize\ttfamily bool S\+Triangle\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pure virtual function. Get all points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{Shape}.
+
 \mbox{\Hypertarget{classSTriangle_a32e4cee65f52d9ee4121c78dc97d86ab}\label{classSTriangle_a32e4cee65f52d9ee4121c78dc97d86ab}} 
 \index{S\+Triangle@{S\+Triangle}!to\+String@{to\+String}}
 \index{to\+String@{to\+String}!S\+Triangle@{S\+Triangle}}

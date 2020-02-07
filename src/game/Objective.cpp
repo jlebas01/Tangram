@@ -11,22 +11,22 @@
 #include <algorithm>
 #include <iostream>
 
-Objective::Objective(MLV_Color _color){
+Objective::Objective(const MLV_Color _color){
     this->color = _color;
-    (this->shapes).push_back(new STriangle({250.0, 350.0}, 0.0, _color));
-    (this->shapes).push_back(new Parallelogram({350.0, 350.0}, 0.0, _color));
- /*   (this->shapes).push_back(new GTriangle({50.0, 50.0}, 0.0, _color));
-    (this->shapes).push_back(new MTriangle({100.0, 50.0}, 0.0, _color));
-    (this->shapes).push_back(new Square({100.0, 50.0}, 0.0, _color));*/
+    (this->shapes).push_back(std::shared_ptr<Shape>(new STriangle({250.0, 350.0}, 0.0, _color)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(new Parallelogram({350.0, 350.0}, 0.0, _color)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(new GTriangle({50.0, 50.0}, 0.0, _color)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(new MTriangle({100.0, 50.0}, 0.0, _color)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(new Square({100.0, 50.0}, 0.0, _color)));
 }
 
-Objective::Objective(std::vector<Shape*> objective, MLV_Color _color){
+Objective::Objective(const std::vector<std::shared_ptr<Shape>> &objective, const MLV_Color _color){
     this->color = _color;
     this->shapes.insert(this->shapes.end(), objective.begin(), objective.end());
 
 }
 
-bool Objective::boardCompleted(const std::vector<Shape*> &objective, const std::vector<Shape*> &game) {
+bool Objective::boardCompleted(const std::vector<std::shared_ptr<Shape>> &objective, const std::vector<std::shared_ptr<Shape>> &game) {
     std::vector<Point<double>> points_objective;
     std::vector<Point<double>> points_game;
 
@@ -50,8 +50,8 @@ bool Objective::boardCompleted(const std::vector<Shape*> &objective, const std::
     return std::is_permutation( points_objective.begin(), points_objective.end(), points_game.begin(), points_game.end());
 }
 
-std::vector<Shape *> Objective::get_Objective(){
-    std::vector<Shape *> const vec_shape = shapes;
+std::vector<std::shared_ptr<Shape>> Objective::get_Objective(){
+    std::vector<std::shared_ptr<Shape>> const vec_shape = shapes;
     return shapes;
 }
 
@@ -60,6 +60,6 @@ MLV_Color Objective::get_Color(){
     return _color;
 }
 
-void Objective::set_Objective(Objective *objective, const std::vector<Shape *> &vec_objective) {
+void Objective::set_Objective(Objective *objective, const std::vector<std::shared_ptr<Shape>> &vec_objective) {
     objective = new Objective(vec_objective);
 }

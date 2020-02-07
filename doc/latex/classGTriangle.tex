@@ -53,8 +53,11 @@ bool \hyperlink{classGTriangle_abb6f7243155483cc6de301931e87475a}{is\+\_\+in\+\_
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
 std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classGTriangle_add4581d1b52836142de5817de4d52d17}{get\+\_\+\+Points} () override
 \begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
+bool \hyperlink{classGTriangle_adb9dae329128600209c54cc4587480ee}{set\+\_\+\+Points} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{Point}$<$ double $>$ \&changed) override
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classGTriangle_a8381aeea39fac0d52ad9e0d45b791b3b}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classGTriangle}{G\+Triangle} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -193,6 +196,23 @@ Rotate the \hyperlink{classGTriangle}{G\+Triangle} with specified angular.
 
 
 Implements \hyperlink{classShape_a2dea8616fd40f2d69fd208715921982a}{Shape}.
+
+\mbox{\Hypertarget{classGTriangle_adb9dae329128600209c54cc4587480ee}\label{classGTriangle_adb9dae329128600209c54cc4587480ee}} 
+\index{G\+Triangle@{G\+Triangle}!set\+\_\+\+Points@{set\+\_\+\+Points}}
+\index{set\+\_\+\+Points@{set\+\_\+\+Points}!G\+Triangle@{G\+Triangle}}
+\subsubsection{\texorpdfstring{set\+\_\+\+Points()}{set\_Points()}}
+{\footnotesize\ttfamily bool G\+Triangle\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pure virtual function. Get all points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{Shape}.
 
 \mbox{\Hypertarget{classGTriangle_a8381aeea39fac0d52ad9e0d45b791b3b}\label{classGTriangle_a8381aeea39fac0d52ad9e0d45b791b3b}} 
 \index{G\+Triangle@{G\+Triangle}!to\+String@{to\+String}}

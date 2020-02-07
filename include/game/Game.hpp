@@ -16,6 +16,7 @@
 #include <drawable/Shape.hpp>
 #include <functional>
 #include <unordered_set>
+#include <memory>
 
 /*!
  * @class Game
@@ -26,11 +27,11 @@
 
 class Game {
 private:
-    std::vector<Shape *> shapes; /*!< Game main loop requires a vector of Shape - Abstract Class*/
+  //  std::vector<Shape *> shapes; /*!< Game main loop requires a vector of Shape - Abstract Class*/
     Objective objective; /*!< Objective of the game */
     std::unordered_set<Point<double>, Point<double>::hash_point, std::equal_to<>> set_objective; /*!< Set of objective of the game */
-    std::vector<Shape *> objective_shape; /*!< Vector of objective shape */
-    //std::vector <std::tr1::shared_ptr<Shape> >
+    std::vector<std::shared_ptr<Shape>> objective_shape; /*!< Vector of objective shape */
+    std::vector <std::shared_ptr<Shape>> shapes;
     int w; /*!< Width of the window*/
     int h; /*!< Height of the window*/
 
@@ -61,7 +62,7 @@ public:
      * @param s : Shape to add
      */
 
-    void add_shape(Shape* s);
+    void add_shape(std::shared_ptr<Shape> s);
 
     /*!
      * @brief Clear the game / the board and the objective
@@ -74,14 +75,14 @@ public:
      * @param shape : Last shape rotated or moved
      */
 
-    void stick(Shape *shape);
+    void stick(const std::shared_ptr<Shape>& shape);
 
     /*!
      * @brief Set the objective of the game
      * @param vec_objective : Vector of Objective for new game;
      */
 
-    void set_Objective(const std::vector<Shape*> &vec_objective);
+    void set_Objective(const std::vector<std::shared_ptr<Shape>> &vec_objective);
 
     /*!
      * @brief Get the color of the objective of the game

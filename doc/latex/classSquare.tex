@@ -53,8 +53,11 @@ bool \hyperlink{classSquare_ada046df2d9fb92286d106d4b3475980a}{is\+\_\+in\+\_\+s
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
 std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classSquare_a2a8fb1bfd2f3464cee813ec8b277506e}{get\+\_\+\+Points} () override
 \begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
+bool \hyperlink{classSquare_ac474644483fa85f7a4f39969f34868fe}{set\+\_\+\+Points} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{Point}$<$ double $>$ \&changed) override
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classSquare_aa5d7db8004bba3c400f57513d93b21d4}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classSquare}{Square} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -193,6 +196,23 @@ Rotate the \hyperlink{classSquare}{Square} with specified angular.
 
 
 Implements \hyperlink{classShape_a2dea8616fd40f2d69fd208715921982a}{Shape}.
+
+\mbox{\Hypertarget{classSquare_ac474644483fa85f7a4f39969f34868fe}\label{classSquare_ac474644483fa85f7a4f39969f34868fe}} 
+\index{Square@{Square}!set\+\_\+\+Points@{set\+\_\+\+Points}}
+\index{set\+\_\+\+Points@{set\+\_\+\+Points}!Square@{Square}}
+\subsubsection{\texorpdfstring{set\+\_\+\+Points()}{set\_Points()}}
+{\footnotesize\ttfamily bool Square\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pure virtual function. Get all points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{Shape}.
 
 \mbox{\Hypertarget{classSquare_aa5d7db8004bba3c400f57513d93b21d4}\label{classSquare_aa5d7db8004bba3c400f57513d93b21d4}} 
 \index{Square@{Square}!to\+String@{to\+String}}

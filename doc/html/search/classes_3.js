@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loader',['Loader',['../classLoader.html',1,'']]]
+  ['hash_5fpoint',['hash_point',['../structPoint_1_1hash__point.html',1,'Point']]]
 ];

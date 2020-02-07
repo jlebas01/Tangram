@@ -53,8 +53,11 @@ bool \hyperlink{classParallelogram_a585b14ca0f65ed3a5007e8c1df3c6bc4}{is\+\_\+in
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
 std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classParallelogram_a17c9986712806a8b07d90e444e0a543d}{get\+\_\+\+Points} () override
 \begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
+bool \hyperlink{classParallelogram_ab74583703a60e4b798d7048aa684f44e}{set\+\_\+\+Points} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{Point}$<$ double $>$ \&changed) override
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classParallelogram_a9caae0044f23d8a1e87b1a78d852c37f}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classParallelogram}{Parallelogram} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -193,6 +196,23 @@ Rotate the \hyperlink{classParallelogram}{Parallelogram} with specified angular.
 
 
 Implements \hyperlink{classShape_a2dea8616fd40f2d69fd208715921982a}{Shape}.
+
+\mbox{\Hypertarget{classParallelogram_ab74583703a60e4b798d7048aa684f44e}\label{classParallelogram_ab74583703a60e4b798d7048aa684f44e}} 
+\index{Parallelogram@{Parallelogram}!set\+\_\+\+Points@{set\+\_\+\+Points}}
+\index{set\+\_\+\+Points@{set\+\_\+\+Points}!Parallelogram@{Parallelogram}}
+\subsubsection{\texorpdfstring{set\+\_\+\+Points()}{set\_Points()}}
+{\footnotesize\ttfamily bool Parallelogram\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pure virtual function. Get all points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{Shape}.
 
 \mbox{\Hypertarget{classParallelogram_a9caae0044f23d8a1e87b1a78d852c37f}\label{classParallelogram_a9caae0044f23d8a1e87b1a78d852c37f}} 
 \index{Parallelogram@{Parallelogram}!to\+String@{to\+String}}

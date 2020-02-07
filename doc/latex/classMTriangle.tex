@@ -53,8 +53,11 @@ bool \hyperlink{classMTriangle_a4cc4cd63537ead67a0b68d1ab25111b4}{is\+\_\+in\+\_
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
 std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classMTriangle_a90351a097a20d35f9d6c4d05ad881e48}{get\+\_\+\+Points} () override
 \begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
+bool \hyperlink{classMTriangle_aec40d088d077bfb14f94895be871dfdf}{set\+\_\+\+Points} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{Point}$<$ double $>$ \&changed) override
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classMTriangle_a7d1fd825592dffa6ac05b3398a8c105a}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classMTriangle}{M\+Triangle} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -193,6 +196,23 @@ Rotate the \hyperlink{classMTriangle}{M\+Triangle} with specified angular.
 
 
 Implements \hyperlink{classShape_a2dea8616fd40f2d69fd208715921982a}{Shape}.
+
+\mbox{\Hypertarget{classMTriangle_aec40d088d077bfb14f94895be871dfdf}\label{classMTriangle_aec40d088d077bfb14f94895be871dfdf}} 
+\index{M\+Triangle@{M\+Triangle}!set\+\_\+\+Points@{set\+\_\+\+Points}}
+\index{set\+\_\+\+Points@{set\+\_\+\+Points}!M\+Triangle@{M\+Triangle}}
+\subsubsection{\texorpdfstring{set\+\_\+\+Points()}{set\_Points()}}
+{\footnotesize\ttfamily bool M\+Triangle\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pure virtual function. Get all points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{Shape}.
 
 \mbox{\Hypertarget{classMTriangle_a7d1fd825592dffa6ac05b3398a8c105a}\label{classMTriangle_a7d1fd825592dffa6ac05b3398a8c105a}} 
 \index{M\+Triangle@{M\+Triangle}!to\+String@{to\+String}}

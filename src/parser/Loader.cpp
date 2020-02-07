@@ -30,7 +30,7 @@ bool Loader::parse_file(const std::string &filename, Game &game) {
     std::ifstream file;
     std::string shape;
 
-    std::vector<Shape *> vec_objective;
+    std::vector<std::shared_ptr<Shape>> vec_objective;
     double x = 0.0, y = 0.0, angular = 0.0;
 
     game.clear();
@@ -42,24 +42,24 @@ bool Loader::parse_file(const std::string &filename, Game &game) {
             char *buf = const_cast<char *>(shape.c_str());
             switch (str2int(buf)) {
                 case str2int("STriangle") :
-                    game.add_shape(new STriangle());
-                    vec_objective.push_back(new STriangle(Point<double>(x, y), angular, game.get_Objective_Color()));
+                    game.add_shape(std::shared_ptr<Shape>(new STriangle()));
+                    vec_objective.push_back(std::shared_ptr<Shape>(new STriangle(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
                 case str2int("MTriangle") :
-                    game.add_shape(new MTriangle());
-                    vec_objective.push_back(new MTriangle(Point<double>(x, y), angular, game.get_Objective_Color()));
+                    game.add_shape(std::shared_ptr<Shape>(new MTriangle()));
+                    vec_objective.push_back(std::shared_ptr<Shape>(new MTriangle(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
                 case str2int("GTriangle") :
-                    game.add_shape(new GTriangle());
-                    vec_objective.push_back(new GTriangle(Point<double>(x, y), angular, game.get_Objective_Color()));
+                    game.add_shape(std::shared_ptr<Shape>(new GTriangle()));
+                    vec_objective.push_back(std::shared_ptr<Shape>(new GTriangle(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
                 case str2int("Square") :
-                    game.add_shape(new Square());
-                    vec_objective.push_back(new Square(Point<double>(x, y), angular, game.get_Objective_Color()));
+                    game.add_shape(std::shared_ptr<Shape>(new Square()));
+                    vec_objective.push_back(std::shared_ptr<Shape>(new Square(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
                 case str2int("Parallelogram") :
-                    game.add_shape(new Parallelogram());
-                    vec_objective.push_back(new Parallelogram(Point<double>(x, y), angular, game.get_Objective_Color()));
+                    game.add_shape(std::shared_ptr<Shape>(new Parallelogram()));
+                    vec_objective.push_back(std::shared_ptr<Shape>(new Parallelogram(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
             }
         }

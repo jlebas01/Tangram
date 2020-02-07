@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['parallelogram',['Parallelogram',['../classParallelogram.html',1,'Parallelogram'],['../classParallelogram.html#a2200aa50be9b13ccb40a371a3d2b119b',1,'Parallelogram::Parallelogram(MLV_Color color=MLV_COLOR_BLUE)'],['../classParallelogram.html#ac60d6fc9e306b202e9c679d170d6d063',1,'Parallelogram::Parallelogram(const std::vector&lt; STriangle &gt; &amp;triangle, MLV_Color color=MLV_COLOR_BLUE)'],['../classParallelogram.html#aeed0c83e942a4869b79d4baab00c2874',1,'Parallelogram::Parallelogram(const Point&lt; double &gt; &amp;origin, double angular=0.0, MLV_Color color=MLV_COLOR_BLUE)']]],
-  ['parallelogram_2ehpp',['Parallelogram.hpp',['../Parallelogram_8hpp.html',1,'']]],
-  ['parse_5ffile',['parse_file',['../classLoader.html#a22ccbf4c21a330d16e37b99948d43ddb',1,'Loader']]],
-  ['point',['Point',['../classPoint.html',1,'Point&lt; T &gt;'],['../classPoint.html#aea76b1130f1a203722d8f2254ced8e66',1,'Point::Point()'],['../classPoint.html#acfb36323391d7fe1e451137f8c39cde7',1,'Point::Point(const T x, const T y)']]],
-  ['point_2ehpp',['Point.hpp',['../Point_8hpp.html',1,'']]],
-  ['point_3c_20double_20_3e',['Point&lt; double &gt;',['../classPoint.html',1,'']]],
-  ['point_3c_20int_20_3e',['Point&lt; int &gt;',['../classPoint.html',1,'']]]
+  ['objective',['Objective',['../classObjective.html',1,'Objective'],['../classObjective.html#ae515d38979a806a95f9476f4437311ab',1,'Objective::Objective(MLV_Color color=MLV_COLOR_GRAY70)'],['../classObjective.html#a7b72b9e9f9174ec9ee98e3a0a28773f2',1,'Objective::Objective(const std::vector&lt; std::shared_ptr&lt; Shape &gt;&gt; &amp;objective, MLV_Color color=MLV_COLOR_GRAY70)']]],
+  ['objective_2ehpp',['Objective.hpp',['../Objective_8hpp.html',1,'']]],
+  ['operator_21_3d',['operator!=',['../classPoint.html#accaa0100c0c631ad03280446a0b05339',1,'Point']]],
+  ['operator_3c',['operator&lt;',['../classPoint.html#ac6b57554a6941b07668b52c66fe20fae',1,'Point']]],
+  ['operator_3d',['operator=',['../classPoint.html#a42cf65d5594e882fc05a25fb344618fb',1,'Point']]],
+  ['operator_3d_3d',['operator==',['../classPoint.html#a63bcffe1a385653e0dd7d3a39c06a631',1,'Point']]],
+  ['operator_3e',['operator&gt;',['../classPoint.html#ade386be90f64de342ada7165415daf07',1,'Point']]]
 ];

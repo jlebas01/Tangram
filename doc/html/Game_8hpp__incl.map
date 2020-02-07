@@ -1,6 +1,6 @@
 <map id="include/game/Game.hpp" name="include/game/Game.hpp">
-<area shape="rect" id="node2" href="$Objective_8hpp.html" title="Objective of the Tangram&#39;s board. " alt="" coords="328,80,467,107"/>
-<area shape="rect" id="node3" href="$Shape_8hpp.html" title="Abstract Class Shape of every shape in Tangram. " alt="" coords="221,155,361,181"/>
-<area shape="rect" id="node6" href="$Point_8hpp.html" title="Point for every shape and menu. " alt="" coords="89,229,194,256"/>
-<area shape="rect" id="node7" href="$Drawable_8h_source.html" title="drawable/Drawable.h" alt="" coords="219,229,363,256"/>
+<area shape="rect" id="node2" href="$Objective_8hpp.html" title="Objective of the Tangram&#39;s board. " alt="" coords="404,80,543,107"/>
+<area shape="rect" id="node3" href="$Shape_8hpp.html" title="Abstract Class Shape of every shape in Tangram. " alt="" coords="169,155,309,181"/>
+<area shape="rect" id="node7" href="$Point_8hpp.html" title="Point for every shape and menu. " alt="" coords="89,229,194,256"/>
+<area shape="rect" id="node9" href="$Drawable_8h_source.html" title="drawable/Drawable.h" alt="" coords="219,229,363,256"/>
 </map>

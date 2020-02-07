@@ -24,14 +24,14 @@ Game::Game(const int _w, const int _h) {
     this->h = _h;
 
     //ajouter toutes les formes
-    (this->shapes).push_back(new STriangle({50.0, 50.0}, 0.0));
-    (this->shapes).push_back(new Parallelogram({50.0, 50.0}, 0.0));
-  /*  (this->shapes).push_back(new GTriangle({50.0, 50.0}, 0.0));
-    (this->shapes).push_back(new MTriangle({50.0, 50.0}, 0.0));
-    (this->shapes).push_back(new Square({50.0, 50.0}, 0.0));*/
+    (this->shapes).push_back(std::shared_ptr<Shape>(new STriangle({50.0, 50.0}, 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(new Parallelogram({50.0, 50.0}, 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(new GTriangle({50.0, 50.0}, 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(new MTriangle({50.0, 50.0}, 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(new Square({50.0, 50.0}, 0.0)));
 
     for (auto &any_shape : objective.get_Objective()) {
-        this->objective_shape.push_back(any_shape);
+        this->objective_shape.push_back(std::shared_ptr<Shape>(any_shape));
     }
 
     for (auto &any_shape : this->objective_shape) {
@@ -58,7 +58,8 @@ void Game::draw() {
 
 void Game::main_loop() {
     bool exit = false;
-    Shape *selected = nullptr;
+   // Shape *selected = nullptr;
+    std::shared_ptr<Shape> selected;
     Point<int> cur_click;
     Point<int> prev_click;
 
@@ -127,11 +128,11 @@ void Game::main_loop() {
 }
 
 
-void Game::add_shape(Shape *s) {
+void Game::add_shape(std::shared_ptr<Shape> s) {
     shapes.push_back(s);
 }
 
-void Game::set_Objective(const std::vector<Shape*> &vec_objective){
+void Game::set_Objective(const std::vector<std::shared_ptr<Shape>> &vec_objective){
     objective_shape.clear();
     set_objective.clear();
     Objective::set_Objective(&objective, vec_objective);
@@ -162,7 +163,7 @@ void Game::clear() {
     }
 };*/
 
-void Game::stick(Shape *shape) {
+void Game::stick(const std::shared_ptr<Shape>& shape) {
     auto set_shape = new std::unordered_set<Point<double>, Point<double>::hash_point, std::equal_to<>>();
     std::unordered_map<Point<double>, std::pair<Point<double>, double>, Point<double>::hash_point, std::equal_to<>> map_distance;
 

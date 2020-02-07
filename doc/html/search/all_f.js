@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['y',['../classPoint.html#a65146418a33ebb2cd9acb85cade60ac9',1,'Point']]]
+  ['x',['x',['../classPoint.html#a401d07562afaf0079121218025e66b76',1,'Point']]]
 ];

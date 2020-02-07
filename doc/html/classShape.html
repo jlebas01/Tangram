@@ -60,6 +60,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classShape-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Shape Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -114,6 +115,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:add74a5c682840fa4a519242b1ddbd0b5"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShape.html#add74a5c682840fa4a519242b1ddbd0b5">get_Points</a> ()=0</td></tr>
 <tr class="memdesc:add74a5c682840fa4a519242b1ddbd0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Get all points of this shape.  <a href="#add74a5c682840fa4a519242b1ddbd0b5">More...</a><br /></td></tr>
 <tr class="separator:add74a5c682840fa4a519242b1ddbd0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb0d80cccc44cb72b06c61d9780bc6b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShape.html#a6eb0d80cccc44cb72b06c61d9780bc6b">set_Points</a> (const <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &amp;ref, const <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &amp;changed)=0</td></tr>
+<tr class="memdesc:a6eb0d80cccc44cb72b06c61d9780bc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Get all points of this shape.  <a href="#a6eb0d80cccc44cb72b06c61d9780bc6b">More...</a><br /></td></tr>
+<tr class="separator:a6eb0d80cccc44cb72b06c61d9780bc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98fa87c6dc4c7045fd6897a8f3bc186c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShape.html#a98fa87c6dc4c7045fd6897a8f3bc186c">toString</a> ()=0</td></tr>
 <tr class="memdesc:a98fa87c6dc4c7045fd6897a8f3bc186c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Convert all data of <a class="el" href="classGTriangle.html" title="Class of the greatest triangle. ">GTriangle</a> in a string.  <a href="#a98fa87c6dc4c7045fd6897a8f3bc186c">More...</a><br /></td></tr>
 <tr class="separator:a98fa87c6dc4c7045fd6897a8f3bc186c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,11 +126,63 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#aa37d7b328240d343134adcfe5e4dcd38">draw</a> ()=0</td></tr>
 <tr class="memdesc:aa37d7b328240d343134adcfe5e4dcd38 inherit pub_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Draw everything which needs to be draw. <br /></td></tr>
 <tr class="separator:aa37d7b328240d343134adcfe5e4dcd38 inherit pub_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aadd5fcb0535a62f4ed4dcfb39e86336a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShape.html#aadd5fcb0535a62f4ed4dcfb39e86336a">computeDistance</a> (const <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &amp;point1, const <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &amp;point2)</td></tr>
+<tr class="memdesc:aadd5fcb0535a62f4ed4dcfb39e86336a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute distance between 2 points.  <a href="#aadd5fcb0535a62f4ed4dcfb39e86336a">More...</a><br /></td></tr>
+<tr class="separator:aadd5fcb0535a62f4ed4dcfb39e86336a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract Class of every <a class="el" href="classShape.html" title="Abstract Class of every Shape. ">Shape</a>. </p>
 <p>This class manage everything other shape (<a class="el" href="classSTriangle.html" title="Class of the small triangle. ">STriangle</a>, <a class="el" href="classMTriangle.html" title="Class of the medium triangle. ">MTriangle</a>, <a class="el" href="classGTriangle.html" title="Class of the greatest triangle. ">GTriangle</a>, <a class="el" href="classSquare.html" title="Class of the square. ">Square</a>, <a class="el" href="classParallelogram.html" title="Class of the parallelogram. ">Parallelogram</a>) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aadd5fcb0535a62f4ed4dcfb39e86336a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd5fcb0535a62f4ed4dcfb39e86336a">&#9670;&nbsp;</a></span>computeDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Shape::computeDistance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>point1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>point2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute distance between 2 points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point1</td><td>: First point </td></tr>
+    <tr><td class="paramname">point2</td><td>: Second point </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return the distance between these two points </dd></dl>
+
+</div>
+</div>
 <a id="add74a5c682840fa4a519242b1ddbd0b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add74a5c682840fa4a519242b1ddbd0b5">&#9670;&nbsp;</a></span>get_Points()</h2>
 
@@ -263,6 +319,47 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 
 <p>Implemented in <a class="el" href="classGTriangle.html#ae3ed75bbad4ba7fed68bc06c5834cfbe">GTriangle</a>, <a class="el" href="classMTriangle.html#a4be29553eeddf99c367b1ec220bc102b">MTriangle</a>, <a class="el" href="classParallelogram.html#ac498f6a15dea236ecc49bece023d17b0">Parallelogram</a>, and <a class="el" href="classSquare.html#a5714e182c30f996b78e74e1badd054a2">Square</a>.</p>
+
+</div>
+</div>
+<a id="a6eb0d80cccc44cb72b06c61d9780bc6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb0d80cccc44cb72b06c61d9780bc6b">&#9670;&nbsp;</a></span>set_Points()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Shape::set_Points </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>changed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pure virtual function. Get all points of this shape. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return a vector of points of this shape </dd></dl>
+
+<p>Implemented in <a class="el" href="classSTriangle.html#acab6926951bd8f2558e4c658610c0e51">STriangle</a>, <a class="el" href="classGTriangle.html#adb9dae329128600209c54cc4587480ee">GTriangle</a>, <a class="el" href="classMTriangle.html#aec40d088d077bfb14f94895be871dfdf">MTriangle</a>, <a class="el" href="classParallelogram.html#ab74583703a60e4b798d7048aa684f44e">Parallelogram</a>, and <a class="el" href="classSquare.html#ac474644483fa85f7a4f39969f34868fe">Square</a>.</p>
 
 </div>
 </div>

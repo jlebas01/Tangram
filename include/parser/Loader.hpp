@@ -14,6 +14,7 @@
 
 #include <game/Game.hpp>
 #include <filesystem>
+#include <memory>
 
 /*!
  * @class Loader

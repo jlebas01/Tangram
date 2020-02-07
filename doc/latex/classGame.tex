@@ -17,11 +17,17 @@ void \hyperlink{classGame_a9e9a77d478f0c0bfb9b61fb1a6556e15}{main\+\_\+loop} ()
 \begin{DoxyCompactList}\small\item\em Main loop of the game. \end{DoxyCompactList}\item 
 \hyperlink{classGame_a2b0cb8af7b823a6d595eef9c9641f806}{Game} (int w, int h)
 \begin{DoxyCompactList}\small\item\em Constructor of the game, initialize a game with an sizing. \end{DoxyCompactList}\item 
-void \hyperlink{classGame_a4c5fae4c7855b0a391c7190889db25d7}{add\+\_\+shape} (\hyperlink{classShape}{Shape} $\ast$s)
+void \hyperlink{classGame_aab43fea0e202c203d998ae575d3f6eeb}{add\+\_\+shape} (std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$ s)
 \begin{DoxyCompactList}\small\item\em Add a shape in the game. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGame_a8ba8d7bcda356ed584dc445184320ff7}\label{classGame_a8ba8d7bcda356ed584dc445184320ff7}} 
 void \hyperlink{classGame_a8ba8d7bcda356ed584dc445184320ff7}{clear} ()
-\begin{DoxyCompactList}\small\item\em Clear the game / the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Clear the game / the board and the objective. \end{DoxyCompactList}\item 
+void \hyperlink{classGame_a54ea3746d3738423197219af2d508188}{stick} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$ \&shape)
+\begin{DoxyCompactList}\small\item\em Stick the shape to nearest objective points. \end{DoxyCompactList}\item 
+void \hyperlink{classGame_af8d3ef359625e4179d54f5dd956a0df5}{set\+\_\+\+Objective} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&vec\+\_\+objective)
+\begin{DoxyCompactList}\small\item\em Set the objective of the game. \end{DoxyCompactList}\item 
+M\+L\+V\+\_\+\+Color \hyperlink{classGame_ac5de4b11ae90a7ea9182621039fa511c}{get\+\_\+\+Objective\+\_\+\+Color} ()
+\begin{DoxyCompactList}\small\item\em Get the color of the objective of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -50,11 +56,11 @@ Constructor of the game, initialize a game with an sizing.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classGame_a4c5fae4c7855b0a391c7190889db25d7}\label{classGame_a4c5fae4c7855b0a391c7190889db25d7}} 
+\mbox{\Hypertarget{classGame_aab43fea0e202c203d998ae575d3f6eeb}\label{classGame_aab43fea0e202c203d998ae575d3f6eeb}} 
 \index{Game@{Game}!add\+\_\+shape@{add\+\_\+shape}}
 \index{add\+\_\+shape@{add\+\_\+shape}!Game@{Game}}
 \subsubsection{\texorpdfstring{add\+\_\+shape()}{add\_shape()}}
-{\footnotesize\ttfamily void Game\+::add\+\_\+shape (\begin{DoxyParamCaption}\item[{\hyperlink{classShape}{Shape} $\ast$}]{s }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Game\+::add\+\_\+shape (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$}]{s }\end{DoxyParamCaption})}
 
 
 
@@ -63,6 +69,49 @@ Add a shape in the game.
 
 \begin{DoxyParams}{Parameters}
 {\em s} & \+: \hyperlink{classShape}{Shape} to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_ac5de4b11ae90a7ea9182621039fa511c}\label{classGame_ac5de4b11ae90a7ea9182621039fa511c}} 
+\index{Game@{Game}!get\+\_\+\+Objective\+\_\+\+Color@{get\+\_\+\+Objective\+\_\+\+Color}}
+\index{get\+\_\+\+Objective\+\_\+\+Color@{get\+\_\+\+Objective\+\_\+\+Color}!Game@{Game}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Objective\+\_\+\+Color()}{get\_Objective\_Color()}}
+{\footnotesize\ttfamily M\+L\+V\+\_\+\+Color Game\+::get\+\_\+\+Objective\+\_\+\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the color of the objective of the game. 
+
+\begin{DoxyReturn}{Returns}
+Return the color of the objective of the game 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_af8d3ef359625e4179d54f5dd956a0df5}\label{classGame_af8d3ef359625e4179d54f5dd956a0df5}} 
+\index{Game@{Game}!set\+\_\+\+Objective@{set\+\_\+\+Objective}}
+\index{set\+\_\+\+Objective@{set\+\_\+\+Objective}!Game@{Game}}
+\subsubsection{\texorpdfstring{set\+\_\+\+Objective()}{set\_Objective()}}
+{\footnotesize\ttfamily void Game\+::set\+\_\+\+Objective (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&}]{vec\+\_\+objective }\end{DoxyParamCaption})}
+
+
+
+Set the objective of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec\+\_\+objective} & \+: Vector of \hyperlink{classObjective}{Objective} for new game; \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a54ea3746d3738423197219af2d508188}\label{classGame_a54ea3746d3738423197219af2d508188}} 
+\index{Game@{Game}!stick@{stick}}
+\index{stick@{stick}!Game@{Game}}
+\subsubsection{\texorpdfstring{stick()}{stick()}}
+{\footnotesize\ttfamily void Game\+::stick (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$ \&}]{shape }\end{DoxyParamCaption})}
+
+
+
+Stick the shape to nearest objective points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & \+: Last shape rotated or moved \\
 \hline
 \end{DoxyParams}
 

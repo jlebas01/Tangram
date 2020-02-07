@@ -44,8 +44,15 @@ virtual bool \hyperlink{classShape_aa09a621da090e42840b4bec7ffb27620}{is\+\_\+in
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Check if a point is in this shape. \end{DoxyCompactList}\item 
 virtual std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{get\+\_\+\+Points} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{set\+\_\+\+Points} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{Point}$<$ double $>$ \&changed)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
 virtual std\+::string \hyperlink{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}{to\+String} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Convert all data of \hyperlink{classGTriangle}{G\+Triangle} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{classShape_aadd5fcb0535a62f4ed4dcfb39e86336a}{compute\+Distance} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&point1, const \hyperlink{classPoint}{Point}$<$ double $>$ \&point2)
+\begin{DoxyCompactList}\small\item\em Compute distance between 2 points. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -54,6 +61,26 @@ Abstract Class of every \hyperlink{classShape}{Shape}.
 This class manage everything other shape (\hyperlink{classSTriangle}{S\+Triangle}, \hyperlink{classMTriangle}{M\+Triangle}, \hyperlink{classGTriangle}{G\+Triangle}, \hyperlink{classSquare}{Square}, \hyperlink{classParallelogram}{Parallelogram}) 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classShape_aadd5fcb0535a62f4ed4dcfb39e86336a}\label{classShape_aadd5fcb0535a62f4ed4dcfb39e86336a}} 
+\index{Shape@{Shape}!compute\+Distance@{compute\+Distance}}
+\index{compute\+Distance@{compute\+Distance}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{compute\+Distance()}{computeDistance()}}
+{\footnotesize\ttfamily static double Shape\+::compute\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{point1,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{point2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compute distance between 2 points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point1} & \+: First point \\
+\hline
+{\em point2} & \+: Second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the distance between these two points 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classShape_add74a5c682840fa4a519242b1ddbd0b5}\label{classShape_add74a5c682840fa4a519242b1ddbd0b5}} 
 \index{Shape@{Shape}!get\+\_\+\+Points@{get\+\_\+\+Points}}
 \index{get\+\_\+\+Points@{get\+\_\+\+Points}!Shape@{Shape}}
@@ -130,6 +157,23 @@ Pure virtual function. Rotate the \hyperlink{classGTriangle}{G\+Triangle} with s
 
 
 Implemented in \hyperlink{classGTriangle_ae3ed75bbad4ba7fed68bc06c5834cfbe}{G\+Triangle}, \hyperlink{classMTriangle_a4be29553eeddf99c367b1ec220bc102b}{M\+Triangle}, \hyperlink{classParallelogram_ac498f6a15dea236ecc49bece023d17b0}{Parallelogram}, and \hyperlink{classSquare_a5714e182c30f996b78e74e1badd054a2}{Square}.
+
+\mbox{\Hypertarget{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}\label{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}} 
+\index{Shape@{Shape}!set\+\_\+\+Points@{set\+\_\+\+Points}}
+\index{set\+\_\+\+Points@{set\+\_\+\+Points}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{set\+\_\+\+Points()}{set\_Points()}}
+{\footnotesize\ttfamily virtual bool Shape\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function. Get all points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of points of this shape 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classSTriangle_acab6926951bd8f2558e4c658610c0e51}{S\+Triangle}, \hyperlink{classGTriangle_adb9dae329128600209c54cc4587480ee}{G\+Triangle}, \hyperlink{classMTriangle_aec40d088d077bfb14f94895be871dfdf}{M\+Triangle}, \hyperlink{classParallelogram_ab74583703a60e4b798d7048aa684f44e}{Parallelogram}, and \hyperlink{classSquare_ac474644483fa85f7a4f39969f34868fe}{Square}.
 
 \mbox{\Hypertarget{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}\label{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}} 
 \index{Shape@{Shape}!to\+String@{to\+String}}

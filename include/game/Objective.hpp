@@ -14,6 +14,7 @@
 
 #include <drawable/Shape.hpp>
 #include <string>
+#include <memory>
 #include <MLV/MLV_color.h>
 
 /*!
@@ -25,7 +26,7 @@
 
 class Objective {
 private:
-    std::vector<Shape *> shapes; /*!< Objective requires a vector of Shape to check when the game end*/
+    std::vector<std::shared_ptr<Shape>> shapes; /*!< Objective requires a vector of Shape to check when the game end*/
     MLV_Color color; /*!< Objective requires a color to draw these shapes */
 public:
 
@@ -42,7 +43,7 @@ public:
      * @param color : color of the objective shape
      */
 
-    explicit Objective(std::vector<Shape*> objective, MLV_Color color = MLV_COLOR_GRAY70);
+    explicit Objective(const std::vector<std::shared_ptr<Shape>> &objective, MLV_Color color = MLV_COLOR_GRAY70);
 
     /*!
      * @brief Check if the board is completed
@@ -51,14 +52,14 @@ public:
      * @return True if the board is completed, false if not
      */
 
-    static bool boardCompleted(const std::vector<Shape *> &objective, const std::vector<Shape *> &game);
+    static bool boardCompleted(const std::vector<std::shared_ptr<Shape>> &objective, const std::vector<std::shared_ptr<Shape>> &game);
 
     /*!
      * @brief Get all shape of the objective
      * @return Return a vector of shape of the objective
      */
 
-    std::vector<Shape *> get_Objective();
+    std::vector<std::shared_ptr<Shape>> get_Objective();
 
     /*!
      * @brief Set an Objective for a new game
@@ -66,7 +67,7 @@ public:
      * @param vec_objective :Vector of new Shape for the new Objective
      */
 
-    static void set_Objective(Objective * objective, const std::vector<Shape*> &vec_objective);
+    static void set_Objective(Objective * objective, const std::vector<std::shared_ptr<Shape>> &vec_objective);
 
     /*!
      * @brief Get the color of an Objective
