@@ -12,11 +12,23 @@
  * @version 1.0
  */
 
-#include <game/Objective.hpp>
+
 #include <drawable/Shape.hpp>
+#include <utils/Point.hpp>
+#include <game/Objective.hpp>
+#include <shape/STriangle.hpp>
+#include <shape/MTriangle.hpp>
+#include <shape/GTriangle.hpp>
+#include <shape/Parallelogram.hpp>
+#include <shape/Square.hpp>
+#include <MLV/MLV_all.h>
+
 #include <functional>
 #include <unordered_set>
 #include <memory>
+#include <iostream>
+#include <unordered_map>
+
 
 /*!
  * @class Game
@@ -27,11 +39,10 @@
 
 class Game {
 private:
-  //  std::vector<Shape *> shapes; /*!< Game main loop requires a vector of Shape - Abstract Class*/
     Objective objective; /*!< Objective of the game */
     std::unordered_set<Point<double>, Point<double>::hash_point, std::equal_to<>> set_objective; /*!< Set of objective of the game */
     std::vector<std::shared_ptr<Shape>> objective_shape; /*!< Vector of objective shape */
-    std::vector <std::shared_ptr<Shape>> shapes;
+    std::vector <std::shared_ptr<Shape>> shapes; /*!< Game main loop requires a vector of Shape - Abstract Class*/
     int w; /*!< Width of the window*/
     int h; /*!< Height of the window*/
 
@@ -48,6 +59,12 @@ public:
      */
 
     void main_loop();
+
+    /*!
+     * @brief Destructor of the game
+     */
+
+    ~Game();
 
     /*!
      * @brief Constructor of the game, initialize a game with an sizing

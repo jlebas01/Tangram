@@ -2,18 +2,18 @@
 // Created by jlebas01 on 15/01/2020.
 //
 
-#include <iostream>
-#include <utils/Point.hpp>
 #include <game/Game.hpp>
-#include <game/Objective.hpp>
-#include <shape/STriangle.hpp>
-#include <shape/MTriangle.hpp>
-#include <shape/GTriangle.hpp>
-#include <shape/Parallelogram.hpp>
-#include <shape/Square.hpp>
-#include <MLV/MLV_all.h>
-#include <unordered_map>
-#include <unordered_set>
+
+
+Game::~Game() {
+    shapes.clear(); //delete all elements in vector triangle (calling destructor of any elements in this vector)
+    // create a new (temporary) vector and swap its contents with triangle. The temporary vector is then destroyed, freeing the memory along with it.
+    std::vector<std::shared_ptr<Shape>>().swap(shapes);
+    objective_shape.clear();
+    std::vector<std::shared_ptr<Shape>>().swap(objective_shape);
+    set_objective.clear();
+    std::unordered_set<Point<double>, Point<double>::hash_point, std::equal_to<>>().swap(set_objective);
+}
 
 static int abso(int x) {
     return x < 0 ? -x : x;
@@ -58,7 +58,6 @@ void Game::draw() {
 
 void Game::main_loop() {
     bool exit = false;
-   // Shape *selected = nullptr;
     std::shared_ptr<Shape> selected;
     Point<int> cur_click;
     Point<int> prev_click;
@@ -105,22 +104,22 @@ void Game::main_loop() {
                     }
                 }
             } else if (cur_state == MLV_RELEASED) {
+                if (selected != nullptr) {
+                    stick(selected);
+                }
                 selected = nullptr;
             }
         } else {
             if (selected && prev_mouse_button == cur_mouse_button && cur_mouse_button == MLV_BUTTON_LEFT) {
                 selected->move({cur_click.x - prev_click.x, cur_click.y - prev_click.y});
-                stick(selected);
             }
             if (selected && prev_mouse_button == cur_mouse_button && cur_mouse_button == MLV_BUTTON_RIGHT) {
                 int dx = cur_click.x - prev_click.x;
                 int dy = cur_click.y - prev_click.y;
                 if (abso(dx) > abso(dy)) {
                     selected->rotate(static_cast<double>(dx) / 250.);
-                    stick(selected);
                 } else {
                     selected->rotate(static_cast<double>(dy) / 250.);
-                    stick(selected);
                 }
             }
         }
@@ -135,7 +134,7 @@ void Game::add_shape(std::shared_ptr<Shape> s) {
 void Game::set_Objective(const std::vector<std::shared_ptr<Shape>> &vec_objective){
     objective_shape.clear();
     set_objective.clear();
-    Objective::set_Objective(&objective, vec_objective);
+    Objective::set_Objective(std::make_shared<Objective>(objective), vec_objective);
 
     objective_shape.insert(objective_shape.end(), vec_objective.begin(), vec_objective.end());
 

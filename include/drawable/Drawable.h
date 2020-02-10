@@ -25,7 +25,7 @@ public :
     /*!
      * @brief Pure virtual function. Draw everything which needs to be draw
      */
-
+    ~Drawable() = default;
     virtual void draw() = 0;
 };
 

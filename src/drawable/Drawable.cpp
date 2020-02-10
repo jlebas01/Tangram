@@ -4,5 +4,3 @@
 
 #include "drawable/Drawable.h"
 
-Drawable::~Drawable()= default;
-

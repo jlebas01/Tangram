@@ -10,6 +10,7 @@
 #include <shape/Square.hpp>
 #include <algorithm>
 #include <iostream>
+#include <memory>
 
 Objective::Objective(const MLV_Color _color){
     this->color = _color;
@@ -33,19 +34,14 @@ bool Objective::boardCompleted(const std::vector<std::shared_ptr<Shape>> &object
     for (auto &it : objective){
         for (auto &it2 : it->get_Points()){
             points_objective.push_back(it2);
-            std::cout << "x : " << it2.x << " y : "<< it2.y << std::endl;
         }
     }
-
-    std::cout << "-------------" << std::endl;
 
     for (auto &it : game){
         for (auto &it2 : it->get_Points()){
             points_game.push_back(it2);
-            std::cout << "x : " << it2.x << " y : "<< it2.y << std::endl;
         }
     }
-    std::cout << "_-_-_-_-_-" << std::endl;
 
     return std::is_permutation( points_objective.begin(), points_objective.end(), points_game.begin(), points_game.end());
 }
@@ -60,6 +56,6 @@ MLV_Color Objective::get_Color(){
     return _color;
 }
 
-void Objective::set_Objective(Objective *objective, const std::vector<std::shared_ptr<Shape>> &vec_objective) {
-    objective = new Objective(vec_objective);
+void Objective::set_Objective(std::shared_ptr<Objective> objective, const std::vector<std::shared_ptr<Shape>> &vec_objective) {
+    objective = std::make_shared<Objective>(vec_objective);
 }
