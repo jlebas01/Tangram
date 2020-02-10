@@ -67,7 +67,7 @@ public:
      * @param vec_objective :Vector of new Shape for the new Objective
      */
 
-    static void set_Objective(Objective * objective, const std::vector<std::shared_ptr<Shape>> &vec_objective);
+    static void set_Objective(Objective &objective, const std::vector<std::shared_ptr<Shape>> &vec_objective);
 
     /*!
      * @brief Get the color of an Objective

@@ -60,6 +60,6 @@ MLV_Color Objective::get_Color(){
     return _color;
 }
 
-void Objective::set_Objective(Objective *objective, const std::vector<std::shared_ptr<Shape>> &vec_objective) {
-    objective = new Objective(vec_objective);
+void Objective::set_Objective(Objective &objective, const std::vector<std::shared_ptr<Shape>> &vec_objective) {
+    objective =  Objective(vec_objective);
 }

@@ -58,7 +58,7 @@ void Game::draw() {
 
 void Game::main_loop() {
     bool exit = false;
-   // Shape *selected = nullptr;
+    // Shape *selected = nullptr;
     std::shared_ptr<Shape> selected;
     Point<int> cur_click;
     Point<int> prev_click;
@@ -69,23 +69,15 @@ void Game::main_loop() {
     MLV_Mouse_button cur_mouse_button;
     MLV_Mouse_button prev_mouse_button;
 
-    MLV_Keyboard_modifier cur_modifier;
-    MLV_Keyboard_modifier prev_modifier;
-
-    MLV_Keyboard_button cur_button;
-    MLV_Keyboard_button prev_button;
-
-    MLV_wait_event(&cur_button, &cur_modifier, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
+    MLV_wait_event(nullptr, nullptr, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
                    &cur_mouse_button, &cur_state);
 
     while (!exit) {
         prev_click = cur_click;
         prev_state = cur_state;
         prev_mouse_button = cur_mouse_button;
-        prev_modifier = cur_modifier;
-        prev_button = cur_button;
 
-        MLV_wait_event(&cur_button, &cur_modifier, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
+        MLV_wait_event(nullptr, nullptr, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
                        &cur_mouse_button, &cur_state);
 
 
@@ -100,7 +92,7 @@ void Game::main_loop() {
         if (prev_state != cur_state) {
             if (cur_state == MLV_PRESSED) {
                 for (auto &shape: shapes) {
-                    if (shape->is_in_shape({cur_click.x, cur_click.y})) {
+                    if (shape->is_in_shape({static_cast<double>(cur_click.x), static_cast<double>(cur_click.y)})) {
                         selected = shape;
                     }
                 }
@@ -109,7 +101,8 @@ void Game::main_loop() {
             }
         } else {
             if (selected && prev_mouse_button == cur_mouse_button && cur_mouse_button == MLV_BUTTON_LEFT) {
-                selected->move({cur_click.x - prev_click.x, cur_click.y - prev_click.y});
+                selected->move({static_cast<double>(cur_click.x - prev_click.x),
+                                static_cast<double>(cur_click.y - prev_click.y)});
                 stick(selected);
             }
             if (selected && prev_mouse_button == cur_mouse_button && cur_mouse_button == MLV_BUTTON_RIGHT) {
@@ -132,10 +125,10 @@ void Game::add_shape(std::shared_ptr<Shape> s) {
     shapes.push_back(s);
 }
 
-void Game::set_Objective(const std::vector<std::shared_ptr<Shape>> &vec_objective){
+void Game::set_Objective(const std::vector<std::shared_ptr<Shape>> &vec_objective) {
     objective_shape.clear();
     set_objective.clear();
-    Objective::set_Objective(&objective, vec_objective);
+    Objective::set_Objective(objective, vec_objective);
 
     objective_shape.insert(objective_shape.end(), vec_objective.begin(), vec_objective.end());
 
@@ -146,7 +139,7 @@ void Game::set_Objective(const std::vector<std::shared_ptr<Shape>> &vec_objectiv
     }
 }
 
-MLV_Color Game::get_Objective_Color(){
+MLV_Color Game::get_Objective_Color() {
     return objective.get_Color();
 }
 
@@ -163,7 +156,7 @@ void Game::clear() {
     }
 };*/
 
-void Game::stick(const std::shared_ptr<Shape>& shape) {
+void Game::stick(const std::shared_ptr<Shape> &shape) {
     auto set_shape = new std::unordered_set<Point<double>, Point<double>::hash_point, std::equal_to<>>();
     std::unordered_map<Point<double>, std::pair<Point<double>, double>, Point<double>::hash_point, std::equal_to<>> map_distance;
 
@@ -189,7 +182,7 @@ void Game::stick(const std::shared_ptr<Shape>& shape) {
     if (map_distance.size() >= set_shape->size()) {
         for (auto &p_min : map_distance) {
             shape->set_Points(p_min.second.first, p_min.first);
-            shape->move(Point<double>(0.0,0.0));
+            shape->move(Point<double>(0.0, 0.0));
         }
     }
 }
