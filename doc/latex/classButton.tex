@@ -15,9 +15,9 @@
 \mbox{\Hypertarget{classButton_a2a001eb9c3cc8ae54768a850dd345002}\label{classButton_a2a001eb9c3cc8ae54768a850dd345002}} 
 \hyperlink{classButton_a2a001eb9c3cc8ae54768a850dd345002}{$\sim$\+Button} ()
 \begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{classButton}{Button}. \end{DoxyCompactList}\item 
-\hyperlink{classButton_ab418fa07a8ea3f68f8e97e7d1021e0b6}{Button} (\hyperlink{classPoint}{Point}$<$ int $>$ point, \hyperlink{classPoint}{Point}$<$ int $>$ sizing, std\+::string text)
+\hyperlink{classButton_aaa8e2182b5ddda43df9a959815ea08bc}{Button} (const \hyperlink{classPoint}{Point}$<$ int $>$ \&point, const \hyperlink{classPoint}{Point}$<$ int $>$ \&sizing, std\+::string text)
 \begin{DoxyCompactList}\small\item\em Constructor of a \hyperlink{classButton}{Button}. \end{DoxyCompactList}\item 
-\hyperlink{classButton_a3010396eab6c85e7193e159fccb056f9}{Button} (\hyperlink{classPoint}{Point}$<$ int $>$ point, \hyperlink{classPoint}{Point}$<$ int $>$ sizing, std\+::string text, std\+::function$<$ int(int)$>$ callback)
+\hyperlink{classButton_a1ddbd1d3b8b32c2ab1367f4b5c51d7d3}{Button} (const \hyperlink{classPoint}{Point}$<$ int $>$ \&point, const \hyperlink{classPoint}{Point}$<$ int $>$ \&sizing, std\+::string text, std\+::function$<$ int(int)$>$ callback)
 \begin{DoxyCompactList}\small\item\em Constructor of a \hyperlink{classButton}{Button}. \end{DoxyCompactList}\item 
 bool \hyperlink{classButton_acf7ec691fccf7fc66863a6bb24d31ce5}{click\+\_\+in\+\_\+button} (const \hyperlink{classPoint}{Point}$<$ int $>$ \&\hyperlink{classButton_af6a02022f77e1809a90cb6159c1a1536}{click})
 \begin{DoxyCompactList}\small\item\em Check if a click is in the button. \end{DoxyCompactList}\item 
@@ -36,11 +36,11 @@ void \hyperlink{classButton_aff79964a98ce6c76d0ece8502a830985}{set\+\_\+callback
 This class manage all buttons of the menu 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classButton_ab418fa07a8ea3f68f8e97e7d1021e0b6}\label{classButton_ab418fa07a8ea3f68f8e97e7d1021e0b6}} 
+\mbox{\Hypertarget{classButton_aaa8e2182b5ddda43df9a959815ea08bc}\label{classButton_aaa8e2182b5ddda43df9a959815ea08bc}} 
 \index{Button@{Button}!Button@{Button}}
 \index{Button@{Button}!Button@{Button}}
 \subsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ int $>$}]{point,  }\item[{\hyperlink{classPoint}{Point}$<$ int $>$}]{sizing,  }\item[{std\+::string}]{text }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ int $>$ \&}]{point,  }\item[{const \hyperlink{classPoint}{Point}$<$ int $>$ \&}]{sizing,  }\item[{std\+::string}]{text }\end{DoxyParamCaption})}
 
 
 
@@ -55,11 +55,11 @@ Constructor of a \hyperlink{classButton}{Button}.
 {\em text} & \+: Text of the button \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classButton_a3010396eab6c85e7193e159fccb056f9}\label{classButton_a3010396eab6c85e7193e159fccb056f9}} 
+\mbox{\Hypertarget{classButton_a1ddbd1d3b8b32c2ab1367f4b5c51d7d3}\label{classButton_a1ddbd1d3b8b32c2ab1367f4b5c51d7d3}} 
 \index{Button@{Button}!Button@{Button}}
 \index{Button@{Button}!Button@{Button}}
 \subsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{\hyperlink{classPoint}{Point}$<$ int $>$}]{point,  }\item[{\hyperlink{classPoint}{Point}$<$ int $>$}]{sizing,  }\item[{std\+::string}]{text,  }\item[{std\+::function$<$ int(int)$>$}]{callback }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ int $>$ \&}]{point,  }\item[{const \hyperlink{classPoint}{Point}$<$ int $>$ \&}]{sizing,  }\item[{std\+::string}]{text,  }\item[{std\+::function$<$ int(int)$>$}]{callback }\end{DoxyParamCaption})}
 
 
 

@@ -122,9 +122,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSTriangle.html#aacf293108989708da341b1fbaeee0aca">draw</a> () override</td></tr>
 <tr class="memdesc:aacf293108989708da341b1fbaeee0aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw this shape on IHM. <br /></td></tr>
 <tr class="separator:aacf293108989708da341b1fbaeee0aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eddfc5b9e5b2951ba71b085345d87d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSTriangle.html#a7eddfc5b9e5b2951ba71b085345d87d1">draw</a> (MLV_Color Color)</td></tr>
-<tr class="memdesc:a7eddfc5b9e5b2951ba71b085345d87d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw this shape on IHM with specific color.  <a href="#a7eddfc5b9e5b2951ba71b085345d87d1">More...</a><br /></td></tr>
-<tr class="separator:a7eddfc5b9e5b2951ba71b085345d87d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f6b3c69067f90821cae1d378d1e575"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSTriangle.html#a52f6b3c69067f90821cae1d378d1e575">draw</a> (MLV_Color color) override</td></tr>
+<tr class="memdesc:a52f6b3c69067f90821cae1d378d1e575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw this shape on IHM with specific color.  <a href="#a52f6b3c69067f90821cae1d378d1e575">More...</a><br /></td></tr>
+<tr class="separator:a52f6b3c69067f90821cae1d378d1e575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b55df6eb4af922521da69f69df77b42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSTriangle.html#a5b55df6eb4af922521da69f69df77b42">is_in_shape</a> (const <a class="el" href="classPoint.html">Point</a>&lt; double &gt; &amp;click) override</td></tr>
 <tr class="memdesc:a5b55df6eb4af922521da69f69df77b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point is in this shape.  <a href="#a5b55df6eb4af922521da69f69df77b42">More...</a><br /></td></tr>
 <tr class="separator:a5b55df6eb4af922521da69f69df77b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +148,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShape.html#a39fe45638d872f0ce9670d7f85290161">~Shape</a> ()=0</td></tr>
 <tr class="memdesc:a39fe45638d872f0ce9670d7f85290161 inherit pub_methods_classShape"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor of Abstract <a class="el" href="classShape.html" title="Abstract Class of every Shape. ">Shape</a>. <br /></td></tr>
 <tr class="separator:a39fe45638d872f0ce9670d7f85290161 inherit pub_methods_classShape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDrawable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDrawable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDrawable.html">Drawable</a></td></tr>
+<tr class="memitem:a313ec095ce0ea2a8c7cac78a6be27be8 inherit pub_methods_classDrawable"><td class="memItemLeft" align="right" valign="top"><a id="a313ec095ce0ea2a8c7cac78a6be27be8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDrawable.html#a313ec095ce0ea2a8c7cac78a6be27be8">~Drawable</a> ()=default</td></tr>
+<tr class="memdesc:a313ec095ce0ea2a8c7cac78a6be27be8 inherit pub_methods_classDrawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Draw everything which needs to be draw. <br /></td></tr>
+<tr class="separator:a313ec095ce0ea2a8c7cac78a6be27be8 inherit pub_methods_classDrawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -381,20 +386,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7eddfc5b9e5b2951ba71b085345d87d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eddfc5b9e5b2951ba71b085345d87d1">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a52f6b3c69067f90821cae1d378d1e575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52f6b3c69067f90821cae1d378d1e575">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void STriangle::draw </td>
           <td>(</td>
           <td class="paramtype">MLV_Color&#160;</td>
-          <td class="paramname"><em>Color</em></td><td>)</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Draw this shape on IHM with specific color. </p>
@@ -404,6 +417,8 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implements <a class="el" href="classDrawable.html">Drawable</a>.</p>
 
 </div>
 </div>

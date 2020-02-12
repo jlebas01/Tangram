@@ -1,6 +1,8 @@
 var searchData=
 [
   ['_7ebutton',['~Button',['../classButton.html#a2a001eb9c3cc8ae54768a850dd345002',1,'Button']]],
+  ['_7edrawable',['~Drawable',['../classDrawable.html#a313ec095ce0ea2a8c7cac78a6be27be8',1,'Drawable']]],
+  ['_7egame',['~Game',['../classGame.html#ae3d112ca6e0e55150d2fdbc704474530',1,'Game']]],
   ['_7egtriangle',['~GTriangle',['../classGTriangle.html#a05bcaee071e6dc6591220869234b05ee',1,'GTriangle']]],
   ['_7emtriangle',['~MTriangle',['../classMTriangle.html#aad494b73728c03ca00e728b0c505a88f',1,'MTriangle']]],
   ['_7eparallelogram',['~Parallelogram',['../classParallelogram.html#ae3c14e58b92406f4679234817313a26c',1,'Parallelogram']]],

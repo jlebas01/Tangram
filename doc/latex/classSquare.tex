@@ -33,11 +33,11 @@ Collaboration diagram for Square\+:\nopagebreak
 \mbox{\Hypertarget{classSquare_ab0677a46d02aa78bc0b7be8c06f9dc37}\label{classSquare_ab0677a46d02aa78bc0b7be8c06f9dc37}} 
 \hyperlink{classSquare_ab0677a46d02aa78bc0b7be8c06f9dc37}{$\sim$\+Square} () override
 \begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classSquare}{Square}. \end{DoxyCompactList}\item 
-\hyperlink{classSquare_aceff50017f5950b32a967a690213a26e}{Square} (M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+I\+NK)
+\hyperlink{classSquare_a6451bb12ac23987428f1a92bf15326b1}{Square} (M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+U\+R\+P\+LE)
 \begin{DoxyCompactList}\small\item\em Constructor by default of \hyperlink{classSquare}{Square}, make a \hyperlink{classSquare}{Square} as default. \end{DoxyCompactList}\item 
-\hyperlink{classSquare_a6ac91ab99424771ac70670c7973c3f74}{Square} (const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&triangle, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+I\+NK)
+\hyperlink{classSquare_ae96b331f8e15352149dbf9ee10ef7cfd}{Square} (const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&triangle, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+U\+R\+P\+LE)
 \begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classSquare}{Square}, requires a vector of S\+Triangles. \end{DoxyCompactList}\item 
-\hyperlink{classSquare_a80828d5c491e3d76ea4707ddd42685cd}{Square} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&origin, double angular=0.\+0, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+I\+NK)
+\hyperlink{classSquare_aff298af518965b650d52b6366de7f3bb}{Square} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&origin, double angular=0.\+0, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+U\+R\+P\+LE)
 \begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classSquare}{Square}, calls the deleguate Default Constructor. \end{DoxyCompactList}\item 
 void \hyperlink{classSquare_a75b2fd22fc3895b83bc20728afb20b10}{move} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&translation) override
 \begin{DoxyCompactList}\small\item\em Move the \hyperlink{classSquare}{Square} by point translation. \end{DoxyCompactList}\item 
@@ -49,6 +49,9 @@ void \hyperlink{classSquare_a2d56ff842244af8f2fdc85b7e5ce76f3}{flip} () override
 \mbox{\Hypertarget{classSquare_a4edbdf9ae0519cc1823f4dbbaa6bbf4c}\label{classSquare_a4edbdf9ae0519cc1823f4dbbaa6bbf4c}} 
 void \hyperlink{classSquare_a4edbdf9ae0519cc1823f4dbbaa6bbf4c}{draw} () override
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_ad1764054d43f5c91530e5067c3db42e0}\label{classSquare_ad1764054d43f5c91530e5067c3db42e0}} 
+void {\bfseries draw} (M\+L\+V\+\_\+\+Color color) override
+\item 
 bool \hyperlink{classSquare_ada046df2d9fb92286d106d4b3475980a}{is\+\_\+in\+\_\+shape} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&click) override
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
 std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classSquare_a2a8fb1bfd2f3464cee813ec8b277506e}{get\+\_\+\+Points} () override
@@ -66,11 +69,11 @@ Class of the square.
 This class manage everything about the \hyperlink{classSquare}{Square} 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classSquare_aceff50017f5950b32a967a690213a26e}\label{classSquare_aceff50017f5950b32a967a690213a26e}} 
+\mbox{\Hypertarget{classSquare_a6451bb12ac23987428f1a92bf15326b1}\label{classSquare_a6451bb12ac23987428f1a92bf15326b1}} 
 \index{Square@{Square}!Square@{Square}}
 \index{Square@{Square}!Square@{Square}}
 \subsubsection{\texorpdfstring{Square()}{Square()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+PINK} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+PURPLE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -81,11 +84,11 @@ Constructor by default of \hyperlink{classSquare}{Square}, make a \hyperlink{cla
 {\em color} & \+: Optional parameter, color of this shape \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classSquare_a6ac91ab99424771ac70670c7973c3f74}\label{classSquare_a6ac91ab99424771ac70670c7973c3f74}} 
+\mbox{\Hypertarget{classSquare_ae96b331f8e15352149dbf9ee10ef7cfd}\label{classSquare_ae96b331f8e15352149dbf9ee10ef7cfd}} 
 \index{Square@{Square}!Square@{Square}}
 \index{Square@{Square}!Square@{Square}}
 \subsubsection{\texorpdfstring{Square()}{Square()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&}]{triangle,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+PINK} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&}]{triangle,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+PURPLE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -98,11 +101,11 @@ Constructor of \hyperlink{classSquare}{Square}, requires a vector of S\+Triangle
 {\em color} & \+: Optional parameter, color of this shape \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classSquare_a80828d5c491e3d76ea4707ddd42685cd}\label{classSquare_a80828d5c491e3d76ea4707ddd42685cd}} 
+\mbox{\Hypertarget{classSquare_aff298af518965b650d52b6366de7f3bb}\label{classSquare_aff298af518965b650d52b6366de7f3bb}} 
 \index{Square@{Square}!Square@{Square}}
 \index{Square@{Square}!Square@{Square}}
 \subsubsection{\texorpdfstring{Square()}{Square()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0},  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+PINK} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0},  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+PURPLE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 

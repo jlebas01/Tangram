@@ -51,7 +51,7 @@ void \hyperlink{classSTriangle_af16f2a83efc6d94578e2feb560983850}{flip} () overr
 \mbox{\Hypertarget{classSTriangle_aacf293108989708da341b1fbaeee0aca}\label{classSTriangle_aacf293108989708da341b1fbaeee0aca}} 
 void \hyperlink{classSTriangle_aacf293108989708da341b1fbaeee0aca}{draw} () override
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
-void \hyperlink{classSTriangle_a7eddfc5b9e5b2951ba71b085345d87d1}{draw} (M\+L\+V\+\_\+\+Color Color)
+void \hyperlink{classSTriangle_a52f6b3c69067f90821cae1d378d1e575}{draw} (M\+L\+V\+\_\+\+Color color) override
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM with specific color. \end{DoxyCompactList}\item 
 bool \hyperlink{classSTriangle_a5b55df6eb4af922521da69f69df77b42}{is\+\_\+in\+\_\+shape} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&click) override
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
@@ -171,11 +171,11 @@ Compute the center point of N points.
 \begin{DoxyReturn}{Returns}
 Return the center point of these N points 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classSTriangle_a7eddfc5b9e5b2951ba71b085345d87d1}\label{classSTriangle_a7eddfc5b9e5b2951ba71b085345d87d1}} 
+\mbox{\Hypertarget{classSTriangle_a52f6b3c69067f90821cae1d378d1e575}\label{classSTriangle_a52f6b3c69067f90821cae1d378d1e575}} 
 \index{S\+Triangle@{S\+Triangle}!draw@{draw}}
 \index{draw@{draw}!S\+Triangle@{S\+Triangle}}
 \subsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily void S\+Triangle\+::draw (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{Color }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void S\+Triangle\+::draw (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -186,6 +186,10 @@ Draw this shape on I\+HM with specific color.
 {\em Color} & \+: Color from the graphic library M\+LV like M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+X\+XX \\
 \hline
 \end{DoxyParams}
+
+
+Implements \hyperlink{classDrawable}{Drawable}.
+
 \mbox{\Hypertarget{classSTriangle_a61228a7f80ee90de80dff8c4e046f51f}\label{classSTriangle_a61228a7f80ee90de80dff8c4e046f51f}} 
 \index{S\+Triangle@{S\+Triangle}!get\+\_\+center\+\_\+point@{get\+\_\+center\+\_\+point}}
 \index{get\+\_\+center\+\_\+point@{get\+\_\+center\+\_\+point}!S\+Triangle@{S\+Triangle}}
