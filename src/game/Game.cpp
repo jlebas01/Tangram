@@ -52,6 +52,8 @@ void Game::draw() {
     for (auto &shape : shapes) {
         shape->draw();
     }
+    if (mouseovered)
+        mouseovered->draw(MLV_COLOR_ALICE_BLUE);
 
     MLV_actualise_window();
 }
@@ -88,11 +90,22 @@ void Game::main_loop() {
             continue;
         }
 
+        if (cur_state == MLV_RELEASED) {
+            for (auto &shape: shapes) {
+                if (shape->is_in_shape({static_cast<double>(cur_click.x), static_cast<double>(cur_click.y)})){
+                    mouseovered = shape;
+                    break;
+                }
+                mouseovered = nullptr;
+            }
+        }
+
         if (prev_state != cur_state) {
             if (cur_state == MLV_PRESSED) {
                 for (auto &shape: shapes) {
                     if (shape->is_in_shape({static_cast<double>(cur_click.x), static_cast<double>(cur_click.y)})) {
                         selected = shape;
+                        break;
                     }
                 }
             } else if (cur_state == MLV_RELEASED) {

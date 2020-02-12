@@ -12,6 +12,8 @@
  * @version 1.0
  */
 
+#include <MLV/MLV_color.h>
+
 /*!
  * @class Drawable
  * @brief Drawable is everything to draw
@@ -27,6 +29,7 @@ public :
      */
     ~Drawable() = default;
     virtual void draw() = 0;
+    virtual void draw(MLV_Color color) = 0;
 };
 
 

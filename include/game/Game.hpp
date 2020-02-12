@@ -45,6 +45,7 @@ private:
     std::vector <std::shared_ptr<Shape>> shapes; /*!< Game main loop requires a vector of Shape - Abstract Class*/
     int w; /*!< Width of the window*/
     int h; /*!< Height of the window*/
+    std::shared_ptr<Shape> mouseovered = nullptr;
 
     /*!
      * @brief Draw the current board

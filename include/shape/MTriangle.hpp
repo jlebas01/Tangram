@@ -26,112 +26,114 @@
  */
 
 class MTriangle : public Shape {
-    private:
+private:
 
-        std::vector<STriangle> triangle; /*!< MTriangle is make by multiple triangles*/
+    std::vector<STriangle> triangle; /*!< MTriangle is make by multiple triangles*/
 
-        std::vector<Point<double>> points; /*!< MTriangle has multiple STriangle with multiple Point */
+    std::vector<Point<double>> points; /*!< MTriangle has multiple STriangle with multiple Point */
 
-        bool update; /*!< Boolean if vector points needs to be update */
+    bool update; /*!< Boolean if vector points needs to be update */
 
-        MLV_Color color; /*!< Color of the MTriangle */
+    MLV_Color color; /*!< Color of the MTriangle */
 
-        /*!
-         * @brief Parameter the constructor
-         * @param origin : shifts the figure of a translation of the origin
-         * @param angular : rotate the figure with an angular
-         */
+    /*!
+     * @brief Parameter the constructor
+     * @param origin : shifts the figure of a translation of the origin
+     * @param angular : rotate the figure with an angular
+     */
 
-        void parameter(const Point<double> &origin, double angular = 0.0);
+    void parameter(const Point<double> &origin, double angular = 0.0);
 
-        /*!
-         * @brief Compute the center of this shape
-         * @return Return a point which is the center of this shape
-         */
+    /*!
+     * @brief Compute the center of this shape
+     * @return Return a point which is the center of this shape
+     */
 
-        Point<double> center_shape();
+    Point<double> center_shape();
 
-    public:
+public:
 
-        /*!
-         * @brief Destructor of MTriangle
-         */
+    /*!
+     * @brief Destructor of MTriangle
+     */
 
-        ~MTriangle() override;
+    ~MTriangle() override;
 
-        /*!
-         * @brief Constructor by default of MTriangle, make a MTriangle as default
-         * @param color : Optional parameter, color of this shape
-         */
+    /*!
+     * @brief Constructor by default of MTriangle, make a MTriangle as default
+     * @param color : Optional parameter, color of this shape
+     */
 
-        explicit MTriangle(MLV_Color color = MLV_COLOR_ORANGE);
+    explicit MTriangle(MLV_Color color = MLV_COLOR_ORANGE);
 
-        /*!
-         * @brief Constructor of MTriangle, requires a vector of STriangles
-         * @param triangle : The MTriangle will created with a vector of STriangle (4)
-         * @param color : Optional parameter, color of this shape
-         */
+    /*!
+     * @brief Constructor of MTriangle, requires a vector of STriangles
+     * @param triangle : The MTriangle will created with a vector of STriangle (4)
+     * @param color : Optional parameter, color of this shape
+     */
 
-        explicit MTriangle(const std::vector<STriangle> &triangle, MLV_Color color = MLV_COLOR_ORANGE);
+    explicit MTriangle(const std::vector<STriangle> &triangle, MLV_Color color = MLV_COLOR_ORANGE);
 
-        /*!
-         * @brief Constructor of MTriangle, calls the deleguate Default Constructor
-         * @param origin : shifts the figure of a translation of the origin
-         * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
-         * @param color : Optional parameter, color of this shape
-         */
+    /*!
+     * @brief Constructor of MTriangle, calls the deleguate Default Constructor
+     * @param origin : shifts the figure of a translation of the origin
+     * @param angular : Optional parameter (angular=0.0 as default), rotate the figure with an angular
+     * @param color : Optional parameter, color of this shape
+     */
 
-        explicit MTriangle(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_ORANGE);
+    explicit MTriangle(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_ORANGE);
 
-        /*!
-         * @brief Move the MTriangle by point translation
-         * @param translation : Every points of this shape will be translate by this parameter
-         */
+    /*!
+     * @brief Move the MTriangle by point translation
+     * @param translation : Every points of this shape will be translate by this parameter
+     */
 
-        void move(const Point<double> &translation) override;
+    void move(const Point<double> &translation) override;
 
-        /*!
-         * @brief Rotate the MTriangle with specified angular
-         * @param angular : This angular should be between (0, 2PI)
-         */
+    /*!
+     * @brief Rotate the MTriangle with specified angular
+     * @param angular : This angular should be between (0, 2PI)
+     */
 
-        void rotate(double angular) override;
+    void rotate(double angular) override;
 
-        /*!
-         * @brief Flip the figure as symmetry
-         */
+    /*!
+     * @brief Flip the figure as symmetry
+     */
 
-        void flip() override;
+    void flip() override;
 
-        /*!
-         * @brief Draw this shape on IHM
-         */
+    /*!
+     * @brief Draw this shape on IHM
+     */
 
-        void draw() override;
+    void draw() override;
 
-        /*!
-         * @brief Check if a point is in this shape
-         * @param click : Point to check
-         * @return true if click is in this shape, false if not
-         */
+    void draw(MLV_Color color) override;
 
-        bool is_in_shape(const Point<double> &click) override;
+    /*!
+     * @brief Check if a point is in this shape
+     * @param click : Point to check
+     * @return true if click is in this shape, false if not
+     */
 
-        /*!
-         * @brief Get points of this shape
-         * @return Return a vector of points of this shape
-         */
+    bool is_in_shape(const Point<double> &click) override;
 
-        std::vector<Point<double>> get_Points() override;
+    /*!
+     * @brief Get points of this shape
+     * @return Return a vector of points of this shape
+     */
 
-        bool set_Points(const Point<double> &ref, const Point<double> &changed) override;
+    std::vector<Point<double>> get_Points() override;
 
-        /*!
-         * @brief Convert all data of MTriangle in a string
-         * @return Return a string which contains every points of this shape
-         */
+    bool set_Points(const Point<double> &ref, const Point<double> &changed) override;
 
-        std::string toString() override;
+    /*!
+     * @brief Convert all data of MTriangle in a string
+     * @return Return a string which contains every points of this shape
+     */
+
+    std::string toString() override;
 };
 
 #endif //TANGRAM_MTRIANGLE_H

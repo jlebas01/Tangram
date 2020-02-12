@@ -64,7 +64,7 @@ public:
      * @param color : Optional parameter, color of this shape
      */
 
-    explicit Square(MLV_Color color = MLV_COLOR_PINK);
+    explicit Square(MLV_Color color = MLV_COLOR_PURPLE);
 
     /*!
      * @brief Constructor of Square, requires a vector of STriangles
@@ -72,7 +72,7 @@ public:
      * @param color : Optional parameter, color of this shape
      */
 
-    explicit Square(const std::vector<STriangle> &triangle, MLV_Color color = MLV_COLOR_PINK);
+    explicit Square(const std::vector<STriangle> &triangle, MLV_Color color = MLV_COLOR_PURPLE);
 
     /*!
      * @brief Constructor of Square, calls the deleguate Default Constructor
@@ -81,7 +81,7 @@ public:
      * @param color : Optional parameter, color of this shape
      */
 
-    explicit Square(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_PINK);
+    explicit Square(const Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_PURPLE);
 
     /*!
      * @brief Move the Square by point translation
@@ -108,6 +108,8 @@ public:
      */
 
     void draw() override;
+
+    void draw(MLV_Color color) override;
 
     /*!
      * @brief Check if a point is in this shape

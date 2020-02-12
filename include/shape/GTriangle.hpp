@@ -109,6 +109,9 @@ public:
 
     void draw() override;
 
+
+    void draw(MLV_Color color) override;
+
     /*!
      * @brief Check if a point is in this shape
      * @param click : Point to check

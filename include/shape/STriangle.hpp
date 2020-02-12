@@ -88,7 +88,8 @@ public:
      * @param color : Optional parameter, color of this shape
      */
 
-    STriangle(const Point<double> &p1, const Point<double> &p2, const Point<double> &p3, MLV_Color color = MLV_COLOR_GREEN);
+    STriangle(const Point<double> &p1, const Point<double> &p2, const Point<double> &p3,
+              MLV_Color color = MLV_COLOR_GREEN);
 
     /*!
      * @brief Constructor of STriangle, requires a vector of 3 points
@@ -139,7 +140,7 @@ public:
      * @param Color : Color from the graphic library MLV like MLV_COLOR_XXX
      */
 
-    void draw(MLV_Color Color);
+    void draw(MLV_Color color) override;
 
     /*!
     * @brief Check if a point is in this shape

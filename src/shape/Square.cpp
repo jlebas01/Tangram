@@ -80,6 +80,12 @@ void Square::draw() {
     }
 }
 
+void Square::draw(MLV_Color color) {
+    for (auto &it : triangle) {
+        it.draw(color);
+    }
+}
+
 bool Square::is_in_shape(const Point<double> &click) {
     for (auto &it : triangle) {
         if (it.is_in_triangle(click)) {
@@ -90,11 +96,11 @@ bool Square::is_in_shape(const Point<double> &click) {
 }
 
 std::vector<Point<double>> Square::get_Points() {
-    if (update){
+    if (update) {
         points.clear();
         update = false;
-        for (auto &it: triangle){
-            for (auto &it2 : it.get_Points()){
+        for (auto &it: triangle) {
+            for (auto &it2 : it.get_Points()) {
                 points.push_back(it2);
             }
         }
@@ -105,8 +111,8 @@ std::vector<Point<double>> Square::get_Points() {
 
 bool Square::set_Points(const Point<double> &ref, const Point<double> &changed) {
     bool status = false;
-    for (auto &it : triangle){
-        status |= it.set_Points(ref,changed);
+    for (auto &it : triangle) {
+        status |= it.set_Points(ref, changed);
     }
     return status;
 }

@@ -78,6 +78,12 @@ void Parallelogram::draw() {
     }
 }
 
+void Parallelogram::draw(MLV_Color color) {
+    for (auto &it : triangle) {
+        it.draw(color);
+    }
+}
+
 bool Parallelogram::is_in_shape(const Point<double> &click) {
     for (auto &it : triangle) {
         if (it.is_in_triangle(click)) {

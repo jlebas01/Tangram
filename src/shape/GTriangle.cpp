@@ -85,6 +85,12 @@ void GTriangle::draw() {
     }
 }
 
+void GTriangle::draw(MLV_Color color) {
+    for (auto &it : triangle) {
+        it.draw(color);
+    }
+}
+
 bool GTriangle::is_in_shape(const Point<double> &click) {
     for (auto &it : triangle) {
         if (it.is_in_triangle(click)) {
