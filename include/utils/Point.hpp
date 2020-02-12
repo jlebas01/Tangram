@@ -23,6 +23,8 @@ public:
     T x; /*!< Template x for a point */
     T y; /*!< Template y for a point */
 
+    constexpr Point( const Point<T> &p ) = default;
+
     /*!
      * @brief Constructor for a point with initialisation list
      */
@@ -36,7 +38,7 @@ public:
      * @param _y : Template Y coordinate
      */
 
-    Point(const T _x, const T _y) {
+    Point(const T &_x, const T &_y) {
         this->x = _x;
         this->y = _y;
     }
@@ -44,10 +46,10 @@ public:
     /*!
      * @brief Operator = of a point
      * @param p : Point to "copy"
-     * @return Return a reference to a point
+     * @return Return a reference to aatomic point
      */
 
-    Point &operator=(const Point<T> p) {
+    Point &operator=(const Point<T> &p) {
         this->x = p.x;
         this->y = p.y;
         return *this;
@@ -59,7 +61,7 @@ public:
      * @return Return True if the point is the same, false if not
      */
 
-    bool operator==(const Point<T> p) const {
+    bool operator==(const Point<T> &p) const {
         return this->x == p.x && this->y == p.y;
     }
 
@@ -69,7 +71,7 @@ public:
      * @return Return True if the point is different, false if not
      */
 
-    bool operator!=(const Point<T> p) const {
+    bool operator!=(const Point<T> &p) const {
         return this->x != p.x || this->y != p.y;
     }
 
@@ -79,7 +81,7 @@ public:
      * @return Return True if the point is strictly weaker, false if not
      */
 
-    bool operator<(const Point<T> p) const {
+    bool operator<(const Point<T> &p) const {
         return this->x < p.x && this->y < p.y;
     }
 
@@ -89,17 +91,22 @@ public:
      * @return Return True if the point is strictly greater, false if not
      */
 
-    bool operator>(const Point<T> p) const {
+    bool operator>(const Point<T> &p) const {
         return this->x > p.x && this->y > p.y;
     }
+
+    /*!
+     * @brief Hash a Point<T>
+     * @struct Struct which allows to hash a point with Point<T>
+     */
 
 
     struct hash_point {
         std::size_t operator()(const Point<double> &p) const {
-            return std::hash<double>()(p.x) ^ std::hash<double>()(p.y);
+            return std::hash<T>()(p.x) ^ std::hash<T>()(p.y);
         }
 
-        bool operator()(const Point<double> &p1, const Point<double> &p2) const {
+        bool operator()(const Point<T> &p1, const Point<T> &p2) const {
             return p1.x == p2.x && p1.y == p2.y;
         }
     };

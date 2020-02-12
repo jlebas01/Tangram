@@ -5,10 +5,9 @@
 #include <drawable/Menu.hpp>
 #include <utils/Point.hpp>
 #include <MLV/MLV_all.h>
-#include <iostream>
 
 
-void Menu::add_button(Button b) {
+void Menu::add_button(const Button &b) {
     buttons.push_back(b);
 }
 

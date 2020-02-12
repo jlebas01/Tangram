@@ -150,6 +150,7 @@ std::string STriangle::toString() {
 
 std::vector<Point<double>> STriangle::get_Points() {
     std::vector<Point<double>> const vec_points = {this->points};
+   // return {this->points = std::move(this->points)};
     return vec_points;
 }
 
@@ -159,7 +160,6 @@ bool STriangle::set_Points(const Point<double> &ref, const Point<double> &change
         if (it == ref) {
             it.x = changed.x;
             it.y = changed.y;
-            //std::cout << toString() << std::endl;
             status = true;
         }
     }

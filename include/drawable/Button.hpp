@@ -45,7 +45,7 @@ public:
      * @param text : Text of the button
      */
 
-    Button(Point<int> point, Point<int> sizing, std::string text);
+    Button(const Point<int> &point, const Point<int> &sizing, std::string text);
 
     /*!
      * @brief Constructor of a Button
@@ -55,7 +55,7 @@ public:
      * @param callback : Pointer of function for callback
      */
 
-    Button(Point<int> point, Point<int> sizing, std::string text, std::function<int(int)> callback);
+    Button(const Point<int> &point, const Point<int> &sizing, std::string text, std::function<int(int)> callback);
 
     /*!
      * @brief Check if a click is in the button

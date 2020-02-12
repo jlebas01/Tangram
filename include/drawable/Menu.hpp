@@ -39,7 +39,7 @@ public:
      * @param button : Button to add
      */
 
-    void add_button(Button button);
+    void add_button(const Button &button);
 
     /*!
      * @brief Main loop of the Menu

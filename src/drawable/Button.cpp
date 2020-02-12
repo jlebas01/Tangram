@@ -9,14 +9,13 @@
 #include <MLV/MLV_color.h>
 #include <MLV/MLV_text.h>
 
-Button::~Button() {
-}
+Button::~Button() = default;
 
-Button::Button(Point<int> point, Point<int> sizing, std::string text) : b_point(point), b_sizing(sizing),
+Button::Button(const Point<int> &point, const Point<int> &sizing, std::string text) : b_point(point), b_sizing(sizing),
                                                                         b_text(std::move(text)), b_callback(
                 nullptr) {}
 
-Button::Button(Point<int> point, Point<int> sizing, std::string text, std::function<int(int)> callback)
+Button::Button(const Point<int> &point, const Point<int> &sizing, std::string text, std::function<int(int)> callback)
         : b_point(point), b_sizing(sizing), b_text(std::move(text)), b_callback(std::move(
         callback)) {}
 
