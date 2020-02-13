@@ -70,8 +70,10 @@ bool Loader::parse_file(const std::string &filename, Game &game) {
             }
         }
         game.set_Objective(vec_objective);
+        vec_objective.clear();
         file.close();
         return true;
     }
+    vec_objective.clear();
     return false;
 }

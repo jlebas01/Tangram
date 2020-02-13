@@ -47,6 +47,7 @@ Point<double> Parallelogram::center_shape() {
         center_points.push_back(it.get_center_point());
     }
     Point<double> const point_rotate = STriangle::center_point(center_points);
+    center_points.clear();
     return point_rotate;
 }
 

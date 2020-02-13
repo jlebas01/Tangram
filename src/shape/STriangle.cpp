@@ -6,7 +6,7 @@
 #include <tuple>
 
 #include <shape/STriangle.hpp>
-#include <iostream>
+#include <bits/unique_ptr.h>
 
 STriangle::~STriangle() {
     points.clear(); //delete all elements in vector triangle (calling destructor of any elements in this vector)
@@ -83,8 +83,8 @@ void STriangle::flip() {
 }
 
 void STriangle::draw() {
-    int *x_points = new int[this->points.size()];
-    int *y_points = new int[this->points.size()];
+    std::unique_ptr<int[]> x_points(new int[this->points.size()]);
+    std::unique_ptr<int[]> y_points(new int[this->points.size()]);
     int i = 0;
     for (auto &it: this->points) {
         x_points[i] = static_cast<int>(it.x);
@@ -92,19 +92,19 @@ void STriangle::draw() {
         i++;
     }
 
-    MLV_draw_filled_polygon(x_points, y_points, static_cast<int>(points.size()), this->color);
+    MLV_draw_filled_polygon(x_points.get(), y_points.get(), static_cast<int>(points.size()), this->color);
 }
 
 void STriangle::draw(const MLV_Color _color) {
-    int *x_points = new int[this->points.size()];
-    int *y_points = new int[this->points.size()];
+    std::unique_ptr<int[]> x_points(new int[this->points.size()]);
+    std::unique_ptr<int[]> y_points(new int[this->points.size()]);
     int i = 0;
     for (auto &it: this->points) {
         x_points[i] = static_cast<int>(it.x);
         y_points[i] = static_cast<int>(it.y);
         i++;
     }
-    MLV_draw_filled_polygon(x_points, y_points, static_cast<int>(this->points.size()), _color);
+    MLV_draw_filled_polygon(x_points.get(), y_points.get(), static_cast<int>(this->points.size()), _color);
 }
 
 Point<double> STriangle::center_point(const std::vector<Point<double>> &list_points) {

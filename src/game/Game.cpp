@@ -24,11 +24,11 @@ Game::Game(const int _w, const int _h) {
     this->h = _h;
 
     //ajouter toutes les formes
-    (this->shapes).push_back(std::shared_ptr<Shape>(new STriangle({50.0, 50.0}, 0.0)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(new Parallelogram({50.0, 50.0}, 0.0)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(new GTriangle({50.0, 50.0}, 0.0)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(new MTriangle({50.0, 50.0}, 0.0)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(new Square({50.0, 50.0}, 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
 
     for (auto &any_shape : objective.get_Objective()) {
         this->objective_shape.push_back(std::shared_ptr<Shape>(any_shape));
@@ -170,7 +170,7 @@ void Game::clear() {
 
 void Game::stick(const std::shared_ptr<Shape> &shape) {
     auto set_shape = new std::unordered_set<Point<double>, Point<double>::hash_point, std::equal_to<>>();
-    std::unordered_map<Point<double>, std::pair<Point<double>, double>, Point<double>::hash_point, std::equal_to<>> map_distance;
+    auto map_distance = std::unordered_map<Point<double>, std::pair<Point<double>, double>, Point<double>::hash_point, std::equal_to<>>();
 
     for (auto &it: shape->get_Points()) {
         set_shape->insert(it);
@@ -197,4 +197,5 @@ void Game::stick(const std::shared_ptr<Shape> &shape) {
             shape->move(Point<double>(0.0, 0.0));
         }
     }
+    delete set_shape;
 }
