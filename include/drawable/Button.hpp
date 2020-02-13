@@ -15,6 +15,7 @@
 #include <utility>
 #include <utils/Point.hpp>
 #include <functional>
+#include <MLV/MLV_color.h>
 
 /*!
  * @class Button
@@ -77,6 +78,8 @@ public:
      */
 
     void draw();
+
+    void draw(MLV_Color color);
 
     /*!
      * @brief Set a callback for a button

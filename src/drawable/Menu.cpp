@@ -30,9 +30,10 @@ void Menu::main_loop() {
 }
 
 void Menu::draw() {
-    MLV_clear_window(MLV_COLOR_GRAY3);
+    MLV_clear_window(MLV_COLOR_LIGHT_GOLDENROD);
     for (auto b: buttons) {
         b.draw();
     }
+
     MLV_actualise_window();
 }

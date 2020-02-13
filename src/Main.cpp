@@ -7,15 +7,33 @@
 #include <drawable/Button.hpp>
 #include <MLV/MLV_all.h>
 #include <game/Game.hpp>
+#include <filesystem>
 
 #define W_WIDTH 1000
 #define W_HEIGHT 800
 
 static int load_callback(int v) {
-    Game g(W_WIDTH, W_HEIGHT);
-    std::string filename("test.txt");
-    Loader::parse_file(filename, g);
-    g.main_loop();
+    Menu menu;
+    const std::string path("../extern/board");
+    double i = 0.25, j = 0.5;
+
+    for (auto &entry : std::filesystem::directory_iterator(path)) {
+        Game game(W_WIDTH, W_HEIGHT);
+        Loader::parse_file(entry.path(), game);
+        menu.add_button({{i * (static_cast<double>(W_WIDTH) / 6), j * (static_cast<double>(W_HEIGHT) / 6)}, {W_WIDTH / 6, W_HEIGHT / 6}, entry.path(),
+                         [&game](int a) -> int {
+                             game.main_loop();
+                             return 0;
+                         }});
+        i += 1.5;
+
+        if (i > 5) {
+            i = 0.25;
+            j += 1.5;
+        }
+    }
+
+    menu.main_loop();
     return 1;
 }
 
@@ -42,7 +60,8 @@ static Menu create_main_menu() {
     menu.add_button(
             Button({W_WIDTH / 3, W_HEIGHT / 6}, {W_WIDTH / 3, W_HEIGHT / 6}, "Launch", launch_game_button_callback));
     menu.add_button(
-            Button({W_WIDTH / 3, static_cast<int>(W_HEIGHT / 2.5)}, {W_WIDTH / 3, W_HEIGHT / 6}, "Load", load_callback));
+            Button({W_WIDTH / 3, static_cast<int>(W_HEIGHT / 2.5)}, {W_WIDTH / 3, W_HEIGHT / 6}, "Load",
+                   load_callback));
     menu.add_button(
             Button({W_WIDTH / 6, 4 * W_HEIGHT / 6}, {W_WIDTH / 6, W_HEIGHT / 6}, "Settings", settings_button_callback));
     menu.add_button(
