@@ -1,1 +1,5 @@
 STriangle 0 0 0
+STriangle 0 0 0
+STriangle 0 0 0
+STriangle 0 0 0
+STriangle 200 200 30

@@ -18,15 +18,20 @@ static int load_callback(int v) {
     Menu menu;
     std::string path("../extern/board/page" + std::to_string(page));
 
+    if (!std::filesystem::is_directory(path)) {
+        return 1;
+    }
+
     double i = 0.25, j = 1;
 
     for (auto &entry : std::filesystem::directory_iterator(path)) {
-        Game game(W_WIDTH, W_HEIGHT);
-        Loader::parse_file(entry.path(), game);
-        menu.add_button({{i * (static_cast<double>(W_WIDTH) / 6), j * (static_cast<double>(W_HEIGHT) / 6)},
+        menu.add_button({{i * (W_WIDTH / 6), j * (W_HEIGHT / 6)},
                          {W_WIDTH / 6, W_HEIGHT / 6}, entry.path().filename(),
-                         [&game](int a) -> int {
+                         [entry](int a) -> int {
+                             Game game(W_WIDTH, W_HEIGHT);
+                             Loader::parse_file(entry.path(), game);
                              game.main_loop();
+                             page = 1;
                              return 0;
                          }});
         i += 1.5;
@@ -35,21 +40,34 @@ static int load_callback(int v) {
             i = 0.25;
             j += 1.5;
         }
-
-        if (std::filesystem::is_directory("../extern/board/page" + std::to_string(page + 1)))
-            menu.add_button({{W_WIDTH - W_WIDTH / 3, W_HEIGHT - W_HEIGHT / 8}, {W_WIDTH / 6, W_HEIGHT / 9}, "next ->",
-                             [](int a) -> int {
-                                 page++;
-                                 load_callback(0);
-                             }});
-
-        if (std::filesystem::is_directory("../extern/board/page" + std::to_string(page - 1)))
-            menu.add_button({{W_WIDTH / 6, W_HEIGHT - W_HEIGHT / 8}, {W_WIDTH / 6, W_HEIGHT / 9}, "<- prev",
-                             [](int a) -> int {
-                                 page--;
-                                 load_callback(0);
-                             }});
     }
+
+    if (std::filesystem::is_directory("../extern/board/page" + std::to_string(page + 1)))
+        menu.add_button({{W_WIDTH - W_WIDTH / 3, W_HEIGHT - W_HEIGHT / 8}, {W_WIDTH / 6, W_HEIGHT / 9}, "next ->",
+                         [](int a) -> int {
+                             page++;
+                             load_callback(0);
+                             return 0;
+                         }});
+
+    if (std::filesystem::is_directory("../extern/board/page" + std::to_string(page - 1)))
+        menu.add_button({{W_WIDTH / 6, W_HEIGHT - W_HEIGHT / 8}, {W_WIDTH / 6, W_HEIGHT / 9}, "<- prev",
+                         [](int a) -> int {
+                             page--;
+                             load_callback(0);
+                             return 0;
+                         }});
+
+    menu.add_button({{W_WIDTH / 2 - W_WIDTH / 12, W_HEIGHT - W_HEIGHT / 8}, {W_WIDTH / 6, W_HEIGHT / 9}, "back",
+                     [](int) -> int {
+                         return 0;
+                     }});
+    std::cout << std::filesystem::directory_entry(path).path().filename() << std::endl;
+    menu.add_button({{W_WIDTH / 2 - W_WIDTH / 8, W_HEIGHT / 24}, {W_WIDTH / 4, W_HEIGHT / 9},
+                     std::filesystem::directory_entry(path).path().filename(), [](int) -> int {
+                return 1;
+            }});
+
 
     menu.main_loop();
     return 1;

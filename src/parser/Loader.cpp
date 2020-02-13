@@ -26,7 +26,8 @@ std::filesystem::path Loader::refactor_path(const std::filesystem::path &path) {
 }
 
 bool Loader::parse_file(const std::string &filename, Game &game) {
-    std::filesystem::path path(refactor_path(filename));
+    //std::filesystem::path path(refactor_path(filename));
+    std::filesystem::path path(filename);
     std::ifstream file;
     std::string shape;
 
