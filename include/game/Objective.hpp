@@ -30,6 +30,8 @@ private:
     MLV_Color color; /*!< Objective requires a color to draw these shapes */
 public:
 
+     ~Objective();
+
     /*!
      * @brief Constructor of an objective, default constructor
      * @param color : color of the objective shape

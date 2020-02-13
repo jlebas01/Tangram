@@ -12,13 +12,19 @@
 #include <iostream>
 #include <memory>
 
+Objective::~Objective(){
+    shapes.clear(); //delete all elements in vector triangle (calling destructor of any elements in this vector)
+    // create a new (temporary) vector and swap its contents with triangle. The temporary vector is then destroyed, freeing the memory along with it.
+    std::vector<std::shared_ptr<Shape>>().swap(shapes);
+}
+
 Objective::Objective(const MLV_Color _color){
     this->color = _color;
-    (this->shapes).push_back(std::shared_ptr<Shape>(new STriangle({250.0, 350.0}, 0.0, _color)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(new Parallelogram({350.0, 350.0}, 0.0, _color)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(new GTriangle({50.0, 50.0}, 0.0, _color)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(new MTriangle({100.0, 50.0}, 0.0, _color)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(new Square({100.0, 50.0}, 0.0, _color)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(250.0, 350.0), 0.0, _color)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<Parallelogram>(Point<double>(350.0, 350.0), 0.0, _color)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<GTriangle>(Point<double>(50.0, 50.0), 0.0, _color)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<MTriangle>(Point<double>(100.0, 50.0), 0.0, _color)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<Square>(Point<double>(100.0, 50.0), 0.0, _color)));
 }
 
 Objective::Objective(const std::vector<std::shared_ptr<Shape>> &objective, const MLV_Color _color){

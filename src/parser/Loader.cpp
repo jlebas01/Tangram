@@ -44,27 +44,27 @@ bool Loader::parse_file(const std::string &filename, Game &game) {
                 case str2int("STriangle") :
                     game.add_shape(std::shared_ptr<Shape>(std::make_shared<STriangle>()));
                     vec_objective.push_back(std::shared_ptr<Shape>(
-                            new STriangle(Point<double>(x, y), angular, game.get_Objective_Color())));
+                            std::make_shared<STriangle>(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
                 case str2int("MTriangle") :
                     game.add_shape(std::shared_ptr<Shape>(std::make_shared<MTriangle>()));
                     vec_objective.push_back(std::shared_ptr<Shape>(
-                            new MTriangle(Point<double>(x, y), angular, game.get_Objective_Color())));
+                            std::make_shared<MTriangle>(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
                 case str2int("GTriangle") :
                     game.add_shape(std::shared_ptr<Shape>(std::make_shared<GTriangle>()));
                     vec_objective.push_back(std::shared_ptr<Shape>(
-                            new GTriangle(Point<double>(x, y), angular, game.get_Objective_Color())));
+                            std::make_shared<GTriangle>(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
                 case str2int("Square") :
                     game.add_shape(std::shared_ptr<Shape>(std::make_shared<Square>()));
                     vec_objective.push_back(std::shared_ptr<Shape>(
-                            new Square(Point<double>(x, y), angular, game.get_Objective_Color())));
+                            std::make_shared<Square>(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
                 case str2int("Parallelogram") :
                     game.add_shape(std::shared_ptr<Shape>(std::make_shared<Parallelogram>()));
                     vec_objective.push_back(std::shared_ptr<Shape>(
-                            new Parallelogram(Point<double>(x, y), angular, game.get_Objective_Color())));
+                            std::make_shared<Parallelogram>(Point<double>(x, y), angular, game.get_Objective_Color())));
                     break;
             }
         }
