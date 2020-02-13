@@ -34,6 +34,12 @@ int Button::click(int val) {
 
 void Button::draw() {
     MLV_draw_text_box(b_point.x, b_point.y, b_sizing.x, b_sizing.y, b_text.c_str(), 0,
-                      MLV_COLOR_RED, MLV_COLOR_BLUE, MLV_COLOR_RED,
+                      MLV_COLOR_BLACK, MLV_COLOR_BLACK, MLV_COLOR_GOLDENROD,
+                      MLV_TEXT_CENTER, MLV_HORIZONTAL_CENTER, MLV_VERTICAL_CENTER);
+}
+
+void Button::draw(MLV_Color color) {
+    MLV_draw_text_box(b_point.x, b_point.y, b_sizing.x, b_sizing.y, b_text.c_str(), 0,
+                      MLV_COLOR_BLACK, MLV_COLOR_BLACK, color,
                       MLV_TEXT_CENTER, MLV_HORIZONTAL_CENTER, MLV_VERTICAL_CENTER);
 }
