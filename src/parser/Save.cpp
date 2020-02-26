@@ -71,6 +71,7 @@ bool Save::saveGame(const std::vector<std::shared_ptr<Shape>> &Game) {
     char *rdm = new char[8];
     gen_random(rdm, 8);
     std::string filename = std::string("save_").append(rdm).append(".txt");
+    delete(rdm);
     std::string path =
             std::string("../extern/board/page") + std::to_string(Save::whereSaveIt()) +
             std::string("/").append(filename);

@@ -68,7 +68,7 @@ void STriangle::move(const Point<double> &translation) {
     translate_shape.y+=translation.y;
 }
 
-void STriangle::rotate(const double angular) {s
+void STriangle::rotate(const double angular) {
     center.operator=(this->center_point());
     for (auto &it : points) {
         it = Point<double>((cos(angular) * (it.x - center.x)) - (sin(angular) * (it.y - it.y)) + center.x,
