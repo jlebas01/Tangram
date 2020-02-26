@@ -24,10 +24,23 @@ SET(TARGET_NAME tangram)
 ADD_EXECUTABLE(${TARGET_NAME} ${SOURCE_FILES} ${HEADER_FILES})
 TARGET_LINK_LIBRARIES(${TARGET_NAME} PUBLIC PkgConfig::MLV stdc++fs)
 
+function(define_file_basename_for_sources tangram)
+    get_target_property(SOURCE_FILES "${TARGET_NAME}" SOURCES)
+    foreach(sourcefile ${SOURCE_FILES})
+        # Add the FILE_BASENAME=filename compile definition to the list.
+        get_filename_component(basename "${SOURCE_FILES}" NAME)
+        # Set the updated compile definitions on the source file.
+        set_property(
+                SOURCE "${SOURCE_FILES}" APPEND
+                PROPERTY COMPILE_DEFINITIONS "FILE_BASENAME=\"${basename}\"")
+    endforeach()
+endfunction()
+define_file_basename_for_sources(tangram)
+
+
 
 TARGET_COMPILE_OPTIONS(
         ${TARGET_NAME} PRIVATE
-        -g
         -O2
         -std=c++17
 )
@@ -41,6 +54,7 @@ IF (CMAKE_CXX_COMPILER_ID MATCHES "[Cc]lang")
             -Wfatal-errors
             -Wno-deprecated
             -Wno-global-constructors
+
     )
     IF (CMAKE_CXX_COMPILER_VERSION VERSION_LESS "9.0.0")
     ELSE ()

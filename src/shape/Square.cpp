@@ -125,3 +125,17 @@ std::string Square::toString() {
     }
     return t;
 }
+
+Point<double> Square::leftCorner() {
+    const Point<double> leftcorner = {triangle.at(0).leftCorner()};
+    return leftcorner;
+}
+
+double Square::current_angular() {
+    const double angular = triangle.at(0).current_angular();
+    return angular;
+}
+
+std::string Square::shape() {
+    return std::string("Square");
+}

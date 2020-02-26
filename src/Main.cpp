@@ -9,9 +9,9 @@
 #include <game/Game.hpp>
 #include <filesystem>
 
-#define W_WIDTH 1000
-#define W_HEIGHT 800
 
+static const int W_WIDTH = static_cast<int>(MLV_get_desktop_width() * 0.8);
+static const int W_HEIGHT = static_cast<int>(MLV_get_desktop_height() * 0.8);
 int page = 1;
 
 static int load_callback(int v) {
@@ -22,10 +22,11 @@ static int load_callback(int v) {
         return 1;
     }
 
-    double i = 0.25, j = 1;
+    double i = 0.25, j = 1.0;
 
     for (auto &entry : std::filesystem::directory_iterator(path)) {
-        menu.add_button({{i * (W_WIDTH / 6), j * (W_HEIGHT / 6)},
+        auto pos_x = static_cast<int>(i * static_cast<double>(W_WIDTH) / 6.0), pos_y = static_cast<int>(j * static_cast<double>(W_HEIGHT) / 6.0);
+        menu.add_button({{pos_x, pos_y},
                          {W_WIDTH / 6, W_HEIGHT / 6}, entry.path().filename(),
                          [entry](int a) -> int {
                              Game game(W_WIDTH, W_HEIGHT);
@@ -107,8 +108,8 @@ static Menu create_main_menu() {
 }
 
 int main(int argc, char *argv[]) {
-
     Menu m = create_main_menu();
+    unsigned int nb_file = 0;
 
     MLV_create_window("Tangram", nullptr, W_WIDTH, W_HEIGHT);
     m.main_loop();

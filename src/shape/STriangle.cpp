@@ -7,6 +7,7 @@
 
 #include <shape/STriangle.hpp>
 #include <bits/unique_ptr.h>
+#include <iostream>
 
 STriangle::~STriangle() {
     points.clear(); //delete all elements in vector triangle (calling destructor of any elements in this vector)
@@ -21,6 +22,8 @@ STriangle::STriangle(const Point<double> &point1, const Point<double> &point2, c
     this->points.emplace_back(point3.x, point3.y);
     this->center = this->center_point();
     this->color = _color;
+    this->angular_shape = 0.0;
+    Point<double> translate_shape = {0.0, 0.0};
 }
 
 STriangle::STriangle(const std::vector<Point<double>> &_points, const MLV_Color _color) {
@@ -29,11 +32,16 @@ STriangle::STriangle(const std::vector<Point<double>> &_points, const MLV_Color 
     }
     this->center = this->center_point();
     this->color = _color;
+    this->angular_shape = 0.0;
+    Point<double> translate_shape = {0.0, 0.0};
 }
 
 STriangle::STriangle(const Point<double> &origin, const double angular, const MLV_Color _color) : STriangle() {
+    this->angular_shape = 0.0;
+    Point<double> translate_shape = {0.0, 0.0};
     parameter(origin, angular);
     this->color = _color;
+
 }
 
 void STriangle::parameter(const Point<double> &origin, const double angular) {
@@ -47,6 +55,7 @@ STriangle::STriangle(const MLV_Color _color) {
     this->points.emplace_back(0.0, 100.0);
     this->center = this->center_point();
     this->color = _color;
+    this->angular_shape = 0.0;
 }
 
 void STriangle::move(const Point<double> &translation) {
@@ -55,15 +64,18 @@ void STriangle::move(const Point<double> &translation) {
         it = Point<double>(it.x + translation.x, it.y + translation.y);
     }
     center = this->center_point();
+    translate_shape.x+=translation.x;
+    translate_shape.y+=translation.y;
 }
 
-void STriangle::rotate(const double angular) {
+void STriangle::rotate(const double angular) {s
     center.operator=(this->center_point());
     for (auto &it : points) {
-        it = Point<double>((cos(angular) * (it.x - center.x)) - (sin(angular) * (it.y - center.y)) + center.x,
-                           (sin(angular) * (it.x - center.x)) + (cos(angular) * (it.y - center.y)) + center.y);
+        it = Point<double>((cos(angular) * (it.x - center.x)) - (sin(angular) * (it.y - it.y)) + center.x,
+                           (sin(angular) * (it.x - center.x)) + (cos(angular) * (it.y - it.y)) + center.y);
     }
     center = this->center_point();
+    angular_shape += angular;
 }
 
 void STriangle::rotate(const double angular, const Point<double> &center_point) {
@@ -73,6 +85,7 @@ void STriangle::rotate(const double angular, const Point<double> &center_point) 
                 (sin(angular) * (it.x - center_point.x)) + (cos(angular) * (it.y - center_point.y)) + center_point.y);
     }
     center = this->center_point();
+    angular_shape += angular;
 }
 
 void STriangle::flip() {
@@ -192,4 +205,18 @@ bool STriangle::is_in_triangle(const Point<double> &click) {
 
 double STriangle::sign(const Point<double> &p1, const Point<double> &p2, const Point<double> &p3) {
     return (p1.x - p3.x) * (p2.y - p3.y) - (p2.x - p3.x) * (p1.y - p3.y);
+}
+
+double STriangle::current_angular() {
+    const double angular = angular_shape;
+    return angular;
+}
+
+Point<double> STriangle::leftCorner() {
+    const Point<double> leftcorner = translate_shape;
+    return leftcorner;
+}
+
+std::string STriangle::shape() {
+    return std::string("STriangle");
 }

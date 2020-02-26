@@ -3,5 +3,105 @@
 //
 
 #include <iostream>
-
 #include <parser/Save.hpp>
+#include <random>
+
+Save::Save() {
+    current_pages = std::stoi(exec(std::string(" ls ../extern/board/ | wc -l").c_str()));
+}
+
+std::string Save::exec(const char *cmd) {
+    std::array<char, 128> buffer{};
+    std::string result;
+    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(cmd, "r"), pclose);
+    if (!pipe) {
+        throw std::runtime_error("popen() failed!");
+    }
+    while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
+        result += buffer.data();
+    }
+    return result;
+}
+
+
+unsigned int Save::whereSaveIt() {
+    unsigned int nb_file = 0;
+    for (unsigned int i = 1; i < current_pages+1; i++) {
+        nb_file = std::stoi(
+                exec(std::string(" ls ../extern/board/page").append(std::to_string(i)).append("/ | wc -l").c_str()));
+        if (nb_file < 12) {
+            return i;
+        }
+    }
+
+
+    if (0 < exec(std::string("mkdir ../extern/board/page").append(std::to_string(current_pages+1)).c_str()).length()) {
+        std::cerr << "error appends" << "file: " << __FILE__ << "/ : " << __func__ << "():" << __LINE__
+                  << std::endl;
+    }
+
+    return ++current_pages;
+
+}
+
+bool Save::delete_file(std::filesystem::path file, unsigned int page) {
+    unsigned int nb_file;
+
+    if (0 < exec(std::string("rm ../extern/board/page").append(std::to_string(page)).append("/").append(
+            file.string()).c_str()).length())
+        return false;
+
+
+    nb_file = stoi(exec(
+            std::string(" ls ../extern/board/page").append(std::to_string(page)).append("/| wc -l").c_str()));
+    if (nb_file == 0 && page != 0) {
+        if (0 <
+            exec(std::string("rm -d ../extern/board/page").append(std::to_string(page)).append("/").c_str()).length()) {
+            std::cerr << "error appends" << "file: " << __FILE__ << "/ : " << __func__ << "():" << __LINE__
+                      << std::endl;
+            std::cerr << std::string("Impossible to delete this directory ../extern/board/page").append(
+                    std::to_string(page)) << std::endl;
+            return false;
+        }
+    }
+    return true;
+}
+
+bool Save::saveGame(const std::vector<std::shared_ptr<Shape>> &Game) {
+    char *rdm = new char[8];
+    gen_random(rdm, 8);
+    std::string filename = std::string("save_").append(rdm).append(".txt");
+    std::string path =
+            std::string("../extern/board/page") + std::to_string(Save::whereSaveIt()) +
+            std::string("/").append(filename);
+    std::ofstream file(path);
+    if (file.is_open()) {
+        for (auto &it : Game) {
+            const Point<double> p = it->leftCorner();
+            file << it->shape() << " " << p.x << " " << p.y << " " << it->current_angular() << std::endl;
+        }
+        std::cout << path << std::endl;
+        file.close();
+    } else {
+        std::cerr << "File can't be open" << "file: " << __FILE__ << "/ : " << __func__ << "():" << __LINE__
+                  << std::endl;
+        return false;
+    }
+    return true;
+}
+
+void Save::gen_random(char *s, const int len) {
+    std::random_device rdm;
+    std::uniform_int_distribution<int> dist(0, 2000);
+    static const char alphanum[] =
+            "0123456789"
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            "abcdefghijklmnopqrstuvwxyz";
+
+    for (int i = 0; i < len; ++i) {
+        s[i] = alphanum[dist(rdm) % (sizeof(alphanum) - 1)];
+    }
+
+    s[len] = 0;
+}
+

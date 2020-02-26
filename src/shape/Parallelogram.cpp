@@ -123,3 +123,17 @@ std::string Parallelogram::toString() {
     }
     return t;
 }
+
+Point<double> Parallelogram::leftCorner() {
+    const Point<double> leftcorner = {triangle.at(0).leftCorner()};
+    return leftcorner;
+}
+
+double Parallelogram::current_angular() {
+    const double angular = triangle.at(0).current_angular();
+    return angular;
+}
+
+std::string Parallelogram::shape() {
+    return std::string("Parallelogram");
+}

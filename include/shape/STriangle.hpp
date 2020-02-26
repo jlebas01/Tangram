@@ -33,6 +33,10 @@ private:
 
     MLV_Color color; /*!< Color of the STriangle */
 
+    double angular_shape; /*!< Current angular of the STriangle */
+
+    Point<double> translate_shape; /*!< Current translation of the STriangle about origin*/
+
     /*!
      * @brief Parameter the constructor
      * @param origin : shifts the figure of a translation of the origin
@@ -188,6 +192,12 @@ public:
      */
 
     Point<double> get_center_point();
+
+    double current_angular() override;
+
+    Point<double> leftCorner() override;
+
+    std::string shape() override;
 };
 
 #endif //TANGRAM_STRIANGLE_H

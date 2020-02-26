@@ -130,3 +130,17 @@ std::string GTriangle::toString() {
     }
     return t;
 }
+
+Point<double> GTriangle::leftCorner() {
+    const Point<double> leftcorner = {triangle.at(0).leftCorner()};
+    return leftcorner;
+}
+
+double GTriangle::current_angular() {
+    const double angular = triangle.at(0).current_angular();
+    return angular;
+}
+
+std::string GTriangle::shape() {
+    return std::string("GTriangle");
+}

@@ -3,6 +3,7 @@
 //
 
 #include <game/Game.hpp>
+#include <parser/Save.hpp>
 
 
 Game::~Game() {
@@ -25,12 +26,14 @@ Game::Game(const int _w, const int _h) {
 
     //ajouter toutes les formes
     (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
-    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<STriangle>(Point<double>(50.0, 50.0), 0.0, MLV_COLOR_BLUE_VIOLET)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<MTriangle>(Point<double>(50.0, 50.0), 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<GTriangle>(Point<double>(50.0, 50.0), 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<GTriangle>(Point<double>(50.0, 50.0), 0.0, MLV_COLOR_CORAL3)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<Square>(Point<double>(50.0, 50.0), 0.0)));
+    (this->shapes).push_back(std::shared_ptr<Shape>(std::make_shared<Parallelogram>(Point<double>(50.0, 50.0), 0.0)));
 
-    for (auto &any_shape : objective.get_Objective()) {
+  /*  for (auto &any_shape : objective.get_Objective()) {
         this->objective_shape.push_back(std::shared_ptr<Shape>(any_shape));
     }
 
@@ -38,7 +41,7 @@ Game::Game(const int _w, const int _h) {
         for (auto &point : any_shape->get_Points()) {
             this->set_objective.insert(point);
         }
-    }
+    }*/
 
 }
 
@@ -61,8 +64,10 @@ void Game::draw() {
 void Game::main_loop() {
     bool exit = false;
     std::shared_ptr<Shape> selected;
+    Save  saver;
     Point<int> cur_click;
     Point<int> prev_click;
+    MLV_Keyboard_button key;
 
     MLV_Button_state cur_state;
     MLV_Button_state prev_state;
@@ -70,7 +75,7 @@ void Game::main_loop() {
     MLV_Mouse_button cur_mouse_button;
     MLV_Mouse_button prev_mouse_button;
 
-    MLV_wait_event(nullptr, nullptr, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
+    MLV_wait_event((&key), nullptr, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
                    &cur_mouse_button, &cur_state);
 
     while (!exit) {
@@ -78,7 +83,7 @@ void Game::main_loop() {
         prev_state = cur_state;
         prev_mouse_button = cur_mouse_button;
 
-        MLV_wait_event(nullptr, nullptr, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
+        MLV_wait_event(&key, nullptr, nullptr, nullptr, nullptr, &(cur_click.x), &(cur_click.y),
                        &cur_mouse_button, &cur_state);
 
 
@@ -88,6 +93,14 @@ void Game::main_loop() {
             exit = true;
             MLV_wait_seconds(3);
             continue;
+        }
+
+        if (key == MLV_KEYBOARD_s){
+            const std::vector<std::shared_ptr<Shape>> current_game = this->shapes;
+            if (saver.saveGame(current_game)){
+                exit = true;
+                continue;
+            }
         }
 
         if (cur_state == MLV_RELEASED) {

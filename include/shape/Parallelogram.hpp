@@ -134,6 +134,12 @@ public:
      */
 
     std::string toString() override;
+
+    double current_angular() override;
+
+    Point<double> leftCorner() override;
+
+    std::string shape() override;
 };
 
 #endif //TANGRAM_PARALELLOGRAM_H

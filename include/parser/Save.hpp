@@ -11,6 +11,12 @@
  * @version 1.0
  */
 
+#include <string>
+#include <filesystem>
+#include <vector>
+#include <fstream>
+#include <drawable/Shape.hpp>
+
 /*!
  * @class Save
  * @brief Class of the main Saver
@@ -19,7 +25,19 @@
  */
 
 class Save {
+private:
+    unsigned int current_pages;
 
+    unsigned int whereSaveIt();
+
+    bool delete_file(std::filesystem::path file, unsigned int page);
+
+    void gen_random(char *s, int len);
+
+    std::string exec(const char* cmd);
+public:
+    Save();
+    bool saveGame(const std::vector<std::shared_ptr<Shape>>& Game);
 };
 
 

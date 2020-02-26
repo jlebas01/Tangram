@@ -92,6 +92,13 @@ public :
      */
 
     virtual std::string toString() = 0;
+
+    virtual double current_angular() = 0;
+
+    virtual Point<double> leftCorner() = 0;
+
+    virtual std::string shape() = 0;
+
 };
 
 #endif //TANGRAM_SHAPE_H
