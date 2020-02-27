@@ -2,7 +2,7 @@
 \label{classGTriangle}\index{G\+Triangle@{G\+Triangle}}
 
 
-Class of the greatest triangle.  
+Class of the greatest mTriangles.
 
 
 
@@ -33,62 +33,62 @@ Collaboration diagram for G\+Triangle\+:\nopagebreak
 \mbox{\Hypertarget{classGTriangle_a05bcaee071e6dc6591220869234b05ee}\label{classGTriangle_a05bcaee071e6dc6591220869234b05ee}} 
 \hyperlink{classGTriangle_a05bcaee071e6dc6591220869234b05ee}{$\sim$\+G\+Triangle} () override
 \begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classGTriangle}{G\+Triangle}. \end{DoxyCompactList}\item 
-\hyperlink{classGTriangle_ad4e9c12fdff32b737ca9e67d64c339bc}{G\+Triangle} (M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+ED)
-\begin{DoxyCompactList}\small\item\em Constructor by default of \hyperlink{classGTriangle}{G\+Triangle}, make a triangle as default. \end{DoxyCompactList}\item 
-\hyperlink{classGTriangle_a1b5220a52053342a4aa85499e328b9ea}{G\+Triangle} (const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&triangle, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+ED)
+\hyperlink{classGTriangle_ad4e9c12fdff32b737ca9e67d64c339bc}{G\+Triangle} (M\+L\+V\+\_\+\+Color mColor=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+ED)
+\begin{DoxyCompactList}\small\item\em Constructor by default of \hyperlink{classGTriangle}{G\+Triangle}, make a mTriangles as default. \end{DoxyCompactList}\item
+\hyperlink{classGTriangle_a1b5220a52053342a4aa85499e328b9ea}{G\+Triangle} (const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&mTriangles, M\+L\+V\+\_\+\+Color mColor=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+ED)
 \begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classGTriangle}{G\+Triangle}, requires a vector of triangles. \end{DoxyCompactList}\item 
-\hyperlink{classGTriangle_a1af75c4d0dc8f03e6e4b1b66f0e463ff}{G\+Triangle} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&origin, double angular=0.\+0, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+ED)
+\hyperlink{classGTriangle_a1af75c4d0dc8f03e6e4b1b66f0e463ff}{G\+Triangle} (const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&origin, double angular=0.\+0, M\+L\+V\+\_\+\+Color mColor=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+ED)
 \begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classGTriangle}{G\+Triangle}, calls the deleguate Default Constructor. \end{DoxyCompactList}\item 
-void \hyperlink{classGTriangle_a6675f3448fca16c1afec576145a9b139}{move} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&translation) override
+void \hyperlink{classGTriangle_a6675f3448fca16c1afec576145a9b139}{move} (const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&translation) override
 \begin{DoxyCompactList}\small\item\em Move the \hyperlink{classGTriangle}{G\+Triangle} by point translation. \end{DoxyCompactList}\item 
 void \hyperlink{classGTriangle_ae3ed75bbad4ba7fed68bc06c5834cfbe}{rotate} (double angular) override
 \begin{DoxyCompactList}\small\item\em Rotate the \hyperlink{classGTriangle}{G\+Triangle} with specified angular. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGTriangle_ab223d049ce2518095201b99c8940e724}\label{classGTriangle_ab223d049ce2518095201b99c8940e724}} 
-void \hyperlink{classGTriangle_ab223d049ce2518095201b99c8940e724}{flip} () override
+void \hyperlink{classGTriangle_ab223d049ce2518095201b99c8940e724}{aFlip} () override
 \begin{DoxyCompactList}\small\item\em Flip the figure as symmetry. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGTriangle_adb7a211b65860ce4dfcc13275cd5052d}\label{classGTriangle_adb7a211b65860ce4dfcc13275cd5052d}} 
-void \hyperlink{classGTriangle_adb7a211b65860ce4dfcc13275cd5052d}{draw} () override
+void \hyperlink{classGTriangle_adb7a211b65860ce4dfcc13275cd5052d}{iDraw} () override
 \begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGTriangle_a33275fad5395d0bf0d17b1ad0c8ec393}\label{classGTriangle_a33275fad5395d0bf0d17b1ad0c8ec393}} 
-void {\bfseries draw} (M\+L\+V\+\_\+\+Color color) override
+void {\bfseries iDraw} (M\+L\+V\+\_\+\+Color mColor) override
 \item 
-bool \hyperlink{classGTriangle_abb6f7243155483cc6de301931e87475a}{is\+\_\+in\+\_\+shape} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&click) override
+bool \hyperlink{classGTriangle_abb6f7243155483cc6de301931e87475a}{is\+\_\+in\+\_\+shape} (const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&click) override
 \begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
-std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classGTriangle_add4581d1b52836142de5817de4d52d17}{get\+\_\+\+Points} () override
-\begin{DoxyCompactList}\small\item\em Get points of this shape. \end{DoxyCompactList}\item 
-bool \hyperlink{classGTriangle_adb9dae329128600209c54cc4587480ee}{set\+\_\+\+Points} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{Point}$<$ double $>$ \&changed) override
-\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classPoint}{T_Point}$<$ double $>$ $>$ \hyperlink{classGTriangle_add4581d1b52836142de5817de4d52d17}{get\+\_\+\+Points} () override
+\begin{DoxyCompactList}\small\item\em Get mPoints of this shape. \end{DoxyCompactList}\item
+bool \hyperlink{classGTriangle_adb9dae329128600209c54cc4587480ee}{set\+\_\+\+Points} (const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&changed) override
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all mPoints of this shape. \end{DoxyCompactList}\item
 std\+::string \hyperlink{classGTriangle_a8381aeea39fac0d52ad9e0d45b791b3b}{to\+String} () override
 \begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classGTriangle}{G\+Triangle} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-Class of the greatest triangle. 
+Class of the greatest mTriangles.
 
-This class manage everything about the greatest triangle 
+This class manage everything about the greatest mTriangles
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classGTriangle_ad4e9c12fdff32b737ca9e67d64c339bc}\label{classGTriangle_ad4e9c12fdff32b737ca9e67d64c339bc}} 
 \index{G\+Triangle@{G\+Triangle}!G\+Triangle@{G\+Triangle}}
 \index{G\+Triangle@{G\+Triangle}!G\+Triangle@{G\+Triangle}}
-\subsubsection{\texorpdfstring{G\+Triangle()}{GTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily G\+Triangle\+::\+G\+Triangle (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+RED} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{G\+Triangle()}{C_GTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily G\+Triangle\+::\+G\+Triangle (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{mColor = {\ttfamily MLV\+\_\+COLOR\+\_\+RED} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-Constructor by default of \hyperlink{classGTriangle}{G\+Triangle}, make a triangle as default. 
+Constructor by default of \hyperlink{classGTriangle}{G\+Triangle}, make a mTriangles as default.
 
 
 \begin{DoxyParams}{Parameters}
-{\em color} & \+: Optional parameter, color of this shape \\
+{\em mColor} & \+: Optional __Parameter, mColor of this shape \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classGTriangle_a1b5220a52053342a4aa85499e328b9ea}\label{classGTriangle_a1b5220a52053342a4aa85499e328b9ea}} 
 \index{G\+Triangle@{G\+Triangle}!G\+Triangle@{G\+Triangle}}
 \index{G\+Triangle@{G\+Triangle}!G\+Triangle@{G\+Triangle}}
-\subsubsection{\texorpdfstring{G\+Triangle()}{GTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily G\+Triangle\+::\+G\+Triangle (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&}]{triangle,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+RED} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{G\+Triangle()}{C_GTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily G\+Triangle\+::\+G\+Triangle (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classSTriangle}{S\+Triangle} $>$ \&}]{mTriangles,  }\item[{M\+L\+V\+\_\+\+Color}]{mColor = {\ttfamily MLV\+\_\+COLOR\+\_\+RED} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -96,16 +96,16 @@ Constructor of \hyperlink{classGTriangle}{G\+Triangle}, requires a vector of tri
 
 
 \begin{DoxyParams}{Parameters}
-{\em triangle} & \+: The \hyperlink{classGTriangle}{G\+Triangle} will created with a vector of \hyperlink{classSTriangle}{S\+Triangle} (4) \\
+{\em mTriangles} & \+: The \hyperlink{classGTriangle}{G\+Triangle} will created with a vector of \hyperlink{classSTriangle}{S\+Triangle} (4) \\
 \hline
-{\em color} & \+: Optional parameter, color of this shape \\
+{\em mColor} & \+: Optional __Parameter, mColor of this shape \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classGTriangle_a1af75c4d0dc8f03e6e4b1b66f0e463ff}\label{classGTriangle_a1af75c4d0dc8f03e6e4b1b66f0e463ff}} 
 \index{G\+Triangle@{G\+Triangle}!G\+Triangle@{G\+Triangle}}
 \index{G\+Triangle@{G\+Triangle}!G\+Triangle@{G\+Triangle}}
-\subsubsection{\texorpdfstring{G\+Triangle()}{GTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily G\+Triangle\+::\+G\+Triangle (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0},  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+RED} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{G\+Triangle()}{C_GTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily G\+Triangle\+::\+G\+Triangle (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0},  }\item[{M\+L\+V\+\_\+\+Color}]{mColor = {\ttfamily MLV\+\_\+COLOR\+\_\+RED} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -115,9 +115,9 @@ Constructor of \hyperlink{classGTriangle}{G\+Triangle}, calls the deleguate Defa
 \begin{DoxyParams}{Parameters}
 {\em origin} & \+: shifts the figure of a translation of the origin \\
 \hline
-{\em angular} & \+: Optional parameter (angular=0.\+0 as default), rotate the figure with an angular \\
+{\em angular} & \+: Optional __Parameter (angular=0.\+0 as default), rotate the figure with an angular \\
 \hline
-{\em color} & \+: Optional parameter, color of this shape \\
+{\em mColor} & \+: Optional __Parameter, mColor of this shape \\
 \hline
 \end{DoxyParams}
 
@@ -127,24 +127,24 @@ Constructor of \hyperlink{classGTriangle}{G\+Triangle}, calls the deleguate Defa
 \index{G\+Triangle@{G\+Triangle}!get\+\_\+\+Points@{get\+\_\+\+Points}}
 \index{get\+\_\+\+Points@{get\+\_\+\+Points}!G\+Triangle@{G\+Triangle}}
 \subsubsection{\texorpdfstring{get\+\_\+\+Points()}{get\_Points()}}
-{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ G\+Triangle\+::get\+\_\+\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classPoint}{T_Point}$<$ double $>$ $>$ G\+Triangle\+::get\+\_\+\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Get points of this shape. 
+Get mPoints of this shape.
 
 \begin{DoxyReturn}{Returns}
-Return a vector of points of this shape 
+Return a vector of mPoints of this shape
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{Shape}.
+Implements \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{A_Shape}.
 
 \mbox{\Hypertarget{classGTriangle_abb6f7243155483cc6de301931e87475a}\label{classGTriangle_abb6f7243155483cc6de301931e87475a}} 
 \index{G\+Triangle@{G\+Triangle}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
 \index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!G\+Triangle@{G\+Triangle}}
 \subsubsection{\texorpdfstring{is\+\_\+in\+\_\+shape()}{is\_in\_shape()}}
-{\footnotesize\ttfamily bool G\+Triangle\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool G\+Triangle\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -152,21 +152,21 @@ Check if a point is in this shape.
 
 
 \begin{DoxyParams}{Parameters}
-{\em click} & \+: \hyperlink{classPoint}{Point} to check \\
+{\em click} & \+: \hyperlink{classPoint}{T_Point} to check \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true if click is in this shape, false if not 
+true if Click is in this shape, false if not
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classShape_aa09a621da090e42840b4bec7ffb27620}{Shape}.
+Implements \hyperlink{classShape_aa09a621da090e42840b4bec7ffb27620}{A_Shape}.
 
 \mbox{\Hypertarget{classGTriangle_a6675f3448fca16c1afec576145a9b139}\label{classGTriangle_a6675f3448fca16c1afec576145a9b139}} 
 \index{G\+Triangle@{G\+Triangle}!move@{move}}
 \index{move@{move}!G\+Triangle@{G\+Triangle}}
 \subsubsection{\texorpdfstring{move()}{move()}}
-{\footnotesize\ttfamily void G\+Triangle\+::move (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void G\+Triangle\+::aMove (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -174,22 +174,22 @@ Move the \hyperlink{classGTriangle}{G\+Triangle} by point translation.
 
 
 \begin{DoxyParams}{Parameters}
-{\em translation} & \+: Every points of this shape will be translate by this parameter \\
+{\em translation} & \+: Every mPoints of this shape will be translate by this __Parameter \\
 \hline
 \end{DoxyParams}
 
 
-Implements \hyperlink{classShape_a1f447acd6219cb10b9b7a40371519c46}{Shape}.
+Implements \hyperlink{classShape_a1f447acd6219cb10b9b7a40371519c46}{A_Shape}.
 
 \mbox{\Hypertarget{classGTriangle_ae3ed75bbad4ba7fed68bc06c5834cfbe}\label{classGTriangle_ae3ed75bbad4ba7fed68bc06c5834cfbe}} 
 \index{G\+Triangle@{G\+Triangle}!rotate@{rotate}}
 \index{rotate@{rotate}!G\+Triangle@{G\+Triangle}}
-\subsubsection{\texorpdfstring{rotate()}{rotate()}}
-{\footnotesize\ttfamily void G\+Triangle\+::rotate (\begin{DoxyParamCaption}\item[{double}]{angular }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\subsubsection{\texorpdfstring{rotate()}{Rotate()}}
+{\footnotesize\ttfamily void G\+Triangle\+::aRotate (\begin{DoxyParamCaption}\item[{double}]{angular }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Rotate the \hyperlink{classGTriangle}{G\+Triangle} with specified angular. 
+Rotate the \hyperlink{classGTriangle}{G\+Triangle} with specified angular.
 
 
 \begin{DoxyParams}{Parameters}
@@ -198,29 +198,29 @@ Rotate the \hyperlink{classGTriangle}{G\+Triangle} with specified angular.
 \end{DoxyParams}
 
 
-Implements \hyperlink{classShape_a2dea8616fd40f2d69fd208715921982a}{Shape}.
+Implements \hyperlink{classShape_a2dea8616fd40f2d69fd208715921982a}{A_Shape}.
 
 \mbox{\Hypertarget{classGTriangle_adb9dae329128600209c54cc4587480ee}\label{classGTriangle_adb9dae329128600209c54cc4587480ee}} 
 \index{G\+Triangle@{G\+Triangle}!set\+\_\+\+Points@{set\+\_\+\+Points}}
 \index{set\+\_\+\+Points@{set\+\_\+\+Points}!G\+Triangle@{G\+Triangle}}
 \subsubsection{\texorpdfstring{set\+\_\+\+Points()}{set\_Points()}}
-{\footnotesize\ttfamily bool G\+Triangle\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool G\+Triangle\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Pure virtual function. Get all points of this shape. 
+Pure virtual function. Get all mPoints of this shape.
 
 \begin{DoxyReturn}{Returns}
-Return a vector of points of this shape 
+Return a vector of mPoints of this shape
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{Shape}.
+Implements \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{A_Shape}.
 
 \mbox{\Hypertarget{classGTriangle_a8381aeea39fac0d52ad9e0d45b791b3b}\label{classGTriangle_a8381aeea39fac0d52ad9e0d45b791b3b}} 
 \index{G\+Triangle@{G\+Triangle}!to\+String@{to\+String}}
 \index{to\+String@{to\+String}!G\+Triangle@{G\+Triangle}}
-\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+\subsubsection{\texorpdfstring{to\+String()}{aToString()}}
 {\footnotesize\ttfamily std\+::string G\+Triangle\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -228,11 +228,11 @@ Implements \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{Shape}.
 Convert all data of \hyperlink{classGTriangle}{G\+Triangle} in a string. 
 
 \begin{DoxyReturn}{Returns}
-Return a string which contains every points of this shape 
+Return a string which contains every mPoints of this shape
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}{Shape}.
+Implements \hyperlink{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}{A_Shape}.
 
 
 

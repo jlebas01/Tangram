@@ -1,4 +1,4 @@
-<map id="Parallelogram" name="Parallelogram">
-<area shape="rect" id="node2" href="$classShape.html" title="Abstract Class of every Shape. " alt="" coords="27,80,85,107"/>
-<area shape="rect" id="node3" href="$classDrawable.html" title="Drawable is everything to draw. " alt="" coords="17,5,95,32"/>
+<map id="C_Parallelogram" name="C_Parallelogram">
+<area shape="rect" id="node2" href="$classShape.html" title="Abstract Class of every A_Shape. " alt="" coords="27,80,85,107"/>
+<area shape="rect" id="node3" href="$classDrawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="17,5,95,32"/>
 </map>

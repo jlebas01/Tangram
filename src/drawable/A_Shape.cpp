@@ -5,8 +5,8 @@
 #include <iostream>
 #include <cmath>
 
-#include <drawable/Shape.hpp>
+#include <drawable/A_Shape.hpp>
 
-Shape::~Shape()= default;
+A_Shape::~A_Shape()= default;
 
 

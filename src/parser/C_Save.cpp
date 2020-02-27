@@ -3,14 +3,14 @@
 //
 
 #include <iostream>
-#include <parser/Save.hpp>
+#include <parser/C_Save.hpp>
 #include <random>
 
-Save::Save() {
-    current_pages = std::stoi(exec(std::string(" ls ../extern/board/ | wc -l").c_str()));
+C_Save::C_Save() {
+    mCurrentPages = std::stoi(__ExecCommand(std::string(" ls ../extern/board/ | wc -l").c_str()));
 }
 
-std::string Save::exec(const char *cmd) {
+std::string C_Save::__ExecCommand(const char *cmd) {
     std::array<char, 128> buffer{};
     std::string result;
     std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(cmd, "r"), pclose);
@@ -24,39 +24,41 @@ std::string Save::exec(const char *cmd) {
 }
 
 
-unsigned int Save::whereSaveIt() {
+unsigned int C_Save::__WhereSaveIt() {
     unsigned int nb_file = 0;
-    for (unsigned int i = 1; i < current_pages+1; i++) {
+    for (unsigned int i = 1; i < mCurrentPages + 1; i++) {
         nb_file = std::stoi(
-                exec(std::string(" ls ../extern/board/page").append(std::to_string(i)).append("/ | wc -l").c_str()));
+                __ExecCommand(
+                        std::string(" ls ../extern/board/page").append(std::to_string(i)).append("/ | wc -l").c_str()));
         if (nb_file < 12) {
             return i;
         }
     }
 
 
-    if (0 < exec(std::string("mkdir ../extern/board/page").append(std::to_string(current_pages+1)).c_str()).length()) {
+    if (0 < __ExecCommand(std::string("mkdir ../extern/board/page").append(std::to_string(mCurrentPages + 1)).c_str()).length()) {
         std::cerr << "error appends" << "file: " << __FILE__ << "/ : " << __func__ << "():" << __LINE__
                   << std::endl;
     }
 
-    return ++current_pages;
+    return ++mCurrentPages;
 
 }
 
-bool Save::delete_file(std::filesystem::path file, unsigned int page) {
+bool C_Save::__DeleteFile(std::filesystem::path file, unsigned int page) {
     unsigned int nb_file;
 
-    if (0 < exec(std::string("rm ../extern/board/page").append(std::to_string(page)).append("/").append(
+    if (0 < __ExecCommand(std::string("rm ../extern/board/page").append(std::to_string(page)).append("/").append(
             file.string()).c_str()).length())
         return false;
 
 
-    nb_file = stoi(exec(
+    nb_file = stoi(__ExecCommand(
             std::string(" ls ../extern/board/page").append(std::to_string(page)).append("/| wc -l").c_str()));
     if (nb_file == 0 && page != 0) {
         if (0 <
-            exec(std::string("rm -d ../extern/board/page").append(std::to_string(page)).append("/").c_str()).length()) {
+                __ExecCommand(
+                        std::string("rm -d ../extern/board/page").append(std::to_string(page)).append("/").c_str()).length()) {
             std::cerr << "error appends" << "file: " << __FILE__ << "/ : " << __func__ << "():" << __LINE__
                       << std::endl;
             std::cerr << std::string("Impossible to delete this directory ../extern/board/page").append(
@@ -67,19 +69,19 @@ bool Save::delete_file(std::filesystem::path file, unsigned int page) {
     return true;
 }
 
-bool Save::saveGame(const std::vector<std::shared_ptr<Shape>> &Game) {
+bool C_Save::Save(const std::vector<std::shared_ptr<A_Shape>> &Game) {
     char *rdm = new char[8];
-    gen_random(rdm, 8);
+    __GenRandom(rdm, 8);
     std::string filename = std::string("save_").append(rdm).append(".txt");
-    delete(rdm);
+    delete[](rdm);
     std::string path =
-            std::string("../extern/board/page") + std::to_string(Save::whereSaveIt()) +
+            std::string("../extern/board/page") + std::to_string(C_Save::__WhereSaveIt()) +
             std::string("/").append(filename);
     std::ofstream file(path);
     if (file.is_open()) {
         for (auto &it : Game) {
-            const Point<double> p = it->leftCorner();
-            file << it->shape() << " " << p.x << " " << p.y << " " << it->current_angular() << std::endl;
+            const T_Point<double> p = it->aLeftCorner();
+            file << it->aGetShape() << " " << p.x << " " << p.y << " " << it->aCurrentAngular() << " " << it->aGetColor() << std::endl;
         }
         std::cout << path << std::endl;
         file.close();
@@ -91,7 +93,7 @@ bool Save::saveGame(const std::vector<std::shared_ptr<Shape>> &Game) {
     return true;
 }
 
-void Save::gen_random(char *s, const int len) {
+void C_Save::__GenRandom(char *s, const int len) {
     std::random_device rdm;
     std::uniform_int_distribution<int> dist(0, 2000);
     static const char alphanum[] =

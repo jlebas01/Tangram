@@ -1,4 +1,4 @@
-<map id="include/shape/GTriangle.hpp" name="include/shape/GTriangle.hpp">
-<area shape="rect" id="node2" href="$Game_8hpp.html" title="Main Game of the Tangram. " alt="" coords="17,80,180,107"/>
+<map id="include/shape/C_GTriangle.hpp" name="include/shape/C_GTriangle.hpp">
+<area shape="rect" id="node2" href="$Game_8hpp.html" title="Main C_Game of the Tangram. " alt="" coords="17,80,180,107"/>
 <area shape="rect" id="node3" href="$Loader_8hpp.html" title="Load a board of Tangram. " alt="" coords="13,155,184,181"/>
 </map>

@@ -1,8 +1,8 @@
-<map id="include/shape/STriangle.hpp" name="include/shape/STriangle.hpp">
-<area shape="rect" id="node2" href="$Game_8hpp.html" title="Main Game of the Tangram. " alt="" coords="247,155,410,181"/>
-<area shape="rect" id="node4" href="$GTriangle_8hpp.html" title="Shape of Great Triangle. " alt="" coords="23,80,210,107"/>
-<area shape="rect" id="node5" href="$MTriangle_8hpp.html" title="Shape of Medium Triangle. " alt="" coords="234,80,422,107"/>
-<area shape="rect" id="node6" href="$Parallelogram_8hpp.html" title="Shape of Parallelogram. " alt="" coords="447,80,658,107"/>
-<area shape="rect" id="node7" href="$Square_8hpp.html" title="Shape of Square. " alt="" coords="682,80,854,107"/>
+<map id="include/shape/C_STriangle.hpp" name="include/shape/C_STriangle.hpp">
+<area shape="rect" id="node2" href="$Game_8hpp.html" title="Main C_Game of the Tangram. " alt="" coords="247,155,410,181"/>
+<area shape="rect" id="node4" href="$GTriangle_8hpp.html" title="A_Shape of Great Triangle. " alt="" coords="23,80,210,107"/>
+<area shape="rect" id="node5" href="$MTriangle_8hpp.html" title="A_Shape of Medium Triangle. " alt="" coords="234,80,422,107"/>
+<area shape="rect" id="node6" href="$Parallelogram_8hpp.html" title="A_Shape of C_Parallelogram. " alt="" coords="447,80,658,107"/>
+<area shape="rect" id="node7" href="$Square_8hpp.html" title="A_Shape of C_Square. " alt="" coords="682,80,854,107"/>
 <area shape="rect" id="node3" href="$Loader_8hpp.html" title="Load a board of Tangram. " alt="" coords="243,229,414,256"/>
 </map>

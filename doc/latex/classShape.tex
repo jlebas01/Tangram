@@ -1,17 +1,17 @@
-\hypertarget{classShape}{}\section{Shape Class Reference}
-\label{classShape}\index{Shape@{Shape}}
+\hypertarget{classShape}{}\section{A_Shape Class Reference}
+\label{classShape}\index{A_Shape@{A_Shape}}
 
 
-Abstract Class of every \hyperlink{classShape}{Shape}.  
-
-
-
-
-{\ttfamily \#include $<$Shape.\+hpp$>$}
+Abstract Class of every \hyperlink{classShape}{A_Shape}.
 
 
 
-Inheritance diagram for Shape\+:\nopagebreak
+
+{\ttfamily \#include $<$A_Shape.\+hpp$>$}
+
+
+
+Inheritance diagram for A_Shape\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +20,7 @@ Inheritance diagram for Shape\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Shape\+:\nopagebreak
+Collaboration diagram for A_Shape\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -31,45 +31,45 @@ Collaboration diagram for Shape\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classShape_a39fe45638d872f0ce9670d7f85290161}\label{classShape_a39fe45638d872f0ce9670d7f85290161}} 
-virtual \hyperlink{classShape_a39fe45638d872f0ce9670d7f85290161}{$\sim$\+Shape} ()=0
-\begin{DoxyCompactList}\small\item\em Destructor of Abstract \hyperlink{classShape}{Shape}. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classShape_a1f447acd6219cb10b9b7a40371519c46}{move} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&translation)=0
-\begin{DoxyCompactList}\small\item\em Pure virtual function. Move the \hyperlink{classShape}{Shape} by point translation. \end{DoxyCompactList}\item 
+virtual \hyperlink{classShape_a39fe45638d872f0ce9670d7f85290161}{$\sim$\+A_Shape} ()=0
+\begin{DoxyCompactList}\small\item\em Destructor of Abstract \hyperlink{classShape}{A_Shape}. \end{DoxyCompactList}\item
+virtual void \hyperlink{classShape_a1f447acd6219cb10b9b7a40371519c46}{move} (const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&translation)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Move the \hyperlink{classShape}{A_Shape} by point translation. \end{DoxyCompactList}\item
 virtual void \hyperlink{classShape_a2dea8616fd40f2d69fd208715921982a}{rotate} (double angular)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Rotate the \hyperlink{classGTriangle}{G\+Triangle} with specified angular. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classShape_a5a1607f7dc4908225f97aeadb449636d}\label{classShape_a5a1607f7dc4908225f97aeadb449636d}} 
-virtual void \hyperlink{classShape_a5a1607f7dc4908225f97aeadb449636d}{flip} ()=0
+virtual void \hyperlink{classShape_a5a1607f7dc4908225f97aeadb449636d}{aFlip} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Flip the figure as symmetry. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classShape_aa09a621da090e42840b4bec7ffb27620}{is\+\_\+in\+\_\+shape} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&point)=0
+virtual bool \hyperlink{classShape_aa09a621da090e42840b4bec7ffb27620}{is\+\_\+in\+\_\+shape} (const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&point)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Check if a point is in this shape. \end{DoxyCompactList}\item 
-virtual std\+::vector$<$ \hyperlink{classPoint}{Point}$<$ double $>$ $>$ \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{get\+\_\+\+Points} ()=0
-\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{set\+\_\+\+Points} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{Point}$<$ double $>$ \&changed)=0
-\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all points of this shape. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \hyperlink{classPoint}{T_Point}$<$ double $>$ $>$ \hyperlink{classShape_add74a5c682840fa4a519242b1ddbd0b5}{get\+\_\+\+Points} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all mPoints of this shape. \end{DoxyCompactList}\item
+virtual bool \hyperlink{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}{set\+\_\+\+Points} (const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&ref, const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&changed)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get all mPoints of this shape. \end{DoxyCompactList}\item
 virtual std\+::string \hyperlink{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}{to\+String} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Convert all data of \hyperlink{classGTriangle}{G\+Triangle} in a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static double \hyperlink{classShape_aadd5fcb0535a62f4ed4dcfb39e86336a}{compute\+Distance} (const \hyperlink{classPoint}{Point}$<$ double $>$ \&point1, const \hyperlink{classPoint}{Point}$<$ double $>$ \&point2)
-\begin{DoxyCompactList}\small\item\em Compute distance between 2 points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static double \hyperlink{classShape_aadd5fcb0535a62f4ed4dcfb39e86336a}{compute\+Distance} (const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&point1, const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&point2)
+\begin{DoxyCompactList}\small\item\em Compute distance between 2 mPoints. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Abstract Class of every \hyperlink{classShape}{Shape}. 
+Abstract Class of every \hyperlink{classShape}{A_Shape}.
 
-This class manage everything other shape (\hyperlink{classSTriangle}{S\+Triangle}, \hyperlink{classMTriangle}{M\+Triangle}, \hyperlink{classGTriangle}{G\+Triangle}, \hyperlink{classSquare}{Square}, \hyperlink{classParallelogram}{Parallelogram}) 
+This class manage everything other shape (\hyperlink{classSTriangle}{S\+Triangle}, \hyperlink{classMTriangle}{M\+Triangle}, \hyperlink{classGTriangle}{G\+Triangle}, \hyperlink{classSquare}{C_Square}, \hyperlink{classParallelogram}{C_Parallelogram})
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classShape_aadd5fcb0535a62f4ed4dcfb39e86336a}\label{classShape_aadd5fcb0535a62f4ed4dcfb39e86336a}} 
-\index{Shape@{Shape}!compute\+Distance@{compute\+Distance}}
-\index{compute\+Distance@{compute\+Distance}!Shape@{Shape}}
+\index{A_Shape@{A_Shape}!compute\+Distance@{compute\+Distance}}
+\index{compute\+Distance@{compute\+Distance}!A_Shape@{A_Shape}}
 \subsubsection{\texorpdfstring{compute\+Distance()}{computeDistance()}}
-{\footnotesize\ttfamily static double Shape\+::compute\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{point1,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{point2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+{\footnotesize\ttfamily static double A_Shape\+::compute\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{point1,  }\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{point2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
-Compute distance between 2 points. 
+Compute distance between 2 mPoints.
 
 
 \begin{DoxyParams}{Parameters}
@@ -79,30 +79,30 @@ Compute distance between 2 points.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Return the distance between these two points 
+Return the distance between these two mPoints
 \end{DoxyReturn}
 \mbox{\Hypertarget{classShape_add74a5c682840fa4a519242b1ddbd0b5}\label{classShape_add74a5c682840fa4a519242b1ddbd0b5}} 
-\index{Shape@{Shape}!get\+\_\+\+Points@{get\+\_\+\+Points}}
-\index{get\+\_\+\+Points@{get\+\_\+\+Points}!Shape@{Shape}}
+\index{A_Shape@{A_Shape}!get\+\_\+\+Points@{get\+\_\+\+Points}}
+\index{get\+\_\+\+Points@{get\+\_\+\+Points}!A_Shape@{A_Shape}}
 \subsubsection{\texorpdfstring{get\+\_\+\+Points()}{get\_Points()}}
-{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{classPoint}{Point}$<$double$>$ $>$ Shape\+::get\+\_\+\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{classPoint}{T_Point}$<$double$>$ $>$ A_Shape\+::get\+\_\+\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Pure virtual function. Get all points of this shape. 
+Pure virtual function. Get all mPoints of this shape.
 
 \begin{DoxyReturn}{Returns}
-Return a vector of points of this shape 
+Return a vector of mPoints of this shape
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classSTriangle_a08f667453619b506b5c16745a9aa5ecf}{S\+Triangle}, \hyperlink{classGTriangle_add4581d1b52836142de5817de4d52d17}{G\+Triangle}, \hyperlink{classMTriangle_a90351a097a20d35f9d6c4d05ad881e48}{M\+Triangle}, \hyperlink{classParallelogram_a17c9986712806a8b07d90e444e0a543d}{Parallelogram}, and \hyperlink{classSquare_a2a8fb1bfd2f3464cee813ec8b277506e}{Square}.
+Implemented in \hyperlink{classSTriangle_a08f667453619b506b5c16745a9aa5ecf}{S\+Triangle}, \hyperlink{classGTriangle_add4581d1b52836142de5817de4d52d17}{G\+Triangle}, \hyperlink{classMTriangle_a90351a097a20d35f9d6c4d05ad881e48}{M\+Triangle}, \hyperlink{classParallelogram_a17c9986712806a8b07d90e444e0a543d}{C_Parallelogram}, and \hyperlink{classSquare_a2a8fb1bfd2f3464cee813ec8b277506e}{C_Square}.
 
 \mbox{\Hypertarget{classShape_aa09a621da090e42840b4bec7ffb27620}\label{classShape_aa09a621da090e42840b4bec7ffb27620}} 
-\index{Shape@{Shape}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
-\index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!Shape@{Shape}}
+\index{A_Shape@{A_Shape}!is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}}
+\index{is\+\_\+in\+\_\+shape@{is\+\_\+in\+\_\+shape}!A_Shape@{A_Shape}}
 \subsubsection{\texorpdfstring{is\+\_\+in\+\_\+shape()}{is\_in\_shape()}}
-{\footnotesize\ttfamily virtual bool Shape\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual bool A_Shape\+::is\+\_\+in\+\_\+shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -110,44 +110,44 @@ Pure virtual function. Check if a point is in this shape.
 
 
 \begin{DoxyParams}{Parameters}
-{\em point} & \+: \hyperlink{classPoint}{Point} to check \\
+{\em point} & \+: \hyperlink{classPoint}{T_Point} to check \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true if click is in this shape, false if not 
+true if Click is in this shape, false if not
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classSTriangle_a5b55df6eb4af922521da69f69df77b42}{S\+Triangle}, \hyperlink{classGTriangle_abb6f7243155483cc6de301931e87475a}{G\+Triangle}, \hyperlink{classMTriangle_a4cc4cd63537ead67a0b68d1ab25111b4}{M\+Triangle}, \hyperlink{classParallelogram_a585b14ca0f65ed3a5007e8c1df3c6bc4}{Parallelogram}, and \hyperlink{classSquare_ada046df2d9fb92286d106d4b3475980a}{Square}.
+Implemented in \hyperlink{classSTriangle_a5b55df6eb4af922521da69f69df77b42}{S\+Triangle}, \hyperlink{classGTriangle_abb6f7243155483cc6de301931e87475a}{G\+Triangle}, \hyperlink{classMTriangle_a4cc4cd63537ead67a0b68d1ab25111b4}{M\+Triangle}, \hyperlink{classParallelogram_a585b14ca0f65ed3a5007e8c1df3c6bc4}{C_Parallelogram}, and \hyperlink{classSquare_ada046df2d9fb92286d106d4b3475980a}{C_Square}.
 
 \mbox{\Hypertarget{classShape_a1f447acd6219cb10b9b7a40371519c46}\label{classShape_a1f447acd6219cb10b9b7a40371519c46}} 
-\index{Shape@{Shape}!move@{move}}
-\index{move@{move}!Shape@{Shape}}
+\index{A_Shape@{A_Shape}!move@{move}}
+\index{move@{move}!A_Shape@{A_Shape}}
 \subsubsection{\texorpdfstring{move()}{move()}}
-{\footnotesize\ttfamily virtual void Shape\+::move (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void A_Shape\+::aMove (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Pure virtual function. Move the \hyperlink{classShape}{Shape} by point translation. 
+Pure virtual function. Move the \hyperlink{classShape}{A_Shape} by point translation.
 
 
 \begin{DoxyParams}{Parameters}
-{\em translation} & \+: Every points of this shape will be translate by this parameter \\
+{\em translation} & \+: Every mPoints of this shape will be translate by this __Parameter \\
 \hline
 \end{DoxyParams}
 
 
-Implemented in \hyperlink{classSTriangle_ac72888032cde56407193da9435e2fcc0}{S\+Triangle}, \hyperlink{classGTriangle_a6675f3448fca16c1afec576145a9b139}{G\+Triangle}, \hyperlink{classMTriangle_aa21f0514a8af2beba5ecf2ea5a22a4ef}{M\+Triangle}, \hyperlink{classParallelogram_ae8d51f9b629160df31c8a12c28da279e}{Parallelogram}, and \hyperlink{classSquare_a75b2fd22fc3895b83bc20728afb20b10}{Square}.
+Implemented in \hyperlink{classSTriangle_ac72888032cde56407193da9435e2fcc0}{S\+Triangle}, \hyperlink{classGTriangle_a6675f3448fca16c1afec576145a9b139}{G\+Triangle}, \hyperlink{classMTriangle_aa21f0514a8af2beba5ecf2ea5a22a4ef}{M\+Triangle}, \hyperlink{classParallelogram_ae8d51f9b629160df31c8a12c28da279e}{C_Parallelogram}, and \hyperlink{classSquare_a75b2fd22fc3895b83bc20728afb20b10}{C_Square}.
 
 \mbox{\Hypertarget{classShape_a2dea8616fd40f2d69fd208715921982a}\label{classShape_a2dea8616fd40f2d69fd208715921982a}} 
-\index{Shape@{Shape}!rotate@{rotate}}
-\index{rotate@{rotate}!Shape@{Shape}}
-\subsubsection{\texorpdfstring{rotate()}{rotate()}}
-{\footnotesize\ttfamily virtual void Shape\+::rotate (\begin{DoxyParamCaption}\item[{double}]{angular }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\index{A_Shape@{A_Shape}!rotate@{rotate}}
+\index{rotate@{rotate}!A_Shape@{A_Shape}}
+\subsubsection{\texorpdfstring{rotate()}{Rotate()}}
+{\footnotesize\ttfamily virtual void A_Shape\+::aRotate (\begin{DoxyParamCaption}\item[{double}]{angular }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Pure virtual function. Rotate the \hyperlink{classGTriangle}{G\+Triangle} with specified angular. 
+Pure virtual function. Rotate the \hyperlink{classGTriangle}{G\+Triangle} with specified angular.
 
 
 \begin{DoxyParams}{Parameters}
@@ -156,45 +156,45 @@ Pure virtual function. Rotate the \hyperlink{classGTriangle}{G\+Triangle} with s
 \end{DoxyParams}
 
 
-Implemented in \hyperlink{classGTriangle_ae3ed75bbad4ba7fed68bc06c5834cfbe}{G\+Triangle}, \hyperlink{classMTriangle_a4be29553eeddf99c367b1ec220bc102b}{M\+Triangle}, \hyperlink{classParallelogram_ac498f6a15dea236ecc49bece023d17b0}{Parallelogram}, and \hyperlink{classSquare_a5714e182c30f996b78e74e1badd054a2}{Square}.
+Implemented in \hyperlink{classGTriangle_ae3ed75bbad4ba7fed68bc06c5834cfbe}{G\+Triangle}, \hyperlink{classMTriangle_a4be29553eeddf99c367b1ec220bc102b}{M\+Triangle}, \hyperlink{classParallelogram_ac498f6a15dea236ecc49bece023d17b0}{C_Parallelogram}, and \hyperlink{classSquare_a5714e182c30f996b78e74e1badd054a2}{C_Square}.
 
 \mbox{\Hypertarget{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}\label{classShape_a6eb0d80cccc44cb72b06c61d9780bc6b}} 
-\index{Shape@{Shape}!set\+\_\+\+Points@{set\+\_\+\+Points}}
-\index{set\+\_\+\+Points@{set\+\_\+\+Points}!Shape@{Shape}}
+\index{A_Shape@{A_Shape}!set\+\_\+\+Points@{set\+\_\+\+Points}}
+\index{set\+\_\+\+Points@{set\+\_\+\+Points}!A_Shape@{A_Shape}}
 \subsubsection{\texorpdfstring{set\+\_\+\+Points()}{set\_Points()}}
-{\footnotesize\ttfamily virtual bool Shape\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual bool A_Shape\+::set\+\_\+\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classPoint}{T_Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Pure virtual function. Get all points of this shape. 
+Pure virtual function. Get all mPoints of this shape.
 
 \begin{DoxyReturn}{Returns}
-Return a vector of points of this shape 
+Return a vector of mPoints of this shape
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classSTriangle_acab6926951bd8f2558e4c658610c0e51}{S\+Triangle}, \hyperlink{classGTriangle_adb9dae329128600209c54cc4587480ee}{G\+Triangle}, \hyperlink{classMTriangle_aec40d088d077bfb14f94895be871dfdf}{M\+Triangle}, \hyperlink{classParallelogram_ab74583703a60e4b798d7048aa684f44e}{Parallelogram}, and \hyperlink{classSquare_ac474644483fa85f7a4f39969f34868fe}{Square}.
+Implemented in \hyperlink{classSTriangle_acab6926951bd8f2558e4c658610c0e51}{S\+Triangle}, \hyperlink{classGTriangle_adb9dae329128600209c54cc4587480ee}{G\+Triangle}, \hyperlink{classMTriangle_aec40d088d077bfb14f94895be871dfdf}{M\+Triangle}, \hyperlink{classParallelogram_ab74583703a60e4b798d7048aa684f44e}{C_Parallelogram}, and \hyperlink{classSquare_ac474644483fa85f7a4f39969f34868fe}{C_Square}.
 
 \mbox{\Hypertarget{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}\label{classShape_a98fa87c6dc4c7045fd6897a8f3bc186c}} 
-\index{Shape@{Shape}!to\+String@{to\+String}}
-\index{to\+String@{to\+String}!Shape@{Shape}}
-\subsubsection{\texorpdfstring{to\+String()}{toString()}}
-{\footnotesize\ttfamily virtual std\+::string Shape\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\index{A_Shape@{A_Shape}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!A_Shape@{A_Shape}}
+\subsubsection{\texorpdfstring{to\+String()}{aToString()}}
+{\footnotesize\ttfamily virtual std\+::string A_Shape\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Pure virtual function. Convert all data of \hyperlink{classGTriangle}{G\+Triangle} in a string. 
 
 \begin{DoxyReturn}{Returns}
-Return a string which contains every points of this shape 
+Return a string which contains every mPoints of this shape
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classSTriangle_a32e4cee65f52d9ee4121c78dc97d86ab}{S\+Triangle}, \hyperlink{classGTriangle_a8381aeea39fac0d52ad9e0d45b791b3b}{G\+Triangle}, \hyperlink{classMTriangle_a7d1fd825592dffa6ac05b3398a8c105a}{M\+Triangle}, \hyperlink{classParallelogram_a9caae0044f23d8a1e87b1a78d852c37f}{Parallelogram}, and \hyperlink{classSquare_aa5d7db8004bba3c400f57513d93b21d4}{Square}.
+Implemented in \hyperlink{classSTriangle_a32e4cee65f52d9ee4121c78dc97d86ab}{S\+Triangle}, \hyperlink{classGTriangle_a8381aeea39fac0d52ad9e0d45b791b3b}{G\+Triangle}, \hyperlink{classMTriangle_a7d1fd825592dffa6ac05b3398a8c105a}{M\+Triangle}, \hyperlink{classParallelogram_a9caae0044f23d8a1e87b1a78d852c37f}{C_Parallelogram}, and \hyperlink{classSquare_aa5d7db8004bba3c400f57513d93b21d4}{C_Square}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/drawable/\hyperlink{Shape_8hpp}{Shape.\+hpp}\item 
-src/drawable/Shape.\+cpp\end{DoxyCompactItemize}
+include/drawable/\hyperlink{Shape_8hpp}{A_Shape.\+hpp}\item
+src/drawable/A_Shape.\+cpp\end{DoxyCompactItemize}

@@ -279,7 +279,7 @@ OPTIMIZE_OUTPUT_VHDL   = NO
 # extension. Doxygen has a built-in mapping, but you can override or extend it
 # using this tag. The format is ext=language, where ext is a file extension, and
 # language is one of the parsers supported by doxygen: IDL, Java, Javascript,
-# C#, C, C++, D, PHP, Objective-C, Python, Fortran (fixed format Fortran:
+# C#, C, C++, D, PHP, C_Objective-C, Python, Fortran (fixed format Fortran:
 # FortranFixed, free formatted Fortran: FortranFree, unknown formatted Fortran:
 # Fortran. In the later case the parser tries to guess whether the code is fixed
 # or free formatted code, this is the default for Fortran type files), VHDL. For
@@ -314,7 +314,7 @@ TOC_INCLUDE_HEADINGS   = 0
 
 # When enabled doxygen tries to link words that correspond to documented
 # classes, or namespaces to their corresponding documentation. Such a link can
-# be prevented in individual cases by putting a % sign in front of the word or
+# be prevented in individual cases by putting a % __Sign in front of the word or
 # globally by setting AUTOLINK_SUPPORT to NO.
 # The default value is: YES.
 
@@ -463,7 +463,7 @@ EXTRACT_STATIC         = NO
 
 EXTRACT_LOCAL_CLASSES  = YES
 
-# This flag is only useful for Objective-C code. If set to YES, local methods,
+# This flag is only useful for C_Objective-C code. If set to YES, local methods,
 # which are defined in the implementation section but not in the interface are
 # included in the documentation. If set to NO, only methods in the interface are
 # included.
@@ -753,7 +753,7 @@ WARN_IF_DOC_ERROR      = YES
 # This WARN_NO_PARAMDOC option can be enabled to get warnings for functions that
 # are documented, but have no documentation for their parameters or return
 # value. If set to NO, doxygen will only warn about wrong or incomplete
-# parameter documentation, but not about the absence of documentation.
+# __Parameter documentation, but not about the absence of documentation.
 # The default value is: NO.
 
 WARN_NO_PARAMDOC       = NO
@@ -1052,7 +1052,7 @@ SOURCE_TOOLTIPS        = YES
 # To use it do the following:
 # - Install the latest version of global
 # - Enable SOURCE_BROWSER and USE_HTAGS in the config file
-# - Make sure the INPUT points to the root of the source tree
+# - Make sure the INPUT mPoints to the root of the source tree
 # - Run doxygen as normal
 #
 # Doxygen will invoke htags (and that will in turn invoke gtags), so these
@@ -1207,9 +1207,9 @@ HTML_EXTRA_STYLESHEET  =
 
 HTML_EXTRA_FILES       =
 
-# The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. Doxygen
+# The HTML_COLORSTYLE_HUE tag controls the mColor of the HTML output. Doxygen
 # will adjust the colors in the style sheet and background images according to
-# this color. Hue is specified as an angle on a colorwheel, see
+# this mColor. Hue is specified as an angle on a colorwheel, see
 # http://en.wikipedia.org/wiki/Hue for more information. For instance the value
 # 0 represents red, 60 is yellow, 120 is green, 180 is cyan, 240 is blue, 300
 # purple, and 360 is red again.
@@ -1359,7 +1359,7 @@ CHM_INDEX_ENCODING     =
 
 # The BINARY_TOC flag controls whether a binary table of contents is generated
 # (YES) or a normal table of contents (NO) in the .chm file. Furthermore it
-# enables the Previous and Next buttons.
+# enables the Previous and Next mButtons.
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTMLHELP is set to YES.
 
@@ -1552,7 +1552,7 @@ MATHJAX_FORMAT         = HTML-CSS
 # output directory using the MATHJAX_RELPATH option. The destination directory
 # should contain the MathJax.js script. For instance, if the mathjax directory
 # is located at the same level as the HTML output directory, then
-# MATHJAX_RELPATH should be ../mathjax. The default value points to the MathJax
+# MATHJAX_RELPATH should be ../mathjax. The default value mPoints to the MathJax
 # Content Delivery Network so you can quickly see the result without installing
 # MathJax. However, it is strongly recommended to install a local copy of
 # MathJax from http://www.mathjax.org before deployment.
@@ -2239,7 +2239,7 @@ DOT_NUM_THREADS        = 0
 
 DOT_FONTNAME           = Helvetica
 
-# The DOT_FONTSIZE tag can be used to set the size (in points) of the font of
+# The DOT_FONTSIZE tag can be used to set the size (in mPoints) of the font of
 # dot graphs.
 # Minimum value: 4, maximum value: 24, default value: 10.
 # This tag requires that the tag HAVE_DOT is set to YES.

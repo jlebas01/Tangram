@@ -1,5 +1,5 @@
-<map id="include/shape/STriangle.hpp" name="include/shape/STriangle.hpp">
-<area shape="rect" id="node3" href="$Shape_8hpp.html" title="Abstract Class Shape of every shape in Tangram. " alt="" coords="113,80,253,107"/>
-<area shape="rect" id="node6" href="$Point_8hpp.html" title="Point for every shape and menu. " alt="" coords="251,155,357,181"/>
-<area shape="rect" id="node8" href="$Drawable_8h_source.html" title="drawable/Drawable.h" alt="" coords="381,155,525,181"/>
+<map id="include/shape/C_STriangle.hpp" name="include/shape/C_STriangle.hpp">
+<area shape="rect" id="node3" href="$Shape_8hpp.html" title="Abstract Class A_Shape of every shape in Tangram. " alt="" coords="113,80,253,107"/>
+<area shape="rect" id="node6" href="$Point_8hpp.html" title="T_Point for every shape and menu. " alt="" coords="251,155,357,181"/>
+<area shape="rect" id="node8" href="$Drawable_8h_source.html" title="drawable/I_Drawable.h" alt="" coords="381,155,525,181"/>
 </map>

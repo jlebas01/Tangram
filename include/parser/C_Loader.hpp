@@ -6,24 +6,24 @@
 #define TANGRAM_LOADER_H
 
 /*!
- * @file Loader.hpp
+ * @file C_Loader.hpp
  * @brief Load a board of Tangram
  * @author Jérémie LE BASTARD
  * @version 1.0
  */
 
-#include <game/Game.hpp>
+#include <game/C_Game.hpp>
 #include <filesystem>
 #include <memory>
 
 /*!
- * @class Loader
- * @brief Class of the main Loader
+ * @class C_Loader
+ * @brief Class of the main C_Loader
  *
  * This class manage everything about the loader
  */
 
-class Loader {
+class C_Loader {
 private:
 
     /*!
@@ -32,17 +32,17 @@ private:
      * @return Return an absolute path to the file
      */
 
-    static std::filesystem::path refactor_path(const std::filesystem::path &path);
+    static std::filesystem::path __RefactorPath(const std::filesystem::path &path);
 
     /*!
      * @brief Convert a string to an int in constexpr
      * @param str : string to convert to int
-     * @param h : hash parameter
+     * @param h : hash __Parameter
      * @return Return a constexpr unsigned int. This int is unique for every string
      */
 
-    static constexpr unsigned int str2int(const char *str, int h = 0) {
-        return !str[h] ? 5381 : (str2int(str, h + 1) * 33) ^ static_cast<unsigned int>(str[h]);
+    static constexpr unsigned int __StrToInt(const char *str, int h = 0) {
+        return !str[h] ? 5381 : (__StrToInt(str, h + 1) * 33) ^ static_cast<unsigned int>(str[h]);
     }
 
 public:
@@ -54,7 +54,7 @@ public:
      * @return True if the game has been created, false if not
      */
 
-    static bool parse_file(const std::string &filename, Game &game);
+    static bool ParseFile(const std::string &filename, C_Game &game);
 };
 
 #endif //TANGRAM_LOADER_H

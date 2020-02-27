@@ -1,4 +1,4 @@
-<map id="include/drawable/Menu.hpp" name="include/drawable/Menu.hpp">
-<area shape="rect" id="node2" href="$Button_8hpp.html" title="Every buttons of menu. " alt="" coords="65,80,207,107"/>
-<area shape="rect" id="node4" href="$Point_8hpp.html" title="Point for every shape and menu. " alt="" coords="83,155,189,181"/>
+<map id="include/drawable/C_Menu.hpp" name="include/drawable/C_Menu.hpp">
+<area shape="rect" id="node2" href="$Button_8hpp.html" title="Every mButtons of menu. " alt="" coords="65,80,207,107"/>
+<area shape="rect" id="node4" href="$Point_8hpp.html" title="T_Point for every shape and menu. " alt="" coords="83,155,189,181"/>
 </map>

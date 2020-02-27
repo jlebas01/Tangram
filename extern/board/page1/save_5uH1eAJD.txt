@@ -1,7 +1,0 @@
-STriangle 50 50 0
-STriangle 50 50 0
-MTriangle 50 50 0
-GTriangle 50 50 0
-GTriangle 50 50 0
-Square 50 50 0
-Parallelogram 50 50 0

@@ -3,33 +3,33 @@
 
 #include <functional>
 /*!
- * @file Point.hpp
- * @brief Point for every shape and menu
+ * @file T_Point.hpp
+ * @brief T_Point for every shape and menu
  * @author Jérémie LE BASTARD
  * @version 1.0
  */
 
 /*!
- * @class Point
+ * @class T_Point
  * @tparam T : Template parameter
- * @brief Class of a Point
+ * @brief Class of a T_Point
  *
  * This class manage everything about a point
  */
 
 template<typename T>
-class Point {
+class T_Point {
 public:
     T x; /*!< Template x for a point */
     T y; /*!< Template y for a point */
 
-    constexpr Point( const Point<T> &p ) = default;
+    constexpr T_Point( const T_Point<T> &p ) = default;
 
     /*!
      * @brief Constructor for a point with initialisation list
      */
 
-    Point() : x(0), y(0) {}
+    T_Point() : x(0), y(0) {}
 
 
     /*!
@@ -38,18 +38,18 @@ public:
      * @param _y : Template Y coordinate
      */
 
-    Point(const T &_x, const T &_y) {
+    T_Point(const T &_x, const T &_y) {
         this->x = _x;
         this->y = _y;
     }
 
     /*!
      * @brief Operator = of a point
-     * @param p : Point to "copy"
-     * @return Return a reference to aatomic point
+     * @param p : T_Point to "copy"
+     * @return Return a reference to an atomic point
      */
 
-    Point &operator=(const Point<T> &p) {
+    T_Point &operator=(const T_Point<T> &p) {
         this->x = p.x;
         this->y = p.y;
         return *this;
@@ -57,56 +57,58 @@ public:
 
     /*!
      * @brief Operator == of a point
-     * @param p : Point to compare
+     * @param p : T_Point to compare
      * @return Return True if the point is the same, false if not
      */
 
-    bool operator==(const Point<T> &p) const {
+    bool operator==(const T_Point<T> &p) const {
         return this->x == p.x && this->y == p.y;
     }
 
     /*!
      * @brief Operator != of a point
-     * @param p : Point to compare
+     * @param p : T_Point to compare
      * @return Return True if the point is different, false if not
      */
 
-    bool operator!=(const Point<T> &p) const {
+    bool operator!=(const T_Point<T> &p) const {
         return this->x != p.x || this->y != p.y;
     }
 
     /*!
      * @brief Operator < of a point
-     * @param p : Point to compare
+     * @param p : T_Point to compare
      * @return Return True if the point is strictly weaker, false if not
      */
 
-    bool operator<(const Point<T> &p) const {
+    bool operator<(const T_Point<T> &p) const {
         return this->x < p.x && this->y < p.y;
     }
 
     /*!
      * @brief Operator > of a point
-     * @param p : Point to comapre
+     * @param p : T_Point to comapre
      * @return Return True if the point is strictly greater, false if not
      */
 
-    bool operator>(const Point<T> &p) const {
+    bool operator>(const T_Point<T> &p) const {
         return this->x > p.x && this->y > p.y;
     }
 
+
+
     /*!
-     * @brief Hash a Point<T>
-     * @struct Struct which allows to hash a point with Point<T>
+     * @brief Hash a T_Point<T>
+     * @struct Struct which allows to hash a point with T_Point<T>
      */
 
 
     struct hash_point {
-        std::size_t operator()(const Point<double> &p) const {
+        std::size_t operator()(const T_Point<T> &p) const {
             return std::hash<T>()(p.x) ^ std::hash<T>()(p.y);
         }
 
-        bool operator()(const Point<T> &p1, const Point<T> &p2) const {
+        bool operator()(const T_Point<T> &p1, const T_Point<T> &p2) const {
             return p1.x == p2.x && p1.y == p2.y;
         }
     };

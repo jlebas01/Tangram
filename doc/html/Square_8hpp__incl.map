@@ -1,6 +1,6 @@
-<map id="include/shape/Square.hpp" name="include/shape/Square.hpp">
-<area shape="rect" id="node3" href="$STriangle_8hpp.html" title="Shape of Small Triangle. " alt="" coords="97,80,239,107"/>
-<area shape="rect" id="node4" href="$Shape_8hpp.html" title="Abstract Class Shape of every shape in Tangram. " alt="" coords="123,155,263,181"/>
-<area shape="rect" id="node7" href="$Point_8hpp.html" title="Point for every shape and menu. " alt="" coords="419,229,525,256"/>
-<area shape="rect" id="node9" href="$Drawable_8h_source.html" title="drawable/Drawable.h" alt="" coords="88,229,232,256"/>
+<map id="include/shape/C_Square.hpp" name="include/shape/C_Square.hpp">
+<area shape="rect" id="node3" href="$STriangle_8hpp.html" title="A_Shape of Small Triangle. " alt="" coords="97,80,239,107"/>
+<area shape="rect" id="node4" href="$Shape_8hpp.html" title="Abstract Class A_Shape of every shape in Tangram. " alt="" coords="123,155,263,181"/>
+<area shape="rect" id="node7" href="$Point_8hpp.html" title="T_Point for every shape and menu. " alt="" coords="419,229,525,256"/>
+<area shape="rect" id="node9" href="$Drawable_8h_source.html" title="drawable/I_Drawable.h" alt="" coords="88,229,232,256"/>
 </map>

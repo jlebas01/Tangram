@@ -1,80 +1,80 @@
-\hypertarget{classObjective}{}\section{Objective Class Reference}
-\label{classObjective}\index{Objective@{Objective}}
+\hypertarget{classObjective}{}\section{C_Objective Class Reference}
+\label{classObjective}\index{C_Objective@{C_Objective}}
 
 
-Class of the board \hyperlink{classObjective}{Objective}.  
+Class of the board \hyperlink{classObjective}{C_Objective}.
 
 
 
 
-{\ttfamily \#include $<$Objective.\+hpp$>$}
+{\ttfamily \#include $<$C_Objective.\+hpp$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classObjective_ae515d38979a806a95f9476f4437311ab}{Objective} (M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+A\+Y70)
-\begin{DoxyCompactList}\small\item\em Constructor of an objective, default constructor. \end{DoxyCompactList}\item 
-\hyperlink{classObjective_a7b72b9e9f9174ec9ee98e3a0a28773f2}{Objective} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&objective, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+A\+Y70)
-\begin{DoxyCompactList}\small\item\em Constructor of an objective. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$ $>$ \hyperlink{classObjective_a9d379ffa32a62fbb5e5df62a88201baf}{get\+\_\+\+Objective} ()
-\begin{DoxyCompactList}\small\item\em Get all shape of the objective. \end{DoxyCompactList}\item 
+\hyperlink{classObjective_ae515d38979a806a95f9476f4437311ab}{C_Objective} (M\+L\+V\+\_\+\+Color mColor=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+A\+Y70)
+\begin{DoxyCompactList}\small\item\em Constructor of an mObjective, default constructor. \end{DoxyCompactList}\item
+\hyperlink{classObjective_a7b72b9e9f9174ec9ee98e3a0a28773f2}{C_Objective} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$$>$ \&mObjective, M\+L\+V\+\_\+\+Color mColor=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+A\+Y70)
+\begin{DoxyCompactList}\small\item\em Constructor of an mObjective. \end{DoxyCompactList}\item
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$ $>$ \hyperlink{classObjective_a9d379ffa32a62fbb5e5df62a88201baf}{get\+\_\+\+C_Objective} ()
+\begin{DoxyCompactList}\small\item\em Get all shape of the mObjective. \end{DoxyCompactList}\item
 M\+L\+V\+\_\+\+Color \hyperlink{classObjective_ae20161454cf0dd248b8e17989044eb13}{get\+\_\+\+Color} ()
-\begin{DoxyCompactList}\small\item\em Get the color of an \hyperlink{classObjective}{Objective}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the mColor of an \hyperlink{classObjective}{C_Objective}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static bool \hyperlink{classObjective_aba5fe938ebccb3825d6b03cd789d6d61}{board\+Completed} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&objective, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&game)
+static bool \hyperlink{classObjective_aba5fe938ebccb3825d6b03cd789d6d61}{board\+Completed} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$$>$ \&mObjective, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$$>$ \&game)
 \begin{DoxyCompactList}\small\item\em Check if the board is completed. \end{DoxyCompactList}\item 
-static void \hyperlink{classObjective_adecebbf5e11f3e778b1b7f48735a0765}{set\+\_\+\+Objective} (std\+::shared\+\_\+ptr$<$ \hyperlink{classObjective}{Objective} $>$ objective, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&vec\+\_\+objective)
-\begin{DoxyCompactList}\small\item\em Set an \hyperlink{classObjective}{Objective} for a new game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static void \hyperlink{classObjective_adecebbf5e11f3e778b1b7f48735a0765}{set\+\_\+\+C_Objective} (std\+::shared\+\_\+ptr$<$ \hyperlink{classObjective}{C_Objective} $>$ mObjective, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$$>$ \&vec\+\_\+mObjective)
+\begin{DoxyCompactList}\small\item\em Set an \hyperlink{classObjective}{C_Objective} for a new game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Class of the board \hyperlink{classObjective}{Objective}. 
+Class of the board \hyperlink{classObjective}{C_Objective}.
 
-This class manage everything about the objective 
+This class manage everything about the mObjective
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classObjective_ae515d38979a806a95f9476f4437311ab}\label{classObjective_ae515d38979a806a95f9476f4437311ab}} 
-\index{Objective@{Objective}!Objective@{Objective}}
-\index{Objective@{Objective}!Objective@{Objective}}
-\subsubsection{\texorpdfstring{Objective()}{Objective()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Objective\+::\+Objective (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+GRAY70} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\index{C_Objective@{C_Objective}!C_Objective@{C_Objective}}
+\index{C_Objective@{C_Objective}!C_Objective@{C_Objective}}
+\subsubsection{\texorpdfstring{C_Objective()}{C_Objective()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C_Objective\+::\+C_Objective (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{mColor = {\ttfamily MLV\+\_\+COLOR\+\_\+GRAY70} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-Constructor of an objective, default constructor. 
+Constructor of an mObjective, default constructor.
 
 
 \begin{DoxyParams}{Parameters}
-{\em color} & \+: color of the objective shape \\
+{\em mColor} & \+: mColor of the mObjective shape \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classObjective_a7b72b9e9f9174ec9ee98e3a0a28773f2}\label{classObjective_a7b72b9e9f9174ec9ee98e3a0a28773f2}} 
-\index{Objective@{Objective}!Objective@{Objective}}
-\index{Objective@{Objective}!Objective@{Objective}}
-\subsubsection{\texorpdfstring{Objective()}{Objective()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Objective\+::\+Objective (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&}]{objective,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+GRAY70} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\index{C_Objective@{C_Objective}!C_Objective@{C_Objective}}
+\index{C_Objective@{C_Objective}!C_Objective@{C_Objective}}
+\subsubsection{\texorpdfstring{C_Objective()}{C_Objective()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C_Objective\+::\+C_Objective (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$$>$ \&}]{mObjective,  }\item[{M\+L\+V\+\_\+\+Color}]{mColor = {\ttfamily MLV\+\_\+COLOR\+\_\+GRAY70} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-Constructor of an objective. 
+Constructor of an mObjective.
 
 
 \begin{DoxyParams}{Parameters}
-{\em objective} & \+: \hyperlink{classObjective}{Objective} requires a vector of \hyperlink{classShape}{Shape} \\
+{\em mObjective} & \+: \hyperlink{classObjective}{C_Objective} requires a vector of \hyperlink{classShape}{A_Shape} \\
 \hline
-{\em color} & \+: color of the objective shape \\
+{\em mColor} & \+: mColor of the mObjective shape \\
 \hline
 \end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classObjective_aba5fe938ebccb3825d6b03cd789d6d61}\label{classObjective_aba5fe938ebccb3825d6b03cd789d6d61}} 
-\index{Objective@{Objective}!board\+Completed@{board\+Completed}}
-\index{board\+Completed@{board\+Completed}!Objective@{Objective}}
-\subsubsection{\texorpdfstring{board\+Completed()}{boardCompleted()}}
-{\footnotesize\ttfamily bool Objective\+::board\+Completed (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&}]{objective,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\index{C_Objective@{C_Objective}!board\+Completed@{board\+Completed}}
+\index{board\+Completed@{board\+Completed}!C_Objective@{C_Objective}}
+\subsubsection{\texorpdfstring{board\+Completed()}{BoardCompleted()}}
+{\footnotesize\ttfamily bool C_Objective\+::board\+Completed (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$$>$ \&}]{mObjective,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$$>$ \&}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -82,7 +82,7 @@ Check if the board is completed.
 
 
 \begin{DoxyParams}{Parameters}
-{\em objective} & \+: Vector of objective\textquotesingle{}s shape \\
+{\em mObjective} & \+: Vector of mObjective\textquotesingle{}s shape \\
 \hline
 {\em game} & \+: Vector of current game\textquotesingle{}s shape \\
 \hline
@@ -91,51 +91,51 @@ Check if the board is completed.
 True if the board is completed, false if not 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classObjective_ae20161454cf0dd248b8e17989044eb13}\label{classObjective_ae20161454cf0dd248b8e17989044eb13}} 
-\index{Objective@{Objective}!get\+\_\+\+Color@{get\+\_\+\+Color}}
-\index{get\+\_\+\+Color@{get\+\_\+\+Color}!Objective@{Objective}}
+\index{C_Objective@{C_Objective}!get\+\_\+\+Color@{get\+\_\+\+Color}}
+\index{get\+\_\+\+Color@{get\+\_\+\+Color}!C_Objective@{C_Objective}}
 \subsubsection{\texorpdfstring{get\+\_\+\+Color()}{get\_Color()}}
-{\footnotesize\ttfamily M\+L\+V\+\_\+\+Color Objective\+::get\+\_\+\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily M\+L\+V\+\_\+\+Color C_Objective\+::get\+\_\+\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Get the color of an \hyperlink{classObjective}{Objective}. 
+Get the mColor of an \hyperlink{classObjective}{C_Objective}.
 
 \begin{DoxyReturn}{Returns}
-Return the color of an \hyperlink{classObjective}{Objective} 
+Return the mColor of an \hyperlink{classObjective}{C_Objective}
 \end{DoxyReturn}
 \mbox{\Hypertarget{classObjective_a9d379ffa32a62fbb5e5df62a88201baf}\label{classObjective_a9d379ffa32a62fbb5e5df62a88201baf}} 
-\index{Objective@{Objective}!get\+\_\+\+Objective@{get\+\_\+\+Objective}}
-\index{get\+\_\+\+Objective@{get\+\_\+\+Objective}!Objective@{Objective}}
-\subsubsection{\texorpdfstring{get\+\_\+\+Objective()}{get\_Objective()}}
-{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$ $>$ Objective\+::get\+\_\+\+Objective (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\index{C_Objective@{C_Objective}!get\+\_\+\+C_Objective@{get\+\_\+\+C_Objective}}
+\index{get\+\_\+\+C_Objective@{get\+\_\+\+C_Objective}!C_Objective@{C_Objective}}
+\subsubsection{\texorpdfstring{get\+\_\+\+C_Objective()}{get\_Objective()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$ $>$ C_Objective\+::get\+\_\+\+C_Objective (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Get all shape of the objective. 
+Get all shape of the mObjective.
 
 \begin{DoxyReturn}{Returns}
-Return a vector of shape of the objective 
+Return a vector of shape of the mObjective
 \end{DoxyReturn}
 \mbox{\Hypertarget{classObjective_adecebbf5e11f3e778b1b7f48735a0765}\label{classObjective_adecebbf5e11f3e778b1b7f48735a0765}} 
-\index{Objective@{Objective}!set\+\_\+\+Objective@{set\+\_\+\+Objective}}
-\index{set\+\_\+\+Objective@{set\+\_\+\+Objective}!Objective@{Objective}}
-\subsubsection{\texorpdfstring{set\+\_\+\+Objective()}{set\_Objective()}}
-{\footnotesize\ttfamily void Objective\+::set\+\_\+\+Objective (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classObjective}{Objective} $>$}]{objective,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{Shape} $>$$>$ \&}]{vec\+\_\+objective }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\index{C_Objective@{C_Objective}!set\+\_\+\+C_Objective@{set\+\_\+\+C_Objective}}
+\index{set\+\_\+\+C_Objective@{set\+\_\+\+C_Objective}!C_Objective@{C_Objective}}
+\subsubsection{\texorpdfstring{set\+\_\+\+C_Objective()}{set\_Objective()}}
+{\footnotesize\ttfamily void C_Objective\+::set\+\_\+\+C_Objective (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classObjective}{C_Objective} $>$}]{mObjective,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classShape}{A_Shape} $>$$>$ \&}]{vec\+\_\+mObjective }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Set an \hyperlink{classObjective}{Objective} for a new game. 
+Set an \hyperlink{classObjective}{C_Objective} for a new game.
 
 
 \begin{DoxyParams}{Parameters}
-{\em objective} & \+: \hyperlink{classObjective}{Objective} to update \\
+{\em mObjective} & \+: \hyperlink{classObjective}{C_Objective} to mUpdate \\
 \hline
-{\em vec\+\_\+objective} & \+:Vector of new \hyperlink{classShape}{Shape} for the new \hyperlink{classObjective}{Objective} \\
+{\em vec\+\_\+mObjective} & \+:Vector of new \hyperlink{classShape}{A_Shape} for the new \hyperlink{classObjective}{C_Objective} \\
 \hline
 \end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/game/\hyperlink{Objective_8hpp}{Objective.\+hpp}\item 
-src/game/Objective.\+cpp\end{DoxyCompactItemize}
+include/game/\hyperlink{Objective_8hpp}{C_Objective.\+hpp}\item
+src/game/C_Objective.\+cpp\end{DoxyCompactItemize}

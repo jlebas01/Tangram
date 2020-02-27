@@ -1,4 +1,4 @@
-<map id="MTriangle" name="MTriangle">
-<area shape="rect" id="node2" href="$classShape.html" title="Abstract Class of every Shape. " alt="" coords="15,80,74,107"/>
-<area shape="rect" id="node3" href="$classDrawable.html" title="Drawable is everything to draw. " alt="" coords="6,5,83,32"/>
+<map id="C_MTriangle" name="C_MTriangle">
+<area shape="rect" id="node2" href="$classShape.html" title="Abstract Class of every A_Shape. " alt="" coords="15,80,74,107"/>
+<area shape="rect" id="node3" href="$classDrawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="6,5,83,32"/>
 </map>

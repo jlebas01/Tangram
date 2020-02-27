@@ -42,6 +42,7 @@ define_file_basename_for_sources(tangram)
 TARGET_COMPILE_OPTIONS(
         ${TARGET_NAME} PRIVATE
         -O2
+        -g
         -std=c++17
 )
 

@@ -1,4 +1,4 @@
-<map id="include/shape/Parallelogram.hpp" name="include/shape/Parallelogram.hpp">
-<area shape="rect" id="node2" href="$Game_8hpp.html" title="Main Game of the Tangram. " alt="" coords="29,80,192,107"/>
+<map id="include/shape/C_Parallelogram.hpp" name="include/shape/C_Parallelogram.hpp">
+<area shape="rect" id="node2" href="$Game_8hpp.html" title="Main C_Game of the Tangram. " alt="" coords="29,80,192,107"/>
 <area shape="rect" id="node3" href="$Loader_8hpp.html" title="Load a board of Tangram. " alt="" coords="25,155,196,181"/>
 </map>

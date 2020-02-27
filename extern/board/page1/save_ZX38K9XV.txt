@@ -1,7 +1,0 @@
-STriangle 1230 252 -0.86
-STriangle 1108 355 0.8
-MTriangle 1136 405 -0.78
-GTriangle 1015 180 2.34
-GTriangle 912 280 0.852
-Square 1172 287 -0.832
-Parallelogram 1046 372 0.796
