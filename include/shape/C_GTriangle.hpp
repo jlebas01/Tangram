@@ -67,6 +67,8 @@ public:
 
     ~C_GTriangle() override;
 
+    //C_GTriangle(C_GTriangle &&) noexcept = default;
+
     /*!
      * @brief Constructor by default of C_GTriangle, make a C_GTriangle as default
      * @param color : Optional __Parameter, mColor of this shape

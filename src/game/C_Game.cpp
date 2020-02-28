@@ -1,8 +1,10 @@
 //
 // Created by jlebas01 on 15/01/2020.
 //
-
+#include <iomanip>
+#include <utility>
 #include <game/C_Game.hpp>
+
 #include <parser/C_Save.hpp>
 
 
@@ -54,7 +56,14 @@ void C_Game::__Draw() {
     }
     if (mMouseOvered)
         mMouseOvered->iDraw(MLV_COLOR_ALICE_BLUE);
-
+    int printable = static_cast<int>(mObjective.GetCompleted(mObjectiveShape, mShapes));
+    std::string s;
+    s = std::to_string(printable).append("/100");
+    if (mSetObjective.size() > 0) {
+        MLV_draw_text_box(this->w - 150, this->h - 150, 150, 150, s.c_str(), 0,
+                          MLV_COLOR_BLACK, MLV_COLOR_BLACK, MLV_COLOR_GOLDENROD,
+                          MLV_TEXT_CENTER, MLV_HORIZONTAL_CENTER, MLV_VERTICAL_CENTER);
+    }
     MLV_actualise_window();
 }
 
@@ -199,7 +208,7 @@ bool C_Game::__Collision(const std::shared_ptr<A_Shape> &shape, T_Point<double> 
     shape->aRotate(angular);
 
     for (auto &it : shape->aGetPoints()) {
-        set_shape->insert({it.x + next_translate.x, it.y + next_translate.y});
+        set_shape->insert(std::move(it + next_translate) );
     }
     for (auto &p_selected : *set_shape) {
         for (auto &shape_game : vec_shapes) {
@@ -225,7 +234,7 @@ void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
     auto map_distance = std::unordered_map<T_Point<double>, std::pair<T_Point<double>, double>, T_Point<double>::hash_point, std::equal_to<>>();
 
     for (auto &it: shape->aGetPoints()) {
-        set_shape->insert(it);
+       set_shape->insert(std::move(it));
     }
 
     for (auto &p_game : *set_shape) {
@@ -246,7 +255,7 @@ void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
     if (map_distance.size() >= set_shape->size()) {
         std::vector<T_Point<double>> save;
         for (auto & it : shape->aGetPoints()){
-            save.emplace_back(T_Point<double>{it.x, it.y});
+            save.emplace_back(std::move(it));
         }
 
 
@@ -257,14 +266,15 @@ void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
         shape->aMove(T_Point<double>(0.0, 0.0));
        for (auto & it : mObjectiveShape){
            const double area = shape->aGetArea();
-           if ((area  + 0.05 * area >= it->aGetArea()) && (it->aGetArea() >= area - 0.05 * area )) {
+           if ((area  + 0.1 * area >= it->aGetArea()) && (it->aGetArea() >= area - 0.1 * area )) {
+
                return;
            }
-       }
+       };
         for (unsigned long  i = 0 ; i < save.size() ; i++){
             shape->aSetPoints(shape->aGetPoints().at(i), save.at(i));
         }
     }
-    shape->aMove(T_Point<double>(0.0, 0.0));
+    shape->aMove(T_Point{0.0, 0.0});
     delete set_shape;
 }

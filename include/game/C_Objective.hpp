@@ -59,10 +59,10 @@ public:
     explicit C_Objective(const std::vector<std::shared_ptr<A_Shape>> &objective, MLV_Color color = MLV_COLOR_GRAY70);
 
     /*!
-     * @brief Check if the board is completed
+     * @brief Check if the board is mCompleted
      * @param objective : Vector of mObjective's shape
      * @param game : Vector of current game's shape
-     * @return True if the board is completed, false if not
+     * @return True if the board is mCompleted, false if not
      */
 
     static bool BoardCompleted(const std::vector<std::shared_ptr<A_Shape>> &objective, const std::vector<std::shared_ptr<A_Shape>> &game);
@@ -88,6 +88,8 @@ public:
      */
 
     MLV_Color GetColor();
+
+    double GetCompleted(const std::vector<std::shared_ptr<A_Shape>> &objective, const std::vector<std::shared_ptr<A_Shape>> &game);
 };
 
 

@@ -72,10 +72,10 @@ bool C_Save::__DeleteFile(std::filesystem::path file, unsigned int page) {
 bool C_Save::Save(const std::vector<std::shared_ptr<A_Shape>> &Game) {
     std::shared_ptr<char[]> rdm(new char[8]);
     __GenRandom(rdm, 8);
-    std::string filename = std::string("save_").append(rdm.get()).append(".txt");
-    std::string path =
+    std::string && filename = std::move(std::string("save_").append(rdm.get()).append(".txt"));
+    std::string && path = std::move(
             std::string("../extern/board/page") + std::to_string(C_Save::__WhereSaveIt()) +
-            std::string("/").append(filename);
+            std::string("/").append(filename));
     std::ofstream file(path);
     if (file.is_open()) {
         for (auto &it : Game) {

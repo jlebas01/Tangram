@@ -68,6 +68,8 @@ public:
 
     ~C_Parallelogram() override;
 
+   // C_Parallelogram(C_Parallelogram &&) noexcept = default;
+
     /*!
      * @brief Constructor by default of C_Parallelogram, make a C_Parallelogram as default
      * @param color : Optional __Parameter, mColor of this shape

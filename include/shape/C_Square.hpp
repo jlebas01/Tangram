@@ -69,6 +69,8 @@ public:
 
     ~C_Square() override;
 
+   // C_Square(C_Square &&) noexcept = default;
+
     /*!
      * @brief Constructor by default of C_Square, make a C_Square as default
      * @param color : Optional __Parameter, mColor of this shape

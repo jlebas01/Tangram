@@ -85,6 +85,8 @@ public:
 
     ~C_STriangle() override;
 
+    //C_STriangle(C_STriangle &&) noexcept = default;
+
     /*!
      * @brief Constructor by default of C_MTriangle, make a C_STriangle as default
      * @param color : Optional __Parameter, mColor of this shape

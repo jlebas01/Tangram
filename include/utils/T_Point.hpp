@@ -2,6 +2,7 @@
 #define TANGRAM_POINT_H
 
 #include <functional>
+#include <utility>
 /*!
  * @file T_Point.hpp
  * @brief T_Point for every shape and menu
@@ -31,6 +32,11 @@ public:
 
     T_Point() : x(0), y(0) {}
 
+    T_Point(const T_Point<T> &&p) noexcept {
+        this->x = std::move(p.x);
+        this->y = std::move(p.y);
+    }
+
 
     /*!
      * @brief Constructor for a point. Requires a X and a Y coordinate
@@ -54,6 +60,29 @@ public:
         this->y = p.y;
         return *this;
     }
+
+    T_Point &operator+=(const T_Point<T> &p) {
+        this->x += p.x;
+        this->y += p.y;
+        return *this;
+    }
+
+    T_Point operator+(const T_Point<T> &p) {
+        const T_Point<T> res({this->x + p.x, this->y + p.y});
+        return res;
+    }
+
+    T_Point &operator-=(const T_Point<T> &p) {
+        this->x -= p.x;
+        this->y -= p.y;
+        return *this;
+    }
+
+    T_Point operator-(const T_Point<T> &p) {
+        const T_Point<T> res({this->x - p.x, this->y - p.y});
+        return res;
+    }
+
 
     /*!
      * @brief Operator == of a point

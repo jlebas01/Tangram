@@ -19,9 +19,9 @@ C_STriangle::~C_STriangle() {
 
 C_STriangle::C_STriangle(const T_Point<double> &point1, const T_Point<double> &point2, const T_Point<double> &point3,
                          const MLV_Color _color) {
-    this->mPoints.emplace_back(point1.x, point1.y);
-    this->mPoints.emplace_back(point2.x, point2.y);
-    this->mPoints.emplace_back(point3.x, point3.y);
+    this->mPoints.emplace_back(point1);
+    this->mPoints.emplace_back(point2);
+    this->mPoints.emplace_back(point3);
     this->mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
     this->mCenter = this->__CenterPoint();
     this->mColor = _color;
@@ -55,9 +55,10 @@ C_STriangle::C_STriangle(const T_Point<double> &origin, const double angular, co
 
 }
 
+
 void C_STriangle::__Parameter(const T_Point<double> &origin, double angular) {
     aRotate(angular);
-    aMove({origin.x, origin.y});
+    aMove(origin);
 }
 
 C_STriangle::C_STriangle(const MLV_Color _color) {
@@ -74,20 +75,19 @@ C_STriangle::C_STriangle(const MLV_Color _color) {
 }
 
 void C_STriangle::aMove(const T_Point<double> &translation) {
-    mCenter.operator=(this->__CenterPoint());
+    mCenter = this->__CenterPoint();
     for (auto &it : mPoints) {
         it = T_Point<double>(it.x + translation.x, it.y + translation.y);
     }
     mCenter = this->__CenterPoint();
-    mTranslateShape.x+=translation.x;
-    mTranslateShape.y+=translation.y;
+    mTranslateShape += translation;
 }
 
 void C_STriangle::aRotate(const double angular) {
-    mCenter.operator=(this->__CenterPoint());
+    mCenter=this->__CenterPoint();
     for (auto &it : mPoints) {
         it = T_Point<double>((cos(angular) * (it.x - mCenter.x)) - (sin(angular) * (it.y - mCenter.y)) + mCenter.x,
-                           (sin(angular) * (it.x - mCenter.x)) + (cos(angular) * (it.y - mCenter.y)) + mCenter.y);
+                             (sin(angular) * (it.x - mCenter.x)) + (cos(angular) * (it.y - mCenter.y)) + mCenter.y);
     }
     mCenter = this->__CenterPoint();
     mAngularShape += angular;
@@ -108,11 +108,14 @@ void C_STriangle::aFlip() {
     aSetPoints(mPoints.at(1), mFlip.at(1));
     aSetPoints(mPoints.at(2), mFlip.at(2));
     mAngularShape = mFlipAngular;
-    aRotate(3.14159265358979323846/4.0);
+    aRotate(3.14159265358979323846 / 4.0);
     mFlipAngular = mAngularShape;
 
-    if (mFlipTranslate != mTranslateShape){
-        aMove({mTranslateShape.x - mFlipTranslate.x, mTranslateShape.y - mFlipTranslate.y});
+    if (mFlipTranslate != mTranslateShape) {
+
+        T_Point<double> tmp = mTranslateShape;
+        aMove(mTranslateShape - mFlipTranslate);
+        mTranslateShape = tmp;
         mFlipTranslate = mTranslateShape;
     }
     mFlip.clear();
@@ -122,17 +125,16 @@ void C_STriangle::aFlip() {
 void C_STriangle::Flip(const T_Point<double> &centerPoint) {
 
     mAngularShape = mFlipAngular;
-    Rotate(3.14159265358979323846/4.0, centerPoint);
+    Rotate(3.14159265358979323846 / 4.0, centerPoint);
     mFlipAngular = mAngularShape;
-    std::cout  << mTranslateShape.x <<" "<< mFlipTranslate.x << " : "<< mTranslateShape.y <<" "<< mFlipTranslate.y <<std::endl;
-    if (mFlipTranslate != mTranslateShape){
-        aMove({mTranslateShape.x - mFlipTranslate.x, mTranslateShape.y - mFlipTranslate.y});
+    if (mFlipTranslate != mTranslateShape) {
+        T_Point<double> tmp = mTranslateShape;
+        aMove(mTranslateShape - mFlipTranslate);
+        mTranslateShape = tmp;
         mFlipTranslate = mTranslateShape;
     }
     mFlip.clear();
     mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
-
-    std::cout << aToString() << std::endl;
 
 }
 
@@ -172,7 +174,7 @@ T_Point<double> C_STriangle::CenterPoint(const std::vector<T_Point<double>> &lis
         }
         return T_Point<double>(sumx / list_points.size(), sumy / list_points.size());
     }
-    std::cerr << "Error happens" <<  "file: " << __FILE__ << "/ : " << __func__ << "():" << __LINE__ << std::endl;
+    std::cerr << "Error happens" << "file: " << __FILE__ << "/ : " << __func__ << "():" << __LINE__ << std::endl;
     return T_Point<double>(-1, -1); //error case
 }
 
@@ -204,7 +206,7 @@ std::string C_STriangle::aToString() {
 
 std::vector<T_Point<double>> C_STriangle::aGetPoints() {
     std::vector<T_Point<double>> const vec_points = {this->mPoints};
-   // return {this->mPoints = std::aMove(this->mPoints)};
+    // return {this->mPoints = std::aMove(this->mPoints)};
     return vec_points;
 }
 
@@ -212,8 +214,7 @@ bool C_STriangle::aSetPoints(const T_Point<double> &ref, const T_Point<double> &
     bool status = false;
     for (auto &it : mPoints) {
         if (it == ref) {
-            it.x = changed.x;
-            it.y = changed.y;
+            it = changed;
             status = true;
         }
     }
@@ -268,16 +269,16 @@ MLV_Color C_STriangle::aGetColor() {
     return color;
 }
 
-double C_STriangle::aGetArea(){
+double C_STriangle::aGetArea() {
     double area = 0.0;
-    area += abs(mPoints.at(0).x * ( mPoints.at(1).y -  mPoints.at(2).y));
-    area += abs(mPoints.at(1).x * ( mPoints.at(2).y -  mPoints.at(0).y));
-    area += abs(mPoints.at(2).x * ( mPoints.at(0).y -  mPoints.at(1).y));
+    area += abs(mPoints.at(0).x * (mPoints.at(1).y - mPoints.at(2).y));
+    area += abs(mPoints.at(1).x * (mPoints.at(2).y - mPoints.at(0).y));
+    area += abs(mPoints.at(2).x * (mPoints.at(0).y - mPoints.at(1).y));
     area /= 2.0;
     return area;
 }
 
-std::vector<T_Point<double>> C_STriangle::GetFlip(){
+std::vector<T_Point<double>> C_STriangle::GetFlip() {
     const std::vector<T_Point<double>> getter = mFlip;
     return getter;
 }

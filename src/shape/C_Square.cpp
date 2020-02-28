@@ -39,7 +39,7 @@ C_Square::C_Square(const T_Point<double> &origin, const double angular, MLV_Colo
 
 void C_Square::__Parameter(const T_Point<double> &origin, double angular) {
     aRotate(angular);
-    aMove({origin.x, origin.y});
+    aMove(origin);
 }
 
 T_Point<double> C_Square::__CenterShape() {
@@ -108,7 +108,7 @@ std::vector<T_Point<double>> C_Square::aGetPoints() {
         mUpdate = false;
         for (auto &it: mTriangles) {
             for (auto &it2 : it.aGetPoints()) {
-                mPoints.push_back(it2);
+                mPoints.push_back(std::move(it2));
             }
         }
     }

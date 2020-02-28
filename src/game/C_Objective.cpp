@@ -41,23 +41,9 @@ C_Objective::C_Objective(const std::vector<std::shared_ptr<A_Shape>> &objective,
 
 bool C_Objective::BoardCompleted(const std::vector<std::shared_ptr<A_Shape>> &objective,
                                  const std::vector<std::shared_ptr<A_Shape>> &game) {
-    std::vector<T_Point<int>> points_objective;
-    std::vector<T_Point<int>> points_game;
 
     auto set_game = new std::unordered_set<T_Point<int>, T_Point<int>::hash_point, std::equal_to<>>();
-    auto set_objective  = new std::unordered_set<T_Point<int>, T_Point<int>::hash_point, std::equal_to<>>();
-
-   /* for (auto &it : objective) {
-        for (auto &it2 : it->aGetPoints()) {
-            points_objective.emplace_back(static_cast<int>(it2.x), static_cast<int>(it2.y));
-        }
-    }
-
-    for (auto &it : game) {
-        for (auto &it2 : it->aGetPoints()) {
-            points_game.emplace_back(static_cast<int>(it2.x), static_cast<int>(it2.y));
-        }
-    }*/
+    auto set_objective = new std::unordered_set<T_Point<int>, T_Point<int>::hash_point, std::equal_to<>>();
 
     for (auto &it : objective) {
         for (auto &it2 : it->aGetPoints()) {
@@ -72,7 +58,7 @@ bool C_Objective::BoardCompleted(const std::vector<std::shared_ptr<A_Shape>> &ob
     }
     auto points_match = static_cast<double>(set_objective->size());
 
-    double error_marge = 0.12;
+    double error_marge = 0.10 + (0.07) * (set_objective->size() / 60.0);
 
     for (auto &it : *set_objective) {
         points_match -= std::count(set_game->begin(), set_game->end(), it);
@@ -89,6 +75,34 @@ std::vector<std::shared_ptr<A_Shape>> C_Objective::GetObjective() {
 MLV_Color C_Objective::GetColor() {
     MLV_Color const _color = this->mColor;
     return _color;
+}
+
+double C_Objective::GetCompleted(const std::vector<std::shared_ptr<A_Shape>> &objective,
+                                 const std::vector<std::shared_ptr<A_Shape>> &game) {
+
+    auto set_game = new std::unordered_set<T_Point<int>, T_Point<int>::hash_point, std::equal_to<>>();
+    auto set_objective = new std::unordered_set<T_Point<int>, T_Point<int>::hash_point, std::equal_to<>>();
+
+    for (auto &it : objective) {
+        for (auto &it2 : it->aGetPoints()) {
+            set_objective->insert({static_cast<int>(it2.x), static_cast<int>(it2.y)});
+        }
+    }
+
+    for (auto &it : game) {
+        for (auto &it2 : it->aGetPoints()) {
+            set_game->insert({static_cast<int>(it2.x), static_cast<int>(it2.y)});
+        }
+    }
+    auto points_match = static_cast<double>(set_objective->size());
+
+    double error_marge = 0.10 + (0.07) * (set_objective->size() / 60.0);
+
+    for (auto &it : *set_objective) {
+        points_match -= std::count(set_game->begin(), set_game->end(), it);
+    }
+
+    return (1- (points_match / static_cast<double>(set_objective->size())))*100;
 }
 
 void C_Objective::SetObjective(std::shared_ptr<C_Objective> objective,
