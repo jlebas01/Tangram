@@ -1,1 +1,0 @@
-C_Parallelogram 674 222 0 65535
