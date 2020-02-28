@@ -30,25 +30,15 @@ C_Game::C_Game(const int _w, const int _h) {
             std::shared_ptr<A_Shape>(
                     std::make_shared<C_STriangle>(T_Point<double>(150.0, 50.0), 0.0, MLV_COLOR_AQUAMARINE3)));
     (this->mShapes).push_back(
-            std::shared_ptr<A_Shape>(std::make_shared<C_MTriangle>(T_Point<double>(50.0, 150.0), 0.0)));
+            std::shared_ptr<A_Shape>(std::make_shared<C_MTriangle>(T_Point<double>(0.0, 150.0), 0.0)));
     (this->mShapes).push_back(
-            std::shared_ptr<A_Shape>(std::make_shared<C_GTriangle>(T_Point<double>(150.0, 150.0), 0.0)));
+            std::shared_ptr<A_Shape>(std::make_shared<C_GTriangle>(T_Point<double>(200.0, 150.0), 0.0)));
     (this->mShapes).push_back(
             std::shared_ptr<A_Shape>(
-                    std::make_shared<C_GTriangle>(T_Point<double>(250.0, 150.0), 0.0, MLV_COLOR_CORAL3)));
+                    std::make_shared<C_GTriangle>(T_Point<double>(400.0, 150.0), 0.0, MLV_COLOR_CORAL3)));
     (this->mShapes).push_back(std::shared_ptr<A_Shape>(std::make_shared<C_Square>(T_Point<double>(250.0, 50.0), 0.0)));
     (this->mShapes).push_back(
-            std::shared_ptr<A_Shape>(std::make_shared<C_Parallelogram>(T_Point<double>(250.0, 150.0), 0.0)));
-
-    /*  for (auto &any_shape : mObjective.GetObjective()) {
-          this->mObjectiveShape.push_back(std::shared_ptr<A_Shape>(any_shape));
-      }
-
-      for (auto &any_shape : this->mObjectiveShape) {
-          for (auto &point : any_shape->aGetPoints()) {
-              this->mSetObjective.insert(point);
-          }
-      }*/
+            std::shared_ptr<A_Shape>(std::make_shared<C_Parallelogram>(T_Point<double>(100.0, 150.0), 0.0)));
 
 }
 
@@ -86,6 +76,7 @@ void C_Game::MainLoop() {
                    &cur_mouse_button, &cur_state);
 
     while (!exit) {
+        key = MLV_KEYBOARD_NONE;
         prev_click = cur_click;
         prev_state = cur_state;
         prev_mouse_button = cur_mouse_button;
@@ -114,6 +105,12 @@ void C_Game::MainLoop() {
             for (auto &shape: mShapes) {
                 if (shape->aIsInShape({static_cast<double>(cur_click.x), static_cast<double>(cur_click.y)})) {
                     mMouseOvered = shape;
+                    if (key == MLV_KEYBOARD_f && shape->aIsInShape({static_cast<double>(cur_click.x), static_cast<double>(cur_click.y)}) ){
+                        mMouseOvered->aFlip();
+                        __Draw();
+                        key = MLV_KEYBOARD_NONE;
+                    }
+
                     break;
                 }
                 mMouseOvered = nullptr;
@@ -247,21 +244,27 @@ void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
     }
 
     if (map_distance.size() >= set_shape->size()) {
-        const std::vector<T_Point<double>> save = shape->aGetPoints();
-        double areaBefore = shape->aGetArea();
-        for (auto &p_min : map_distance) {
-
-            shape->aSetPoints(p_min.second.first, p_min.first);
-            shape->aMove(T_Point<double>(0.0, 0.0));
+        std::vector<T_Point<double>> save;
+        for (auto & it : shape->aGetPoints()){
+            save.emplace_back(T_Point<double>{it.x, it.y});
         }
-        if (!(shape->aGetArea() - 1.0 <= areaBefore && areaBefore <= shape->aGetArea() + 1.0)) {
-            for (auto &p_rollback : save) {
-                for (auto &ref_p : shape->aGetPoints()) {
-                    shape->aSetPoints(ref_p, p_rollback);
-                    shape->aMove(T_Point<double>(0.0, 0.0));
-                }
-            }
+
+
+
+        for (auto &p_min : map_distance) {
+            shape->aSetPoints(p_min.second.first, p_min.first);
+        }
+        shape->aMove(T_Point<double>(0.0, 0.0));
+       for (auto & it : mObjectiveShape){
+           const double area = shape->aGetArea();
+           if ((area  + 0.05 * area >= it->aGetArea()) && (it->aGetArea() >= area - 0.05 * area )) {
+               return;
+           }
+       }
+        for (unsigned long  i = 0 ; i < save.size() ; i++){
+            shape->aSetPoints(shape->aGetPoints().at(i), save.at(i));
         }
     }
+    shape->aMove(T_Point<double>(0.0, 0.0));
     delete set_shape;
 }

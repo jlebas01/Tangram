@@ -33,6 +33,8 @@ private:
 
     std::vector<T_Point<double>> mPoints; /*!< C_STriangle is make by multiple mPoints*/
 
+    std::vector<T_Point<double>> mFlip; /*! C_STriangle needs a vector of initial mPoints to flip*/
+
     T_Point<double> mCenter; /*!< C_STriangle has a center point*/
 
     MLV_Color mColor; /*!< Color of the C_STriangle */
@@ -40,6 +42,10 @@ private:
     double mAngularShape; /*!< Current angular of the C_STriangle */
 
     T_Point<double> mTranslateShape; /*!< Current translation of the C_STriangle about origin*/
+
+    double mFlipAngular; /*! Stores the last angular value flip */
+
+    T_Point<double> mFlipTranslate; /*! Stores the last translate value flip */
 
     /*!
      * @brief Class methods
@@ -210,7 +216,11 @@ public:
 
     void Rotate(double angular, const T_Point<double> &center_point);
 
+    void Flip(const T_Point<double> &centerPoint);
+
     double aGetArea() override;
+
+    std::vector<T_Point<double>> GetFlip();
 };
 
 #endif //TANGRAM_STRIANGLE_H

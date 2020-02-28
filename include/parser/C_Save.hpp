@@ -45,7 +45,7 @@ private:
 
     bool __DeleteFile(std::filesystem::path file, unsigned int page);
 
-    static void __GenRandom(char *s, int len);
+    void __GenRandom(const std::shared_ptr<char[]> &s, int len);
 
     static std::string __ExecCommand(const char* cmd);
 
@@ -54,6 +54,8 @@ public:
     C_Save();
 
     bool Save(const std::vector<std::shared_ptr<A_Shape>>& Game);
+
+
 };
 
 

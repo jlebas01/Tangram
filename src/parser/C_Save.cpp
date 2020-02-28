@@ -70,10 +70,9 @@ bool C_Save::__DeleteFile(std::filesystem::path file, unsigned int page) {
 }
 
 bool C_Save::Save(const std::vector<std::shared_ptr<A_Shape>> &Game) {
-    char *rdm = new char[8];
+    std::shared_ptr<char[]> rdm(new char[8]);
     __GenRandom(rdm, 8);
-    std::string filename = std::string("save_").append(rdm).append(".txt");
-    delete[](rdm);
+    std::string filename = std::string("save_").append(rdm.get()).append(".txt");
     std::string path =
             std::string("../extern/board/page") + std::to_string(C_Save::__WhereSaveIt()) +
             std::string("/").append(filename);
@@ -93,7 +92,7 @@ bool C_Save::Save(const std::vector<std::shared_ptr<A_Shape>> &Game) {
     return true;
 }
 
-void C_Save::__GenRandom(char *s, const int len) {
+void C_Save::__GenRandom(const std::shared_ptr<char[]>& s, const int len) {
     std::random_device rdm;
     std::uniform_int_distribution<int> dist(0, 2000);
     static const char alphanum[] =
@@ -102,9 +101,9 @@ void C_Save::__GenRandom(char *s, const int len) {
             "abcdefghijklmnopqrstuvwxyz";
 
     for (int i = 0; i < len; ++i) {
-        s[i] = alphanum[dist(rdm) % (sizeof(alphanum) - 1)];
+        s.get()[i] = alphanum[dist(rdm) % (sizeof(alphanum) - 1)];
     }
 
-    s[len] = 0;
+    s.get()[len] = 0;
 }
 
