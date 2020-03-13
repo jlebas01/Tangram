@@ -3,6 +3,7 @@
 
 #include <functional>
 #include <utility>
+#include <cmath>
 /*!
  * @file T_Point.hpp
  * @brief T_Point for every shape and menu
@@ -24,7 +25,7 @@ public:
     T x; /*!< Template x for a point */
     T y; /*!< Template y for a point */
 
-    constexpr T_Point( const T_Point<T> &p ) = default;
+    constexpr T_Point(const T_Point<T> &p) = default;
 
     /*!
      * @brief Constructor for a point with initialisation list
@@ -90,9 +91,12 @@ public:
      * @return Return True if the point is the same, false if not
      */
 
+
+
     bool operator==(const T_Point<T> &p) const {
         return this->x == p.x && this->y == p.y;
     }
+
 
     /*!
      * @brief Operator != of a point
@@ -125,7 +129,6 @@ public:
     }
 
 
-
     /*!
      * @brief Hash a T_Point<T>
      * @struct Struct which allows to hash a point with T_Point<T>
@@ -142,6 +145,5 @@ public:
         }
     };
 };
-
 
 #endif
