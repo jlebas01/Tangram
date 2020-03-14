@@ -20,9 +20,9 @@
 
 /*!
  * @class C_MTriangle
- * @brief Class of the medium mTriangles
+ * @brief Class of the medium C_MTriangle
  *
- * This class manage everything about the medium mTriangles
+ * This class manage everything about the medium C_MTriangle
  */
 
 class C_MTriangle : public A_Shape {

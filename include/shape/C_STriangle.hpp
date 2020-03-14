@@ -19,9 +19,9 @@
 
 /*!
  * @class C_STriangle
- * @brief Class of the small mTriangles
+ * @brief Class of the small C_STriangle
  *
- * This class manage everything about the small mTriangles
+ * This class manage everything about the small C_STriangle
  */
 
 class C_STriangle : public A_Shape {

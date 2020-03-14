@@ -20,9 +20,9 @@
 
 /*!
  * @class C_GTriangle
- * @brief Class of the greatest mTriangles
+ * @brief Class of the greatest C_GTriangle
  *
- * This class manage everything about the greatest mTriangles
+ * This class manage everything about the greatest G_GTriangle
  */
 
 class C_GTriangle : public A_Shape {
