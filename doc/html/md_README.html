@@ -67,16 +67,46 @@ $(function() {
 <p>When you're in the root directory of this project <br />
 <br />
  </p><h3>CMake</h3>
-<p>If you didn't have CMake the project, you could do that it below : <code>cmake ./cmake-build-debug</code> </p><h3>Make</h3>
-<p>If you have already CMake the project, you could do that it below : <code>cd cmake-build-debug</code> <br />
+<p>If you didn't have CMake the project, you could do that it below : <br />
+ <code>cmake ./cmake-build-debug</code> </p><h3>Make</h3>
+<p>If you have already CMake the project, you could do that it below : <br />
+ <code>cd cmake-build-debug</code> <br />
  <code>make</code> <br />
  </p><h3>Run</h3>
-<p>If you have already CMake and Make the project, you could do it that it below : <code>./tangram</code></p>
+<p>If you have already CMake and Make the project, you could do it that it below : <br />
+ <code>./tangram</code></p>
+<h2>How to play</h2>
+<p>When you have launch the game with <code>./tangram</code> you can play now.</p>
+<h4>Launch</h4>
+<p>You can create a new puzzle board if you click on <code>Launch</code> and use these commands to play : <br />
+ <code>click left</code> on a shape to move it. <br />
+ <code>click right</code> on a shape to rotate it. <br />
+ <code>press 'Esc'</code> to exit this mode. <br />
+ <code>press 's'</code> to save the current board as puzzle. <br />
+ <code>press 'd'</code> on a shape to rotate the shape as 45° anti clock. <br />
+ <code>press 'f</code> on a shape to rotate the shape as 45° clock. <br />
+ <code>press 'r'</code> to reverse the shape as symmetry. <br />
+ Note that last command rotate every shape as 180° except parallelogram is overturned like a mirror <br />
+ <br />
+ </p><h4>Load</h4>
+<p>If you click on <code>Load</code> you can load a puzzle file and try to resolve it. To play this mode you can use these commands below : <br />
+ <code>click left</code> on a shape to move it. <br />
+ <code>click right</code> on a shape to rotate it. <br />
+ <code>press 'Esc'</code> to exit this mode. <br />
+ <code>press 'd'</code> on a shape to rotate the shape as 45° anti clock. <br />
+ <code>press 'f</code> on a shape to rotate the shape as 45° clock. <br />
+ <code>press 'r'</code> to reverse the shape as symmetry. <br />
+ Note that last command rotate every shape as 180° except parallelogram is overturned like a mirror <br />
+ </p><h4>End Game</h4>
+<p>The game will stop when you put the last shape at a right place. You will back to the main menu.</p>
 <h2>Documentation</h2>
 <p>Here there is HTML files, LaTeX files and PDF. </p><h3>HTML</h3>
-<p>Open it with your browser <code>cd doc/html</code> <code>index.html</code> </p><h3>LaTeX</h3>
+<p>Open it with your browser <br />
+ <code>cd doc/html</code> <br />
+ <code>index.html</code> </p><h3>LaTeX</h3>
 <p><code>cd doc/latex</code> </p><h3>PDF</h3>
-<p>Open it with a PDF reader <code>cd doc/latex</code><br />
+<p>Open it with a PDF reader <br />
+ <code>cd doc/latex</code><br />
  <code>refman.pdf</code></p>
 <h2>Regenerate Documentation</h2>
 <p>You can generate this document as you wish. If you're updating the code and the doc, you should do : <br />
@@ -84,7 +114,8 @@ $(function() {
  In the root directory of this project : <br />
 <br />
  <code>doxygen config-file</code><br />
- <code>cd doc/latex</code><br />
+ </p><h2>Regenerate LaTeX Documentation</h2>
+<p><code>cd doc/latex</code><br />
  <code>make</code><br />
  </p>
 </div></div><!-- contents -->
