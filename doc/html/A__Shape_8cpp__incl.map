@@ -1,5 +1,5 @@
 <map id="src/drawable/A_Shape.cpp" name="src/drawable/A_Shape.cpp">
-<area shape="rect" id="node4" href="$drawable_2A__Shape_8hpp.html" title="drawable/A_Shape.hpp" alt="" coords="194,80,350,107"/>
-<area shape="rect" id="node7" href="$utils_2T__Point_8hpp.html" title="utils/T_Point.hpp" alt="" coords="365,155,485,181"/>
-<area shape="rect" id="node10" href="$drawable_2I__Drawable_8h.html" title="drawable/I_Drawable.h" alt="" coords="509,155,664,181"/>
+<area shape="rect" id="node4" href="$A__Shape_8hpp.html" title="Abstract Class A_Shape of every shape in Tangram. " alt="" coords="194,80,350,107"/>
+<area shape="rect" id="node7" href="$T__Point_8hpp.html" title="T_Point for every shape and menu. " alt="" coords="365,155,485,181"/>
+<area shape="rect" id="node10" href="$I__Drawable_8h.html" title="drawable/I_Drawable.h" alt="" coords="509,155,664,181"/>
 </map>

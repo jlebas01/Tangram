@@ -74,23 +74,22 @@ $(function() {
 Collaboration diagram for C_Loader:</div>
 <div class="dyncontent">
 <div class="center"><img src="classC__Loader__coll__graph.png" border="0" usemap="#C__Loader_coll__map" alt="Collaboration graph"/></div>
+<map name="C__Loader_coll__map" id="C__Loader_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a6f0089933a6108eb92390afe0ead80"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classC__Loader.html#a7a6f0089933a6108eb92390afe0ead80">ParseFile</a> (const std::string &amp;filename, <a class="el" href="classC__Game.html">C_Game</a> &amp;game)</td></tr>
-<tr class="memdesc:a7a6f0089933a6108eb92390afe0ead80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to an int in constexpr.  <a href="#a7a6f0089933a6108eb92390afe0ead80">More...</a><br /></td></tr>
+<tr class="memdesc:a7a6f0089933a6108eb92390afe0ead80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a file to make a board.  <a href="#a7a6f0089933a6108eb92390afe0ead80">More...</a><br /></td></tr>
 <tr class="separator:a7a6f0089933a6108eb92390afe0ead80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa555ff55462405a34610adc1055371e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classC__Loader.html#aaa555ff55462405a34610adc1055371e">ParseFile</a> (const std::string &amp;filename, <a class="el" href="classC__Game.html">C_Game</a> &amp;game)</td></tr>
-<tr class="memdesc:aaa555ff55462405a34610adc1055371e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a file to make a board.  <a href="#aaa555ff55462405a34610adc1055371e">More...</a><br /></td></tr>
-<tr class="separator:aaa555ff55462405a34610adc1055371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class of the main <a class="el" href="classC__Loader.html" title="Class of the main C_Loader. ">C_Loader</a>. </p>
 <p>This class manage everything about the loader </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7a6f0089933a6108eb92390afe0ead80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a6f0089933a6108eb92390afe0ead80">&#9670;&nbsp;</a></span>ParseFile() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a6f0089933a6108eb92390afe0ead80">&#9670;&nbsp;</a></span>ParseFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -100,60 +99,6 @@ Static Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool C_Loader::ParseFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classC__Game.html">C_Game</a> &amp;&#160;</td>
-          <td class="paramname"><em>game</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Convert a string to an int in constexpr. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>: string to convert to int </td></tr>
-    <tr><td class="paramname">h</td><td>: hash __Parameter </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Return a constexpr unsigned int. This int is unique for every string</dd></dl>
-<p>Parse a file to make a board </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>: name of the file, this file should be located in this directory ./Tangram/extern/board/ </td></tr>
-    <tr><td class="paramname">game</td><td>: The current game / board </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the game has been created, false if not </dd></dl>
-
-</div>
-</div>
-<a id="aaa555ff55462405a34610adc1055371e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa555ff55462405a34610adc1055371e">&#9670;&nbsp;</a></span>ParseFile() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool C_Loader::ParseFile </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
@@ -190,7 +135,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/<a class="el" href="C__Loader_8hpp_source.html">C_Loader.hpp</a></li>
+<li>include/parser/<a class="el" href="C__Loader_8hpp_source.html">C_Loader.hpp</a></li>
 <li>src/parser/<a class="el" href="C__Loader_8cpp.html">C_Loader.cpp</a></li>
 </ul>
 </div><!-- contents -->
