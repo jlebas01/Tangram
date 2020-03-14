@@ -23,8 +23,8 @@ static int abso(int x) {
 }
 
 C_Game::C_Game(const int _w, const int _h) {
-    this->w = _w;
-    this->h = _h;
+    this->mWidth = _w;
+    this->mHeight = _h;
     this->mProgress = std::string("0/100");;
 
     //ajouter toutes les formes
@@ -59,7 +59,7 @@ void C_Game::__Draw() {
         mMouseOvered->iDraw(MLV_COLOR_ALICE_BLUE);
 
     if (!mSetObjective.empty()) {
-        MLV_draw_text_box(this->w - 150, this->h - 150, 150, 150, mProgress.c_str(), 0,
+        MLV_draw_text_box(this->mWidth - 150, this->mHeight - 150, 150, 150, mProgress.c_str(), 0,
                           MLV_COLOR_BLACK, MLV_COLOR_BLACK, MLV_COLOR_GOLDENROD,
                           MLV_TEXT_CENTER, MLV_HORIZONTAL_CENTER, MLV_VERTICAL_CENTER);
     }

@@ -1,0 +1,594 @@
+\hypertarget{classC__STriangle}{}\section{C\+\_\+\+S\+Triangle Class Reference}
+\label{classC__STriangle}\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+
+
+Class of the small m\+Triangles.  
+
+
+
+
+{\ttfamily \#include $<$C\+\_\+\+S\+Triangle.\+hpp$>$}
+
+
+
+Inheritance diagram for C\+\_\+\+S\+Triangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classC__STriangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+\_\+\+S\+Triangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classC__STriangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classC__STriangle_a545f9a8f64e89a4b1269f7ea93251e64}{$\sim$\+C\+\_\+\+S\+Triangle} () override
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}. \end{DoxyCompactList}\item 
+\hyperlink{classC__STriangle_a3fcf5957768e63aded3872349d3a0397}{C\+\_\+\+S\+Triangle} (M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+EN)
+\begin{DoxyCompactList}\small\item\em Constructor by default of \hyperlink{classC__MTriangle}{C\+\_\+\+M\+Triangle}, make a \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} as default. \end{DoxyCompactList}\item 
+\hyperlink{classC__STriangle_a7d3fe40c752838aab0116af91b3a2b28}{C\+\_\+\+S\+Triangle} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&p1, const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&p2, const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&p3, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+EN)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}, requires 3 m\+Points. \end{DoxyCompactList}\item 
+\hyperlink{classC__STriangle_acaabdb10b1689d1b26f655c266d34996}{C\+\_\+\+S\+Triangle} (const std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$$>$ \&points, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+EN)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}, requires a vector of 3 m\+Points. \end{DoxyCompactList}\item 
+\hyperlink{classC__STriangle_aee7b2ac8280dde9b86f5c3ad973fd692}{C\+\_\+\+S\+Triangle} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&origin, double angular=0.\+0, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+EN)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}, calls the deleguate Default Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_a82a3c3a847ca6c2d5922921150fa50b5}{a\+Move} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&translation) override
+\begin{DoxyCompactList}\small\item\em Move the \hyperlink{classC__MTriangle}{C\+\_\+\+M\+Triangle} by point translation. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_a52612242aba17043862355c030637a18}{a\+Rotate} (double angular) override
+\begin{DoxyCompactList}\small\item\em Rotate the \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} with specified angular. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_aa3cad7b7367c253000cf0f91f55ba600}{a\+Right\+Flip} () override
+\begin{DoxyCompactList}\small\item\em Flip the figure as 45° clock. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_aff480b9ec706ee5ae58f6f78318e2728}{a\+Left\+Flip} () override
+\begin{DoxyCompactList}\small\item\em Flip the figure as 45° anti clock. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_a5402899ec4ea0de3ca3e7aa6f184a1c7}{a\+Reverse} () override
+\begin{DoxyCompactList}\small\item\em Reverse the figure as symmetry. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_a7297480fe52b58654d81e2e70fbb237d}{i\+Draw} () override
+\begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_ad003b932a467de60b814d897fda38390}{i\+Draw} (M\+L\+V\+\_\+\+Color color) override
+\begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM with specific m\+Color. \end{DoxyCompactList}\item 
+bool \hyperlink{classC__STriangle_a3bc82d7ea53a6a058b9fb49bbd89282c}{a\+Is\+In\+Shape} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&click) override
+\begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
+bool \hyperlink{classC__STriangle_ae0cfadc631baf280df7e77f011489caa}{Is\+In\+S\+Triangle} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&click)
+\begin{DoxyCompactList}\small\item\em Check if a point is in this \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classC__STriangle_a1ea089f6a82c2770e0529c4a9fc07d90}{a\+To\+String} () override
+\begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classC__MTriangle}{C\+\_\+\+M\+Triangle} in a string. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ $>$ \hyperlink{classC__STriangle_a8d144f4451fe2e5bf6f333d8c37f0f57}{a\+Get\+Points} () override
+\begin{DoxyCompactList}\small\item\em Get every m\+Points of this \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}. \end{DoxyCompactList}\item 
+bool \hyperlink{classC__STriangle_a431802d5e10b69f535e7929a23963b5e}{a\+Set\+Points} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&ref, const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&changed) override
+\begin{DoxyCompactList}\small\item\em Set a point as same value that another point given in parameter. \end{DoxyCompactList}\item 
+\hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \hyperlink{classC__STriangle_ac9b374f16313b3c99eca7fe615d14851}{Get\+Center\+Point} ()
+\begin{DoxyCompactList}\small\item\em Get the current center point of this \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}. \end{DoxyCompactList}\item 
+double \hyperlink{classC__STriangle_a38304830925938339c4a4a0ad812e151}{a\+Current\+Angular} () override
+\begin{DoxyCompactList}\small\item\em Get the current angular of this shape. \end{DoxyCompactList}\item 
+\hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \hyperlink{classC__STriangle_a8e580f80693ea6f66cca3782ced8e301}{a\+Left\+Corner} () override
+\begin{DoxyCompactList}\small\item\em Take the point at left top corner. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classC__STriangle_a40c1434870b99112c4457819c9295483}{a\+Get\+Shape} () override
+\begin{DoxyCompactList}\small\item\em Get the type of shape is it. \end{DoxyCompactList}\item 
+M\+L\+V\+\_\+\+Color \hyperlink{classC__STriangle_a1a0c315653ece65118705648d09336dd}{a\+Get\+Color} () override
+\begin{DoxyCompactList}\small\item\em Get the color of the shape. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_afe6a1fcb5bf97792dd38e698bb6ad0cd}{Rotate} (double angular, const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&center\+\_\+point)
+\begin{DoxyCompactList}\small\item\em Rotate an \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} with specified angular, used only for an other shape. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_ad84c7c6c2a4ca6d2fd3a681fd6dfcf63}{Right\+Flip} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&center\+Point)
+\begin{DoxyCompactList}\small\item\em Right flip as 45° clock. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_aec7540d5750509269894dc4c906fc20f}{Left\+Flip} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&center\+Point)
+\begin{DoxyCompactList}\small\item\em Right flip as 45° anti clock. \end{DoxyCompactList}\item 
+void \hyperlink{classC__STriangle_a3fafeed75d888024e95a494b8901e8fe}{Reverse} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&center\+Point)
+\begin{DoxyCompactList}\small\item\em Reverse the figure as symmetry. \end{DoxyCompactList}\item 
+double \hyperlink{classC__STriangle_aaff25f3c7f7640c3e7c735a77800e96e}{a\+Get\+Area} () override
+\begin{DoxyCompactList}\small\item\em Get the area of the shape. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ $>$ \hyperlink{classC__STriangle_a92550826ba2d9866f2cb01b66abfbebc}{Get\+Flip} ()
+\begin{DoxyCompactList}\small\item\em Get a vector of \char`\"{}flip\char`\"{} needed to flip the figure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \hyperlink{classC__STriangle_a98c01a7d57aeee85ee4e2df88a786b7f}{Center\+Point} (const std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$$>$ \&list\+\_\+points)
+\begin{DoxyCompactList}\small\item\em Compute the center point of N m\+Points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class of the small m\+Triangles. 
+
+This class manage everything about the small m\+Triangles 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classC__STriangle_a545f9a8f64e89a4b1269f7ea93251e64}\label{classC__STriangle_a545f9a8f64e89a4b1269f7ea93251e64}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!````~C\+\_\+\+S\+Triangle@{$\sim$\+C\+\_\+\+S\+Triangle}}
+\index{````~C\+\_\+\+S\+Triangle@{$\sim$\+C\+\_\+\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+\_\+\+S\+Triangle()}{~C\_STriangle()}}
+{\footnotesize\ttfamily C\+\_\+\+S\+Triangle\+::$\sim$\+C\+\_\+\+S\+Triangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor of \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}. 
+
+\mbox{\Hypertarget{classC__STriangle_a3fcf5957768e63aded3872349d3a0397}\label{classC__STriangle_a3fcf5957768e63aded3872349d3a0397}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{C\+\_\+\+S\+Triangle()}{C\_STriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily C\+\_\+\+S\+Triangle\+::\+C\+\_\+\+S\+Triangle (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+GREEN} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor by default of \hyperlink{classC__MTriangle}{C\+\_\+\+M\+Triangle}, make a \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} as default. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \+: Optional \+\_\+\+\_\+\+Parameter, m\+Color of this shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classC__STriangle_a7d3fe40c752838aab0116af91b3a2b28}\label{classC__STriangle_a7d3fe40c752838aab0116af91b3a2b28}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{C\+\_\+\+S\+Triangle()}{C\_STriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily C\+\_\+\+S\+Triangle\+::\+C\+\_\+\+S\+Triangle (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{p1,  }\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{p2,  }\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{p3,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+GREEN} }\end{DoxyParamCaption})}
+
+
+
+Constructor of \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}, requires 3 m\+Points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \+: First point of the \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} \\
+\hline
+{\em p2} & \+: Second point of the \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} \\
+\hline
+{\em p3} & \+: Third point of the \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} \\
+\hline
+{\em color} & \+: Optional \+\_\+\+\_\+\+Parameter, m\+Color of this shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classC__STriangle_acaabdb10b1689d1b26f655c266d34996}\label{classC__STriangle_acaabdb10b1689d1b26f655c266d34996}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{C\+\_\+\+S\+Triangle()}{C\_STriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily C\+\_\+\+S\+Triangle\+::\+C\+\_\+\+S\+Triangle (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$$>$ \&}]{points,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+GREEN} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}, requires a vector of 3 m\+Points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & \+: vector of 3 m\+Points \\
+\hline
+{\em color} & \+: Optional \+\_\+\+\_\+\+Parameter, m\+Color of this shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classC__STriangle_aee7b2ac8280dde9b86f5c3ad973fd692}\label{classC__STriangle_aee7b2ac8280dde9b86f5c3ad973fd692}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{C\+\_\+\+S\+Triangle()}{C\_STriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily C\+\_\+\+S\+Triangle\+::\+C\+\_\+\+S\+Triangle (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0},  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+GREEN} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}, calls the deleguate Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & \+: shifts the figure of a translation of the origin \\
+\hline
+{\em angular} & \+: Optional \+\_\+\+\_\+\+Parameter (angular=0.\+0 as default), a\+Rotate the figure with an angular \\
+\hline
+{\em color} & \+: Optional \+\_\+\+\_\+\+Parameter, m\+Color of this shape \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classC__STriangle_a38304830925938339c4a4a0ad812e151}\label{classC__STriangle_a38304830925938339c4a4a0ad812e151}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Current\+Angular@{a\+Current\+Angular}}
+\index{a\+Current\+Angular@{a\+Current\+Angular}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Current\+Angular()}{aCurrentAngular()}}
+{\footnotesize\ttfamily double C\+\_\+\+S\+Triangle\+::a\+Current\+Angular (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the current angular of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return the current angular in double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a80fa4e009c875dd0ba7fc5bfeeb43f98}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_aaff25f3c7f7640c3e7c735a77800e96e}\label{classC__STriangle_aaff25f3c7f7640c3e7c735a77800e96e}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Get\+Area@{a\+Get\+Area}}
+\index{a\+Get\+Area@{a\+Get\+Area}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Get\+Area()}{aGetArea()}}
+{\footnotesize\ttfamily double C\+\_\+\+S\+Triangle\+::a\+Get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the area of the shape. 
+
+\begin{DoxyReturn}{Returns}
+Return the area of this shape as a double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a1b142ee2d873d6c217f65de1632e7b6e}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a1a0c315653ece65118705648d09336dd}\label{classC__STriangle_a1a0c315653ece65118705648d09336dd}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Get\+Color@{a\+Get\+Color}}
+\index{a\+Get\+Color@{a\+Get\+Color}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Get\+Color()}{aGetColor()}}
+{\footnotesize\ttfamily M\+L\+V\+\_\+\+Color C\+\_\+\+S\+Triangle\+::a\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the color of the shape. 
+
+\begin{DoxyReturn}{Returns}
+Return the M\+L\+V\+\_\+\+Color of the shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a1e90c8132d33e4ac84d42f72606193b2}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a8d144f4451fe2e5bf6f333d8c37f0f57}\label{classC__STriangle_a8d144f4451fe2e5bf6f333d8c37f0f57}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Get\+Points@{a\+Get\+Points}}
+\index{a\+Get\+Points@{a\+Get\+Points}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Get\+Points()}{aGetPoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ $>$ C\+\_\+\+S\+Triangle\+::a\+Get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get every m\+Points of this \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of these m\+Points 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a9fd1285bd63b1fc88943c9969bf01a5c}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a40c1434870b99112c4457819c9295483}\label{classC__STriangle_a40c1434870b99112c4457819c9295483}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Get\+Shape@{a\+Get\+Shape}}
+\index{a\+Get\+Shape@{a\+Get\+Shape}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Get\+Shape()}{aGetShape()}}
+{\footnotesize\ttfamily std\+::string C\+\_\+\+S\+Triangle\+::a\+Get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of shape is it. 
+
+\begin{DoxyReturn}{Returns}
+Return as string the type of shape is it 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a1b202256a4e5dcb0edab4ab93a37122c}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a3bc82d7ea53a6a058b9fb49bbd89282c}\label{classC__STriangle_a3bc82d7ea53a6a058b9fb49bbd89282c}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Is\+In\+Shape@{a\+Is\+In\+Shape}}
+\index{a\+Is\+In\+Shape@{a\+Is\+In\+Shape}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Is\+In\+Shape()}{aIsInShape()}}
+{\footnotesize\ttfamily bool C\+\_\+\+S\+Triangle\+::a\+Is\+In\+Shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if a point is in this shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em click} & \+: \hyperlink{classT__Point}{T\+\_\+\+Point} to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Click is in this shape, false if not 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a63f825cbc9780208d9a137f5c14917d0}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a8e580f80693ea6f66cca3782ced8e301}\label{classC__STriangle_a8e580f80693ea6f66cca3782ced8e301}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Left\+Corner@{a\+Left\+Corner}}
+\index{a\+Left\+Corner@{a\+Left\+Corner}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Left\+Corner()}{aLeftCorner()}}
+{\footnotesize\ttfamily \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ C\+\_\+\+S\+Triangle\+::a\+Left\+Corner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Take the point at left top corner. 
+
+\begin{DoxyReturn}{Returns}
+Return the point at left top corner 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_abe6781b13037bf7ecea8ff9456b31533}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_aff480b9ec706ee5ae58f6f78318e2728}\label{classC__STriangle_aff480b9ec706ee5ae58f6f78318e2728}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Left\+Flip@{a\+Left\+Flip}}
+\index{a\+Left\+Flip@{a\+Left\+Flip}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Left\+Flip()}{aLeftFlip()}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::a\+Left\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Flip the figure as 45° anti clock. 
+
+
+
+Implements \hyperlink{classA__Shape_abe947e7003cb63be2b4f6c439533427d}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a82a3c3a847ca6c2d5922921150fa50b5}\label{classC__STriangle_a82a3c3a847ca6c2d5922921150fa50b5}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Move@{a\+Move}}
+\index{a\+Move@{a\+Move}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Move()}{aMove()}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::a\+Move (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Move the \hyperlink{classC__MTriangle}{C\+\_\+\+M\+Triangle} by point translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & \+: Every m\+Points of this shape will be translate by this \+\_\+\+\_\+\+Parameter \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classA__Shape_ab284298db1b557ccfa7ba6de7a5fee2c}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a5402899ec4ea0de3ca3e7aa6f184a1c7}\label{classC__STriangle_a5402899ec4ea0de3ca3e7aa6f184a1c7}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Reverse@{a\+Reverse}}
+\index{a\+Reverse@{a\+Reverse}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Reverse()}{aReverse()}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::a\+Reverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reverse the figure as symmetry. 
+
+
+
+Implements \hyperlink{classA__Shape_afe2c7969d647f6358da13879a7534ecb}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_aa3cad7b7367c253000cf0f91f55ba600}\label{classC__STriangle_aa3cad7b7367c253000cf0f91f55ba600}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Right\+Flip@{a\+Right\+Flip}}
+\index{a\+Right\+Flip@{a\+Right\+Flip}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Right\+Flip()}{aRightFlip()}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::a\+Right\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Flip the figure as 45° clock. 
+
+
+
+Implements \hyperlink{classA__Shape_a892688cbbad3297e00e87cce0dbfc76d}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a52612242aba17043862355c030637a18}\label{classC__STriangle_a52612242aba17043862355c030637a18}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Rotate@{a\+Rotate}}
+\index{a\+Rotate@{a\+Rotate}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Rotate()}{aRotate()}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::a\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angular }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Rotate the \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} with specified angular. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angular} & \+: This angular should be between (0, 2\+PI) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classA__Shape_a25b4e0c34cdb46da5382fe9c7467efaf}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a431802d5e10b69f535e7929a23963b5e}\label{classC__STriangle_a431802d5e10b69f535e7929a23963b5e}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+Set\+Points@{a\+Set\+Points}}
+\index{a\+Set\+Points@{a\+Set\+Points}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+Set\+Points()}{aSetPoints()}}
+{\footnotesize\ttfamily bool C\+\_\+\+S\+Triangle\+::a\+Set\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set a point as same value that another point given in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & Point we want to set \\
+\hline
+{\em changed} & The ref Point will take same value as this one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return true if the ref point exists and has benn changed, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a6996f454b337f8425ad13cba3f7a7c35}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a1ea089f6a82c2770e0529c4a9fc07d90}\label{classC__STriangle_a1ea089f6a82c2770e0529c4a9fc07d90}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!a\+To\+String@{a\+To\+String}}
+\index{a\+To\+String@{a\+To\+String}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{a\+To\+String()}{aToString()}}
+{\footnotesize\ttfamily std\+::string C\+\_\+\+S\+Triangle\+::a\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Convert all data of \hyperlink{classC__MTriangle}{C\+\_\+\+M\+Triangle} in a string. 
+
+\begin{DoxyReturn}{Returns}
+Return a string which contains every m\+Points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_ad8804b4e74543db374af6892367b7c2e}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__STriangle_a98c01a7d57aeee85ee4e2df88a786b7f}\label{classC__STriangle_a98c01a7d57aeee85ee4e2df88a786b7f}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!Center\+Point@{Center\+Point}}
+\index{Center\+Point@{Center\+Point}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{Center\+Point()}{CenterPoint()}}
+{\footnotesize\ttfamily \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ C\+\_\+\+S\+Triangle\+::\+Center\+Point (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$$>$ \&}]{list\+\_\+points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compute the center point of N m\+Points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+\_\+points} & \+: vector of N m\+Points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the center point of these N m\+Points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classC__STriangle_ac9b374f16313b3c99eca7fe615d14851}\label{classC__STriangle_ac9b374f16313b3c99eca7fe615d14851}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!Get\+Center\+Point@{Get\+Center\+Point}}
+\index{Get\+Center\+Point@{Get\+Center\+Point}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{Get\+Center\+Point()}{GetCenterPoint()}}
+{\footnotesize\ttfamily \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ C\+\_\+\+S\+Triangle\+::\+Get\+Center\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current center point of this \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}. 
+
+\begin{DoxyReturn}{Returns}
+Return the current center point of this \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classC__STriangle_a92550826ba2d9866f2cb01b66abfbebc}\label{classC__STriangle_a92550826ba2d9866f2cb01b66abfbebc}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!Get\+Flip@{Get\+Flip}}
+\index{Get\+Flip@{Get\+Flip}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{Get\+Flip()}{GetFlip()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ $>$ C\+\_\+\+S\+Triangle\+::\+Get\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a vector of \char`\"{}flip\char`\"{} needed to flip the figure. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of point needed to flip the figure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classC__STriangle_a7297480fe52b58654d81e2e70fbb237d}\label{classC__STriangle_a7297480fe52b58654d81e2e70fbb237d}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!i\+Draw@{i\+Draw}}
+\index{i\+Draw@{i\+Draw}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{i\+Draw()}{iDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::i\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw this shape on I\+HM. 
+
+
+
+Implements \hyperlink{classI__Drawable_ae24c65000977a805f52ce032321cd86f}{I\+\_\+\+Drawable}.
+
+\mbox{\Hypertarget{classC__STriangle_ad003b932a467de60b814d897fda38390}\label{classC__STriangle_ad003b932a467de60b814d897fda38390}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!i\+Draw@{i\+Draw}}
+\index{i\+Draw@{i\+Draw}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{i\+Draw()}{iDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::i\+Draw (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw this shape on I\+HM with specific m\+Color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Color} & \+: Color from the graphic library M\+LV like M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+X\+XX \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classI__Drawable_a25f6474325614c451a91f019e5fe8010}{I\+\_\+\+Drawable}.
+
+\mbox{\Hypertarget{classC__STriangle_ae0cfadc631baf280df7e77f011489caa}\label{classC__STriangle_ae0cfadc631baf280df7e77f011489caa}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!Is\+In\+S\+Triangle@{Is\+In\+S\+Triangle}}
+\index{Is\+In\+S\+Triangle@{Is\+In\+S\+Triangle}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{Is\+In\+S\+Triangle()}{IsInSTriangle()}}
+{\footnotesize\ttfamily bool C\+\_\+\+S\+Triangle\+::\+Is\+In\+S\+Triangle (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{click }\end{DoxyParamCaption})}
+
+
+
+Check if a point is in this \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em click} & \+: \hyperlink{classT__Point}{T\+\_\+\+Point} to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Click is in this shape, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classC__STriangle_aec7540d5750509269894dc4c906fc20f}\label{classC__STriangle_aec7540d5750509269894dc4c906fc20f}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!Left\+Flip@{Left\+Flip}}
+\index{Left\+Flip@{Left\+Flip}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{Left\+Flip()}{LeftFlip()}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::\+Left\+Flip (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{center\+Point }\end{DoxyParamCaption})}
+
+
+
+Right flip as 45° anti clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Point} & \+: flip the figure about this center point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classC__STriangle_a3fafeed75d888024e95a494b8901e8fe}\label{classC__STriangle_a3fafeed75d888024e95a494b8901e8fe}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!Reverse@{Reverse}}
+\index{Reverse@{Reverse}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{Reverse()}{Reverse()}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::\+Reverse (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{center\+Point }\end{DoxyParamCaption})}
+
+
+
+Reverse the figure as symmetry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Point} & \+: Reverse the figure as symmetry about this center point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classC__STriangle_ad84c7c6c2a4ca6d2fd3a681fd6dfcf63}\label{classC__STriangle_ad84c7c6c2a4ca6d2fd3a681fd6dfcf63}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!Right\+Flip@{Right\+Flip}}
+\index{Right\+Flip@{Right\+Flip}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{Right\+Flip()}{RightFlip()}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::\+Right\+Flip (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{center\+Point }\end{DoxyParamCaption})}
+
+
+
+Right flip as 45° clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Point} & \+: flip the figure about this center point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classC__STriangle_afe6a1fcb5bf97792dd38e698bb6ad0cd}\label{classC__STriangle_afe6a1fcb5bf97792dd38e698bb6ad0cd}} 
+\index{C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!C\+\_\+\+S\+Triangle@{C\+\_\+\+S\+Triangle}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void C\+\_\+\+S\+Triangle\+::\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angular,  }\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{center\+\_\+point }\end{DoxyParamCaption})}
+
+
+
+Rotate an \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} with specified angular, used only for an other shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angular} & \+: This angular should be between (0, 2\+PI) \\
+\hline
+{\em center\+\_\+point} & \+: Rotate an \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} around this point \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/shape/\hyperlink{C__STriangle_8hpp}{C\+\_\+\+S\+Triangle.\+hpp}\item 
+src/shape/\hyperlink{C__STriangle_8cpp}{C\+\_\+\+S\+Triangle.\+cpp}\end{DoxyCompactItemize}

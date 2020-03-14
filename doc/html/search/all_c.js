@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['rotate',['rotate',['../classShape.html#a2dea8616fd40f2d69fd208715921982a',1,'Shape::rotate()'],['../classGTriangle.html#ae3ed75bbad4ba7fed68bc06c5834cfbe',1,'GTriangle::rotate()'],['../classMTriangle.html#a4be29553eeddf99c367b1ec220bc102b',1,'MTriangle::rotate()'],['../classParallelogram.html#ac498f6a15dea236ecc49bece023d17b0',1,'Parallelogram::rotate()'],['../classSquare.html#a5714e182c30f996b78e74e1badd054a2',1,'Square::rotate()'],['../classSTriangle.html#a53b7f48c2bc66402170912686e77ec5d',1,'STriangle::rotate()']]]
+  ['save',['Save',['../classC__Save.html#a144be848679b771afb9cf410710308e8',1,'C_Save']]],
+  ['setcallback',['SetCallBack',['../classC__Button.html#aedb01f3229d8176f6a9475cf2edae8f0',1,'C_Button']]],
+  ['setobjective',['SetObjective',['../classC__Game.html#a0fa57725991fb2b249eb40dd776a68c4',1,'C_Game::SetObjective()'],['../classC__Objective.html#a931d916840c73104815dbf529f9c866c',1,'C_Objective::SetObjective()']]],
+  ['struct',['Struct',['../structStruct.html',1,'']]]
 ];

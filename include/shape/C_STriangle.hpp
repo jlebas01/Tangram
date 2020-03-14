@@ -148,6 +148,10 @@ public:
 
     void aLeftFlip() override;
 
+    /*!
+     * @brief Reverse the figure as symmetry
+     */
+
     void aReverse() override;
 
     /*!
@@ -194,6 +198,13 @@ public:
 
     std::vector<T_Point<double>> aGetPoints() override;
 
+    /*!
+     * @brief Set a point as same value that another point given in parameter
+     * @param ref Point we want to set
+     * @param changed The ref Point will take same value as this one
+     * @return Return true if the ref point exists and has benn changed, false otherwise
+     */
+
     bool aSetPoints(const T_Point<double> &ref, const T_Point<double> &changed) override;
 
     /*!
@@ -203,11 +214,31 @@ public:
 
     T_Point<double> GetCenterPoint();
 
+    /*!
+     * @brief Get the current angular of this shape
+     * @return Return the current angular in double
+     */
+
     double aCurrentAngular() override;
+
+    /*!
+     * @brief Take the point at left top corner
+     * @return Return the point at left top corner
+     */
 
     T_Point<double> aLeftCorner() override;
 
+    /*!
+     * @brief Get the type of shape is it
+     * @return Return as string the type of shape is it
+     */
+
     std::string aGetShape() override;
+
+    /*!
+     * @brief Get the color of the shape
+     * @return Return the MLV_Color of the shape
+     */
 
     MLV_Color aGetColor() override;
 
@@ -227,13 +258,38 @@ public:
 
     void Rotate(double angular, const T_Point<double> &center_point);
 
+    /*!
+     * @brief Right flip as 45° clock
+     * @param centerPoint : flip the figure about this center point
+     */
+
     void RightFlip(const T_Point<double> &centerPoint);
+
+    /*!
+     * @brief Right flip as 45° anti clock
+     * @param centerPoint : flip the figure about this center point
+     */
 
     void LeftFlip(const T_Point<double> &centerPoint);
 
+    /*!
+     * @brief Reverse the figure as symmetry
+     * @param centerPoint : Reverse the figure as symmetry about this center point
+     */
+
     void Reverse(const T_Point<double> &centerPoint);
 
+    /*!
+     * @brief Get the area of the shape
+     * @return Return the area of this shape as a double
+     */
+
     double aGetArea() override;
+
+    /*!
+     * @brief Get a vector of "flip" needed to flip the figure
+     * @return Return a vector of point needed to flip the figure
+     */
 
     std::vector<T_Point<double>> GetFlip();
 };

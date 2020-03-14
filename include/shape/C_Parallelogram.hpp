@@ -122,6 +122,10 @@ public:
 
     void aLeftFlip() override;
 
+    /*!
+     * @brief Reverse the figure as symmetry
+     */
+
     void aReverse() override;
 
     /*!
@@ -129,6 +133,11 @@ public:
      */
 
     void iDraw() override;
+
+    /*!
+     * @brief Draw this shape on IHM with specific color
+     * @param color : Color of the shape will be draw
+     */
 
     void iDraw(MLV_Color color) override;
 
@@ -147,6 +156,13 @@ public:
 
     std::vector<T_Point<double>> aGetPoints() override;
 
+    /*!
+     * @brief Set a point to another one
+     * @param ref : Point to change
+     * @param changed : New value of the point
+     * @return True if the ref point exists, false otherwise
+     */
+
     bool aSetPoints(const T_Point<double> &ref, const T_Point<double> &changed) override;
 
     /*!
@@ -156,13 +172,38 @@ public:
 
     std::string aToString() override;
 
+    /*!
+      * @brief Get the current angular of this shape
+      * @return
+      */
+
     double aCurrentAngular() override;
+
+    /*!
+     * @brief Take the point at left top corner
+     * @return Return the point at left top corner
+     */
 
     T_Point<double> aLeftCorner() override;
 
+    /*!
+     * @brief Get the shape type
+     * @return Return as string the shape type
+     */
+
     std::string aGetShape() override;
 
+    /*!
+     * @brief Get the color of the shape
+     * @return Return the MLV_Color of the shape
+     */
+
     MLV_Color aGetColor() override;
+
+    /*!
+     * @brief Get the area of the shape
+     * @return Return the area of the shape
+     */
 
     double aGetArea() override;
 };

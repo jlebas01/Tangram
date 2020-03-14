@@ -119,6 +119,10 @@ public:
 
     void aLeftFlip() override;
 
+    /*!
+     * @brief Reverse the figure as symmetry
+     */
+
     void aReverse() override;
 
     /*!
@@ -164,13 +168,38 @@ public:
 
     std::string aToString() override;
 
+    /*!
+     * @brief Get the current angular of this shape
+     * @return
+     */
+
     double aCurrentAngular() override;
+
+    /*!
+     * @brief Take the point at left top corner
+     * @return Return the point at left top corner
+     */
 
     T_Point<double> aLeftCorner() override;
 
+    /*!
+     * @brief Get the shape type
+     * @return Return as string the shape type
+     */
+
     std::string aGetShape() override;
 
+    /*!
+     * @brief Get the color of the shape
+     * @return Return the MLV_Color of the shape
+     */
+
     MLV_Color aGetColor() override;
+
+    /*!
+     * @brief Get the area of the shape
+     * @return Return the area of the shape
+     */
 
     double aGetArea() override;
 };

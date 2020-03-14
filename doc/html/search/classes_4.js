@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loader',['Loader',['../classLoader.html',1,'']]]
+  ['struct',['Struct',['../structStruct.html',1,'']]]
 ];

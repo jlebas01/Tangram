@@ -49,8 +49,8 @@ private:
     std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>> mSetObjective; /*!< Set of mObjective of the game */
     std::vector<std::shared_ptr<A_Shape>> mObjectiveShape; /*!< Vector of mObjective shape */
     std::vector<std::shared_ptr<A_Shape>> mShapes; /*!< C_Game main loop requires a vector of A_Shape - Abstract Class*/
-    int w; /*!< Width of the window*/
-    int h; /*!< Height of the window*/
+    int mWidth; /*!< Width of the window*/
+    int mHeight; /*!< Height of the window*/
     std::string mProgress; /*!< Progression of the game */
     std::shared_ptr<A_Shape> mMouseOvered = nullptr; /*!< Current shape mouseovered*/
 

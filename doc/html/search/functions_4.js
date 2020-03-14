@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['flip',['flip',['../classShape.html#a5a1607f7dc4908225f97aeadb449636d',1,'Shape::flip()'],['../classGTriangle.html#ab223d049ce2518095201b99c8940e724',1,'GTriangle::flip()'],['../classMTriangle.html#a6258b96b57c1892098f84a5a5fa0f976',1,'MTriangle::flip()'],['../classParallelogram.html#a51f002e90b7bf6c5d875cc094c22f7c1',1,'Parallelogram::flip()'],['../classSquare.html#a2d56ff842244af8f2fdc85b7e5ce76f3',1,'Square::flip()'],['../classSTriangle.html#af16f2a83efc6d94578e2feb560983850',1,'STriangle::flip()']]]
+  ['getcenterpoint',['GetCenterPoint',['../classC__STriangle.html#ac9b374f16313b3c99eca7fe615d14851',1,'C_STriangle']]],
+  ['getcolor',['GetColor',['../classC__Objective.html#aeaaa69ca15b1e1d8edbc3f1920399964',1,'C_Objective']]],
+  ['getcompleted',['GetCompleted',['../classC__Objective.html#a026149982f0d62ea0a039a8b94bbaae0',1,'C_Objective']]],
+  ['getflip',['GetFlip',['../classC__STriangle.html#a92550826ba2d9866f2cb01b66abfbebc',1,'C_STriangle']]],
+  ['getobjective',['GetObjective',['../classC__Objective.html#aa8e3dea19bd4578246b183d2bad2d475',1,'C_Objective']]],
+  ['getobjectivecolor',['GetObjectiveColor',['../classC__Game.html#a0efbb25a7daf4411b2dfe3055530ac85',1,'C_Game']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['game',['Game',['../classGame.html',1,'']]],
-  ['gtriangle',['GTriangle',['../classGTriangle.html',1,'']]]
+  ['hash_5fpoint',['hash_point',['../structT__Point_1_1hash__point.html',1,'T_Point']]]
 ];

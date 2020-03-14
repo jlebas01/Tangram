@@ -1,0 +1,22 @@
+<map id="include/drawable/A_Shape.hpp" name="include/drawable/A_Shape.hpp">
+<area shape="rect" id="node2" href="$C__Game_8hpp.html" title="Main C_Game of the Tangram. " alt="" coords="577,244,757,271"/>
+<area shape="rect" id="node7" href="$C__Objective_8hpp.html" title="C_Objective of the Tangram&#39;s board. " alt="" coords="488,169,688,196"/>
+<area shape="rect" id="node9" href="$C__Save_8hpp.html" title="C_Save a board of Tangram. " alt="" coords="5,95,184,121"/>
+<area shape="rect" id="node11" href="$C__GTriangle_8hpp.html" title="A_Shape of Great Triangle. " alt="" coords="259,169,463,196"/>
+<area shape="rect" id="node13" href="$C__MTriangle_8hpp.html" title="A_Shape of Medium Triangle. " alt="" coords="1283,169,1488,196"/>
+<area shape="rect" id="node15" href="$C__Parallelogram_8hpp.html" title="A_Shape of C_Parallelogram. " alt="" coords="1512,169,1739,196"/>
+<area shape="rect" id="node17" href="$C__Square_8hpp.html" title="A_Shape of C_Square. " alt="" coords="763,169,952,196"/>
+<area shape="rect" id="node19" href="$C__STriangle_8hpp.html" title="A_Shape of Small Triangle. " alt="" coords="929,95,1132,121"/>
+<area shape="rect" id="node21" href="$A__Shape_8cpp.html" title="src/drawable/A_Shape.cpp" alt="" coords="1257,95,1436,121"/>
+<area shape="rect" id="node3" href="$C__Loader_8hpp.html" title="Load a board of Tangram. " alt="" coords="575,319,763,345"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html" title="src/Main.cpp" alt="" coords="569,393,666,420"/>
+<area shape="rect" id="node6" href="$C__Game_8cpp.html" title="src/game/C_Game.cpp" alt="" coords="101,319,259,345"/>
+<area shape="rect" id="node5" href="$C__Loader_8cpp.html" title="src/parser/C_Loader.cpp" alt="" coords="769,393,935,420"/>
+<area shape="rect" id="node8" href="$C__Objective_8cpp.html" title="src/game/C_Objective.cpp" alt="" coords="1030,244,1207,271"/>
+<area shape="rect" id="node10" href="$C__Save_8cpp.html" title="src/parser/C_Save.cpp" alt="" coords="27,169,183,196"/>
+<area shape="rect" id="node12" href="$C__GTriangle_8cpp.html" title="src/shape/C_GTriangle.cpp" alt="" coords="271,244,452,271"/>
+<area shape="rect" id="node14" href="$C__MTriangle_8cpp.html" title="src/shape/C_MTriangle.cpp" alt="" coords="1334,244,1517,271"/>
+<area shape="rect" id="node16" href="$C__Parallelogram_8cpp.html" title="src/shape/C_Parallelogram.cpp" alt="" coords="1541,244,1745,271"/>
+<area shape="rect" id="node18" href="$C__Square_8cpp.html" title="src/shape/C_Square.cpp" alt="" coords="839,244,1006,271"/>
+<area shape="rect" id="node20" href="$C__STriangle_8cpp.html" title="src/shape/C_STriangle.cpp" alt="" coords="977,169,1157,196"/>
+</map>

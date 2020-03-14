@@ -1,0 +1,11 @@
+<map id="include/game/C_Game.hpp" name="include/game/C_Game.hpp">
+<area shape="rect" id="node2" href="$A__Shape_8hpp.html" title="Abstract Class A_Shape of every shape in Tangram. " alt="" coords="411,229,567,256"/>
+<area shape="rect" id="node6" href="$T__Point_8hpp.html" title="T_Point for every shape and menu. " alt="" coords="78,304,198,331"/>
+<area shape="rect" id="node11" href="$C__Objective_8hpp.html" title="C_Objective of the Tangram&#39;s board. " alt="" coords="175,155,330,181"/>
+<area shape="rect" id="node13" href="$C__STriangle_8hpp.html" title="A_Shape of Small Triangle. " alt="" coords="709,155,868,181"/>
+<area shape="rect" id="node15" href="$C__MTriangle_8hpp.html" title="A_Shape of Medium Triangle. " alt="" coords="1066,80,1226,107"/>
+<area shape="rect" id="node16" href="$C__GTriangle_8hpp.html" title="A_Shape of Great Triangle. " alt="" coords="456,80,615,107"/>
+<area shape="rect" id="node17" href="$C__Parallelogram_8hpp.html" title="A_Shape of C_Parallelogram. " alt="" coords="691,80,873,107"/>
+<area shape="rect" id="node18" href="$C__Square_8hpp.html" title="A_Shape of C_Square. " alt="" coords="898,80,1042,107"/>
+<area shape="rect" id="node9" href="$I__Drawable_8h.html" title="drawable/I_Drawable.h" alt="" coords="410,304,565,331"/>
+</map>

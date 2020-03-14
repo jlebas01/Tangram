@@ -1,0 +1,8 @@
+<map id="include/game/C_Objective.hpp" name="include/game/C_Objective.hpp">
+<area shape="rect" id="node2" href="$C__Game_8hpp.html" title="Main C_Game of the Tangram. " alt="" coords="96,80,276,107"/>
+<area shape="rect" id="node7" href="$C__Objective_8cpp.html" title="src/game/C_Objective.cpp" alt="" coords="300,80,477,107"/>
+<area shape="rect" id="node3" href="$C__Loader_8hpp.html" title="Load a board of Tangram. " alt="" coords="92,155,280,181"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html" title="src/Main.cpp" alt="" coords="5,229,103,256"/>
+<area shape="rect" id="node6" href="$C__Game_8cpp.html" title="src/game/C_Game.cpp" alt="" coords="305,155,462,181"/>
+<area shape="rect" id="node5" href="$C__Loader_8cpp.html" title="src/parser/C_Loader.cpp" alt="" coords="127,229,293,256"/>
+</map>

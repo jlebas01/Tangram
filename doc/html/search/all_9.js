@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['main_5floop',['main_loop',['../classMenu.html#a02baf39291517cea771a2e1cffed960e',1,'Menu::main_loop()'],['../classGame.html#a9e9a77d478f0c0bfb9b61fb1a6556e15',1,'Game::main_loop()']]],
-  ['menu',['Menu',['../classMenu.html',1,'']]],
-  ['menu_2ehpp',['Menu.hpp',['../Menu_8hpp.html',1,'']]],
-  ['move',['move',['../classShape.html#a1f447acd6219cb10b9b7a40371519c46',1,'Shape::move()'],['../classGTriangle.html#a6675f3448fca16c1afec576145a9b139',1,'GTriangle::move()'],['../classMTriangle.html#aa21f0514a8af2beba5ecf2ea5a22a4ef',1,'MTriangle::move()'],['../classParallelogram.html#ae8d51f9b629160df31c8a12c28da279e',1,'Parallelogram::move()'],['../classSquare.html#a75b2fd22fc3895b83bc20728afb20b10',1,'Square::move()'],['../classSTriangle.html#ac72888032cde56407193da9435e2fcc0',1,'STriangle::move()']]],
-  ['mtriangle',['MTriangle',['../classMTriangle.html',1,'MTriangle'],['../classMTriangle.html#aa3d177f785a15aee1416d5b0382b2f23',1,'MTriangle::MTriangle(MLV_Color color=MLV_COLOR_ORANGE)'],['../classMTriangle.html#ab611bdde6afe8f0ab0b3308d36b2416c',1,'MTriangle::MTriangle(const std::vector&lt; STriangle &gt; &amp;triangle, MLV_Color color=MLV_COLOR_ORANGE)'],['../classMTriangle.html#a3c0ffb582fd22a3a673ec13e6575da28',1,'MTriangle::MTriangle(const Point&lt; double &gt; &amp;origin, double angular=0.0, MLV_Color color=MLV_COLOR_ORANGE)']]],
-  ['mtriangle_2ehpp',['MTriangle.hpp',['../MTriangle_8hpp.html',1,'']]]
+  ['operator_21_3d',['operator!=',['../classT__Point.html#ab92f1605c6f5008b42105b4c7a7fc1b2',1,'T_Point']]],
+  ['operator_28_29',['operator()',['../structT__Point_1_1hash__point.html#a6d41490eb7af074b029db524a80e2e53',1,'T_Point::hash_point::operator()(const T_Point&lt; T &gt; &amp;p) const'],['../structT__Point_1_1hash__point.html#a92f4c83c6538fcb66804d44e944d7b20',1,'T_Point::hash_point::operator()(const T_Point&lt; T &gt; &amp;p1, const T_Point&lt; T &gt; &amp;p2) const']]],
+  ['operator_2b',['operator+',['../classT__Point.html#a1f94a7a19cc8711e7784f700ea59297a',1,'T_Point']]],
+  ['operator_2b_3d',['operator+=',['../classT__Point.html#a4fa7b8ceb837c81e608d5ddad0f1ffe7',1,'T_Point']]],
+  ['operator_2d',['operator-',['../classT__Point.html#a4a3671d0a9763b3e749c799294ebb1ca',1,'T_Point']]],
+  ['operator_2d_3d',['operator-=',['../classT__Point.html#aa438de3090999e1f24f0de58dc5171a0',1,'T_Point']]],
+  ['operator_3c',['operator&lt;',['../classT__Point.html#a95cb559fe5888b44481f6ad3aebabefe',1,'T_Point']]],
+  ['operator_3d',['operator=',['../classT__Point.html#a13fbb5646f2333aa41194d648423e10f',1,'T_Point']]],
+  ['operator_3d_3d',['operator==',['../classT__Point.html#a83c15f53049523cc75c23350ceb4832a',1,'T_Point']]],
+  ['operator_3e',['operator&gt;',['../classT__Point.html#a0a9956de8ab7c8dccf35b78c43aedefd',1,'T_Point']]]
 ];
