@@ -80,8 +80,10 @@ Collaboration diagram for T_Point&lt; T &gt;::hash_point:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d41490eb7af074b029db524a80e2e53"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structT__Point_1_1hash__point.html#a6d41490eb7af074b029db524a80e2e53">operator()</a> (const <a class="el" href="classT__Point.html">T_Point</a>&lt; T &gt; &amp;p) const</td></tr>
+<tr class="memdesc:a6d41490eb7af074b029db524a80e2e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator to hash a point.  <a href="#a6d41490eb7af074b029db524a80e2e53">More...</a><br /></td></tr>
 <tr class="separator:a6d41490eb7af074b029db524a80e2e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92f4c83c6538fcb66804d44e944d7b20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structT__Point_1_1hash__point.html#a92f4c83c6538fcb66804d44e944d7b20">operator()</a> (const <a class="el" href="classT__Point.html">T_Point</a>&lt; T &gt; &amp;p1, const <a class="el" href="classT__Point.html">T_Point</a>&lt; T &gt; &amp;p2) const</td></tr>
+<tr class="memdesc:a92f4c83c6538fcb66804d44e944d7b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator equal need to hash a point.  <a href="#a92f4c83c6538fcb66804d44e944d7b20">More...</a><br /></td></tr>
 <tr class="separator:a92f4c83c6538fcb66804d44e944d7b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -110,6 +112,15 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Operator to hash a point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>: point to hash </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return the hash of the point </dd></dl>
 
 </div>
 </div>
@@ -148,6 +159,16 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Operator equal need to hash a point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>: Point 1 </td></tr>
+    <tr><td class="paramname">p2</td><td>: Point 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return true if p1 and p2 are equals, false otherwise </dd></dl>
 
 </div>
 </div>

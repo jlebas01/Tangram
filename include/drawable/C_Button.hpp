@@ -87,6 +87,11 @@ public:
 
     void Draw();
 
+    /*!
+     * @brief Draw the button with specific color
+     * @param color : MLV_Color needed to draw the button
+     */
+
     void Draw(MLV_Color color);
 
     /*!

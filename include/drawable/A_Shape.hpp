@@ -52,7 +52,7 @@ public :
     virtual void aMove(const T_Point<double> &translation) = 0;
 
     /*!
-     * @brief Pure virtual function. Rotate the C_GTriangle with specified angular
+     * @brief Pure virtual function. Rotate the A_Shape with specified angular
      * @param angular : This angular should be between (0, 2PI)
      */
 
@@ -99,19 +99,44 @@ public :
     virtual bool aSetPoints(const T_Point<double> &ref, const T_Point<double> &changed) = 0;
 
     /*!
-     * @brief Pure virtual function. Convert all data of C_GTriangle in a string
+     * @brief Pure virtual function. Convert all data of A_Shape in a string
      * @return Return a string which contains every mPoints of this shape
      */
 
     virtual std::string aToString() = 0;
 
+    /*!
+     * @brief Pure virtual function. Get the current angular of a A_Shape
+     * @return Return the current angular of a A_Shape as double
+     */
+
     virtual double aCurrentAngular() = 0;
+
+    /*!
+     * @brief Pure virtual function. Take the point at left top corner of a A_Shape
+     * @return Return the point at left top corner
+     */
 
     virtual T_Point<double> aLeftCorner() = 0;
 
+    /*!
+     * @brief Pure virtual function. Get the A_Shape type
+     * @return Return as string a A_Shape type
+     */
+
     virtual std::string aGetShape() = 0;
 
+    /*!
+     * @brief Pure virtual function. Get the color of a A_Shape
+     * @return Return the MLV_Color of a A_Shape
+     */
+
     virtual MLV_Color aGetColor() = 0;
+
+    /*!
+     * @brief Pure virtual function. Get the area of a A_Shape
+     * @return Return the area of a A_Shape
+     */
 
     virtual double aGetArea() = 0;
 };

@@ -17,9 +17,9 @@ Collaboration diagram for T\+\_\+\+Point$<$ T $>$\+:\+:hash\+\_\+point\+:\nopage
 \begin{DoxyCompactItemize}
 \item 
 std\+::size\+\_\+t \hyperlink{structT__Point_1_1hash__point_a6d41490eb7af074b029db524a80e2e53}{operator()} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p) const
-\item 
+\begin{DoxyCompactList}\small\item\em Operator to hash a point. \end{DoxyCompactList}\item 
 bool \hyperlink{structT__Point_1_1hash__point_a92f4c83c6538fcb66804d44e944d7b20}{operator()} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p1, const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p2) const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Operator equal need to hash a point. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
@@ -30,6 +30,18 @@ bool \hyperlink{structT__Point_1_1hash__point_a92f4c83c6538fcb66804d44e944d7b20}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 std\+::size\+\_\+t \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::hash\+\_\+point\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Operator to hash a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: point to hash \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the hash of the point 
+\end{DoxyReturn}
 \mbox{\Hypertarget{structT__Point_1_1hash__point_a92f4c83c6538fcb66804d44e944d7b20}\label{structT__Point_1_1hash__point_a92f4c83c6538fcb66804d44e944d7b20}} 
 \index{T\+\_\+\+Point\+::hash\+\_\+point@{T\+\_\+\+Point\+::hash\+\_\+point}!operator()@{operator()}}
 \index{operator()@{operator()}!T\+\_\+\+Point\+::hash\+\_\+point@{T\+\_\+\+Point\+::hash\+\_\+point}}
@@ -37,6 +49,20 @@ std\+::size\+\_\+t \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::hash\+\
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 bool \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::hash\+\_\+point\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p1,  }\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Operator equal need to hash a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \+: Point 1 \\
+\hline
+{\em p2} & \+: Point 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return true if p1 and p2 are equals, false otherwise 
+\end{DoxyReturn}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

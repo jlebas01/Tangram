@@ -33,6 +33,11 @@ public:
 
     T_Point() : x(0), y(0) {}
 
+    /*!
+     * @brief Constructor of a point with move semantic
+     * @param p : Point to move
+     */
+
     T_Point(const T_Point<T> &&p) noexcept {
         this->x = std::move(p.x);
         this->y = std::move(p.y);
@@ -62,22 +67,46 @@ public:
         return *this;
     }
 
+    /*!
+     * @brief Operator +=
+     * @param p : Point
+     * @return Return the behavior when a point is affected and add by another one
+     */
+
     T_Point &operator+=(const T_Point<T> &p) {
         this->x += p.x;
         this->y += p.y;
         return *this;
     }
 
+    /*!
+     * @brief Operator +
+     * @param p : Point
+     * @return Return the behavior when a point is add by another one
+     */
+
     T_Point operator+(const T_Point<T> &p) {
         const T_Point<T> res({this->x + p.x, this->y + p.y});
         return res;
     }
+
+    /*!
+     * @brief Operator -=
+     * @param p : Point
+     * @return Return the behavior when a point is affected and subtract by another one
+     */
 
     T_Point &operator-=(const T_Point<T> &p) {
         this->x -= p.x;
         this->y -= p.y;
         return *this;
     }
+
+    /*!
+     * @brief Operator -
+     * @param p : Point
+     * @return Return the behavior when a point is subtract by another one
+     */
 
     T_Point operator-(const T_Point<T> &p) {
         const T_Point<T> res({this->x - p.x, this->y - p.y});
@@ -136,9 +165,23 @@ public:
 
 
     struct hash_point {
+
+        /*!
+         * @brief Operator to hash a point
+         * @param p : point to hash
+         * @return Return the hash of the point
+         */
+
         std::size_t operator()(const T_Point<T> &p) const {
             return std::hash<T>()(p.x) ^ std::hash<T>()(p.y);
         }
+
+        /*!
+         * @brief Operator equal need to hash a point
+         * @param p1 : Point 1
+         * @param p2 : Point 2
+         * @return Return true if p1 and p2 are equals, false otherwise
+         */
 
         bool operator()(const T_Point<T> &p1, const T_Point<T> &p2) const {
             return p1.x == p2.x && p1.y == p2.y;
