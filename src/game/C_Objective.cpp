@@ -101,7 +101,7 @@ bool C_Objective::BoardCompleted(const std::vector<std::shared_ptr<A_Shape>> &ob
 
 std::vector<std::shared_ptr<A_Shape>> C_Objective::GetObjective() {
     std::vector<std::shared_ptr<A_Shape>> const vec_shape = mShapes;
-    return mShapes;
+    return vec_shape;
 }
 
 MLV_Color C_Objective::GetColor() {
@@ -134,13 +134,22 @@ double C_Objective::GetCompleted(const std::vector<std::shared_ptr<A_Shape>> &ob
         points_match -= std::count(set_game->begin(), set_game->end(), it);
     }
 
+
+    double progress = (1- (points_match / static_cast<double>(set_objective->size())))*100;
+
     delete set_game;
     delete set_objective;
 
-    return (1- (points_match / static_cast<double>(set_objective->size())))*100;
+    return progress;
 }
 
 void C_Objective::SetObjective(std::shared_ptr<C_Objective> objective,
                                const std::vector<std::shared_ptr<A_Shape>> &vec_objective) {
     objective = std::make_shared<C_Objective>(vec_objective);
+}
+
+void C_Objective::Clear(){
+    mShapes.clear(); //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    // create a new (temporary) vector and swap its contents with mTriangles. The temporary vector is then destroyed, freeing the memory along with it.
+    std::vector<std::shared_ptr<A_Shape>>().swap(mShapes);
 }

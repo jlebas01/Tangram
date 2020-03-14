@@ -33,7 +33,9 @@ std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classA__Shape}{A\+\_\+\+Sh
 M\+L\+V\+\_\+\+Color \hyperlink{classC__Objective_aeaaa69ca15b1e1d8edbc3f1920399964}{Get\+Color} ()
 \begin{DoxyCompactList}\small\item\em Get the m\+Color of an \hyperlink{classC__Objective}{C\+\_\+\+Objective}. \end{DoxyCompactList}\item 
 double \hyperlink{classC__Objective_a026149982f0d62ea0a039a8b94bbaae0}{Get\+Completed} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classA__Shape}{A\+\_\+\+Shape} $>$$>$ \&objective, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classA__Shape}{A\+\_\+\+Shape} $>$$>$ \&game)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Give the progress of the puzzle. \end{DoxyCompactList}\item 
+void \hyperlink{classC__Objective_a05924ace1e7f1c2f04de7f6c007cb104}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Clear the objective. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -114,6 +116,16 @@ Check if the board is m\+Completed.
 \begin{DoxyReturn}{Returns}
 True if the board is m\+Completed, false if not 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classC__Objective_a05924ace1e7f1c2f04de7f6c007cb104}\label{classC__Objective_a05924ace1e7f1c2f04de7f6c007cb104}} 
+\index{C\+\_\+\+Objective@{C\+\_\+\+Objective}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+\_\+\+Objective@{C\+\_\+\+Objective}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void C\+\_\+\+Objective\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear the objective. 
+
 \mbox{\Hypertarget{classC__Objective_aeaaa69ca15b1e1d8edbc3f1920399964}\label{classC__Objective_aeaaa69ca15b1e1d8edbc3f1920399964}} 
 \index{C\+\_\+\+Objective@{C\+\_\+\+Objective}!Get\+Color@{Get\+Color}}
 \index{Get\+Color@{Get\+Color}!C\+\_\+\+Objective@{C\+\_\+\+Objective}}
@@ -133,6 +145,20 @@ Return the m\+Color of an \hyperlink{classC__Objective}{C\+\_\+\+Objective}
 \subsubsection{\texorpdfstring{Get\+Completed()}{GetCompleted()}}
 {\footnotesize\ttfamily double C\+\_\+\+Objective\+::\+Get\+Completed (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classA__Shape}{A\+\_\+\+Shape} $>$$>$ \&}]{objective,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classA__Shape}{A\+\_\+\+Shape} $>$$>$ \&}]{game }\end{DoxyParamCaption})}
 
+
+
+Give the progress of the puzzle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objective} & \+: Shapes of objective \\
+\hline
+{\em game} & \+: Shape of the game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the \%100 of the progress 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classC__Objective_aa8e3dea19bd4578246b183d2bad2d475}\label{classC__Objective_aa8e3dea19bd4578246b183d2bad2d475}} 
 \index{C\+\_\+\+Objective@{C\+\_\+\+Objective}!Get\+Objective@{Get\+Objective}}
 \index{Get\+Objective@{Get\+Objective}!C\+\_\+\+Objective@{C\+\_\+\+Objective}}

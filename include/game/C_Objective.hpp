@@ -89,7 +89,20 @@ public:
 
     MLV_Color GetColor();
 
+    /*!
+     * @brief Give the progress of the puzzle
+     * @param objective : Shapes of objective
+     * @param game : Shape of the game
+     * @return Return the %100 of the progress
+     */
+
     double GetCompleted(const std::vector<std::shared_ptr<A_Shape>> &objective, const std::vector<std::shared_ptr<A_Shape>> &game);
+
+    /*!
+     * @brief Clear the objective
+     */
+
+    void Clear();
 };
 
 

@@ -9,12 +9,13 @@
 
 
 C_Game::~C_Game() {
-    mShapes.clear(); //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
-    // create a new (temporary) vector and swap its contents with mTriangles. The temporary vector is then destroyed, freeing the memory along with it.
-    std::vector<std::shared_ptr<A_Shape>>().swap(mShapes);
+    //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    mShapes.clear();
     mObjectiveShape.clear();
-    std::vector<std::shared_ptr<A_Shape>>().swap(mObjectiveShape);
     mSetObjective.clear();
+    // create a new (temporary) vector and swap its contents with mTriangles. The temporary vector is then destroyed, freeing the memory along with it.
+    std::vector<std::shared_ptr<A_Shape>>().swap(mObjectiveShape);
+    std::vector<std::shared_ptr<A_Shape>>().swap(mShapes);
     std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>().swap(mSetObjective);
 }
 
@@ -184,6 +185,7 @@ void C_Game::MainLoop() {
             }
         }
     }
+    Clear();
 }
 
 
@@ -194,6 +196,9 @@ void C_Game::addShape(std::shared_ptr<A_Shape> s) {
 void C_Game::SetObjective(const std::vector<std::shared_ptr<A_Shape>> &vec_objective) {
     mObjectiveShape.clear();
     mSetObjective.clear();
+    std::vector<std::shared_ptr<A_Shape>>().swap(mObjectiveShape);
+    std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>().swap(mSetObjective);
+
     C_Objective::SetObjective(std::make_shared<C_Objective>(mObjective), vec_objective);
 
     mObjectiveShape.insert(mObjectiveShape.end(), vec_objective.begin(), vec_objective.end());
@@ -213,12 +218,16 @@ void C_Game::Clear() {
     mShapes.clear();
     mObjectiveShape.clear();
     mSetObjective.clear();
+    std::vector<std::shared_ptr<A_Shape>>().swap(mObjectiveShape);
+    std::vector<std::shared_ptr<A_Shape>>().swap(mShapes);
+    std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>().swap(mSetObjective);
+    mObjective.Clear();
 }
 
 bool C_Game::__Collision(const std::shared_ptr<A_Shape> &shape, T_Point<double> next_translate, double angular) {
     auto set_shape = new std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>();
     auto set_shape_game = new std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>();
-    const std::vector<std::shared_ptr<A_Shape>> vec_shapes = mShapes;
+    std::vector<std::shared_ptr<A_Shape>> vec_shapes = mShapes;
     shape->aRotate(angular);
 
     for (auto &it : shape->aGetPoints()) {
@@ -240,6 +249,8 @@ bool C_Game::__Collision(const std::shared_ptr<A_Shape> &shape, T_Point<double> 
 
     delete set_shape;
     delete set_shape_game;
+    vec_shapes.clear();
+
     return false;
 }
 
@@ -281,7 +292,8 @@ void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
        for (auto & it : mObjectiveShape){
            const double area = shape->aGetArea();
            if ((area  + 0.1 * area >= it->aGetArea()) && (it->aGetArea() >= area - 0.1 * area )) {
-
+               delete set_shape;
+               map_distance.clear();
                return;
            }
        };
@@ -291,4 +303,5 @@ void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
     }
     shape->aMove(T_Point{0.0, 0.0});
     delete set_shape;
+    map_distance.clear();
 }

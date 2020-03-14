@@ -97,7 +97,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aeaaa69ca15b1e1d8edbc3f1920399964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mColor of an <a class="el" href="classC__Objective.html" title="Class of the board C_Objective. ">C_Objective</a>.  <a href="#aeaaa69ca15b1e1d8edbc3f1920399964">More...</a><br /></td></tr>
 <tr class="separator:aeaaa69ca15b1e1d8edbc3f1920399964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a026149982f0d62ea0a039a8b94bbaae0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classC__Objective.html#a026149982f0d62ea0a039a8b94bbaae0">GetCompleted</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classA__Shape.html">A_Shape</a> &gt;&gt; &amp;objective, const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classA__Shape.html">A_Shape</a> &gt;&gt; &amp;game)</td></tr>
+<tr class="memdesc:a026149982f0d62ea0a039a8b94bbaae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give the progress of the puzzle.  <a href="#a026149982f0d62ea0a039a8b94bbaae0">More...</a><br /></td></tr>
 <tr class="separator:a026149982f0d62ea0a039a8b94bbaae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05924ace1e7f1c2f04de7f6c007cb104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classC__Objective.html#a05924ace1e7f1c2f04de7f6c007cb104">Clear</a> ()</td></tr>
+<tr class="memdesc:a05924ace1e7f1c2f04de7f6c007cb104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the objective.  <a href="#a05924ace1e7f1c2f04de7f6c007cb104">More...</a><br /></td></tr>
+<tr class="separator:a05924ace1e7f1c2f04de7f6c007cb104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -257,6 +261,25 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a05924ace1e7f1c2f04de7f6c007cb104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05924ace1e7f1c2f04de7f6c007cb104">&#9670;&nbsp;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C_Objective::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the objective. </p>
+
+</div>
+</div>
 <a id="aeaaa69ca15b1e1d8edbc3f1920399964"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeaaa69ca15b1e1d8edbc3f1920399964">&#9670;&nbsp;</a></span>GetColor()</h2>
 
@@ -302,6 +325,16 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Give the progress of the puzzle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objective</td><td>: Shapes of objective </td></tr>
+    <tr><td class="paramname">game</td><td>: Shape of the game </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return the %100 of the progress </dd></dl>
 
 </div>
 </div>

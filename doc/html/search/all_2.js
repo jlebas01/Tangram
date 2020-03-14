@@ -34,7 +34,7 @@ var searchData=
   ['c_5fstriangle_2ecpp',['C_STriangle.cpp',['../C__STriangle_8cpp.html',1,'']]],
   ['c_5fstriangle_2ehpp',['C_STriangle.hpp',['../C__STriangle_8hpp.html',1,'']]],
   ['centerpoint',['CenterPoint',['../classC__STriangle.html#a98c01a7d57aeee85ee4e2df88a786b7f',1,'C_STriangle']]],
-  ['clear',['Clear',['../classC__Game.html#a1ad2e168bba0305e48c0bf8e162a889a',1,'C_Game']]],
+  ['clear',['Clear',['../classC__Game.html#a1ad2e168bba0305e48c0bf8e162a889a',1,'C_Game::Clear()'],['../classC__Objective.html#a05924ace1e7f1c2f04de7f6c007cb104',1,'C_Objective::Clear()']]],
   ['click',['Click',['../classC__Button.html#ac743591b5933dd95b571d5956c7d669b',1,'C_Button']]],
   ['clickinbutton',['ClickInButton',['../classC__Button.html#a805c797b9afdddb5896a516a3e783882',1,'C_Button']]],
   ['computedistance',['computeDistance',['../classA__Shape.html#a2c663e21cf31002323b83f9f98234d33',1,'A_Shape']]]

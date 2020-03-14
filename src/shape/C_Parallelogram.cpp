@@ -58,18 +58,16 @@ T_Point<double> C_Parallelogram::__CenterShape(const std::vector<C_STriangle>& v
         for (auto &it : mTriangles) {
             center_points.push_back(it.GetCenterPoint());
         }
-        T_Point<double> const point_rotate = C_STriangle::CenterPoint(center_points);
-        center_points.clear();
-        return point_rotate;
     }
     else {
         for (auto &it : mTrianglesReverse) {
             center_points.push_back(it.GetCenterPoint());
         }
-        T_Point<double> const point_rotate = C_STriangle::CenterPoint(center_points);
-        center_points.clear();
-        return point_rotate;
     }
+    T_Point<double> const point_rotate = C_STriangle::CenterPoint(center_points);
+    center_points.clear();
+    std::vector<T_Point<double>>().swap(center_points);
+    return point_rotate;
 
 }
 

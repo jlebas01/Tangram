@@ -10,10 +10,11 @@
 #include <iostream>
 
 C_STriangle::~C_STriangle() {
-    mPoints.clear(); //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    mPoints.clear();
+    mFlip.clear();
     // create a new (temporary) vector and swap its contents with mTriangles. The temporary vector is then destroyed, freeing the memory along with it.
     std::vector<T_Point<double>>().swap(mPoints);
-    mFlip.clear();
     std::vector<T_Point<double>>().swap(mFlip);
 }
 
@@ -119,6 +120,7 @@ void C_STriangle::aRightFlip() {
         mFlipTranslate = mTranslateShape;
     }
     mFlip.clear();
+    std::vector<T_Point<double>>().swap(mFlip);
     mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
 }
 
@@ -138,6 +140,7 @@ void C_STriangle::aLeftFlip() {
         mFlipTranslate = mTranslateShape;
     }
     mFlip.clear();
+    std::vector<T_Point<double>>().swap(mFlip);
     mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
 }
 
@@ -153,6 +156,7 @@ void C_STriangle::RightFlip(const T_Point<double> &centerPoint) {
         mFlipTranslate = mTranslateShape;
     }
     mFlip.clear();
+    std::vector<T_Point<double>>().swap(mFlip);
     mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
 
 }
@@ -169,6 +173,7 @@ void C_STriangle::LeftFlip(const T_Point<double> &centerPoint) {
         mFlipTranslate = mTranslateShape;
     }
     mFlip.clear();
+    std::vector<T_Point<double>>().swap(mFlip);
     mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
 
 }
@@ -189,6 +194,7 @@ void C_STriangle::aReverse() {
         mFlipTranslate = mTranslateShape;
     }
     mFlip.clear();
+    std::vector<T_Point<double>>().swap(mFlip);
     mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
 }
 
@@ -203,6 +209,7 @@ void C_STriangle::Reverse(const T_Point<double> &centerPoint){
         mFlipTranslate = mTranslateShape;
     }
     mFlip.clear();
+    std::vector<T_Point<double>>().swap(mFlip);
     mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
 }
 

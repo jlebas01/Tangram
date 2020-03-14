@@ -9,9 +9,12 @@
 
 
 C_Square::~C_Square() {
-    mTriangles.clear(); //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    mTriangles.clear();
+    mPoints.clear();
     // create a new (temporary) vector and swap its contents with mTriangles. The temporary vector is then destroyed, freeing the memory along with it.
     std::vector<C_STriangle>().swap(mTriangles);
+    std::vector<T_Point<double>>().swap(mPoints);
 }
 
 C_Square::C_Square(const std::vector<C_STriangle> &_triangle, MLV_Color _color) {
@@ -49,6 +52,7 @@ T_Point<double> C_Square::__CenterShape() {
     }
     T_Point<double> const point_rotate = C_STriangle::CenterPoint(center_points);
     center_points.clear();
+    std::vector<T_Point<double>>().swap(center_points);
     return point_rotate;
 }
 

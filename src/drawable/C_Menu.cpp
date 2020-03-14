@@ -6,6 +6,10 @@
 #include <utils/T_Point.hpp>
 #include <MLV/MLV_all.h>
 
+C_Menu::~C_Menu(){
+    mButtons.clear();
+    std::vector<C_Button>().swap(mButtons);
+}
 
 void C_Menu::AddButton(const C_Button &button) {
     mButtons.push_back(button);

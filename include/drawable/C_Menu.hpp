@@ -45,6 +45,8 @@ private:
 
 public:
 
+    ~C_Menu();
+
     /*!
      * @brief Add a button in the C_Menu
      * @param button : C_Button to add

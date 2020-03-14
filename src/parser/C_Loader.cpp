@@ -87,9 +87,12 @@ bool C_Loader::ParseFile(const std::string &filename, C_Game &game) {
         }
         game.SetObjective(vec_objective);
         vec_objective.clear();
+        std::vector<std::shared_ptr<A_Shape>>().swap(vec_objective);
         file.close();
         return true;
     }
+    file.close();
     vec_objective.clear();
+    std::vector<std::shared_ptr<A_Shape>>().swap(vec_objective);
     return false;
 }

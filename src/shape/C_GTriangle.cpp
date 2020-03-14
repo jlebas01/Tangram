@@ -8,9 +8,12 @@
 #include <shape/C_GTriangle.hpp>
 
 C_GTriangle::~C_GTriangle() {
-    mTriangles.clear(); //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    mTriangles.clear();
+    mPoints.clear();
     // create a new (temporary) vector and swap its contents with mTriangles. The temporary vector is then destroyed, freeing the memory along with it.
     std::vector<C_STriangle>().swap(mTriangles);
+    std::vector<T_Point<double>>().swap(mPoints);
 }
 
 C_GTriangle::C_GTriangle(const std::vector<C_STriangle> &_triangle, const MLV_Color _color) {

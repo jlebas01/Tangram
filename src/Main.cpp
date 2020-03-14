@@ -115,5 +115,6 @@ int main(int argc, char *argv[]) {
     m.MainLoop();
 
     MLV_free_window();
+
     std::exit(EXIT_SUCCESS);
 }
