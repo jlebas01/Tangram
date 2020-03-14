@@ -101,7 +101,7 @@ void C_Game::MainLoop() {
             continue;
         }
 
-        if (key == MLV_KEYBOARD_s) {
+        if (key == MLV_KEYBOARD_s && (mSetObjective.empty())) {
             const std::vector<std::shared_ptr<A_Shape>> current_game = this->mShapes;
             if (saver.Save(current_game)) {
                 exit = true;
