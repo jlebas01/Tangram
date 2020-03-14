@@ -110,10 +110,18 @@ public:
     void aRotate(double angular) override;
 
     /*!
-     * @brief Flip the figure as symmetry
+     * @brief Flip the figure as 45° clock
      */
 
-    void aFlip() override;
+    void aRightFlip() override;
+
+    /*!
+     * @brief Flip the figure as 45° anti clock
+     */
+
+    void aLeftFlip() override;
+
+    void aReverse() override;
 
     /*!
      * @brief Draw this shape on IHM

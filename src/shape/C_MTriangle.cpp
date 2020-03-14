@@ -69,7 +69,7 @@ void C_MTriangle::aRotate(const double angular) {
     mUpdate = true;
 }
 
-void C_MTriangle::aFlip() {
+void C_MTriangle::aRightFlip() {
     for (auto &it : mTriangles){
         it.aSetPoints(it.aGetPoints().at(0), it.GetFlip().at(0));
         it.aSetPoints(it.aGetPoints().at(1), it.GetFlip().at(1));
@@ -77,7 +77,33 @@ void C_MTriangle::aFlip() {
     }
     T_Point<double> const point_rotate = __CenterShape();
     for (auto &it : mTriangles) {
-        it.Flip(point_rotate);
+        it.RightFlip(point_rotate);
+    }
+    mUpdate = true;
+}
+
+void C_MTriangle::aLeftFlip() {
+    for (auto &it : mTriangles){
+        it.aSetPoints(it.aGetPoints().at(0), it.GetFlip().at(0));
+        it.aSetPoints(it.aGetPoints().at(1), it.GetFlip().at(1));
+        it.aSetPoints(it.aGetPoints().at(2), it.GetFlip().at(2));
+    }
+    T_Point<double> const point_rotate = __CenterShape();
+    for (auto &it : mTriangles) {
+        it.LeftFlip(point_rotate);
+    }
+    mUpdate = true;
+}
+
+void C_MTriangle::aReverse() {
+    for (auto &it : mTriangles){
+        it.aSetPoints(it.aGetPoints().at(0), it.GetFlip().at(0));
+        it.aSetPoints(it.aGetPoints().at(1), it.GetFlip().at(1));
+        it.aSetPoints(it.aGetPoints().at(2), it.GetFlip().at(2));
+    }
+    T_Point<double> const point_rotate = __CenterShape();
+    for (auto &it : mTriangles) {
+        it.Reverse(point_rotate);
     }
     mUpdate = true;
 }

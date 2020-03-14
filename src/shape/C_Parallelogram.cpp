@@ -8,9 +8,14 @@
 #include <shape/C_Parallelogram.hpp>
 
 C_Parallelogram::~C_Parallelogram() {
-    mTriangles.clear(); //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    //delete all elements in vector mTriangles (calling destructor of any elements in this vector)
+    mTriangles.clear();
+    mPoints.clear();
+    mTrianglesReverse.clear();
     // create a new (temporary) vector and swap its contents with mTriangles. The temporary vector is then destroyed, freeing the memory along with it.
     std::vector<C_STriangle>().swap(mTriangles);
+    std::vector<T_Point<double>>().swap(mPoints);
+    std::vector<C_STriangle>().swap(mTrianglesReverse);
 }
 
 C_Parallelogram::C_Parallelogram(const MLV_Color _color) {
@@ -18,6 +23,12 @@ C_Parallelogram::C_Parallelogram(const MLV_Color _color) {
                                               T_Point<double>(0.0, 100.0), _color));
     this->mTriangles.emplace_back(C_STriangle(T_Point<double>(0.0, 200.0), T_Point<double>(100.0, 100.0),
                                               T_Point<double>(0.0, 100.0), _color));
+
+    this->mTrianglesReverse.emplace_back(C_STriangle(T_Point<double>(0.0, 0.0), T_Point<double>(100.0, 100.0),
+                                              T_Point<double>(0.0, 100.0), _color));
+    this->mTrianglesReverse.emplace_back(C_STriangle(T_Point<double>(100.0, 200.0), T_Point<double>(100.0, 100.0),
+                                              T_Point<double>(0.0, 100.0), _color));
+
     this->mColor = _color;
     this->mUpdate = true;
 }
@@ -41,18 +52,32 @@ void C_Parallelogram::__Parameter(const T_Point<double> &origin, double angular)
     aMove({origin.x, origin.y});
 }
 
-T_Point<double> C_Parallelogram::__CenterShape() {
+T_Point<double> C_Parallelogram::__CenterShape(const std::vector<C_STriangle>& vec) {
     std::vector<T_Point<double>> center_points;
-    for (auto &it : mTriangles) {
-        center_points.push_back(it.GetCenterPoint());
+    if (vec.empty()){
+        for (auto &it : mTriangles) {
+            center_points.push_back(it.GetCenterPoint());
+        }
+        T_Point<double> const point_rotate = C_STriangle::CenterPoint(center_points);
+        center_points.clear();
+        return point_rotate;
     }
-    T_Point<double> const point_rotate = C_STriangle::CenterPoint(center_points);
-    center_points.clear();
-    return point_rotate;
+    else {
+        for (auto &it : mTrianglesReverse) {
+            center_points.push_back(it.GetCenterPoint());
+        }
+        T_Point<double> const point_rotate = C_STriangle::CenterPoint(center_points);
+        center_points.clear();
+        return point_rotate;
+    }
+
 }
 
 void C_Parallelogram::aMove(const T_Point<double> &translation) {
     for (auto &it : mTriangles) {
+        it.aMove(translation);
+    }
+    for (auto &it : mTrianglesReverse) {
         it.aMove(translation);
     }
     mUpdate = true;
@@ -63,19 +88,75 @@ void C_Parallelogram::aRotate(const double angular) {
     for (auto &it : mTriangles) {
         it.Rotate(angular, point_rotate);
     }
+    T_Point<double> const point_rotate2 = __CenterShape(mTrianglesReverse);
+    for (auto &it : mTrianglesReverse) {
+        it.Rotate(angular, point_rotate2);
+    }
     mUpdate = true;
 }
 
-void C_Parallelogram::aFlip() {
+void C_Parallelogram::aRightFlip() {
     for (auto &it : mTriangles){
         it.aSetPoints(it.aGetPoints().at(0), it.GetFlip().at(0));
         it.aSetPoints(it.aGetPoints().at(1), it.GetFlip().at(1));
         it.aSetPoints(it.aGetPoints().at(2), it.GetFlip().at(2));
     }
+
+    for (auto &it : mTrianglesReverse) {
+        it.aSetPoints(it.aGetPoints().at(0), it.GetFlip().at(0));
+        it.aSetPoints(it.aGetPoints().at(1), it.GetFlip().at(1));
+        it.aSetPoints(it.aGetPoints().at(2), it.GetFlip().at(2));
+    }
+
+
     T_Point<double> const point_rotate = __CenterShape();
     for (auto &it : mTriangles) {
-        it.Flip(point_rotate);
+        it.RightFlip(point_rotate);
     }
+
+    T_Point<double> const point_rotate2 = __CenterShape(mTrianglesReverse);
+    for (auto &it : mTrianglesReverse) {
+        it.LeftFlip(point_rotate2);
+    }
+
+
+    mUpdate = true;
+}
+
+void C_Parallelogram::aLeftFlip() {
+    for (auto &it : mTriangles){
+        it.aSetPoints(it.aGetPoints().at(0), it.GetFlip().at(0));
+        it.aSetPoints(it.aGetPoints().at(1), it.GetFlip().at(1));
+        it.aSetPoints(it.aGetPoints().at(2), it.GetFlip().at(2));
+    }
+
+    for (auto &it : mTrianglesReverse) {
+        it.aSetPoints(it.aGetPoints().at(0), it.GetFlip().at(0));
+        it.aSetPoints(it.aGetPoints().at(1), it.GetFlip().at(1));
+        it.aSetPoints(it.aGetPoints().at(2), it.GetFlip().at(2));
+    }
+
+
+    T_Point<double> const point_rotate = __CenterShape();
+    for (auto &it : mTriangles) {
+        it.LeftFlip(point_rotate);
+    }
+
+    T_Point<double> const point_rotate2 = __CenterShape(mTrianglesReverse);
+    for (auto &it : mTrianglesReverse) {
+        it.RightFlip(point_rotate2);
+    }
+
+    mUpdate = true;
+}
+
+void C_Parallelogram::aReverse() {
+
+    std::vector<C_STriangle> tmp = mTriangles;
+    mTriangles = mTrianglesReverse;
+    mTrianglesReverse = tmp;
+    tmp.clear();
+    std::vector<C_STriangle>().swap(tmp);
     mUpdate = true;
 }
 

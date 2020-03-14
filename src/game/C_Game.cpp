@@ -25,6 +25,7 @@ static int abso(int x) {
 C_Game::C_Game(const int _w, const int _h) {
     this->w = _w;
     this->h = _h;
+    this->mProgress = std::string("0/100");;
 
     //ajouter toutes les formes
     (this->mShapes).push_back(std::shared_ptr<A_Shape>(std::make_shared<C_STriangle>(T_Point<double>(0.0, 0.0), 0.0)));
@@ -56,11 +57,9 @@ void C_Game::__Draw() {
     }
     if (mMouseOvered)
         mMouseOvered->iDraw(MLV_COLOR_ALICE_BLUE);
-    int printable = static_cast<int>(mObjective.GetCompleted(mObjectiveShape, mShapes));
-    std::string s;
-    s = std::to_string(printable).append("/100");
-    if (mSetObjective.size() > 0) {
-        MLV_draw_text_box(this->w - 150, this->h - 150, 150, 150, s.c_str(), 0,
+
+    if (!mSetObjective.empty()) {
+        MLV_draw_text_box(this->w - 150, this->h - 150, 150, 150, mProgress.c_str(), 0,
                           MLV_COLOR_BLACK, MLV_COLOR_BLACK, MLV_COLOR_GOLDENROD,
                           MLV_TEXT_CENTER, MLV_HORIZONTAL_CENTER, MLV_VERTICAL_CENTER);
     }
@@ -109,13 +108,26 @@ void C_Game::MainLoop() {
                 continue;
             }
         }
+        else if (key == MLV_KEYBOARD_ESCAPE){
+            exit = true;
+            continue;
+        }
 
         if (cur_state == MLV_RELEASED) {
             for (auto &shape: mShapes) {
                 if (shape->aIsInShape({static_cast<double>(cur_click.x), static_cast<double>(cur_click.y)})) {
                     mMouseOvered = shape;
                     if (key == MLV_KEYBOARD_f && shape->aIsInShape({static_cast<double>(cur_click.x), static_cast<double>(cur_click.y)}) ){
-                        mMouseOvered->aFlip();
+                        mMouseOvered->aRightFlip();
+                        __Draw();
+                        key = MLV_KEYBOARD_NONE;
+                    } else if (key == MLV_KEYBOARD_d && shape->aIsInShape({static_cast<double>(cur_click.x), static_cast<double>(cur_click.y)}) ){
+                        mMouseOvered->aLeftFlip();
+                        __Draw();
+                        key = MLV_KEYBOARD_NONE;
+                    }
+                    else if (key == MLV_KEYBOARD_r && shape->aIsInShape({static_cast<double>(cur_click.x), static_cast<double>(cur_click.y)}) ){
+                        mMouseOvered->aReverse();
                         __Draw();
                         key = MLV_KEYBOARD_NONE;
                     }
@@ -137,6 +149,8 @@ void C_Game::MainLoop() {
             } else if (cur_state == MLV_RELEASED) {
                 if (selected != nullptr) {
                     __Stick(selected);
+                    int printable = static_cast<int>(mObjective.GetCompleted(mObjectiveShape, mShapes));
+                    mProgress = std::to_string(printable).append("/100");
                 }
                 selected = nullptr;
             }

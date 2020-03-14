@@ -59,10 +59,22 @@ public :
     virtual void aRotate(double angular) = 0;
 
     /*!
-     * @brief Pure virtual function. Flip the figure as symmetry
+     * @brief Pure virtual function. Flip the figure as 45° clock (Pi/4)
      */
 
-    virtual void aFlip() = 0;
+    virtual void aRightFlip() = 0;
+
+    /*!
+     * @brief Pure virtual function. Flip the figure as 45° anti clock (Pi/4)
+     */
+
+    virtual void aLeftFlip() = 0;
+
+    /*!
+     * @brief Pure virtual function. Reverse the shape as symmetry
+     */
+
+    virtual void aReverse() = 0;
 
     /*!
      * @brief Pure virtual function. Check if a point is in this shape

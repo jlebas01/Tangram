@@ -137,14 +137,23 @@ public:
     void aRotate(double angular) override;
 
     /*!
-     * @brief Flip the figure as symmetry
+     * @brief Flip the figure as 45° clock
      */
 
-    void aFlip() override;
+    void aRightFlip() override;
+
+    /*!
+     * @brief Flip the figure as 45° anti clock
+     */
+
+    void aLeftFlip() override;
+
+    void aReverse() override;
 
     /*!
      * @brief Draw this shape on IHM
      */
+
 
     void iDraw() override;
 
@@ -218,7 +227,11 @@ public:
 
     void Rotate(double angular, const T_Point<double> &center_point);
 
-    void Flip(const T_Point<double> &centerPoint);
+    void RightFlip(const T_Point<double> &centerPoint);
+
+    void LeftFlip(const T_Point<double> &centerPoint);
+
+    void Reverse(const T_Point<double> &centerPoint);
 
     double aGetArea() override;
 

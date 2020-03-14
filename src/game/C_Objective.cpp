@@ -85,24 +85,18 @@ bool C_Objective::BoardCompleted(const std::vector<std::shared_ptr<A_Shape>> &ob
             set_game->insert({static_cast<int>(it2.x), static_cast<int>(it2.y)});
         }
     }
-  /*  auto points_match = static_cast<double>(set_objective->size());
 
-    double error_marge = 0.10 + (0.07) * (set_objective->size() / 60.0);
-
-    for (auto &it : *set_objective) {
-        points_match -= std::count(set_game->begin(), set_game->end(), it);
-    }
-
-    return points_match / static_cast<double>(set_objective->size()) <= 0.01;*/
 
     for (auto &it : *set_game){
         if (std::count(set_objective->begin(), set_objective->end(), it) == 0 ){
             return false;
         }
     }
+
+    delete set_game;
+    delete set_objective;
+
     return true;
-  //return std::is_permutation(set_game->begin(), set_game->end(),  set_objective->begin());
-    //return points_match < static_cast<double>(set_objective->size());
 }
 
 std::vector<std::shared_ptr<A_Shape>> C_Objective::GetObjective() {
@@ -134,11 +128,14 @@ double C_Objective::GetCompleted(const std::vector<std::shared_ptr<A_Shape>> &ob
     }
     auto points_match = static_cast<double>(set_objective->size());
 
-    double error_marge = 0.10 + (0.05) * (set_objective->size() / 60.0);
+   // double error_marge = 0.10 + (0.05) * (set_objective->size() / 60.0);
 
     for (auto &it : *set_objective) {
         points_match -= std::count(set_game->begin(), set_game->end(), it);
     }
+
+    delete set_game;
+    delete set_objective;
 
     return (1- (points_match / static_cast<double>(set_objective->size())))*100;
 }

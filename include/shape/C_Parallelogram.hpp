@@ -40,6 +40,8 @@ private:
 
     MLV_Color mColor; /*!< Color of the C_Parallelogram */
 
+    std::vector<C_STriangle> mTrianglesReverse;
+
 /*!
  * @brief Class methods
  */
@@ -58,7 +60,7 @@ private:
      * @return Return a point which is the center of this shape
      */
 
-    T_Point<double> __CenterShape();
+    T_Point<double> __CenterShape(const std::vector<C_STriangle>& vec = {});
 
 public:
 
@@ -109,10 +111,18 @@ public:
     void aRotate(double angular) override;
 
     /*!
-     * @brief Flip the figure as symmetry
+     * @brief Flip the figure as 45° clock
      */
 
-    void aFlip() override;
+    void aRightFlip() override;
+
+    /*!
+     * @brief Flip the figure as 45° anti clock
+     */
+
+    void aLeftFlip() override;
+
+    void aReverse() override;
 
     /*!
      * @brief Draw this shape on IHM

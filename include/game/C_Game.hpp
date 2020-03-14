@@ -51,7 +51,8 @@ private:
     std::vector<std::shared_ptr<A_Shape>> mShapes; /*!< C_Game main loop requires a vector of A_Shape - Abstract Class*/
     int w; /*!< Width of the window*/
     int h; /*!< Height of the window*/
-    std::shared_ptr<A_Shape> mMouseOvered = nullptr;
+    std::string mProgress; /*!< Progression of the game */
+    std::shared_ptr<A_Shape> mMouseOvered = nullptr; /*!< Current shape mouseovered*/
 
 private:
 

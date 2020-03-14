@@ -103,7 +103,7 @@ void C_STriangle::Rotate(double angular, const T_Point<double> &center_point) {
     mAngularShape += angular;
 }
 
-void C_STriangle::aFlip() {
+void C_STriangle::aRightFlip() {
     aSetPoints(mPoints.at(0), mFlip.at(0));
     aSetPoints(mPoints.at(1), mFlip.at(1));
     aSetPoints(mPoints.at(2), mFlip.at(2));
@@ -122,7 +122,26 @@ void C_STriangle::aFlip() {
     mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
 }
 
-void C_STriangle::Flip(const T_Point<double> &centerPoint) {
+void C_STriangle::aLeftFlip() {
+    aSetPoints(mPoints.at(0), mFlip.at(0));
+    aSetPoints(mPoints.at(1), mFlip.at(1));
+    aSetPoints(mPoints.at(2), mFlip.at(2));
+    mAngularShape = mFlipAngular;
+    aRotate(-3.14159265358979323846 / 4.0);
+    mFlipAngular = mAngularShape;
+
+    if (mFlipTranslate != mTranslateShape) {
+
+        T_Point<double> tmp = mTranslateShape;
+        aMove(mTranslateShape - mFlipTranslate);
+        mTranslateShape = tmp;
+        mFlipTranslate = mTranslateShape;
+    }
+    mFlip.clear();
+    mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
+}
+
+void C_STriangle::RightFlip(const T_Point<double> &centerPoint) {
 
     mAngularShape = mFlipAngular;
     Rotate(3.14159265358979323846 / 4.0, centerPoint);
@@ -136,6 +155,55 @@ void C_STriangle::Flip(const T_Point<double> &centerPoint) {
     mFlip.clear();
     mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
 
+}
+
+void C_STriangle::LeftFlip(const T_Point<double> &centerPoint) {
+
+    mAngularShape = mFlipAngular;
+    Rotate(-3.14159265358979323846 / 4.0, centerPoint);
+    mFlipAngular = mAngularShape;
+    if (mFlipTranslate != mTranslateShape) {
+        T_Point<double> tmp = mTranslateShape;
+        aMove(mTranslateShape - mFlipTranslate);
+        mTranslateShape = tmp;
+        mFlipTranslate = mTranslateShape;
+    }
+    mFlip.clear();
+    mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
+
+}
+
+void C_STriangle::aReverse() {
+    aSetPoints(mPoints.at(0), mFlip.at(0));
+    aSetPoints(mPoints.at(1), mFlip.at(1));
+    aSetPoints(mPoints.at(2), mFlip.at(2));
+    mAngularShape = mFlipAngular;
+    aRotate(3.14159265358979323846);
+    mFlipAngular = mAngularShape;
+
+    if (mFlipTranslate != mTranslateShape) {
+
+        T_Point<double> tmp = mTranslateShape;
+        aMove(mTranslateShape - mFlipTranslate);
+        mTranslateShape = tmp;
+        mFlipTranslate = mTranslateShape;
+    }
+    mFlip.clear();
+    mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
+}
+
+void C_STriangle::Reverse(const T_Point<double> &centerPoint){
+    mAngularShape = mFlipAngular;
+    Rotate(3.14159265358979323846, centerPoint);
+    mFlipAngular = mAngularShape;
+    if (mFlipTranslate != mTranslateShape) {
+        T_Point<double> tmp = mTranslateShape;
+        aMove(mTranslateShape - mFlipTranslate);
+        mTranslateShape = tmp;
+        mFlipTranslate = mTranslateShape;
+    }
+    mFlip.clear();
+    mFlip.insert(mFlip.end(), mPoints.begin(), mPoints.end());
 }
 
 void C_STriangle::iDraw() {
