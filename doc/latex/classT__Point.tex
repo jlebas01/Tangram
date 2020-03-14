@@ -15,7 +15,7 @@ Inheritance diagram for T\+\_\+\+Point$<$ T $>$\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=274pt]{classT__Point__inherit__graph}
+\includegraphics[height=550pt]{classT__Point__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -35,6 +35,30 @@ struct \hyperlink{structT__Point_1_1hash__point}{hash\+\_\+point}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+constexpr \hyperlink{classT__Point_af313da04154273b9a75d66e9950359ea}{T\+\_\+\+Point} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p)=default
+\item 
+\hyperlink{classT__Point_a61017b12d3c2aa88a242dbbc57733413}{T\+\_\+\+Point} ()
+\begin{DoxyCompactList}\small\item\em Constructor for a point with initialisation list. \end{DoxyCompactList}\item 
+\hyperlink{classT__Point_a12f2ef3c5f10e162dcb6385bbfbfae58}{T\+\_\+\+Point} (const T \&\+\_\+x, const T \&\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Constructor of a point with move semantic. \end{DoxyCompactList}\item 
+\hyperlink{classT__Point}{T\+\_\+\+Point} \& \hyperlink{classT__Point_a13fbb5646f2333aa41194d648423e10f}{operator=} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Operator = of a point. \end{DoxyCompactList}\item 
+\hyperlink{classT__Point}{T\+\_\+\+Point} \& \hyperlink{classT__Point_a4fa7b8ceb837c81e608d5ddad0f1ffe7}{operator+=} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Operator +=. \end{DoxyCompactList}\item 
+\hyperlink{classT__Point}{T\+\_\+\+Point} \hyperlink{classT__Point_a1f94a7a19cc8711e7784f700ea59297a}{operator+} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Operator +. \end{DoxyCompactList}\item 
+\hyperlink{classT__Point}{T\+\_\+\+Point} \& \hyperlink{classT__Point_aa438de3090999e1f24f0de58dc5171a0}{operator-\/=} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Operator -\/=. \end{DoxyCompactList}\item 
+\hyperlink{classT__Point}{T\+\_\+\+Point} \hyperlink{classT__Point_a4a3671d0a9763b3e749c799294ebb1ca}{operator-\/} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Operator -\/. \end{DoxyCompactList}\item 
+bool \hyperlink{classT__Point_a83c15f53049523cc75c23350ceb4832a}{operator==} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Operator == of a point. \end{DoxyCompactList}\item 
+bool \hyperlink{classT__Point_ab92f1605c6f5008b42105b4c7a7fc1b2}{operator!=} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Operator != of a point. \end{DoxyCompactList}\item 
+bool \hyperlink{classT__Point_a95cb559fe5888b44481f6ad3aebabefe}{operator$<$} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Operator $<$ of a point. \end{DoxyCompactList}\item 
+bool \hyperlink{classT__Point_a0a9956de8ab7c8dccf35b78c43aedefd}{operator$>$} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Operator $>$ of a point. \end{DoxyCompactList}\item 
 constexpr \hyperlink{classT__Point_af313da04154273b9a75d66e9950359ea}{T\+\_\+\+Point} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&p)=default
 \item 
 \hyperlink{classT__Point_a61017b12d3c2aa88a242dbbc57733413}{T\+\_\+\+Point} ()
@@ -87,14 +111,55 @@ Class of a \hyperlink{classT__Point}{T\+\_\+\+Point}.
 \mbox{\Hypertarget{classT__Point_af313da04154273b9a75d66e9950359ea}\label{classT__Point_af313da04154273b9a75d66e9950359ea}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 constexpr \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::\hyperlink{classT__Point}{T\+\_\+\+Point} (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 \mbox{\Hypertarget{classT__Point_a61017b12d3c2aa88a242dbbc57733413}\label{classT__Point_a61017b12d3c2aa88a242dbbc57733413}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::\hyperlink{classT__Point}{T\+\_\+\+Point} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for a point with initialisation list. 
+
+\mbox{\Hypertarget{classT__Point_a12f2ef3c5f10e162dcb6385bbfbfae58}\label{classT__Point_a12f2ef3c5f10e162dcb6385bbfbfae58}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::\hyperlink{classT__Point}{T\+\_\+\+Point} (\begin{DoxyParamCaption}\item[{const T \&}]{\+\_\+x,  }\item[{const T \&}]{\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of a point with move semantic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: Point to move\\
+\hline
+\end{DoxyParams}
+Constructor for a point. Requires a X and a Y coordinate 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & \+: Template X coordinate \\
+\hline
+{\em \+\_\+y} & \+: Template Y coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classT__Point_af313da04154273b9a75d66e9950359ea}\label{classT__Point_af313da04154273b9a75d66e9950359ea}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::\hyperlink{classT__Point}{T\+\_\+\+Point} (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classT__Point_a61017b12d3c2aa88a242dbbc57733413}\label{classT__Point_a61017b12d3c2aa88a242dbbc57733413}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::\hyperlink{classT__Point}{T\+\_\+\+Point} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -105,7 +170,7 @@ Constructor for a point with initialisation list.
 \mbox{\Hypertarget{classT__Point_af6c471d7e5547576a6c379930b9d1d35}\label{classT__Point_af6c471d7e5547576a6c379930b9d1d35}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::\hyperlink{classT__Point}{T\+\_\+\+Point} (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&\&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
@@ -121,7 +186,7 @@ Constructor of a point with move semantic.
 \mbox{\Hypertarget{classT__Point_a12f2ef3c5f10e162dcb6385bbfbfae58}\label{classT__Point_a12f2ef3c5f10e162dcb6385bbfbfae58}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+\subsubsection{\texorpdfstring{T\+\_\+\+Point()}{T\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::\hyperlink{classT__Point}{T\+\_\+\+Point} (\begin{DoxyParamCaption}\item[{const T \&}]{\+\_\+x,  }\item[{const T \&}]{\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -142,7 +207,26 @@ Constructor for a point. Requires a X and a Y coordinate.
 \mbox{\Hypertarget{classT__Point_ab92f1605c6f5008b42105b4c7a7fc1b2}\label{classT__Point_ab92f1605c6f5008b42105b4c7a7fc1b2}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator"!=@{operator"!=}}
 \index{operator"!=@{operator"!=}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator != of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classT__Point}{T\+\_\+\+Point} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return True if the point is different, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classT__Point_ab92f1605c6f5008b42105b4c7a7fc1b2}\label{classT__Point_ab92f1605c6f5008b42105b4c7a7fc1b2}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 bool \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -161,7 +245,26 @@ Return True if the point is different, false if not
 \mbox{\Hypertarget{classT__Point_a1f94a7a19cc8711e7784f700ea59297a}\label{classT__Point_a1f94a7a19cc8711e7784f700ea59297a}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator+@{operator+}}
 \index{operator+@{operator+}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classT__Point}{T\+\_\+\+Point} \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator +. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: Point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the behavior when a point is add by another one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classT__Point_a1f94a7a19cc8711e7784f700ea59297a}\label{classT__Point_a1f94a7a19cc8711e7784f700ea59297a}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator+@{operator+}}
+\index{operator+@{operator+}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classT__Point}{T\+\_\+\+Point} \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -180,7 +283,26 @@ Return the behavior when a point is add by another one
 \mbox{\Hypertarget{classT__Point_a4fa7b8ceb837c81e608d5ddad0f1ffe7}\label{classT__Point_a4fa7b8ceb837c81e608d5ddad0f1ffe7}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator+=@{operator+=}}
 \index{operator+=@{operator+=}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classT__Point}{T\+\_\+\+Point}\& \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator +=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: Point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the behavior when a point is affected and add by another one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classT__Point_a4fa7b8ceb837c81e608d5ddad0f1ffe7}\label{classT__Point_a4fa7b8ceb837c81e608d5ddad0f1ffe7}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classT__Point}{T\+\_\+\+Point}\& \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -199,7 +321,26 @@ Return the behavior when a point is affected and add by another one
 \mbox{\Hypertarget{classT__Point_a4a3671d0a9763b3e749c799294ebb1ca}\label{classT__Point_a4a3671d0a9763b3e749c799294ebb1ca}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classT__Point}{T\+\_\+\+Point} \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator -\/. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: Point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the behavior when a point is subtract by another one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classT__Point_a4a3671d0a9763b3e749c799294ebb1ca}\label{classT__Point_a4a3671d0a9763b3e749c799294ebb1ca}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classT__Point}{T\+\_\+\+Point} \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -218,7 +359,26 @@ Return the behavior when a point is subtract by another one
 \mbox{\Hypertarget{classT__Point_aa438de3090999e1f24f0de58dc5171a0}\label{classT__Point_aa438de3090999e1f24f0de58dc5171a0}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator-\/=@{operator-\/=}}
 \index{operator-\/=@{operator-\/=}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classT__Point}{T\+\_\+\+Point}\& \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator -\/=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: Point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the behavior when a point is affected and subtract by another one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classT__Point_aa438de3090999e1f24f0de58dc5171a0}\label{classT__Point_aa438de3090999e1f24f0de58dc5171a0}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classT__Point}{T\+\_\+\+Point}\& \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -237,7 +397,26 @@ Return the behavior when a point is affected and subtract by another one
 \mbox{\Hypertarget{classT__Point_a95cb559fe5888b44481f6ad3aebabefe}\label{classT__Point_a95cb559fe5888b44481f6ad3aebabefe}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator$<$@{operator$<$}}
 \index{operator$<$@{operator$<$}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator $<$ of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classT__Point}{T\+\_\+\+Point} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return True if the point is strictly weaker, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classT__Point_a95cb559fe5888b44481f6ad3aebabefe}\label{classT__Point_a95cb559fe5888b44481f6ad3aebabefe}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 bool \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -256,7 +435,26 @@ Return True if the point is strictly weaker, false if not
 \mbox{\Hypertarget{classT__Point_a13fbb5646f2333aa41194d648423e10f}\label{classT__Point_a13fbb5646f2333aa41194d648423e10f}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator=@{operator=}}
 \index{operator=@{operator=}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classT__Point}{T\+\_\+\+Point}\& \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator = of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classT__Point}{T\+\_\+\+Point} to \char`\"{}copy\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return a reference to an atomic point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classT__Point_a13fbb5646f2333aa41194d648423e10f}\label{classT__Point_a13fbb5646f2333aa41194d648423e10f}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator=@{operator=}}
+\index{operator=@{operator=}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classT__Point}{T\+\_\+\+Point}\& \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -275,7 +473,26 @@ Return a reference to an atomic point
 \mbox{\Hypertarget{classT__Point_a83c15f53049523cc75c23350ceb4832a}\label{classT__Point_a83c15f53049523cc75c23350ceb4832a}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator==@{operator==}}
 \index{operator==@{operator==}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator == of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classT__Point}{T\+\_\+\+Point} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return True if the point is the same, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classT__Point_a83c15f53049523cc75c23350ceb4832a}\label{classT__Point_a83c15f53049523cc75c23350ceb4832a}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator==@{operator==}}
+\index{operator==@{operator==}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 bool \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -294,7 +511,26 @@ Return True if the point is the same, false if not
 \mbox{\Hypertarget{classT__Point_a0a9956de8ab7c8dccf35b78c43aedefd}\label{classT__Point_a0a9956de8ab7c8dccf35b78c43aedefd}} 
 \index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator$>$@{operator$>$}}
 \index{operator$>$@{operator$>$}!T\+\_\+\+Point@{T\+\_\+\+Point}}
-\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator $>$ of a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: \hyperlink{classT__Point}{T\+\_\+\+Point} to comapre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return True if the point is strictly greater, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classT__Point_a0a9956de8ab7c8dccf35b78c43aedefd}\label{classT__Point_a0a9956de8ab7c8dccf35b78c43aedefd}} 
+\index{T\+\_\+\+Point@{T\+\_\+\+Point}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!T\+\_\+\+Point@{T\+\_\+\+Point}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 bool \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -331,4 +567,4 @@ Template y for a point
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/utils/\hyperlink{T__Point_8hpp}{T\+\_\+\+Point.\+hpp}\end{DoxyCompactItemize}
+include/\hyperlink{T__Point_8hpp}{T\+\_\+\+Point.\+hpp}\end{DoxyCompactItemize}

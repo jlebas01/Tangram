@@ -24,7 +24,11 @@ Collaboration diagram for C\+\_\+\+Save\+:\nopagebreak
 \hyperlink{classC__Save_adc49f753d7b0f40c95ec2b93f81b9672}{C\+\_\+\+Save} ()
 \item 
 bool \hyperlink{classC__Save_a144be848679b771afb9cf410710308e8}{Save} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classA__Shape}{A\+\_\+\+Shape} $>$$>$ \&Game)
-\end{DoxyCompactItemize}
+\item 
+\hyperlink{classC__Save_adc49f753d7b0f40c95ec2b93f81b9672}{C\+\_\+\+Save} ()
+\item 
+bool \hyperlink{classC__Save_a144be848679b771afb9cf410710308e8}{Save} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classA__Shape}{A\+\_\+\+Shape} $>$$>$ \&Game)
+\begin{DoxyCompactList}\small\item\em Save the current board as puzzle file in a page which contains less than 12 files. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -36,21 +40,45 @@ This class manage everything about the save
 \mbox{\Hypertarget{classC__Save_adc49f753d7b0f40c95ec2b93f81b9672}\label{classC__Save_adc49f753d7b0f40c95ec2b93f81b9672}} 
 \index{C\+\_\+\+Save@{C\+\_\+\+Save}!C\+\_\+\+Save@{C\+\_\+\+Save}}
 \index{C\+\_\+\+Save@{C\+\_\+\+Save}!C\+\_\+\+Save@{C\+\_\+\+Save}}
-\subsubsection{\texorpdfstring{C\+\_\+\+Save()}{C\_Save()}}
+\subsubsection{\texorpdfstring{C\+\_\+\+Save()}{C\_Save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily C\+\_\+\+Save\+::\+C\+\_\+\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{classC__Save_adc49f753d7b0f40c95ec2b93f81b9672}\label{classC__Save_adc49f753d7b0f40c95ec2b93f81b9672}} 
+\index{C\+\_\+\+Save@{C\+\_\+\+Save}!C\+\_\+\+Save@{C\+\_\+\+Save}}
+\index{C\+\_\+\+Save@{C\+\_\+\+Save}!C\+\_\+\+Save@{C\+\_\+\+Save}}
+\subsubsection{\texorpdfstring{C\+\_\+\+Save()}{C\_Save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+\_\+\+Save\+::\+C\+\_\+\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Construct an instance of a saver 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classC__Save_a144be848679b771afb9cf410710308e8}\label{classC__Save_a144be848679b771afb9cf410710308e8}} 
 \index{C\+\_\+\+Save@{C\+\_\+\+Save}!Save@{Save}}
 \index{Save@{Save}!C\+\_\+\+Save@{C\+\_\+\+Save}}
-\subsubsection{\texorpdfstring{Save()}{Save()}}
+\subsubsection{\texorpdfstring{Save()}{Save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool C\+\_\+\+Save\+::\+Save (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classA__Shape}{A\+\_\+\+Shape} $>$$>$ \&}]{Game }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classC__Save_a144be848679b771afb9cf410710308e8}\label{classC__Save_a144be848679b771afb9cf410710308e8}} 
+\index{C\+\_\+\+Save@{C\+\_\+\+Save}!Save@{Save}}
+\index{Save@{Save}!C\+\_\+\+Save@{C\+\_\+\+Save}}
+\subsubsection{\texorpdfstring{Save()}{Save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool C\+\_\+\+Save\+::\+Save (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classA__Shape}{A\+\_\+\+Shape} $>$$>$ \&}]{Game }\end{DoxyParamCaption})}
 
 
 
+Save the current board as puzzle file in a page which contains less than 12 files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Game} & \+: Current game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return true if the board has been saved, false otherwise 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/parser/\hyperlink{C__Save_8hpp}{C\+\_\+\+Save.\+hpp}\item 
+include/\hyperlink{C__Save_8hpp}{C\+\_\+\+Save.\+hpp}\item 
 src/parser/\hyperlink{C__Save_8cpp}{C\+\_\+\+Save.\+cpp}\end{DoxyCompactItemize}

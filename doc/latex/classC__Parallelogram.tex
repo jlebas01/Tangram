@@ -69,6 +69,46 @@ std\+::string \hyperlink{classC__Parallelogram_a373fdd3ebdfeffcaa0a72ff7001af8ec
 M\+L\+V\+\_\+\+Color \hyperlink{classC__Parallelogram_afd5055e948fcd992be3cdd227c8b4bfb}{a\+Get\+Color} () override
 \begin{DoxyCompactList}\small\item\em Get the color of the shape. \end{DoxyCompactList}\item 
 double \hyperlink{classC__Parallelogram_a72b4509a33ee27331e5b9bdc8a3278e8}{a\+Get\+Area} () override
+\begin{DoxyCompactList}\small\item\em Get the area of the shape. \end{DoxyCompactList}\item 
+\hyperlink{classC__Parallelogram_a2d7af48f3a26e8e07031e7c147a084a3}{$\sim$\+C\+\_\+\+Parallelogram} () override
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}. \end{DoxyCompactList}\item 
+\hyperlink{classC__Parallelogram_a85d543d3a3a118676e7e47cff7ce82be}{C\+\_\+\+Parallelogram} (M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+UE)
+\begin{DoxyCompactList}\small\item\em Constructor by default of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}, make a \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram} as default. \end{DoxyCompactList}\item 
+\hyperlink{classC__Parallelogram_a6e31f5dcaf076ca4b745c0b0108bb809}{C\+\_\+\+Parallelogram} (const std\+::vector$<$ \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} $>$ \&triangle, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+UE)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}, requires a vector of S\+Triangles. \end{DoxyCompactList}\item 
+\hyperlink{classC__Parallelogram_abd470868efc5d3a002509a9e45e4ed63}{C\+\_\+\+Parallelogram} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&origin, double angular=0.\+0, M\+L\+V\+\_\+\+Color color=M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+UE)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}, calls the deleguate Default Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classC__Parallelogram_ac77ea776b24c551114d84eaf147f6977}{a\+Move} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&translation) override
+\begin{DoxyCompactList}\small\item\em Move the \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram} by point translation. \end{DoxyCompactList}\item 
+void \hyperlink{classC__Parallelogram_a07b6dfae7100a409cdcf04d710ac9c3f}{a\+Rotate} (double angular) override
+\begin{DoxyCompactList}\small\item\em Rotate the \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram} with specified angular. \end{DoxyCompactList}\item 
+void \hyperlink{classC__Parallelogram_ab638d55c999ea10da7b5000fd034fbc1}{a\+Right\+Flip} () override
+\begin{DoxyCompactList}\small\item\em Flip the figure as 45° clock. \end{DoxyCompactList}\item 
+void \hyperlink{classC__Parallelogram_a284a59c9f1c778ac8da80efedc313354}{a\+Left\+Flip} () override
+\begin{DoxyCompactList}\small\item\em Flip the figure as 45° anti clock. \end{DoxyCompactList}\item 
+void \hyperlink{classC__Parallelogram_a573447294989d53fadf3d7adfb0640c6}{a\+Reverse} () override
+\begin{DoxyCompactList}\small\item\em Reverse the figure as symmetry. \end{DoxyCompactList}\item 
+void \hyperlink{classC__Parallelogram_a6d43cc787a39def68c7b7de4a33caf5e}{i\+Draw} () override
+\begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM. \end{DoxyCompactList}\item 
+void \hyperlink{classC__Parallelogram_a044ce6d1042ea93589a38f4686489862}{i\+Draw} (M\+L\+V\+\_\+\+Color color) override
+\begin{DoxyCompactList}\small\item\em Draw this shape on I\+HM with specific color. \end{DoxyCompactList}\item 
+bool \hyperlink{classC__Parallelogram_a9ccee396c30606bfe64df416c22586d5}{a\+Is\+In\+Shape} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&click) override
+\begin{DoxyCompactList}\small\item\em Check if a point is in this shape. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ $>$ \hyperlink{classC__Parallelogram_a81a9927b24fec7dbe4276ce35aa761cd}{a\+Get\+Points} () override
+\begin{DoxyCompactList}\small\item\em Get m\+Points of this shape. \end{DoxyCompactList}\item 
+bool \hyperlink{classC__Parallelogram_adfe1c40f2d33955617e3a535c548dfa0}{a\+Set\+Points} (const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&ref, const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&changed) override
+\begin{DoxyCompactList}\small\item\em Set a point to another one. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classC__Parallelogram_add67ef2aba5e14c27e30a958e4843223}{a\+To\+String} () override
+\begin{DoxyCompactList}\small\item\em Convert all data of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram} in a string. \end{DoxyCompactList}\item 
+double \hyperlink{classC__Parallelogram_a51959da2b0cf083767f39d8065f395f2}{a\+Current\+Angular} () override
+\begin{DoxyCompactList}\small\item\em Get the current angular of this shape. \end{DoxyCompactList}\item 
+\hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \hyperlink{classC__Parallelogram_aba287e395a90cc8038388fc85dbeb6d8}{a\+Left\+Corner} () override
+\begin{DoxyCompactList}\small\item\em Take the point at left top corner. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classC__Parallelogram_a373fdd3ebdfeffcaa0a72ff7001af8ec}{a\+Get\+Shape} () override
+\begin{DoxyCompactList}\small\item\em Get the shape type. \end{DoxyCompactList}\item 
+M\+L\+V\+\_\+\+Color \hyperlink{classC__Parallelogram_afd5055e948fcd992be3cdd227c8b4bfb}{a\+Get\+Color} () override
+\begin{DoxyCompactList}\small\item\em Get the color of the shape. \end{DoxyCompactList}\item 
+double \hyperlink{classC__Parallelogram_a72b4509a33ee27331e5b9bdc8a3278e8}{a\+Get\+Area} () override
 \begin{DoxyCompactList}\small\item\em Get the area of the shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -82,7 +122,7 @@ This class manage everything about the \hyperlink{classC__Parallelogram}{C\+\_\+
 \mbox{\Hypertarget{classC__Parallelogram_a2d7af48f3a26e8e07031e7c147a084a3}\label{classC__Parallelogram_a2d7af48f3a26e8e07031e7c147a084a3}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!````~C\+\_\+\+Parallelogram@{$\sim$\+C\+\_\+\+Parallelogram}}
 \index{````~C\+\_\+\+Parallelogram@{$\sim$\+C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{$\sim$\+C\+\_\+\+Parallelogram()}{~C\_Parallelogram()}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+\_\+\+Parallelogram()}{~C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily C\+\_\+\+Parallelogram\+::$\sim$\+C\+\_\+\+Parallelogram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
 
 
@@ -92,7 +132,7 @@ Destructor of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}.
 \mbox{\Hypertarget{classC__Parallelogram_a85d543d3a3a118676e7e47cff7ce82be}\label{classC__Parallelogram_a85d543d3a3a118676e7e47cff7ce82be}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{C\+\_\+\+Parallelogram()}{C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\subsubsection{\texorpdfstring{C\+\_\+\+Parallelogram()}{C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
 {\footnotesize\ttfamily C\+\_\+\+Parallelogram\+::\+C\+\_\+\+Parallelogram (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+BLUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -107,7 +147,7 @@ Constructor by default of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogr
 \mbox{\Hypertarget{classC__Parallelogram_a6e31f5dcaf076ca4b745c0b0108bb809}\label{classC__Parallelogram_a6e31f5dcaf076ca4b745c0b0108bb809}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{C\+\_\+\+Parallelogram()}{C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{C\+\_\+\+Parallelogram()}{C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
 {\footnotesize\ttfamily C\+\_\+\+Parallelogram\+::\+C\+\_\+\+Parallelogram (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} $>$ \&}]{triangle,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+BLUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -124,7 +164,68 @@ Constructor of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}, requir
 \mbox{\Hypertarget{classC__Parallelogram_abd470868efc5d3a002509a9e45e4ed63}\label{classC__Parallelogram_abd470868efc5d3a002509a9e45e4ed63}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{C\+\_\+\+Parallelogram()}{C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\subsubsection{\texorpdfstring{C\+\_\+\+Parallelogram()}{C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily C\+\_\+\+Parallelogram\+::\+C\+\_\+\+Parallelogram (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0},  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+BLUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}, calls the deleguate Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & \+: shifts the figure of a translation of the origin \\
+\hline
+{\em angular} & \+: Optional \+\_\+\+\_\+\+Parameter (angular=0.\+0 as default), a\+Rotate the figure with an angular \\
+\hline
+{\em color} & \+: Optional \+\_\+\+\_\+\+Parameter, m\+Color of this shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classC__Parallelogram_a2d7af48f3a26e8e07031e7c147a084a3}\label{classC__Parallelogram_a2d7af48f3a26e8e07031e7c147a084a3}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!````~C\+\_\+\+Parallelogram@{$\sim$\+C\+\_\+\+Parallelogram}}
+\index{````~C\+\_\+\+Parallelogram@{$\sim$\+C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+\_\+\+Parallelogram()}{~C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+\_\+\+Parallelogram\+::$\sim$\+C\+\_\+\+Parallelogram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}. 
+
+\mbox{\Hypertarget{classC__Parallelogram_a85d543d3a3a118676e7e47cff7ce82be}\label{classC__Parallelogram_a85d543d3a3a118676e7e47cff7ce82be}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{C\+\_\+\+Parallelogram()}{C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily C\+\_\+\+Parallelogram\+::\+C\+\_\+\+Parallelogram (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+BLUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor by default of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}, make a \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram} as default. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \+: Optional \+\_\+\+\_\+\+Parameter, m\+Color of this shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classC__Parallelogram_a6e31f5dcaf076ca4b745c0b0108bb809}\label{classC__Parallelogram_a6e31f5dcaf076ca4b745c0b0108bb809}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{C\+\_\+\+Parallelogram()}{C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily C\+\_\+\+Parallelogram\+::\+C\+\_\+\+Parallelogram (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} $>$ \&}]{triangle,  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+BLUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}, requires a vector of S\+Triangles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em triangle} & \+: The \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram} will created with a vector of \hyperlink{classC__STriangle}{C\+\_\+\+S\+Triangle} (4) \\
+\hline
+{\em color} & \+: Optional \+\_\+\+\_\+\+Parameter, m\+Color of this shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classC__Parallelogram_abd470868efc5d3a002509a9e45e4ed63}\label{classC__Parallelogram_abd470868efc5d3a002509a9e45e4ed63}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{C\+\_\+\+Parallelogram()}{C\_Parallelogram()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
 {\footnotesize\ttfamily C\+\_\+\+Parallelogram\+::\+C\+\_\+\+Parallelogram (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{origin,  }\item[{double}]{angular = {\ttfamily 0.0},  }\item[{M\+L\+V\+\_\+\+Color}]{color = {\ttfamily MLV\+\_\+COLOR\+\_\+BLUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -146,7 +247,24 @@ Constructor of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram}, calls 
 \mbox{\Hypertarget{classC__Parallelogram_a51959da2b0cf083767f39d8065f395f2}\label{classC__Parallelogram_a51959da2b0cf083767f39d8065f395f2}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Current\+Angular@{a\+Current\+Angular}}
 \index{a\+Current\+Angular@{a\+Current\+Angular}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Current\+Angular()}{aCurrentAngular()}}
+\subsubsection{\texorpdfstring{a\+Current\+Angular()}{aCurrentAngular()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double C\+\_\+\+Parallelogram\+::a\+Current\+Angular (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the current angular of this shape. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a80fa4e009c875dd0ba7fc5bfeeb43f98}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a51959da2b0cf083767f39d8065f395f2}\label{classC__Parallelogram_a51959da2b0cf083767f39d8065f395f2}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Current\+Angular@{a\+Current\+Angular}}
+\index{a\+Current\+Angular@{a\+Current\+Angular}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Current\+Angular()}{aCurrentAngular()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily double C\+\_\+\+Parallelogram\+::a\+Current\+Angular (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -163,7 +281,24 @@ Implements \hyperlink{classA__Shape_a80fa4e009c875dd0ba7fc5bfeeb43f98}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_a72b4509a33ee27331e5b9bdc8a3278e8}\label{classC__Parallelogram_a72b4509a33ee27331e5b9bdc8a3278e8}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Get\+Area@{a\+Get\+Area}}
 \index{a\+Get\+Area@{a\+Get\+Area}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Get\+Area()}{aGetArea()}}
+\subsubsection{\texorpdfstring{a\+Get\+Area()}{aGetArea()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double C\+\_\+\+Parallelogram\+::a\+Get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the area of the shape. 
+
+\begin{DoxyReturn}{Returns}
+Return the area of the shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a1b142ee2d873d6c217f65de1632e7b6e}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a72b4509a33ee27331e5b9bdc8a3278e8}\label{classC__Parallelogram_a72b4509a33ee27331e5b9bdc8a3278e8}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Get\+Area@{a\+Get\+Area}}
+\index{a\+Get\+Area@{a\+Get\+Area}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Get\+Area()}{aGetArea()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily double C\+\_\+\+Parallelogram\+::a\+Get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -180,7 +315,7 @@ Implements \hyperlink{classA__Shape_a1b142ee2d873d6c217f65de1632e7b6e}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_afd5055e948fcd992be3cdd227c8b4bfb}\label{classC__Parallelogram_afd5055e948fcd992be3cdd227c8b4bfb}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Get\+Color@{a\+Get\+Color}}
 \index{a\+Get\+Color@{a\+Get\+Color}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Get\+Color()}{aGetColor()}}
+\subsubsection{\texorpdfstring{a\+Get\+Color()}{aGetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily M\+L\+V\+\_\+\+Color C\+\_\+\+Parallelogram\+::a\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -194,10 +329,44 @@ Return the M\+L\+V\+\_\+\+Color of the shape
 
 Implements \hyperlink{classA__Shape_a1e90c8132d33e4ac84d42f72606193b2}{A\+\_\+\+Shape}.
 
+\mbox{\Hypertarget{classC__Parallelogram_afd5055e948fcd992be3cdd227c8b4bfb}\label{classC__Parallelogram_afd5055e948fcd992be3cdd227c8b4bfb}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Get\+Color@{a\+Get\+Color}}
+\index{a\+Get\+Color@{a\+Get\+Color}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Get\+Color()}{aGetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily M\+L\+V\+\_\+\+Color C\+\_\+\+Parallelogram\+::a\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the color of the shape. 
+
+\begin{DoxyReturn}{Returns}
+Return the M\+L\+V\+\_\+\+Color of the shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a1e90c8132d33e4ac84d42f72606193b2}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a81a9927b24fec7dbe4276ce35aa761cd}\label{classC__Parallelogram_a81a9927b24fec7dbe4276ce35aa761cd}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Get\+Points@{a\+Get\+Points}}
+\index{a\+Get\+Points@{a\+Get\+Points}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Get\+Points()}{aGetPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classT__Point}{T\+\_\+\+Point}$<$double$>$ $>$ C\+\_\+\+Parallelogram\+::a\+Get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get m\+Points of this shape. 
+
+\begin{DoxyReturn}{Returns}
+Return a vector of m\+Points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a9fd1285bd63b1fc88943c9969bf01a5c}{A\+\_\+\+Shape}.
+
 \mbox{\Hypertarget{classC__Parallelogram_ae75f316315134020e8423feff917828e}\label{classC__Parallelogram_ae75f316315134020e8423feff917828e}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Get\+Points@{a\+Get\+Points}}
 \index{a\+Get\+Points@{a\+Get\+Points}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Get\+Points()}{aGetPoints()}}
+\subsubsection{\texorpdfstring{a\+Get\+Points()}{aGetPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ $>$ C\+\_\+\+Parallelogram\+::a\+Get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -214,7 +383,24 @@ Implements \hyperlink{classA__Shape_a9fd1285bd63b1fc88943c9969bf01a5c}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_a373fdd3ebdfeffcaa0a72ff7001af8ec}\label{classC__Parallelogram_a373fdd3ebdfeffcaa0a72ff7001af8ec}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Get\+Shape@{a\+Get\+Shape}}
 \index{a\+Get\+Shape@{a\+Get\+Shape}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Get\+Shape()}{aGetShape()}}
+\subsubsection{\texorpdfstring{a\+Get\+Shape()}{aGetShape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string C\+\_\+\+Parallelogram\+::a\+Get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the shape type. 
+
+\begin{DoxyReturn}{Returns}
+Return as string the shape type 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a1b202256a4e5dcb0edab4ab93a37122c}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a373fdd3ebdfeffcaa0a72ff7001af8ec}\label{classC__Parallelogram_a373fdd3ebdfeffcaa0a72ff7001af8ec}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Get\+Shape@{a\+Get\+Shape}}
+\index{a\+Get\+Shape@{a\+Get\+Shape}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Get\+Shape()}{aGetShape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::string C\+\_\+\+Parallelogram\+::a\+Get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -231,7 +417,29 @@ Implements \hyperlink{classA__Shape_a1b202256a4e5dcb0edab4ab93a37122c}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_a9ccee396c30606bfe64df416c22586d5}\label{classC__Parallelogram_a9ccee396c30606bfe64df416c22586d5}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Is\+In\+Shape@{a\+Is\+In\+Shape}}
 \index{a\+Is\+In\+Shape@{a\+Is\+In\+Shape}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Is\+In\+Shape()}{aIsInShape()}}
+\subsubsection{\texorpdfstring{a\+Is\+In\+Shape()}{aIsInShape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool C\+\_\+\+Parallelogram\+::a\+Is\+In\+Shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if a point is in this shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em click} & \+: \hyperlink{classT__Point}{T\+\_\+\+Point} to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Click is in this shape, false if not 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a63f825cbc9780208d9a137f5c14917d0}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a9ccee396c30606bfe64df416c22586d5}\label{classC__Parallelogram_a9ccee396c30606bfe64df416c22586d5}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Is\+In\+Shape@{a\+Is\+In\+Shape}}
+\index{a\+Is\+In\+Shape@{a\+Is\+In\+Shape}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Is\+In\+Shape()}{aIsInShape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool C\+\_\+\+Parallelogram\+::a\+Is\+In\+Shape (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -253,8 +461,25 @@ Implements \hyperlink{classA__Shape_a63f825cbc9780208d9a137f5c14917d0}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_a260c557810c63dd97f2dd64bc15b9dc8}\label{classC__Parallelogram_a260c557810c63dd97f2dd64bc15b9dc8}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Left\+Corner@{a\+Left\+Corner}}
 \index{a\+Left\+Corner@{a\+Left\+Corner}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Left\+Corner()}{aLeftCorner()}}
+\subsubsection{\texorpdfstring{a\+Left\+Corner()}{aLeftCorner()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ C\+\_\+\+Parallelogram\+::a\+Left\+Corner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Take the point at left top corner. 
+
+\begin{DoxyReturn}{Returns}
+Return the point at left top corner 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_abe6781b13037bf7ecea8ff9456b31533}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_aba287e395a90cc8038388fc85dbeb6d8}\label{classC__Parallelogram_aba287e395a90cc8038388fc85dbeb6d8}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Left\+Corner@{a\+Left\+Corner}}
+\index{a\+Left\+Corner@{a\+Left\+Corner}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Left\+Corner()}{aLeftCorner()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classT__Point}{T\+\_\+\+Point}$<$double$>$ C\+\_\+\+Parallelogram\+::a\+Left\+Corner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -270,7 +495,21 @@ Implements \hyperlink{classA__Shape_abe6781b13037bf7ecea8ff9456b31533}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_a284a59c9f1c778ac8da80efedc313354}\label{classC__Parallelogram_a284a59c9f1c778ac8da80efedc313354}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Left\+Flip@{a\+Left\+Flip}}
 \index{a\+Left\+Flip@{a\+Left\+Flip}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Left\+Flip()}{aLeftFlip()}}
+\subsubsection{\texorpdfstring{a\+Left\+Flip()}{aLeftFlip()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Left\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Flip the figure as 45° anti clock. 
+
+
+
+Implements \hyperlink{classA__Shape_abe947e7003cb63be2b4f6c439533427d}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a284a59c9f1c778ac8da80efedc313354}\label{classC__Parallelogram_a284a59c9f1c778ac8da80efedc313354}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Left\+Flip@{a\+Left\+Flip}}
+\index{a\+Left\+Flip@{a\+Left\+Flip}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Left\+Flip()}{aLeftFlip()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Left\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -284,7 +523,26 @@ Implements \hyperlink{classA__Shape_abe947e7003cb63be2b4f6c439533427d}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_ac77ea776b24c551114d84eaf147f6977}\label{classC__Parallelogram_ac77ea776b24c551114d84eaf147f6977}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Move@{a\+Move}}
 \index{a\+Move@{a\+Move}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Move()}{aMove()}}
+\subsubsection{\texorpdfstring{a\+Move()}{aMove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Move (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Move the \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram} by point translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & \+: Every m\+Points of this shape will be translate by this \+\_\+\+\_\+\+Parameter \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classA__Shape_ab284298db1b557ccfa7ba6de7a5fee2c}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_ac77ea776b24c551114d84eaf147f6977}\label{classC__Parallelogram_ac77ea776b24c551114d84eaf147f6977}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Move@{a\+Move}}
+\index{a\+Move@{a\+Move}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Move()}{aMove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Move (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -303,7 +561,21 @@ Implements \hyperlink{classA__Shape_ab284298db1b557ccfa7ba6de7a5fee2c}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_a573447294989d53fadf3d7adfb0640c6}\label{classC__Parallelogram_a573447294989d53fadf3d7adfb0640c6}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Reverse@{a\+Reverse}}
 \index{a\+Reverse@{a\+Reverse}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Reverse()}{aReverse()}}
+\subsubsection{\texorpdfstring{a\+Reverse()}{aReverse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Reverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reverse the figure as symmetry. 
+
+
+
+Implements \hyperlink{classA__Shape_afe2c7969d647f6358da13879a7534ecb}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a573447294989d53fadf3d7adfb0640c6}\label{classC__Parallelogram_a573447294989d53fadf3d7adfb0640c6}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Reverse@{a\+Reverse}}
+\index{a\+Reverse@{a\+Reverse}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Reverse()}{aReverse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Reverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -317,7 +589,21 @@ Implements \hyperlink{classA__Shape_afe2c7969d647f6358da13879a7534ecb}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_ab638d55c999ea10da7b5000fd034fbc1}\label{classC__Parallelogram_ab638d55c999ea10da7b5000fd034fbc1}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Right\+Flip@{a\+Right\+Flip}}
 \index{a\+Right\+Flip@{a\+Right\+Flip}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Right\+Flip()}{aRightFlip()}}
+\subsubsection{\texorpdfstring{a\+Right\+Flip()}{aRightFlip()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Right\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Flip the figure as 45° clock. 
+
+
+
+Implements \hyperlink{classA__Shape_a892688cbbad3297e00e87cce0dbfc76d}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_ab638d55c999ea10da7b5000fd034fbc1}\label{classC__Parallelogram_ab638d55c999ea10da7b5000fd034fbc1}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Right\+Flip@{a\+Right\+Flip}}
+\index{a\+Right\+Flip@{a\+Right\+Flip}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Right\+Flip()}{aRightFlip()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Right\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -331,7 +617,26 @@ Implements \hyperlink{classA__Shape_a892688cbbad3297e00e87cce0dbfc76d}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_a07b6dfae7100a409cdcf04d710ac9c3f}\label{classC__Parallelogram_a07b6dfae7100a409cdcf04d710ac9c3f}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Rotate@{a\+Rotate}}
 \index{a\+Rotate@{a\+Rotate}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Rotate()}{aRotate()}}
+\subsubsection{\texorpdfstring{a\+Rotate()}{aRotate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angular }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Rotate the \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram} with specified angular. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angular} & \+: This angular should be between (0, 2\+PI) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classA__Shape_a25b4e0c34cdb46da5382fe9c7467efaf}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a07b6dfae7100a409cdcf04d710ac9c3f}\label{classC__Parallelogram_a07b6dfae7100a409cdcf04d710ac9c3f}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Rotate@{a\+Rotate}}
+\index{a\+Rotate@{a\+Rotate}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Rotate()}{aRotate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::a\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angular }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -350,7 +655,31 @@ Implements \hyperlink{classA__Shape_a25b4e0c34cdb46da5382fe9c7467efaf}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_adfe1c40f2d33955617e3a535c548dfa0}\label{classC__Parallelogram_adfe1c40f2d33955617e3a535c548dfa0}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Set\+Points@{a\+Set\+Points}}
 \index{a\+Set\+Points@{a\+Set\+Points}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+Set\+Points()}{aSetPoints()}}
+\subsubsection{\texorpdfstring{a\+Set\+Points()}{aSetPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool C\+\_\+\+Parallelogram\+::a\+Set\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set a point to another one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & \+: Point to change \\
+\hline
+{\em changed} & \+: New value of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the ref point exists, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_a6996f454b337f8425ad13cba3f7a7c35}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_adfe1c40f2d33955617e3a535c548dfa0}\label{classC__Parallelogram_adfe1c40f2d33955617e3a535c548dfa0}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+Set\+Points@{a\+Set\+Points}}
+\index{a\+Set\+Points@{a\+Set\+Points}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+Set\+Points()}{aSetPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool C\+\_\+\+Parallelogram\+::a\+Set\+Points (\begin{DoxyParamCaption}\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{ref,  }\item[{const \hyperlink{classT__Point}{T\+\_\+\+Point}$<$ double $>$ \&}]{changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -374,7 +703,24 @@ Implements \hyperlink{classA__Shape_a6996f454b337f8425ad13cba3f7a7c35}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_add67ef2aba5e14c27e30a958e4843223}\label{classC__Parallelogram_add67ef2aba5e14c27e30a958e4843223}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+To\+String@{a\+To\+String}}
 \index{a\+To\+String@{a\+To\+String}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{a\+To\+String()}{aToString()}}
+\subsubsection{\texorpdfstring{a\+To\+String()}{aToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string C\+\_\+\+Parallelogram\+::a\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Convert all data of \hyperlink{classC__Parallelogram}{C\+\_\+\+Parallelogram} in a string. 
+
+\begin{DoxyReturn}{Returns}
+Return a string which contains every m\+Points of this shape 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classA__Shape_ad8804b4e74543db374af6892367b7c2e}{A\+\_\+\+Shape}.
+
+\mbox{\Hypertarget{classC__Parallelogram_add67ef2aba5e14c27e30a958e4843223}\label{classC__Parallelogram_add67ef2aba5e14c27e30a958e4843223}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!a\+To\+String@{a\+To\+String}}
+\index{a\+To\+String@{a\+To\+String}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{a\+To\+String()}{aToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::string C\+\_\+\+Parallelogram\+::a\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -391,7 +737,21 @@ Implements \hyperlink{classA__Shape_ad8804b4e74543db374af6892367b7c2e}{A\+\_\+\+
 \mbox{\Hypertarget{classC__Parallelogram_a6d43cc787a39def68c7b7de4a33caf5e}\label{classC__Parallelogram_a6d43cc787a39def68c7b7de4a33caf5e}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!i\+Draw@{i\+Draw}}
 \index{i\+Draw@{i\+Draw}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{i\+Draw()}{iDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{i\+Draw()}{iDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::i\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw this shape on I\+HM. 
+
+
+
+Implements \hyperlink{classI__Drawable_ae24c65000977a805f52ce032321cd86f}{I\+\_\+\+Drawable}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a6d43cc787a39def68c7b7de4a33caf5e}\label{classC__Parallelogram_a6d43cc787a39def68c7b7de4a33caf5e}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!i\+Draw@{i\+Draw}}
+\index{i\+Draw@{i\+Draw}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{i\+Draw()}{iDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::i\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -405,7 +765,26 @@ Implements \hyperlink{classI__Drawable_ae24c65000977a805f52ce032321cd86f}{I\+\_\
 \mbox{\Hypertarget{classC__Parallelogram_a044ce6d1042ea93589a38f4686489862}\label{classC__Parallelogram_a044ce6d1042ea93589a38f4686489862}} 
 \index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!i\+Draw@{i\+Draw}}
 \index{i\+Draw@{i\+Draw}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
-\subsubsection{\texorpdfstring{i\+Draw()}{iDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{i\+Draw()}{iDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::i\+Draw (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw this shape on I\+HM with specific color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \+: Color of the shape will be draw \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classI__Drawable_a25f6474325614c451a91f019e5fe8010}{I\+\_\+\+Drawable}.
+
+\mbox{\Hypertarget{classC__Parallelogram_a044ce6d1042ea93589a38f4686489862}\label{classC__Parallelogram_a044ce6d1042ea93589a38f4686489862}} 
+\index{C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}!i\+Draw@{i\+Draw}}
+\index{i\+Draw@{i\+Draw}!C\+\_\+\+Parallelogram@{C\+\_\+\+Parallelogram}}
+\subsubsection{\texorpdfstring{i\+Draw()}{iDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily void C\+\_\+\+Parallelogram\+::i\+Draw (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -425,5 +804,5 @@ Implements \hyperlink{classI__Drawable_a25f6474325614c451a91f019e5fe8010}{I\+\_\
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/shape/\hyperlink{C__Parallelogram_8hpp}{C\+\_\+\+Parallelogram.\+hpp}\item 
+include/\hyperlink{C__Parallelogram_8hpp}{C\+\_\+\+Parallelogram.\+hpp}\item 
 src/shape/\hyperlink{C__Parallelogram_8cpp}{C\+\_\+\+Parallelogram.\+cpp}\end{DoxyCompactItemize}
