@@ -293,6 +293,11 @@ public:
 
     std::vector<T_Point<double>> GetFlip();
 
+    /*!
+     * @brief Get the status of shape reversed or not
+     * @return Return true if the shape got reversed, false otherwise
+     */
+
     [[nodiscard]] bool aGetStatusReverse() const override ;
 };
 

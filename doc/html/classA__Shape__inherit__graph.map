@@ -1,8 +1,8 @@
 <map id="A_Shape" name="A_Shape">
-<area shape="rect" id="node3" href="$classC__GTriangle.html" title="Class of the greatest C_GTriangle. " alt="" coords="5,571,141,927"/>
-<area shape="rect" id="node4" href="$classC__MTriangle.html" title="Class of the medium C_MTriangle. " alt="" coords="165,571,301,927"/>
-<area shape="rect" id="node5" href="$classC__Parallelogram.html" title="Class of the parallelogram. " alt="" coords="325,571,472,927"/>
-<area shape="rect" id="node6" href="$classC__Square.html" title="Class of the square. " alt="" coords="496,571,632,927"/>
-<area shape="rect" id="node7" href="$classC__STriangle.html" title="Class of the small C_STriangle. " alt="" coords="656,505,792,993"/>
-<area shape="rect" id="node2" href="$classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="341,5,457,112"/>
+<area shape="rect" id="node3" href="$classC__GTriangle.html" title="Class of the greatest C_GTriangle. " alt="" coords="5,586,163,957"/>
+<area shape="rect" id="node4" href="$classC__MTriangle.html" title="Class of the medium C_MTriangle. " alt="" coords="187,586,344,957"/>
+<area shape="rect" id="node5" href="$classC__Parallelogram.html" title="Class of the parallelogram. " alt="" coords="368,586,525,957"/>
+<area shape="rect" id="node6" href="$classC__Square.html" title="Class of the square. " alt="" coords="549,586,707,957"/>
+<area shape="rect" id="node7" href="$classC__STriangle.html" title="Class of the small C_STriangle. " alt="" coords="731,520,888,1023"/>
+<area shape="rect" id="node2" href="$classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="389,5,505,112"/>
 </map>

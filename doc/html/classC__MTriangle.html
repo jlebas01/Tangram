@@ -75,8 +75,8 @@ Inheritance diagram for C_MTriangle:</div>
 <div class="dyncontent">
 <div class="center"><img src="classC__MTriangle__inherit__graph.png" border="0" usemap="#C__MTriangle_inherit__map" alt="Inheritance graph"/></div>
 <map name="C__MTriangle_inherit__map" id="C__MTriangle_inherit__map">
-<area shape="rect" id="node2" href="classA__Shape.html" title="Abstract Class of every A_Shape. " alt="" coords="5,160,149,457"/>
-<area shape="rect" id="node3" href="classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="19,5,135,112"/>
+<area shape="rect" id="node2" href="classA__Shape.html" title="Abstract Class of every A_Shape. " alt="" coords="5,160,163,472"/>
+<area shape="rect" id="node3" href="classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="26,5,142,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -84,8 +84,8 @@ Collaboration diagram for C_MTriangle:</div>
 <div class="dyncontent">
 <div class="center"><img src="classC__MTriangle__coll__graph.png" border="0" usemap="#C__MTriangle_coll__map" alt="Collaboration graph"/></div>
 <map name="C__MTriangle_coll__map" id="C__MTriangle_coll__map">
-<area shape="rect" id="node2" href="classA__Shape.html" title="Abstract Class of every A_Shape. " alt="" coords="5,160,149,457"/>
-<area shape="rect" id="node3" href="classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="19,5,135,112"/>
+<area shape="rect" id="node2" href="classA__Shape.html" title="Abstract Class of every A_Shape. " alt="" coords="5,160,163,472"/>
+<area shape="rect" id="node3" href="classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="26,5,142,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -151,6 +151,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1baff5085fc1b9822987e3fc307550ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classC__MTriangle.html#a1baff5085fc1b9822987e3fc307550ce">aGetArea</a> () override</td></tr>
 <tr class="memdesc:a1baff5085fc1b9822987e3fc307550ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the area of the shape.  <a href="#a1baff5085fc1b9822987e3fc307550ce">More...</a><br /></td></tr>
 <tr class="separator:a1baff5085fc1b9822987e3fc307550ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0488c23e9e64750bb879d0394830b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classC__MTriangle.html#a5c0488c23e9e64750bb879d0394830b2">aGetStatusReverse</a> () const override</td></tr>
+<tr class="memdesc:a5c0488c23e9e64750bb879d0394830b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of shape reversed or not.  <a href="#a5c0488c23e9e64750bb879d0394830b2">More...</a><br /></td></tr>
+<tr class="separator:a5c0488c23e9e64750bb879d0394830b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classA__Shape"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classA__Shape')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classA__Shape.html">A_Shape</a></td></tr>
 <tr class="memitem:ad0a3bcb28f3d4f42043ea8c592bb5f1f inherit pub_methods_classA__Shape"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classA__Shape.html#ad0a3bcb28f3d4f42043ea8c592bb5f1f">~A_Shape</a> ()=0</td></tr>
 <tr class="memdesc:ad0a3bcb28f3d4f42043ea8c592bb5f1f inherit pub_methods_classA__Shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor of Abstract <a class="el" href="classA__Shape.html" title="Abstract Class of every A_Shape. ">A_Shape</a>.  <a href="classA__Shape.html#ad0a3bcb28f3d4f42043ea8c592bb5f1f">More...</a><br /></td></tr>
@@ -477,6 +480,36 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Return as string the shape type </dd></dl>
 
 <p>Implements <a class="el" href="classA__Shape.html#a1b202256a4e5dcb0edab4ab93a37122c">A_Shape</a>.</p>
+
+</div>
+</div>
+<a id="a5c0488c23e9e64750bb879d0394830b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0488c23e9e64750bb879d0394830b2">&#9670;&nbsp;</a></span>aGetStatusReverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool C_MTriangle::aGetStatusReverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the status of shape reversed or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return true if the shape got reversed, false otherwise </dd></dl>
+
+<p>Implements <a class="el" href="classA__Shape.html#a24991f7667367b646cae75f60df22e28">A_Shape</a>.</p>
 
 </div>
 </div>

@@ -11,7 +11,8 @@ Abstract Class of every \hyperlink{classA__Shape}{A\+\_\+\+Shape}.
 
 
 
-Inheritance diagram for A\+\_\+\+Shape\+:\nopagebreak
+Inheritance diagram for A\+\_\+\+Shape\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,11 +21,12 @@ Inheritance diagram for A\+\_\+\+Shape\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for A\+\_\+\+Shape\+:\nopagebreak
+Collaboration diagram for A\+\_\+\+Shape\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=188pt]{classA__Shape__coll__graph}
+\includegraphics[width=198pt]{classA__Shape__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -59,7 +61,9 @@ virtual std\+::string \hyperlink{classA__Shape_a1b202256a4e5dcb0edab4ab93a37122c
 virtual M\+L\+V\+\_\+\+Color \hyperlink{classA__Shape_a1e90c8132d33e4ac84d42f72606193b2}{a\+Get\+Color} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function. Get the color of a \hyperlink{classA__Shape}{A\+\_\+\+Shape}. \end{DoxyCompactList}\item 
 virtual double \hyperlink{classA__Shape_a1b142ee2d873d6c217f65de1632e7b6e}{a\+Get\+Area} ()=0
-\begin{DoxyCompactList}\small\item\em Pure virtual function. Get the area of a \hyperlink{classA__Shape}{A\+\_\+\+Shape}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pure virtual function. Get the area of a \hyperlink{classA__Shape}{A\+\_\+\+Shape}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classA__Shape_a24991f7667367b646cae75f60df22e28}{a\+Get\+Status\+Reverse} () const =0
+\begin{DoxyCompactList}\small\item\em Get the status of shape reversed or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -170,6 +174,23 @@ Return as string a \hyperlink{classA__Shape}{A\+\_\+\+Shape} type
 
 
 Implemented in \hyperlink{classC__STriangle_a40c1434870b99112c4457819c9295483}{C\+\_\+\+S\+Triangle}, \hyperlink{classC__Parallelogram_a373fdd3ebdfeffcaa0a72ff7001af8ec}{C\+\_\+\+Parallelogram}, \hyperlink{classC__MTriangle_aca7e38c6bf9695aacf54aa03ecfba978}{C\+\_\+\+M\+Triangle}, \hyperlink{classC__Square_a4919017d3750c1b8deb5f07d22069636}{C\+\_\+\+Square}, and \hyperlink{classC__GTriangle_a039e79bb17dae01997b11243de457d98}{C\+\_\+\+G\+Triangle}.
+
+\mbox{\Hypertarget{classA__Shape_a24991f7667367b646cae75f60df22e28}\label{classA__Shape_a24991f7667367b646cae75f60df22e28}} 
+\index{A\+\_\+\+Shape@{A\+\_\+\+Shape}!a\+Get\+Status\+Reverse@{a\+Get\+Status\+Reverse}}
+\index{a\+Get\+Status\+Reverse@{a\+Get\+Status\+Reverse}!A\+\_\+\+Shape@{A\+\_\+\+Shape}}
+\subsubsection{\texorpdfstring{a\+Get\+Status\+Reverse()}{aGetStatusReverse()}}
+{\footnotesize\ttfamily virtual bool A\+\_\+\+Shape\+::a\+Get\+Status\+Reverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the status of shape reversed or not. 
+
+\begin{DoxyReturn}{Returns}
+Return true if the shape got reversed, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classC__STriangle_a707d24ede0b9db731dbefee9ab5c017b}{C\+\_\+\+S\+Triangle}, \hyperlink{classC__Parallelogram_a14b00a011ff4fe3170c5ab11af628252}{C\+\_\+\+Parallelogram}, \hyperlink{classC__MTriangle_a5c0488c23e9e64750bb879d0394830b2}{C\+\_\+\+M\+Triangle}, \hyperlink{classC__Square_afe17127df3b112178973ad2182fe9204}{C\+\_\+\+Square}, and \hyperlink{classC__GTriangle_a8aa6444f3d7f001f61cd3903a46f4b67}{C\+\_\+\+G\+Triangle}.
 
 \mbox{\Hypertarget{classA__Shape_a63f825cbc9780208d9a137f5c14917d0}\label{classA__Shape_a63f825cbc9780208d9a137f5c14917d0}} 
 \index{A\+\_\+\+Shape@{A\+\_\+\+Shape}!a\+Is\+In\+Shape@{a\+Is\+In\+Shape}}

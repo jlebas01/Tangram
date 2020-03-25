@@ -76,12 +76,12 @@ Inheritance diagram for A_Shape:</div>
 <div class="dyncontent">
 <div class="center"><img src="classA__Shape__inherit__graph.png" border="0" usemap="#A__Shape_inherit__map" alt="Inheritance graph"/></div>
 <map name="A__Shape_inherit__map" id="A__Shape_inherit__map">
-<area shape="rect" id="node3" href="classC__GTriangle.html" title="Class of the greatest C_GTriangle. " alt="" coords="5,571,141,927"/>
-<area shape="rect" id="node4" href="classC__MTriangle.html" title="Class of the medium C_MTriangle. " alt="" coords="165,571,301,927"/>
-<area shape="rect" id="node5" href="classC__Parallelogram.html" title="Class of the parallelogram. " alt="" coords="325,571,472,927"/>
-<area shape="rect" id="node6" href="classC__Square.html" title="Class of the square. " alt="" coords="496,571,632,927"/>
-<area shape="rect" id="node7" href="classC__STriangle.html" title="Class of the small C_STriangle. " alt="" coords="656,505,792,993"/>
-<area shape="rect" id="node2" href="classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="341,5,457,112"/>
+<area shape="rect" id="node3" href="classC__GTriangle.html" title="Class of the greatest C_GTriangle. " alt="" coords="5,586,163,957"/>
+<area shape="rect" id="node4" href="classC__MTriangle.html" title="Class of the medium C_MTriangle. " alt="" coords="187,586,344,957"/>
+<area shape="rect" id="node5" href="classC__Parallelogram.html" title="Class of the parallelogram. " alt="" coords="368,586,525,957"/>
+<area shape="rect" id="node6" href="classC__Square.html" title="Class of the square. " alt="" coords="549,586,707,957"/>
+<area shape="rect" id="node7" href="classC__STriangle.html" title="Class of the small C_STriangle. " alt="" coords="731,520,888,1023"/>
+<area shape="rect" id="node2" href="classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="389,5,505,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -89,7 +89,7 @@ Collaboration diagram for A_Shape:</div>
 <div class="dyncontent">
 <div class="center"><img src="classA__Shape__coll__graph.png" border="0" usemap="#A__Shape_coll__map" alt="Collaboration graph"/></div>
 <map name="A__Shape_coll__map" id="A__Shape_coll__map">
-<area shape="rect" id="node2" href="classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="19,5,135,112"/>
+<area shape="rect" id="node2" href="classI__Drawable.html" title="I_Drawable is everything to iDraw. " alt="" coords="26,5,142,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b142ee2d873d6c217f65de1632e7b6e"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classA__Shape.html#a1b142ee2d873d6c217f65de1632e7b6e">aGetArea</a> ()=0</td></tr>
 <tr class="memdesc:a1b142ee2d873d6c217f65de1632e7b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Get the area of a <a class="el" href="classA__Shape.html" title="Abstract Class of every A_Shape. ">A_Shape</a>.  <a href="#a1b142ee2d873d6c217f65de1632e7b6e">More...</a><br /></td></tr>
 <tr class="separator:a1b142ee2d873d6c217f65de1632e7b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24991f7667367b646cae75f60df22e28"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classA__Shape.html#a24991f7667367b646cae75f60df22e28">aGetStatusReverse</a> () const =0</td></tr>
+<tr class="memdesc:a24991f7667367b646cae75f60df22e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of shape reversed or not.  <a href="#a24991f7667367b646cae75f60df22e28">More...</a><br /></td></tr>
+<tr class="separator:a24991f7667367b646cae75f60df22e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classI__Drawable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classI__Drawable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classI__Drawable.html">I_Drawable</a></td></tr>
 <tr class="memitem:a80bfc9f76ccdded97cbcf446d4ace774 inherit pub_methods_classI__Drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classI__Drawable.html#a80bfc9f76ccdded97cbcf446d4ace774">~I_Drawable</a> ()=default</td></tr>
 <tr class="memdesc:a80bfc9f76ccdded97cbcf446d4ace774 inherit pub_methods_classI__Drawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function. Draw everything which needs to be iDraw.  <a href="classI__Drawable.html#a80bfc9f76ccdded97cbcf446d4ace774">More...</a><br /></td></tr>
@@ -334,6 +337,36 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Return as string a <a class="el" href="classA__Shape.html" title="Abstract Class of every A_Shape. ">A_Shape</a> type </dd></dl>
 
 <p>Implemented in <a class="el" href="classC__STriangle.html#a40c1434870b99112c4457819c9295483">C_STriangle</a>, <a class="el" href="classC__Parallelogram.html#a373fdd3ebdfeffcaa0a72ff7001af8ec">C_Parallelogram</a>, <a class="el" href="classC__MTriangle.html#aca7e38c6bf9695aacf54aa03ecfba978">C_MTriangle</a>, <a class="el" href="classC__Square.html#a4919017d3750c1b8deb5f07d22069636">C_Square</a>, and <a class="el" href="classC__GTriangle.html#a039e79bb17dae01997b11243de457d98">C_GTriangle</a>.</p>
+
+</div>
+</div>
+<a id="a24991f7667367b646cae75f60df22e28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24991f7667367b646cae75f60df22e28">&#9670;&nbsp;</a></span>aGetStatusReverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool A_Shape::aGetStatusReverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the status of shape reversed or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return true if the shape got reversed, false otherwise </dd></dl>
+
+<p>Implemented in <a class="el" href="classC__STriangle.html#a707d24ede0b9db731dbefee9ab5c017b">C_STriangle</a>, <a class="el" href="classC__Parallelogram.html#a14b00a011ff4fe3170c5ab11af628252">C_Parallelogram</a>, <a class="el" href="classC__MTriangle.html#a5c0488c23e9e64750bb879d0394830b2">C_MTriangle</a>, <a class="el" href="classC__Square.html#afe17127df3b112178973ad2182fe9204">C_Square</a>, and <a class="el" href="classC__GTriangle.html#a8aa6444f3d7f001f61cd3903a46f4b67">C_GTriangle</a>.</p>
 
 </div>
 </div>

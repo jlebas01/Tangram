@@ -140,6 +140,11 @@ public :
 
     virtual double aGetArea() = 0;
 
+    /*!
+     * @brief Get the status of shape reversed or not
+     * @return Return true if the shape got reversed, false otherwise
+     */
+
     [[nodiscard]] virtual bool aGetStatusReverse() const = 0;
 };
 

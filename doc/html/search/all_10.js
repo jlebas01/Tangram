@@ -10,5 +10,6 @@ var searchData=
   ['_7ec_5fparallelogram',['~C_Parallelogram',['../classC__Parallelogram.html#a2d7af48f3a26e8e07031e7c147a084a3',1,'C_Parallelogram']]],
   ['_7ec_5fsquare',['~C_Square',['../classC__Square.html#a8b63c0c06cdda3835b85c4a38692ac44',1,'C_Square']]],
   ['_7ec_5fstriangle',['~C_STriangle',['../classC__STriangle.html#a545f9a8f64e89a4b1269f7ea93251e64',1,'C_STriangle']]],
-  ['_7ei_5fdrawable',['~I_Drawable',['../classI__Drawable.html#a80bfc9f76ccdded97cbcf446d4ace774',1,'I_Drawable']]]
+  ['_7ei_5fdrawable',['~I_Drawable',['../classI__Drawable.html#a80bfc9f76ccdded97cbcf446d4ace774',1,'I_Drawable']]],
+  ['_7et_5fpoint',['~T_Point',['../classT__Point.html#aeab73ddfa664bfe9ac4ce92982c1c36b',1,'T_Point']]]
 ];
