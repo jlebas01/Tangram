@@ -25,7 +25,7 @@
  * This class manage everything about the medium C_MTriangle
  */
 
-class C_MTriangle : public A_Shape {
+class C_MTriangle final : public A_Shape {
 
     /*!
      * @brief Class members

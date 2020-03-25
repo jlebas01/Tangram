@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['getcenterpoint',['GetCenterPoint',['../classC__STriangle.html#ac9b374f16313b3c99eca7fe615d14851',1,'C_STriangle']]],
+  ['getcenterpoint',['GetCenterPoint',['../classC__STriangle.html#a8b146612f33e3d2e8f6f218be1499a13',1,'C_STriangle']]],
   ['getcolor',['GetColor',['../classC__Objective.html#aeaaa69ca15b1e1d8edbc3f1920399964',1,'C_Objective']]],
   ['getcompleted',['GetCompleted',['../classC__Objective.html#a026149982f0d62ea0a039a8b94bbaae0',1,'C_Objective']]],
   ['getflip',['GetFlip',['../classC__STriangle.html#a92550826ba2d9866f2cb01b66abfbebc',1,'C_STriangle']]],

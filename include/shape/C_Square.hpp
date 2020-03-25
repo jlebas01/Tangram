@@ -25,7 +25,7 @@
  * This class manage everything about the C_Square
  */
 
-class C_Square : public A_Shape {
+class C_Square final: public A_Shape {
 
     /*!
      * @brief Class members

@@ -253,7 +253,7 @@ T_Point<double> C_STriangle::CenterPoint(const std::vector<T_Point<double>> &lis
     return T_Point<double>(-1, -1); //error case
 }
 
-T_Point<double> C_STriangle::__CenterPoint() {
+T_Point<double> C_STriangle::__CenterPoint() const{
     double sumx = 0.0, sumy = 0.0;
     for (auto &it : mPoints) {
         sumx += it.x;
@@ -262,10 +262,9 @@ T_Point<double> C_STriangle::__CenterPoint() {
     return T_Point<double>(sumx / mPoints.size(), sumy / mPoints.size());
 }
 
-T_Point<double> C_STriangle::GetCenterPoint() {
+T_Point<double> C_STriangle::GetCenterPoint() const {
     mCenter = this->__CenterPoint();
-    T_Point<double> const center_point = mCenter;
-    return {center_point};
+    return mCenter;
 }
 
 std::string C_STriangle::aToString() {

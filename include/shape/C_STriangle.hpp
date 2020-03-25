@@ -24,7 +24,7 @@
  * This class manage everything about the small C_STriangle
  */
 
-class C_STriangle : public A_Shape {
+class C_STriangle final : public A_Shape {
 /*!
  * @brief Class members
  */
@@ -35,7 +35,7 @@ private:
 
     std::vector<T_Point<double>> mFlip; /*! C_STriangle needs a vector of initial mPoints to flip*/
 
-    T_Point<double> mCenter; /*!< C_STriangle has a center point*/
+    mutable T_Point<double> mCenter; /*!< C_STriangle has a center point*/
 
     MLV_Color mColor; /*!< Color of the C_STriangle */
 
@@ -66,7 +66,7 @@ private:
      * @return Return the center point of a C_STriangle
      */
 
-    T_Point<double> __CenterPoint();
+    [[nodiscard]] T_Point<double> __CenterPoint() const;
 
     /*!
      * @brief Compute the __Sign about a two reference point and another point, used by IsInSTriangle()
@@ -212,7 +212,7 @@ public:
      * @return Return the current center point of this C_STriangle
      */
 
-    T_Point<double> GetCenterPoint();
+    T_Point<double> GetCenterPoint() const;
 
     /*!
      * @brief Get the current angular of this shape

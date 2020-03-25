@@ -25,7 +25,7 @@
  * This class manage everything about the greatest G_GTriangle
  */
 
-class C_GTriangle : public A_Shape {
+class C_GTriangle final : public A_Shape {
     /*!
      * @brief Class members
      */
