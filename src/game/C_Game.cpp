@@ -225,15 +225,15 @@ void C_Game::Clear() {
 }
 
 bool C_Game::__Collision(const std::shared_ptr<A_Shape> &shape, T_Point<double> next_translate, double angular) {
-    auto set_shape = new std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>();
-    auto set_shape_game = new std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>();
+    auto set_shape =  std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>();
+    auto set_shape_game =  std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>();
     std::vector<std::shared_ptr<A_Shape>> vec_shapes = mShapes;
     shape->aRotate(angular);
 
     for (auto &it : shape->aGetPoints()) {
-        set_shape->insert(std::move(it + next_translate) );
+        set_shape.insert(std::move(it + next_translate) );
     }
-    for (auto &p_selected : *set_shape) {
+    for (auto &p_selected : set_shape) {
         for (auto &shape_game : vec_shapes) {
             if (shape_game != shape) {
 
@@ -247,22 +247,22 @@ bool C_Game::__Collision(const std::shared_ptr<A_Shape> &shape, T_Point<double> 
     }
 
 
-    delete set_shape;
-    delete set_shape_game;
+    //delete set_shape;
+    //delete set_shape_game;
     vec_shapes.clear();
 
     return false;
 }
 
 void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
-    auto set_shape = new std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>();
+    auto set_shape = std::unordered_set<T_Point<double>, T_Point<double>::hash_point, std::equal_to<>>();
     auto map_distance = std::unordered_map<T_Point<double>, std::pair<T_Point<double>, double>, T_Point<double>::hash_point, std::equal_to<>>();
 
     for (auto &it: shape->aGetPoints()) {
-       set_shape->insert(std::move(it));
+       set_shape.insert(std::move(it));
     }
 
-    for (auto &p_game : *set_shape) {
+    for (auto &p_game : set_shape) {
         for (auto &p_objective : mSetObjective) {
             double distance = A_Shape::computeDistance(p_game, p_objective);
             if (12.0 > distance) {
@@ -277,7 +277,7 @@ void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
         }
     }
 
-    if (map_distance.size() >= set_shape->size()) {
+    if (map_distance.size() >= set_shape.size()) {
         std::vector<T_Point<double>> save;
         for (auto & it : shape->aGetPoints()){
             save.emplace_back(std::move(it));
@@ -292,7 +292,7 @@ void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
        for (auto & it : mObjectiveShape){
            const double area = shape->aGetArea();
            if ((area  + 0.1 * area >= it->aGetArea()) && (it->aGetArea() >= area - 0.1 * area )) {
-               delete set_shape;
+               //delete set_shape;
                map_distance.clear();
                return;
            }
@@ -302,6 +302,6 @@ void C_Game::__Stick(const std::shared_ptr<A_Shape> &shape) {
         }
     }
     shape->aMove(T_Point{0.0, 0.0});
-    delete set_shape;
+   // delete set_shape;
     map_distance.clear();
 }
