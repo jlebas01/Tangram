@@ -292,6 +292,8 @@ public:
      */
 
     std::vector<T_Point<double>> GetFlip();
+
+    [[nodiscard]] bool aGetStatusReverse() const override ;
 };
 
 #endif //TANGRAM_STRIANGLE_H

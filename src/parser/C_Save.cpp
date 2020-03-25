@@ -79,7 +79,7 @@ bool C_Save::Save(const std::vector<std::shared_ptr<A_Shape>> &Game) {
     if (file.is_open()) {
         for (auto &it : Game) {
             const T_Point<double> p = it->aLeftCorner();
-            file << it->aGetShape() << " " << p.x << " " << p.y << " " << it->aCurrentAngular() << " " << it->aGetColor() << std::endl;
+            file << it->aGetShape() << " " << p.x << " " << p.y << " " << it->aCurrentAngular() << " " << it->aGetColor() << " " << it->aGetStatusReverse() << std::endl;
         }
         std::cout << path << std::endl;
         file.close();

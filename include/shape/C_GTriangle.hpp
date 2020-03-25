@@ -202,6 +202,8 @@ public:
      */
 
     double aGetArea() override;
+
+    [[nodiscard]] bool aGetStatusReverse() const override ;
 };
 
 #endif //TANGRAM_GTRIANGLE_H

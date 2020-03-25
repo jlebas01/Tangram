@@ -356,3 +356,7 @@ std::vector<T_Point<double>> C_STriangle::GetFlip() {
     const std::vector<T_Point<double>> getter = mFlip;
     return getter;
 }
+
+bool C_STriangle::aGetStatusReverse() const {
+    return false;
+}

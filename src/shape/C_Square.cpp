@@ -188,3 +188,7 @@ double C_Square::aGetArea(){
     }
     return area;
 }
+
+bool C_Square::aGetStatusReverse() const {
+    return false;
+}

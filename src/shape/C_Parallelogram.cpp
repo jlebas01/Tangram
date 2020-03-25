@@ -31,6 +31,7 @@ C_Parallelogram::C_Parallelogram(const MLV_Color _color) {
 
     this->mColor = _color;
     this->mUpdate = true;
+    this->mReverse = false;
 }
 
 C_Parallelogram::C_Parallelogram(const std::vector<C_STriangle> &_triangle, const MLV_Color _color) {
@@ -39,12 +40,18 @@ C_Parallelogram::C_Parallelogram(const std::vector<C_STriangle> &_triangle, cons
     }
     this->mColor = _color;
     this->mUpdate = true;
+    this->mReverse = false;
 }
 
-C_Parallelogram::C_Parallelogram(const T_Point<double> &origin, const double angular, const MLV_Color _color) : C_Parallelogram() {
+C_Parallelogram::C_Parallelogram(const T_Point<double> &origin, const double angular, const MLV_Color _color, bool reverse) : C_Parallelogram() {
     __Parameter(origin, angular);
+    this->mReverse = false;
     this->mColor = _color;
     this->mUpdate = true;
+    if (reverse){
+        aReverse();
+    }
+
 }
 
 void C_Parallelogram::__Parameter(const T_Point<double> &origin, double angular) {
@@ -156,6 +163,7 @@ void C_Parallelogram::aReverse() {
     tmp.clear();
     std::vector<C_STriangle>().swap(tmp);
     mUpdate = true;
+    mReverse=!mReverse;
 }
 
 void C_Parallelogram::iDraw() {
@@ -234,4 +242,8 @@ double C_Parallelogram::aGetArea(){
         area += it.aGetArea();
     }
     return area;
+}
+
+bool C_Parallelogram::aGetStatusReverse() const {
+    return mReverse;
 }

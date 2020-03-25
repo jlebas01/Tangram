@@ -38,6 +38,8 @@ private:
 
     bool mUpdate; /*!< Boolean if vector mPoints needs to be mUpdate */
 
+    bool mReverse; /*!< Boolean if the shape has been reversed */
+
     MLV_Color mColor; /*!< Color of the C_Parallelogram */
 
     std::vector<C_STriangle> mTrianglesReverse;
@@ -94,7 +96,7 @@ public:
      * @param color : Optional __Parameter, mColor of this shape
      */
 
-    explicit C_Parallelogram(const T_Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_BLUE);
+    explicit C_Parallelogram(const T_Point<double> &origin, double angular = 0.0, MLV_Color color = MLV_COLOR_BLUE, bool reverse = false);
 
     /*!
      * @brief Move the C_Parallelogram by point translation
@@ -206,6 +208,8 @@ public:
      */
 
     double aGetArea() override;
+
+    [[nodiscard]] bool aGetStatusReverse() const override;
 };
 
 #endif //TANGRAM_PARALELLOGRAM_H

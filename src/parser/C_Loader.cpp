@@ -33,6 +33,7 @@ bool C_Loader::ParseFile(const std::string &filename, C_Game &game) {
 
     std::vector<std::shared_ptr<A_Shape>> vec_objective;
     MLV_Color color;
+    bool reverse;
     double x = 0.0, y = 0.0, angular = 0.0;
     double striangle=0;
     double gtriangle=0;
@@ -41,7 +42,7 @@ bool C_Loader::ParseFile(const std::string &filename, C_Game &game) {
     file.open(path, std::ifstream::in);
 
     if (file.is_open()) {
-        while (file >> shape >> x >> y >> angular >> color) {
+        while (file >> shape >> x >> y >> angular >> color >> reverse) {
             char *buf = const_cast<char *>(shape.c_str());
             switch (__StrToInt(buf)) {
                 case __StrToInt("C_STriangle") :
@@ -81,7 +82,9 @@ bool C_Loader::ParseFile(const std::string &filename, C_Game &game) {
                 case __StrToInt("C_Parallelogram") :
                     game.addShape(std::shared_ptr<A_Shape>(std::make_shared<C_Parallelogram>(T_Point(50.0,150.0), 0.0, color)));
                     vec_objective.push_back(std::shared_ptr<A_Shape>(
-                            std::make_shared<C_Parallelogram>(T_Point<double>(x, y), angular, game.GetObjectiveColor())));
+                            std::make_shared<C_Parallelogram>(T_Point<double>(x, y), angular, game.GetObjectiveColor(), reverse)));
+                    if (reverse){
+                        std::cout << "reverse : " << reverse << std::endl;}
                     break;
             }
         }

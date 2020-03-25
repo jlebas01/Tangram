@@ -187,3 +187,7 @@ double C_MTriangle::aGetArea(){
     }
     return area;
 }
+
+bool C_MTriangle::aGetStatusReverse() const {
+    return false;
+}

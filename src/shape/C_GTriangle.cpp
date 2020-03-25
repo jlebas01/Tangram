@@ -192,3 +192,7 @@ double C_GTriangle::aGetArea(){
     }
     return area;
 }
+
+bool C_GTriangle::aGetStatusReverse() const {
+    return false;
+}

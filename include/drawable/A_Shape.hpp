@@ -139,6 +139,8 @@ public :
      */
 
     virtual double aGetArea() = 0;
+
+    [[nodiscard]] virtual bool aGetStatusReverse() const = 0;
 };
 
 #endif //TANGRAM_SHAPE_H
