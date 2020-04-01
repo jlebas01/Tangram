@@ -90,7 +90,7 @@ Open with a PDF reader
 >
 > refman.pdf
 
-## Regenerate Documentation
+## Generate Documentation
 You can generate this document as needed.
 If you're updating the code and the documentation, you should do execute in the
 root directory of this project :
@@ -100,7 +100,7 @@ If you want customize the documentation generated, you could also configurate th
 following file :
 >$ gedit config-file
 
-## Regenerate LaTeX Documentation
+## Generate LaTeX Documentation
 To generate the PDF documentation, execute the following commands :
 >$ cd doc/latex
 >
