@@ -1,75 +1,94 @@
-A student project about the tangram\textquotesingle{}s game make in C++
+A student project about the Tangram game made in C++
 
-\subsection*{How to run}
+\subsection*{Getting started}
 
-When you\textquotesingle{}re in the root directory of this project ~\newline
-~\newline
- \subsubsection*{C\+Make}
+When you\textquotesingle{}re in the root directory of this project, follow the next steps \+: \subsubsection*{C\+Make}
 
-If you didn\textquotesingle{}t have C\+Make the project, you could do that it below \+: ~\newline
- {\ttfamily cmake ./cmake-\/build-\/debug} \subsubsection*{Make}
+First, If you have not did it already, you can build the game by executing the following command line \+: $>$\$ cmake ./cmake-\/build-\/debug \subsubsection*{Make}
 
-If you have already C\+Make the project, you could do that it below \+: ~\newline
- {\ttfamily cd cmake-\/build-\/debug} ~\newline
- {\ttfamily make} ~\newline
- \subsubsection*{Run}
+Second, If you have not did it already, you can make the executable’s game by executing the following command line \+: $>$\$ cd cmake-\/build-\/debug \begin{quote}
 
-If you have already C\+Make and Make the project, you could do it that it below \+: ~\newline
- {\ttfamily ./tangram}
+
+$>$\$ make \end{quote}
+\subsubsection*{Run}
+
+Before using the run command line, you have to use the two aforementionned command in the right order. If you have already did it, you can run the game by executing the following command line \+: $>$\$ ./tangram
 
 \subsection*{How to play}
 
-When you have launch the game with {\ttfamily ./tangram} you can play now.
+Run the game with the following command line in the cmake-\/debug-\/build directory \+: $>$\$ ./tangram
 
-\paragraph*{Launch}
+You can play now.
 
-You can create a new puzzle board if you click on {\ttfamily Launch} and use these commands to play \+: ~\newline
- {\ttfamily click left} on a shape to move it. ~\newline
- {\ttfamily click right} on a shape to rotate it. ~\newline
- {\ttfamily press \textquotesingle{}Esc\textquotesingle{}} to exit this mode. ~\newline
- {\ttfamily press \textquotesingle{}s\textquotesingle{}} to save the current board as puzzle. ~\newline
- {\ttfamily press \textquotesingle{}d\textquotesingle{}} on a shape to rotate the shape as 45° anti clock. ~\newline
- {\ttfamily press \textquotesingle{}f} on a shape to rotate the shape as 45° clock. ~\newline
- {\ttfamily press \textquotesingle{}r\textquotesingle{}} to reverse the shape as symmetry. ~\newline
- Note that last command rotate every shape as 180° except parallelogram is overturned like a mirror ~\newline
- ~\newline
- \paragraph*{Load}
+\paragraph*{Launch Button}
 
-If you click on {\ttfamily Load} you can load a puzzle file and try to resolve it. To play this mode you can use these commands below \+: ~\newline
- {\ttfamily click left} on a shape to move it. ~\newline
- {\ttfamily click right} on a shape to rotate it. ~\newline
- {\ttfamily press \textquotesingle{}Esc\textquotesingle{}} to exit this mode. ~\newline
- {\ttfamily press \textquotesingle{}d\textquotesingle{}} on a shape to rotate the shape as 45° anti clock. ~\newline
- {\ttfamily press \textquotesingle{}f} on a shape to rotate the shape as 45° clock. ~\newline
- {\ttfamily press \textquotesingle{}r\textquotesingle{}} to reverse the shape as symmetry. ~\newline
- Note that last command rotate every shape as 180° except parallelogram is overturned like a mirror ~\newline
- \paragraph*{End Game}
+You can create a new puzzle board if you click on the {\ttfamily Launch} button and use the following commands \+: $>${\ttfamily mouse click left} on a shape and drag to move it. \begin{quote}
 
-The game will stop when you put the last shape at a right place. You will back to the main menu.
+
+$>${\ttfamily mouse click right} on a shape and drag to rotate it.
+
+$>${\ttfamily press \textquotesingle{}Esc\textquotesingle{}} to exit this mode.
+
+press \textquotesingle{}s\textquotesingle{} to save the current board as puzzle.
+
+$>${\ttfamily press \textquotesingle{}d\textquotesingle{}} on a shape mouseovered to rotate it 45° anti clockwise.
+
+$>${\ttfamily press \textquotesingle{}f} on a shape mouseovered to rotate it 45° clockwise.
+
+$>${\ttfamily press \textquotesingle{}r\textquotesingle{}} to symmetrically reverse the shape.
+
+$>$Note that last command rotates every shape to 180° except parallelogram which is \end{quote}
+overturned (in a mirror fashion)
+
+\paragraph*{Load Button}
+
+If you click on the {\ttfamily Load} button, you can load a puzzle file and try to resolve it. You can use the following commands \+: $>${\ttfamily mouse click left} on a shape and drag to move it. \begin{quote}
+
+
+$>${\ttfamily mouse click right} on a shape and drag to rotate it.
+
+$>${\ttfamily press \textquotesingle{}Esc\textquotesingle{}} to exit this mode.
+
+$>${\ttfamily press \textquotesingle{}d\textquotesingle{}} on a shape mouseovered to rotate it 45° anti clockwise.
+
+$>${\ttfamily press \textquotesingle{}f} on a shape mouseovered to rotate it 45° clockwise.
+
+$>${\ttfamily press \textquotesingle{}r\textquotesingle{}} to symmetrically reverse the shape.
+
+$>$Note that last command rotates every shape to 180° except parallelogram which is \end{quote}
+overturned (in a mirror fashion) \paragraph*{End Game}
+
+The game will stop when you put the last shape at the right place. You will return to the main menu. When you solve a puzzle, the last shape dropped will be displayed in white and the game will freeze a for few seconds before you return to the main menu.
 
 \subsection*{Documentation}
 
-Here there is H\+T\+ML files, La\+TeX files and P\+DF. \subsubsection*{H\+T\+ML}
+Here you can find H\+T\+ML files, La\+TeX files and P\+DF. \subsubsection*{H\+T\+ML}
 
-Open it with your browser ~\newline
- {\ttfamily cd doc/html} ~\newline
- {\ttfamily index.\+html} \subsubsection*{La\+TeX}
+Open with your browser ~\newline
+ $>$\$ cd doc/html \begin{quote}
 
-{\ttfamily cd doc/latex} \subsubsection*{P\+DF}
 
-Open it with a P\+DF reader ~\newline
- {\ttfamily cd doc/latex}~\newline
- {\ttfamily refman.\+pdf}
+$>$index.\+html \end{quote}
+\subsubsection*{La\+TeX}
+
+$>$\$ cd doc/latex \subsubsection*{P\+DF}
+
+Open with a P\+DF reader ~\newline
+ $>$\$ cd doc/latex \begin{quote}
+
+
+refman.\+pdf \end{quote}
+
 
 \subsection*{Regenerate Documentation}
 
-You can generate this document as you wish. If you\textquotesingle{}re updating the code and the doc, you should do \+: ~\newline
-~\newline
- In the root directory of this project \+: ~\newline
-~\newline
- {\ttfamily doxygen config-\/file}~\newline
- \subsection*{Regenerate La\+TeX Documentation}
+You can generate this document as needed. If you\textquotesingle{}re updating the code and the documentation, you should do execute in the root directory of this project \+: $>$\$ doxygen config-\/file
 
-{\ttfamily cd doc/latex}~\newline
- {\ttfamily make}~\newline
- 
+If you want customize the documentation generated, you could also configurate the following file \+: $>$\$ gedit config-\/file
+
+\subsection*{Regenerate La\+TeX Documentation}
+
+To generate the P\+DF documentation, execute the following commands \+: $>$\$ cd doc/latex \begin{quote}
+
+
+$>$\$ make\end{quote}

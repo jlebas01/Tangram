@@ -1,92 +1,107 @@
 # Tangram
-A student project about the tangram's game make in C++
+A student project about the Tangram game made in C++
 
-## How to run 
-When you're in the root directory of this project <br/><br/>
+## Getting started 
+When you're in the root directory of this project, follow the next steps :
 ### CMake
-If you didn't have CMake the project, you could do that it below :
-<br/>
-`cmake ./cmake-build-debug`
+First, If you have not did it already, you can build the game by executing the
+following command line :
+>$ cmake ./cmake-build-debug
 ### Make
-If you have already CMake the project, you could do that it below :
-<br/>
-`cd cmake-build-debug` <br/>
-`make` <br/>
+Second, If you have not did it already, you can make the executable’s game by
+executing the following command line :
+>$ cd cmake-build-debug
+>
+>$ make
 ### Run
-If you have already CMake and Make the project, you could do it that it below :
-<br/>
-`./tangram`
+Before using the run command line, you have to use the two aforementionned
+command in the right order. If you have already did it, you can run the game by
+executing the following command line :
+>$ ./tangram
 
 ## How to play
 
-When you have launch the game with `./tangram` you can play now.
+Run the game with the following command line in the cmake-debug-build directory :
+>$ ./tangram
 
-#### Launch
+You can play now.
 
-You can create a new puzzle board if you click on `Launch` and use these commands to play :
-<br/>
-`click left` on a shape to move it.
-<br/>
-`click right` on a shape to rotate it.
-<br/>
-`press 'Esc'` to exit this mode.
-<br/>
-`press 's'` to save the current board as puzzle.
-<br/>
-`press 'd'` on a shape to rotate the shape as 45° anti clock.
-<br/>
-`press 'f` on a shape to rotate the shape as 45° clock.
-<br/>
-`press 'r'` to reverse the shape as symmetry.
-<br/>
-Note that last command rotate every shape as 180° except parallelogram is overturned like a mirror
-<br/>
-<br/>
-#### Load
-If you click on `Load` you can load a puzzle file and try to resolve it. To play this mode you can use these commands below :
-<br/>
-`click left` on a shape to move it.
-<br/>
-`click right` on a shape to rotate it.
-<br/>
-`press 'Esc'` to exit this mode.
-<br/>
-`press 'd'` on a shape to rotate the shape as 45° anti clock.
-<br/>
-`press 'f` on a shape to rotate the shape as 45° clock.
-<br/>
-`press 'r'` to reverse the shape as symmetry.
-<br/>
-Note that last command rotate every shape as 180° except parallelogram is overturned like a mirror
-<br/>
+#### Launch Button
+
+You can create a new puzzle board if you click on the `Launch` button and use the
+following commands :
+>`mouse click left` on a shape and drag to move it.
+>
+>`mouse click right` on a shape and drag to rotate it.
+>
+>`press 'Esc'` to exit this mode.
+>
+> press 's' to save the current board as puzzle.
+>
+>`press 'd'` on a shape mouseovered to rotate it 45° anti clockwise.
+>
+>`press 'f` on a shape mouseovered to rotate it 45° clockwise.
+>
+>`press 'r'` to symmetrically reverse the shape.
+>
+>
+>Note that last command rotates every shape to 180° except parallelogram which is
+ overturned (in a mirror fashion)
+
+#### Load Button
+If you click on the `Load` button, you can load a puzzle file and try to resolve it. You can use the
+following commands :
+>`mouse click left` on a shape and drag to move it.
+>
+>`mouse click right` on a shape and drag to rotate it.
+>
+>`press 'Esc'` to exit this mode.
+>
+>`press 'd'` on a shape mouseovered to rotate it 45° anti clockwise.
+>
+>`press 'f` on a shape mouseovered to rotate it 45° clockwise.
+>
+>`press 'r'` to symmetrically reverse the shape.
+>
+>
+>Note that last command rotates every shape to 180° except parallelogram which is
+ overturned (in a mirror fashion)
 #### End Game
 
-The game will stop when you put the last shape at a right place. You will back to the main menu.
-
-
+The game will stop when you put the last shape at the right place. You will return to
+the main menu.
+When you solve a puzzle, the last shape dropped will be displayed in white and the
+game will freeze a for few seconds before you return to the main menu.
 
 ## Documentation
-Here there is HTML files, LaTeX files and PDF.
+Here you can find HTML files, LaTeX files and PDF.
 ### HTML
-Open it with your browser
+Open with your browser
 <br/>
-`cd doc/html`
-<br/>
-`index.html`
+>$ cd doc/html
+>
+>index.html
 ### LaTeX
-`cd doc/latex`
+>$ cd doc/latex
 ### PDF
-Open it with a PDF reader
+Open with a PDF reader
 <br/>
-`cd doc/latex`<br/>
-`refman.pdf`
+>$ cd doc/latex
+>
+> refman.pdf
 
 ## Regenerate Documentation
-You can generate this document as you wish. If you're updating the code and the doc, you should do :
-<br/><br/>
-In the root directory of this project :
-<br/><br/>
-`doxygen config-file`<br/>
+You can generate this document as needed.
+If you're updating the code and the documentation, you should do execute in the
+root directory of this project :
+>$ doxygen config-file
+
+If you want customize the documentation generated, you could also configurate the
+following file :
+>$ gedit config-file
+
 ## Regenerate LaTeX Documentation
-`cd doc/latex`<br/>
-`make`<br/>
+To generate the PDF documentation, execute the following commands :
+>$ cd doc/latex
+>
+>$ make

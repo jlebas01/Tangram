@@ -62,62 +62,65 @@ $(function() {
 <div class="title">Tangram </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>A student project about the tangram's game make in C++</p>
-<h2>How to run</h2>
-<p>When you're in the root directory of this project <br />
-<br />
- </p><h3>CMake</h3>
-<p>If you didn't have CMake the project, you could do that it below : <br />
- <code>cmake ./cmake-build-debug</code> </p><h3>Make</h3>
-<p>If you have already CMake the project, you could do that it below : <br />
- <code>cd cmake-build-debug</code> <br />
- <code>make</code> <br />
- </p><h3>Run</h3>
-<p>If you have already CMake and Make the project, you could do it that it below : <br />
- <code>./tangram</code></p>
+<div class="textblock"><p>A student project about the Tangram game made in C++</p>
+<h2>Getting started</h2>
+<p>When you're in the root directory of this project, follow the next steps : </p><h3>CMake</h3>
+<p>First, If you have not did it already, you can build the game by executing the following command line : &gt;$ cmake ./cmake-build-debug </p><h3>Make</h3>
+<p>Second, If you have not did it already, you can make the executable’s game by executing the following command line : &gt;$ cd cmake-build-debug </p><blockquote class="doxtable">
+<p></p>
+<p>&gt;$ make </p>
+</blockquote>
+<h3>Run</h3>
+<p>Before using the run command line, you have to use the two aforementionned command in the right order. If you have already did it, you can run the game by executing the following command line : &gt;$ ./tangram</p>
 <h2>How to play</h2>
-<p>When you have launch the game with <code>./tangram</code> you can play now.</p>
-<h4>Launch</h4>
-<p>You can create a new puzzle board if you click on <code>Launch</code> and use these commands to play : <br />
- <code>click left</code> on a shape to move it. <br />
- <code>click right</code> on a shape to rotate it. <br />
- <code>press 'Esc'</code> to exit this mode. <br />
- <code>press 's'</code> to save the current board as puzzle. <br />
- <code>press 'd'</code> on a shape to rotate the shape as 45° anti clock. <br />
- <code>press 'f</code> on a shape to rotate the shape as 45° clock. <br />
- <code>press 'r'</code> to reverse the shape as symmetry. <br />
- Note that last command rotate every shape as 180° except parallelogram is overturned like a mirror <br />
- <br />
- </p><h4>Load</h4>
-<p>If you click on <code>Load</code> you can load a puzzle file and try to resolve it. To play this mode you can use these commands below : <br />
- <code>click left</code> on a shape to move it. <br />
- <code>click right</code> on a shape to rotate it. <br />
- <code>press 'Esc'</code> to exit this mode. <br />
- <code>press 'd'</code> on a shape to rotate the shape as 45° anti clock. <br />
- <code>press 'f</code> on a shape to rotate the shape as 45° clock. <br />
- <code>press 'r'</code> to reverse the shape as symmetry. <br />
- Note that last command rotate every shape as 180° except parallelogram is overturned like a mirror <br />
- </p><h4>End Game</h4>
-<p>The game will stop when you put the last shape at a right place. You will back to the main menu.</p>
+<p>Run the game with the following command line in the cmake-debug-build directory : &gt;$ ./tangram</p>
+<p>You can play now.</p>
+<h4>Launch Button</h4>
+<p>You can create a new puzzle board if you click on the <code>Launch</code> button and use the following commands : &gt;<code>mouse click left</code> on a shape and drag to move it. </p><blockquote class="doxtable">
+<p></p>
+<p>&gt;<code>mouse click right</code> on a shape and drag to rotate it.</p>
+<p>&gt;<code>press 'Esc'</code> to exit this mode.</p>
+<p>press 's' to save the current board as puzzle.</p>
+<p>&gt;<code>press 'd'</code> on a shape mouseovered to rotate it 45° anti clockwise.</p>
+<p>&gt;<code>press 'f</code> on a shape mouseovered to rotate it 45° clockwise.</p>
+<p>&gt;<code>press 'r'</code> to symmetrically reverse the shape.</p>
+<p>&gt;Note that last command rotates every shape to 180° except parallelogram which is </p>
+</blockquote>
+<p>overturned (in a mirror fashion)</p>
+<h4>Load Button</h4>
+<p>If you click on the <code>Load</code> button, you can load a puzzle file and try to resolve it. You can use the following commands : &gt;<code>mouse click left</code> on a shape and drag to move it. </p><blockquote class="doxtable">
+<p></p>
+<p>&gt;<code>mouse click right</code> on a shape and drag to rotate it.</p>
+<p>&gt;<code>press 'Esc'</code> to exit this mode.</p>
+<p>&gt;<code>press 'd'</code> on a shape mouseovered to rotate it 45° anti clockwise.</p>
+<p>&gt;<code>press 'f</code> on a shape mouseovered to rotate it 45° clockwise.</p>
+<p>&gt;<code>press 'r'</code> to symmetrically reverse the shape.</p>
+<p>&gt;Note that last command rotates every shape to 180° except parallelogram which is </p>
+</blockquote>
+<p>overturned (in a mirror fashion) </p><h4>End Game</h4>
+<p>The game will stop when you put the last shape at the right place. You will return to the main menu. When you solve a puzzle, the last shape dropped will be displayed in white and the game will freeze a for few seconds before you return to the main menu.</p>
 <h2>Documentation</h2>
-<p>Here there is HTML files, LaTeX files and PDF. </p><h3>HTML</h3>
-<p>Open it with your browser <br />
- <code>cd doc/html</code> <br />
- <code>index.html</code> </p><h3>LaTeX</h3>
-<p><code>cd doc/latex</code> </p><h3>PDF</h3>
-<p>Open it with a PDF reader <br />
- <code>cd doc/latex</code><br />
- <code>refman.pdf</code></p>
+<p>Here you can find HTML files, LaTeX files and PDF. </p><h3>HTML</h3>
+<p>Open with your browser <br />
+ &gt;$ cd doc/html </p><blockquote class="doxtable">
+<p></p>
+<p>&gt;index.html </p>
+</blockquote>
+<h3>LaTeX</h3>
+<p>&gt;$ cd doc/latex </p><h3>PDF</h3>
+<p>Open with a PDF reader <br />
+ &gt;$ cd doc/latex </p><blockquote class="doxtable">
+<p></p>
+<p>refman.pdf </p>
+</blockquote>
 <h2>Regenerate Documentation</h2>
-<p>You can generate this document as you wish. If you're updating the code and the doc, you should do : <br />
-<br />
- In the root directory of this project : <br />
-<br />
- <code>doxygen config-file</code><br />
- </p><h2>Regenerate LaTeX Documentation</h2>
-<p><code>cd doc/latex</code><br />
- <code>make</code><br />
- </p>
+<p>You can generate this document as needed. If you're updating the code and the documentation, you should do execute in the root directory of this project : &gt;$ doxygen config-file</p>
+<p>If you want customize the documentation generated, you could also configurate the following file : &gt;$ gedit config-file</p>
+<h2>Regenerate LaTeX Documentation</h2>
+<p>To generate the PDF documentation, execute the following commands : &gt;$ cd doc/latex </p><blockquote class="doxtable">
+<p></p>
+<p>&gt;$ make</p>
+</blockquote>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
