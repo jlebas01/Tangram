@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.3)  12 FEB 2020 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.3)  1 APR 2020 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -79,15 +79,15 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@in@stream=\read1
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX mColor extensions (UK)
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/mColor.cfg
-File: mColor.cfg 2016/01/02 v1.6 sample mColor configuration
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/mColor driver for pdftex
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
@@ -883,27 +883,27 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 12.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 12.
+(Font)              scaled to size 6.29996pt on input line 9.
+ [1
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 34.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 16.
- [1
-
-]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 66.
- [2] [3] [4]
-[5])
+ [2] [3] [4] [5]
+[6] [7] [8] [9])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [6]
+ [10]
 Package hyperref Info: Option `pageanchor' set `true' on input line 138.
 
 Chapter 1.
@@ -929,33 +929,66 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--10
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 13.
+(Font)              scaled to size 8.99994pt on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 13.
+(Font)              scaled to size 6.29996pt on input line 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--31
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 29.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 26--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--31
+Underfull \hbox (badness 10000) in paragraph at lines 26--36
+
+ []
+
+[1
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 38--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--31
+Underfull \hbox (badness 10000) in paragraph at lines 66--71
 
  []
 
-) [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--71
+
+ []
 
 
-] [2
+Underfull \hbox (badness 10000) in paragraph at lines 66--71
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+
+ []
+
+) [3] [4
 
 ]
 Chapter 2.
@@ -966,383 +999,520 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
-) [3] [4
+) [5] [6
 
 ]
 Chapter 3.
-(./annotated.tex) [5] [6
+(./annotated.tex) [7] [8
 
 ]
 Chapter 4.
-(./files.tex
-
-LaTeX Warning: Reference `Drawable_8h' on page 7 undefined on input line 4.
-
-) [7] [8
-
-]
+(./files.tex [9]) [10]
 Chapter 5.
-(./classButton.tex
+(./classA__Shape.tex
+<classA__Shape__inherit__graph.pdf, id=1792, 744.7825pt x 846.16125pt>
+File: classA__Shape__inherit__graph.pdf Graphic file (type pdf)
+<use classA__Shape__inherit__graph.pdf>
+Package pdftex.def Info: classA__Shape__inherit__graph.pdf  used on input line 
+18.
+(pdftex.def)             Requested size: 350.0pt x 397.65712pt.
+<classA__Shape__coll__graph.pdf, id=1793, 198.7425pt x 431.6125pt>
+File: classA__Shape__coll__graph.pdf Graphic file (type pdf)
+<use classA__Shape__coll__graph.pdf>
+Package pdftex.def Info: classA__Shape__coll__graph.pdf  used on input line 27.
+
+(pdftex.def)             Requested size: 198.0pt x 430.01106pt.
+ [11
+
+ <./classA__Shape__inherit__graph.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 17.
+(Font)              scaled to size 8.09995pt on input line 34.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 17.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 17.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 7.19995pt on input line 42.
+(Font)              scaled to size 8.09995pt on input line 34.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 34.
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 40.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 40.
+ [12 <./classA__Shape__coll__graph.pdf>]
+Underfull \hbox (badness 10000) detected at line 101
+[][][]
+ []
+
+[13]
+Underfull \hbox (badness 10000) detected at line 118
+[][][]
+ []
 
 
-LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 42.
+Underfull \hbox (badness 10000) detected at line 135
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 152
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 169
+[][][]
+ []
+
+[14]
+Underfull \hbox (badness 10000) detected at line 186
+[][][]
+ []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 43.
-[9]
-Underfull \hbox (badness 10000) detected at line 92
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 197.
+
+Underfull \hbox (badness 10000) detected at line 208
 [][][]
  []
 
-[10]
-Underfull \hbox (badness 10000) detected at line 110
+[15]
+Underfull \hbox (badness 10000) detected at line 225
 [][][]
  []
 
-) (./classDrawable.tex
-<classDrawable__inherit__graph.pdf, id=1125, 454.69875pt x 212.795pt>
-File: classDrawable__inherit__graph.pdf Graphic file (type pdf)
-<use classDrawable__inherit__graph.pdf>
-Package pdftex.def Info: classDrawable__inherit__graph.pdf  used on input line 
-18.
-(pdftex.def)             Requested size: 350.0pt x 163.79744pt.
-
-Underfull \vbox (badness 1163) has occurred while \output is active []
-
- [11])
-(./classGame.tex [12 <./classDrawable__inherit__graph.pdf>] [13]
-Underfull \hbox (badness 10000) detected at line 87
+[16]
+Underfull \hbox (badness 10000) detected at line 322
 [][][]
  []
 
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 94.
 
-Overfull \vbox (1.9265pt too high) has occurred while \output is active []
-
-
-[14]) (./classGTriangle.tex
-<classGTriangle__inherit__graph.pdf, id=1196, 139.52126pt x 212.795pt>
-File: classGTriangle__inherit__graph.pdf Graphic file (type pdf)
-<use classGTriangle__inherit__graph.pdf>
-Package pdftex.def Info: classGTriangle__inherit__graph.pdf  used on input line
- 18.
-(pdftex.def)             Requested size: 139.0pt x 212.00543pt.
-<classGTriangle__coll__graph.pdf, id=1197, 139.52126pt x 212.795pt>
-File: classGTriangle__coll__graph.pdf Graphic file (type pdf)
-<use classGTriangle__coll__graph.pdf>
-Package pdftex.def Info: classGTriangle__coll__graph.pdf  used on input line 27
-.
-(pdftex.def)             Requested size: 139.0pt x 212.00543pt.
- [15 <./classGTriangle__inherit__graph.pdf> <./classGTriangle__coll__graph.pdf
-
-pdfTeX warning: pdflatex (file ./classGTriangle__coll__graph.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
->] [16]
-Underfull \hbox (badness 10000) detected at line 136
+Underfull \hbox (badness 10000) detected at line 339
 [][][]
  []
 
 [17]
-Underfull \hbox (badness 10000) detected at line 158
+Underfull \hbox (badness 10000) detected at line 363
 [][][]
  []
 
-[18]
-Underfull \hbox (badness 10000) detected at line 213
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 230
-[][][]
- []
-
-) (./structPoint_1_1hash__point.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-) (./classLoader.tex [19]
-Underfull \hbox (badness 10000) detected at line 42
-[][][]
- []
-
-) (./classMenu.tex [20]) (./classMTriangle.tex
-<classMTriangle__inherit__graph.pdf, id=1350, 139.52126pt x 212.795pt>
-File: classMTriangle__inherit__graph.pdf Graphic file (type pdf)
-<use classMTriangle__inherit__graph.pdf>
-Package pdftex.def Info: classMTriangle__inherit__graph.pdf  used on input line
- 18.
-(pdftex.def)             Requested size: 139.0pt x 212.00543pt.
- [21]
-<classMTriangle__coll__graph.pdf, id=1359, 139.52126pt x 212.795pt>
-File: classMTriangle__coll__graph.pdf Graphic file (type pdf)
-<use classMTriangle__coll__graph.pdf>
-Package pdftex.def Info: classMTriangle__coll__graph.pdf  used on input line 27
+) (./classC__Button.tex
+<classC__Button__coll__graph.pdf, id=2085, 171.64125pt x 215.80624pt>
+File: classC__Button__coll__graph.pdf Graphic file (type pdf)
+<use classC__Button__coll__graph.pdf>
+Package pdftex.def Info: classC__Button__coll__graph.pdf  used on input line 18
 .
-(pdftex.def)             Requested size: 139.0pt x 212.00543pt.
- [22 <./classMTriangle__inherit__graph.pdf> <./classMTriangle__coll__graph.pdf
+(pdftex.def)             Requested size: 171.0pt x 214.99893pt.
+ [18 <./classC__Button__coll__graph.pdf>]
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 7.19995pt on input line 61.
 
-pdfTeX warning: pdflatex (file ./classMTriangle__coll__graph.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
->] [23]
-Underfull \hbox (badness 10000) detected at line 136
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 61.
+
+[19]
+Underfull \hbox (badness 10000) detected at line 111
 [][][]
  []
 
-[24]
-Underfull \hbox (badness 10000) detected at line 158
+[20]
+Underfull \hbox (badness 10000) detected at line 129
 [][][]
  []
 
-[25]
-Underfull \hbox (badness 10000) detected at line 213
+) (./classC__Game.tex [21]
+<classC__Game__coll__graph.pdf, id=2157, 192.72pt x 204.765pt>
+File: classC__Game__coll__graph.pdf Graphic file (type pdf)
+<use classC__Game__coll__graph.pdf>
+Package pdftex.def Info: classC__Game__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 192.0pt x 203.99898pt.
+ [22 <./classC__Game__coll__graph.pdf>] [23]
+Underfull \hbox (badness 10000) detected at line 111
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 230
-[][][]
- []
-
-) (./classObjective.tex [26] [27]
-Underfull \hbox (badness 10000) detected at line 90
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 103
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 116
-[][][]
- []
-
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 128.
+) (./classC__GTriangle.tex
+<classC__GTriangle__inherit__graph.pdf, id=2204, 198.7425pt x 746.79pt>
+File: classC__GTriangle__inherit__graph.pdf Graphic file (type pdf)
+<use classC__GTriangle__inherit__graph.pdf>
+Package pdftex.def Info: classC__GTriangle__inherit__graph.pdf  used on input l
+ine 18.
+(pdftex.def)             Requested size: 146.37572pt x 550.0pt.
+ [24]
+<classC__GTriangle__coll__graph.pdf, id=2210, 198.7425pt x 746.79pt>
+File: classC__GTriangle__coll__graph.pdf Graphic file (type pdf)
+<use classC__GTriangle__coll__graph.pdf>
+Package pdftex.def Info: classC__GTriangle__coll__graph.pdf  used on input line
+ 27.
+(pdftex.def)             Requested size: 146.37572pt x 550.0pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28])
-(./classParallelogram.tex
-<classParallelogram__inherit__graph.pdf, id=1537, 156.585pt x 212.795pt>
-File: classParallelogram__inherit__graph.pdf Graphic file (type pdf)
-<use classParallelogram__inherit__graph.pdf>
-Package pdftex.def Info: classParallelogram__inherit__graph.pdf  used on input 
-line 18.
-(pdftex.def)             Requested size: 156.0pt x 212.00868pt.
-<classParallelogram__coll__graph.pdf, id=1538, 156.585pt x 212.795pt>
-File: classParallelogram__coll__graph.pdf Graphic file (type pdf)
-<use classParallelogram__coll__graph.pdf>
-Package pdftex.def Info: classParallelogram__coll__graph.pdf  used on input lin
-e 27.
-(pdftex.def)             Requested size: 156.0pt x 212.00868pt.
- [29 <./classParallelogram__inherit__graph.pdf> <./classParallelogram__coll__gr
-aph.pdf
+ [25 <./classC__GTriangle__inherit__graph.pdf>] [26 <./classC__GTriangle__coll_
+_graph.pdf>] [27]
+Overfull \vbox (21.87042pt too high) has occurred while \output is active []
 
-pdfTeX warning: pdflatex (file ./classParallelogram__coll__graph.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
->] [30]
-Underfull \hbox (badness 10000) detected at line 136
+
+[28]
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 175
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 192
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 209
+[][][]
+ []
+
+[29]
+Underfull \hbox (badness 10000) detected at line 226
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 243
+[][][]
+ []
+
+[30]
+Underfull \hbox (badness 10000) detected at line 265
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 282
 [][][]
  []
 
 [31]
-Underfull \hbox (badness 10000) detected at line 158
+Underfull \hbox (badness 10000) detected at line 379
 [][][]
  []
 
 [32]
-Underfull \hbox (badness 10000) detected at line 213
+Underfull \hbox (badness 10000) detected at line 396
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 230
+) (./classC__Loader.tex
+<classC__Loader__coll__graph.pdf, id=2358, 153.57375pt x 138.5175pt>
+File: classC__Loader__coll__graph.pdf Graphic file (type pdf)
+<use classC__Loader__coll__graph.pdf>
+Package pdftex.def Info: classC__Loader__coll__graph.pdf  used on input line 18
+.
+(pdftex.def)             Requested size: 153.0pt x 138.00777pt.
+ [33]
+Underfull \hbox (badness 10000) detected at line 51
 [][][]
  []
 
-) (./classPoint.tex
+[34 <./classC__Loader__coll__graph.pdf>]) (./classC__Menu.tex
+<classC__Menu__coll__graph.pdf, id=2387, 157.58875pt x 160.6pt>
+File: classC__Menu__coll__graph.pdf Graphic file (type pdf)
+<use classC__Menu__coll__graph.pdf>
+Package pdftex.def Info: classC__Menu__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 157.0pt x 160.009pt.
+ [35 <./classC__Menu__coll__graph.pdf>]) (./classC__MTriangle.tex
+<classC__MTriangle__inherit__graph.pdf, id=2419, 198.7425pt x 746.79pt>
+File: classC__MTriangle__inherit__graph.pdf Graphic file (type pdf)
+<use classC__MTriangle__inherit__graph.pdf>
+Package pdftex.def Info: classC__MTriangle__inherit__graph.pdf  used on input l
+ine 18.
+(pdftex.def)             Requested size: 146.37572pt x 550.0pt.
+ [36]
+<classC__MTriangle__coll__graph.pdf, id=2425, 198.7425pt x 746.79pt>
+File: classC__MTriangle__coll__graph.pdf Graphic file (type pdf)
+<use classC__MTriangle__coll__graph.pdf>
+Package pdftex.def Info: classC__MTriangle__coll__graph.pdf  used on input line
+ 27.
+(pdftex.def)             Requested size: 146.37572pt x 550.0pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [37 <./classC__MTriangle__inherit__graph.pdf>] [38 <./classC__MTriangle__coll_
+_graph.pdf>] [39]
+Overfull \vbox (21.87042pt too high) has occurred while \output is active []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-[33]
-Overfull \hbox (4.48154pt too wide) in paragraph at lines 78--78
-\T1/phv/m/sl/10 _[] 
- []
-
-
-Overfull \hbox (4.48154pt too wide) in paragraph at lines 78--78
-\T1/phv/m/sl/10 _[] 
- []
-
-[34]
-Underfull \hbox (badness 10000) detected at line 98
-[][][]
- []
-
-[35]
-Underfull \hbox (badness 10000) detected at line 117
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 136
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 155
-[][][]
- []
-
-[36]
-Underfull \hbox (badness 10000) detected at line 174
-[][][]
- []
-
-) (./classSave.tex) (./classShape.tex
-<classShape__inherit__graph.pdf, id=1740, 454.69875pt x 212.795pt>
-File: classShape__inherit__graph.pdf Graphic file (type pdf)
-<use classShape__inherit__graph.pdf>
-Package pdftex.def Info: classShape__inherit__graph.pdf  used on input line 18.
-
-(pdftex.def)             Requested size: 350.0pt x 163.79744pt.
- [37]
-<classShape__coll__graph.pdf, id=1746, 138.5175pt x 156.585pt>
-File: classShape__coll__graph.pdf Graphic file (type pdf)
-<use classShape__coll__graph.pdf>
-Package pdftex.def Info: classShape__coll__graph.pdf  used on input line 27.
-(pdftex.def)             Requested size: 138.0pt x 156.00162pt.
- [38 <./classShape__inherit__graph.pdf> <./classShape__coll__graph.pdf
-
-pdfTeX warning: pdflatex (file ./classShape__coll__graph.pdf): PDF inclusion: m
-ultiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) detected at line 81
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 94
-[][][]
- []
-
-[39]
-Underfull \hbox (badness 10000) detected at line 116
-[][][]
- []
 
 [40]
-Underfull \hbox (badness 10000) detected at line 171
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 188
-[][][]
- []
-
-) (./classSquare.tex
-<classSquare__inherit__graph.pdf, id=1856, 138.5175pt x 212.795pt>
-File: classSquare__inherit__graph.pdf Graphic file (type pdf)
-<use classSquare__inherit__graph.pdf>
-Package pdftex.def Info: classSquare__inherit__graph.pdf  used on input line 18
-.
-(pdftex.def)             Requested size: 138.0pt x 212.0022pt.
- [41]
-<classSquare__coll__graph.pdf, id=1868, 138.5175pt x 212.795pt>
-File: classSquare__coll__graph.pdf Graphic file (type pdf)
-<use classSquare__coll__graph.pdf>
-Package pdftex.def Info: classSquare__coll__graph.pdf  used on input line 27.
-(pdftex.def)             Requested size: 138.0pt x 212.0022pt.
- [42 <./classSquare__inherit__graph.pdf> <./classSquare__coll__graph.pdf
-
-pdfTeX warning: pdflatex (file ./classSquare__coll__graph.pdf): PDF inclusion: 
-multiple pdfs with page group included in a single page
->] [43]
-Underfull \hbox (badness 10000) detected at line 136
-[][][]
- []
-
-[44] [45]
 Underfull \hbox (badness 10000) detected at line 158
 [][][]
  []
 
-[46]
-Underfull \hbox (badness 10000) detected at line 213
+
+Underfull \hbox (badness 10000) detected at line 175
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 230
+Underfull \hbox (badness 10000) detected at line 192
 [][][]
  []
 
-) (./classSTriangle.tex
-<classSTriangle__inherit__graph.pdf, id=1976, 138.5175pt x 212.795pt>
-File: classSTriangle__inherit__graph.pdf Graphic file (type pdf)
-<use classSTriangle__inherit__graph.pdf>
-Package pdftex.def Info: classSTriangle__inherit__graph.pdf  used on input line
+
+Underfull \hbox (badness 10000) detected at line 209
+[][][]
+ []
+
+[41]
+Underfull \hbox (badness 10000) detected at line 226
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 243
+[][][]
+ []
+
+[42]
+Underfull \hbox (badness 10000) detected at line 265
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 282
+[][][]
+ []
+
+[43]
+Overfull \vbox (6.97432pt too high) has occurred while \output is active []
+
+
+[44]
+Underfull \hbox (badness 10000) detected at line 386
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 403
+[][][]
+ []
+
+) (./classC__Objective.tex [45]
+<classC__Objective__coll__graph.pdf, id=2582, 184.69pt x 226.8475pt>
+File: classC__Objective__coll__graph.pdf Graphic file (type pdf)
+<use classC__Objective__coll__graph.pdf>
+Package pdftex.def Info: classC__Objective__coll__graph.pdf  used on input line
  18.
-(pdftex.def)             Requested size: 138.0pt x 212.0022pt.
-<classSTriangle__coll__graph.pdf, id=1977, 138.5175pt x 212.795pt>
-File: classSTriangle__coll__graph.pdf Graphic file (type pdf)
-<use classSTriangle__coll__graph.pdf>
-Package pdftex.def Info: classSTriangle__coll__graph.pdf  used on input line 27
-.
-(pdftex.def)             Requested size: 138.0pt x 212.0022pt.
- [47 <./classSTriangle__inherit__graph.pdf>] [48 <./classSTriangle__coll__graph
-.pdf>]
-Overfull \vbox (39.93457pt too high) has occurred while \output is active []
+(pdftex.def)             Requested size: 184.0pt x 226.00235pt.
+ [46 <./classC__Objective__coll__graph.pdf>]
+Underfull \vbox (badness 2608) has occurred while \output is active []
+
+ [47]
+Underfull \hbox (badness 10000) detected at line 115
+[][][]
+ []
 
 
-[49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) detected at line 138
+[][][]
+ []
 
- [50]
+[48]
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 171
 [][][]
  []
 
+) (./classC__Parallelogram.tex
+<classC__Parallelogram__inherit__graph.pdf, id=2666, 198.7425pt x 746.79pt>
+File: classC__Parallelogram__inherit__graph.pdf Graphic file (type pdf)
+<use classC__Parallelogram__inherit__graph.pdf>
+Package pdftex.def Info: classC__Parallelogram__inherit__graph.pdf  used on inp
+ut line 18.
+(pdftex.def)             Requested size: 146.37572pt x 550.0pt.
+ [49]
+<classC__Parallelogram__coll__graph.pdf, id=2674, 198.7425pt x 746.79pt>
+File: classC__Parallelogram__coll__graph.pdf Graphic file (type pdf)
+<use classC__Parallelogram__coll__graph.pdf>
+Package pdftex.def Info: classC__Parallelogram__coll__graph.pdf  used on input 
+line 27.
+(pdftex.def)             Requested size: 146.37572pt x 550.0pt.
 
-Underfull \hbox (badness 10000) detected at line 203
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50 <./classC__Parallelogram__inherit__graph.pdf>] [51 <./classC__Parallelogra
+m__coll__graph.pdf>] [52]
+Overfull \vbox (33.87042pt too high) has occurred while \output is active []
+
+
+[53]
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 175
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 192
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 209
+[][][]
+ []
+
+[54]
+Underfull \hbox (badness 10000) detected at line 226
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 243
+[][][]
+ []
+
+[55]
+Underfull \hbox (badness 10000) detected at line 265
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 282
+[][][]
+ []
+
+[56]
+Overfull \vbox (6.97432pt too high) has occurred while \output is active []
+
+
+[57]
+Underfull \hbox (badness 10000) detected at line 386
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 403
+[][][]
+ []
+
+) (./classC__Save.tex [58]
+<classC__Save__coll__graph.pdf, id=2826, 147.55125pt x 149.55875pt>
+File: classC__Save__coll__graph.pdf Graphic file (type pdf)
+<use classC__Save__coll__graph.pdf>
+Package pdftex.def Info: classC__Save__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 147.0pt x 149.00383pt.
+ [59 <./classC__Save__coll__graph.pdf>]
+Underfull \hbox (badness 10000) detected at line 60
+[][][]
+ []
+
+) (./classC__Square.tex
+<classC__Square__inherit__graph.pdf, id=2847, 198.7425pt x 746.79pt>
+File: classC__Square__inherit__graph.pdf Graphic file (type pdf)
+<use classC__Square__inherit__graph.pdf>
+Package pdftex.def Info: classC__Square__inherit__graph.pdf  used on input line
+ 18.
+(pdftex.def)             Requested size: 146.37572pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
+<classC__Square__coll__graph.pdf, id=2853, 198.7425pt x 746.79pt>
+File: classC__Square__coll__graph.pdf Graphic file (type pdf)
+<use classC__Square__coll__graph.pdf>
+Package pdftex.def Info: classC__Square__coll__graph.pdf  used on input line 27
+.
+(pdftex.def)             Requested size: 146.37572pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61 <./classC__Square__inherit__graph.pdf>] [62 <./classC__Square__coll__graph
+.pdf>]
+[63]
+Overfull \vbox (21.76237pt too high) has occurred while \output is active []
+
+
+[64]
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 175
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 192
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 209
+[][][]
+ []
+
+[65]
+Underfull \hbox (badness 10000) detected at line 226
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 243
+[][][]
+ []
+
+[66]
+Underfull \hbox (badness 10000) detected at line 265
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 282
+[][][]
+ []
+
+[67]
+Overfull \vbox (6.97432pt too high) has occurred while \output is active []
+
+
+[68]
+Underfull \hbox (badness 10000) detected at line 386
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 403
+[][][]
+ []
+
+) (./classC__STriangle.tex [69]
+<classC__STriangle__inherit__graph.pdf, id=3007, 198.7425pt x 846.16125pt>
+File: classC__STriangle__inherit__graph.pdf Graphic file (type pdf)
+<use classC__STriangle__inherit__graph.pdf>
+Package pdftex.def Info: classC__STriangle__inherit__graph.pdf  used on input l
+ine 18.
+(pdftex.def)             Requested size: 129.18411pt x 550.0pt.
+<classC__STriangle__coll__graph.pdf, id=3008, 198.7425pt x 846.16125pt>
+File: classC__STriangle__coll__graph.pdf Graphic file (type pdf)
+<use classC__STriangle__coll__graph.pdf>
+Package pdftex.def Info: classC__STriangle__coll__graph.pdf  used on input line
+ 27.
+(pdftex.def)             Requested size: 129.18411pt x 550.0pt.
+ [70 <./classC__STriangle__inherit__graph.pdf>]
+[71 <./classC__STriangle__coll__graph.pdf>] [72] [73] [74]
+Underfull \hbox (badness 10000) detected at line 199
 [][][]
  []
 
@@ -1351,311 +1521,355 @@ Underfull \hbox (badness 10000) detected at line 216
 [][][]
  []
 
-[51]
-Underfull \hbox (badness 10000) detected at line 238
+
+Underfull \hbox (badness 10000) detected at line 233
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 260
-[][][]
- []
-
-[52]
-Underfull \hbox (badness 10000) detected at line 309
+Underfull \hbox (badness 10000) detected at line 250
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 326
+Underfull \hbox (badness 10000) detected at line 267
 [][][]
  []
 
-) (./structStruct.tex) [53] [54
+[75]
+Underfull \hbox (badness 10000) detected at line 284
+[][][]
+ []
 
-]
+
+Underfull \hbox (badness 10000) detected at line 306
+[][][]
+ []
+
+[76]
+Underfull \hbox (badness 10000) detected at line 323
+[][][]
+ []
+
+[77]
+Underfull \hbox (badness 10000) detected at line 427
+[][][]
+ []
+
+[78]
+Underfull \hbox (badness 10000) detected at line 444
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 466
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 479
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 492
+[][][]
+ []
+
+[79]
+Underfull \hbox (badness 10000) detected at line 543
+[][][]
+ []
+
+[80] [81]) (./structT__Point_1_1hash__point.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+<structT__Point_1_1hash__point__coll__graph.pdf, id=3243, 181.67876pt x 160.6pt
+>
+File: structT__Point_1_1hash__point__coll__graph.pdf Graphic file (type pdf)
+<use structT__Point_1_1hash__point__coll__graph.pdf>
+Package pdftex.def Info: structT__Point_1_1hash__point__coll__graph.pdf  used o
+n input line 13.
+(pdftex.def)             Requested size: 181.0pt x 160.0041pt.
+[82 <./structT__Point_1_1hash__point__coll__graph.pdf>]
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][][]
+ []
+
+) (./classI__Drawable.tex
+<classI__Drawable__inherit__graph.pdf, id=3273, 744.7825pt x 846.16125pt>
+File: classI__Drawable__inherit__graph.pdf Graphic file (type pdf)
+<use classI__Drawable__inherit__graph.pdf>
+Package pdftex.def Info: classI__Drawable__inherit__graph.pdf  used on input li
+ne 18.
+(pdftex.def)             Requested size: 350.0pt x 397.65712pt.
+
+Underfull \vbox (badness 2671) has occurred while \output is active []
+
+ [83]
+<classI__Drawable__coll__graph.pdf, id=3279, 167.62625pt x 160.6pt>
+File: classI__Drawable__coll__graph.pdf Graphic file (type pdf)
+<use classI__Drawable__coll__graph.pdf>
+Package pdftex.def Info: classI__Drawable__coll__graph.pdf  used on input line 
+27.
+(pdftex.def)             Requested size: 167.0pt x 159.9992pt.
+
+[84 <./classI__Drawable__inherit__graph.pdf> <./classI__Drawable__coll__graph.p
+df
+
+pdfTeX warning: pdflatex (file ./classI__Drawable__coll__graph.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>]) (./structStruct.tex
+<structStruct__coll__graph.pdf, id=3314, 123.46124pt x 138.5175pt>
+File: structStruct__coll__graph.pdf Graphic file (type pdf)
+<use structStruct__coll__graph.pdf>
+Package pdftex.def Info: structStruct__coll__graph.pdf  used on input line 14.
+(pdftex.def)             Requested size: 123.0pt x 138.00777pt.
+ [85]) (./classT__Point.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+<classT__Point__inherit__graph.pdf, id=3322, 275.0275pt x 553.06625pt>
+File: classT__Point__inherit__graph.pdf Graphic file (type pdf)
+<use classT__Point__inherit__graph.pdf>
+Package pdftex.def Info: classT__Point__inherit__graph.pdf  used on input line 
+18.
+(pdftex.def)             Requested size: 273.50346pt x 550.0pt.
+
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [86 <./structStruct__coll__graph.pdf>]
+<classT__Point__coll__graph.pdf, id=3334, 159.59625pt x 293.095pt>
+File: classT__Point__coll__graph.pdf Graphic file (type pdf)
+<use classT__Point__coll__graph.pdf>
+Package pdftex.def Info: classT__Point__coll__graph.pdf  used on input line 27.
+
+(pdftex.def)             Requested size: 159.0pt x 292.00302pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87 <./classT__Point__inherit__graph.pdf>] [88 <./classT__Point__coll__graph.p
+df>]
+[89]
+Overfull \hbox (4.48154pt too wide) in paragraph at lines 140--140
+\T1/phv/m/sl/10 _[] 
+ []
+
+
+Overfull \hbox (4.48154pt too wide) in paragraph at lines 140--140
+\T1/phv/m/sl/10 _[] 
+ []
+
+[90]
+Underfull \hbox (badness 10000) detected at line 167
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 186
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 205
+[][][]
+ []
+
+[91]
+Underfull \hbox (badness 10000) detected at line 224
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 243
+[][][]
+ []
+
+[92]
+Underfull \hbox (badness 10000) detected at line 262
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 281
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 300
+[][][]
+ []
+
+[93]
+Underfull \hbox (badness 10000) detected at line 319
+[][][]
+ []
+
+) [94]
 Chapter 6.
-(./Button_8hpp.tex
-<Button_8hpp__incl.pdf, id=2149, 248.93pt x 212.795pt>
-File: Button_8hpp__incl.pdf Graphic file (type pdf)
-<use Button_8hpp__incl.pdf>
-Package pdftex.def Info: Button_8hpp__incl.pdf  used on input line 15.
-(pdftex.def)             Requested size: 248.0pt x 212.00543pt.
-<Button_8hpp__dep__incl.pdf, id=2150, 220.825pt x 156.585pt>
-File: Button_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use Button_8hpp__dep__incl.pdf>
-Package pdftex.def Info: Button_8hpp__dep__incl.pdf  used on input line 22.
-(pdftex.def)             Requested size: 220.0pt x 156.0064pt.
+(./A__Shape_8hpp.tex
+<A__Shape_8hpp__incl.pdf, id=3505, 485.815pt x 223.83624pt>
+File: A__Shape_8hpp__incl.pdf Graphic file (type pdf)
+<use A__Shape_8hpp__incl.pdf>
+Package pdftex.def Info: A__Shape_8hpp__incl.pdf  used on input line 17.
+(pdftex.def)             Requested size: 350.0pt x 161.2576pt.
+<A__Shape_8hpp__dep__incl.pdf, id=3506, 1405.25pt x 392.46625pt>
+File: A__Shape_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use A__Shape_8hpp__dep__incl.pdf>
+Package pdftex.def Info: A__Shape_8hpp__dep__incl.pdf  used on input line 24.
+(pdftex.def)             Requested size: 350.0pt x 97.751pt.
+ [95
 
-Underfull \vbox (badness 2662) has occurred while \output is active []
+ <./A__Shape_8hpp__incl.pdf> <./A__Shape_8hpp__dep__incl.pdf
 
- [55 <./Button_8hpp__incl.pdf>]
-Underfull \hbox (badness 10000) detected at line 35
+pdfTeX warning: pdflatex (file ./A__Shape_8hpp__dep__incl.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 37
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 38
+Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
 
-) (./Menu_8hpp.tex
-<Menu_8hpp__incl.pdf, id=2167, 294.09875pt x 269.005pt>
-File: Menu_8hpp__incl.pdf Graphic file (type pdf)
-<use Menu_8hpp__incl.pdf>
-Package pdftex.def Info: Menu_8hpp__incl.pdf  used on input line 14.
-(pdftex.def)             Requested size: 293.0pt x 268.00278pt.
- [56 <./Button_8hpp__dep__incl.pdf>]
-Underfull \hbox (badness 10000) detected at line 27
+) (./C__Button_8hpp.tex
+<C__Button_8hpp__incl.pdf, id=3527, 364.36125pt x 223.83624pt>
+File: C__Button_8hpp__incl.pdf Graphic file (type pdf)
+<use C__Button_8hpp__incl.pdf>
+Package pdftex.def Info: C__Button_8hpp__incl.pdf  used on input line 16.
+(pdftex.def)             Requested size: 350.0pt x 215.02039pt.
+<C__Button_8hpp__dep__incl.pdf, id=3528, 430.60875pt x 234.8775pt>
+File: C__Button_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__Button_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__Button_8hpp__dep__incl.pdf  used on input line 23.
+(pdftex.def)             Requested size: 350.0pt x 190.91275pt.
+ [96 <./C__Button_8hpp__incl.pdf>]
+Underfull \hbox (badness 10000) detected at line 36
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 30
-[][][]
- []
-
-) (./Shape_8hpp.tex
-<Shape_8hpp__incl.pdf, id=2185, 471.7625pt x 212.795pt>
-File: Shape_8hpp__incl.pdf Graphic file (type pdf)
-<use Shape_8hpp__incl.pdf>
-Package pdftex.def Info: Shape_8hpp__incl.pdf  used on input line 18.
-(pdftex.def)             Requested size: 350.0pt x 157.87494pt.
- [57 <./Menu_8hpp__incl.pdf>]
-<Shape_8hpp__dep__incl.pdf, id=2198, 782.925pt x 325.215pt>
-File: Shape_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use Shape_8hpp__dep__incl.pdf>
-Package pdftex.def Info: Shape_8hpp__dep__incl.pdf  used on input line 26.
-(pdftex.def)             Requested size: 350.0pt x 145.38765pt.
 
 Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
+) (./C__Menu_8hpp.tex
+<C__Menu_8hpp__incl.pdf, id=3546, 364.36125pt x 280.04625pt>
+File: C__Menu_8hpp__incl.pdf Graphic file (type pdf)
+<use C__Menu_8hpp__incl.pdf>
+Package pdftex.def Info: C__Menu_8hpp__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 269.01653pt.
+ [97 <./C__Button_8hpp__dep__incl.pdf>]
+<C__Menu_8hpp__dep__incl.pdf, id=3560, 303.1325pt x 167.62625pt>
+File: C__Menu_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__Menu_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__Menu_8hpp__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 302.0pt x 167.00172pt.
 
-Underfull \hbox (badness 10000) detected at line 42
+Underfull \hbox (badness 10000) detected at line 34
 [][][]
  []
 
-) (./Game_8hpp.tex
-<Game_8hpp__incl.pdf, id=2203, 1277.77374pt x 381.425pt>
-File: Game_8hpp__incl.pdf Graphic file (type pdf)
-<use Game_8hpp__incl.pdf>
-Package pdftex.def Info: Game_8hpp__incl.pdf  used on input line 27.
-(pdftex.def)             Requested size: 350.0pt x 104.47606pt.
- [58 <./Shape_8hpp__incl.pdf> <./Shape_8hpp__dep__incl.pdf
+[98 <./C__Menu_8hpp__incl.pdf> <./C__Menu_8hpp__dep__incl.pdf
 
-pdfTeX warning: pdflatex (file ./Shape_8hpp__dep__incl.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
->]
-<Game_8hpp__dep__incl.pdf, id=2223, 208.78pt x 156.585pt>
-File: Game_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use Game_8hpp__dep__incl.pdf>
-Package pdftex.def Info: Game_8hpp__dep__incl.pdf  used on input line 35.
-(pdftex.def)             Requested size: 208.0pt x 156.00879pt.
- [59 <./Game_8hpp__incl.pdf> <./Game_8hpp__dep__incl.pdf
-
-pdfTeX warning: pdflatex (file ./Game_8hpp__dep__incl.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) detected at line 48
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 51
-[][][]
- []
-
-) (./Objective_8hpp.tex
-<Objective_8hpp__incl.pdf, id=2247, 580.1675pt x 269.005pt>
-File: Objective_8hpp__incl.pdf Graphic file (type pdf)
-<use Objective_8hpp__incl.pdf>
-Package pdftex.def Info: Objective_8hpp__incl.pdf  used on input line 17.
-(pdftex.def)             Requested size: 350.0pt x 162.28264pt.
-<Objective_8hpp__dep__incl.pdf, id=2248, 217.81375pt x 212.795pt>
-File: Objective_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use Objective_8hpp__dep__incl.pdf>
-Package pdftex.def Info: Objective_8hpp__dep__incl.pdf  used on input line 24.
-(pdftex.def)             Requested size: 217.0pt x 211.99895pt.
- [60 <./Objective_8hpp__incl.pdf> <./Objective_8hpp__dep__incl.pdf
-
-pdfTeX warning: pdflatex (file ./Objective_8hpp__dep__incl.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./C__Menu_8hpp__dep__incl.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
 >]
 Underfull \hbox (badness 10000) detected at line 37
 [][][]
  []
 
+) (./I__Drawable_8h.tex
+<I__Drawable_8h__incl.pdf, id=3584, 175.65625pt x 167.62625pt>
+File: I__Drawable_8h__incl.pdf Graphic file (type pdf)
+<use I__Drawable_8h__incl.pdf>
+Package pdftex.def Info: I__Drawable_8h__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 175.0pt x 167.01195pt.
+<I__Drawable_8h__dep__incl.pdf, id=3585, 1405.25pt x 459.7175pt>
+File: I__Drawable_8h__dep__incl.pdf Graphic file (type pdf)
+<use I__Drawable_8h__dep__incl.pdf>
+Package pdftex.def Info: I__Drawable_8h__dep__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 114.50119pt.
+) (./C__Game_8hpp.tex
+<C__Game_8hpp__incl.pdf, id=3589, 1372.12625pt x 381.425pt>
+File: C__Game_8hpp__incl.pdf Graphic file (type pdf)
+<use C__Game_8hpp__incl.pdf>
+Package pdftex.def Info: C__Game_8hpp__incl.pdf  used on input line 26.
+(pdftex.def)             Requested size: 350.0pt x 97.29408pt.
+ [99 <./I__Drawable_8h__incl.pdf> <./I__Drawable_8h__dep__incl.pdf
 
-Underfull \hbox (badness 10000) detected at line 40
-[][][]
- []
-
-) (./Loader_8hpp.tex
-<Loader_8hpp__incl.pdf, id=2269, 1226.5825pt x 437.635pt>
-File: Loader_8hpp__incl.pdf Graphic file (type pdf)
-<use Loader_8hpp__incl.pdf>
-Package pdftex.def Info: Loader_8hpp__incl.pdf  used on input line 16.
-(pdftex.def)             Requested size: 350.0pt x 124.87418pt.
-
-Underfull \hbox (badness 10000) detected at line 29
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 32
-[][][]
- []
-
-) (./Save_8hpp.tex [61 <./Loader_8hpp__incl.pdf>]
-Underfull \hbox (badness 10000) detected at line 18
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 21
-[][][]
- []
-
-) (./GTriangle_8hpp.tex
-<GTriangle_8hpp__incl.pdf, id=2289, 471.7625pt x 325.215pt>
-File: GTriangle_8hpp__incl.pdf Graphic file (type pdf)
-<use GTriangle_8hpp__incl.pdf>
-Package pdftex.def Info: GTriangle_8hpp__incl.pdf  used on input line 17.
-(pdftex.def)             Requested size: 350.0pt x 241.28058pt.
-<GTriangle_8hpp__dep__incl.pdf, id=2290, 220.825pt x 212.795pt>
-File: GTriangle_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use GTriangle_8hpp__dep__incl.pdf>
-Package pdftex.def Info: GTriangle_8hpp__dep__incl.pdf  used on input line 25.
-(pdftex.def)             Requested size: 220.0pt x 212.00868pt.
- [62 <./GTriangle_8hpp__incl.pdf>]
-Underfull \hbox (badness 10000) detected at line 38
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 41
-[][][]
- []
-
-) (./MTriangle_8hpp.tex
-<MTriangle_8hpp__incl.pdf, id=2306, 471.7625pt x 325.215pt>
-File: MTriangle_8hpp__incl.pdf Graphic file (type pdf)
-<use MTriangle_8hpp__incl.pdf>
-Package pdftex.def Info: MTriangle_8hpp__incl.pdf  used on input line 17.
-(pdftex.def)             Requested size: 350.0pt x 241.28058pt.
- [63 <./GTriangle_8hpp__dep__incl.pdf>]
-<MTriangle_8hpp__dep__incl.pdf, id=2319, 221.82875pt x 212.795pt>
-File: MTriangle_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use MTriangle_8hpp__dep__incl.pdf>
-Package pdftex.def Info: MTriangle_8hpp__dep__incl.pdf  used on input line 25.
-(pdftex.def)             Requested size: 221.0pt x 211.99895pt.
- [64 <./MTriangle_8hpp__incl.pdf> <./MTriangle_8hpp__dep__incl.pdf
-
-pdfTeX warning: pdflatex (file ./MTriangle_8hpp__dep__incl.pdf): PDF inclusion:
+pdfTeX warning: pdflatex (file ./I__Drawable_8h__dep__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) detected at line 38
-[][][]
- []
+<C__Game_8hpp__dep__incl.pdf, id=3608, 424.58624pt x 212.795pt>
+File: C__Game_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__Game_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__Game_8hpp__dep__incl.pdf  used on input line 33.
+(pdftex.def)             Requested size: 350.0pt x 175.42165pt.
+ [100 <./C__Game_8hpp__incl.pdf> <./C__Game_8hpp__dep__incl.pdf
 
-
-Underfull \hbox (badness 10000) detected at line 41
-[][][]
- []
-
-) (./Parallelogram_8hpp.tex
-<Parallelogram_8hpp__incl.pdf, id=2343, 471.7625pt x 325.215pt>
-File: Parallelogram_8hpp__incl.pdf Graphic file (type pdf)
-<use Parallelogram_8hpp__incl.pdf>
-Package pdftex.def Info: Parallelogram_8hpp__incl.pdf  used on input line 17.
-(pdftex.def)             Requested size: 350.0pt x 241.28058pt.
-<Parallelogram_8hpp__dep__incl.pdf, id=2344, 238.8925pt x 212.795pt>
-File: Parallelogram_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use Parallelogram_8hpp__dep__incl.pdf>
-Package pdftex.def Info: Parallelogram_8hpp__dep__incl.pdf  used on input line 
-25.
-(pdftex.def)             Requested size: 238.0pt x 211.99895pt.
-
-Underfull \vbox (badness 6893) has occurred while \output is active []
-
- [65 <./Parallelogram_8hpp__incl.pdf>]
-Underfull \hbox (badness 10000) detected at line 38
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 41
-[][][]
- []
-
-) (./Square_8hpp.tex
-<Square_8hpp__incl.pdf, id=2362, 471.7625pt x 325.215pt>
-File: Square_8hpp__incl.pdf Graphic file (type pdf)
-<use Square_8hpp__incl.pdf>
-Package pdftex.def Info: Square_8hpp__incl.pdf  used on input line 17.
-(pdftex.def)             Requested size: 350.0pt x 241.28058pt.
- [66 <./Parallelogram_8hpp__dep__incl.pdf>]
-<Square_8hpp__dep__incl.pdf, id=2375, 209.78375pt x 212.795pt>
-File: Square_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use Square_8hpp__dep__incl.pdf>
-Package pdftex.def Info: Square_8hpp__dep__incl.pdf  used on input line 25.
-(pdftex.def)             Requested size: 209.0pt x 211.99895pt.
- [67 <./Square_8hpp__incl.pdf> <./Square_8hpp__dep__incl.pdf
-
-pdfTeX warning: pdflatex (file ./Square_8hpp__dep__incl.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./C__Game_8hpp__dep__incl.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) detected at line 38
+Underfull \hbox (badness 10000) detected at line 46
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 41
+Underfull \hbox (badness 10000) detected at line 49
 [][][]
  []
 
-) (./STriangle_8hpp.tex
-<STriangle_8hpp__incl.pdf, id=2398, 471.7625pt x 269.005pt>
-File: STriangle_8hpp__incl.pdf Graphic file (type pdf)
-<use STriangle_8hpp__incl.pdf>
-Package pdftex.def Info: STriangle_8hpp__incl.pdf  used on input line 16.
-(pdftex.def)             Requested size: 350.0pt x 199.57776pt.
-<STriangle_8hpp__dep__incl.pdf, id=2399, 719.68875pt x 269.005pt>
-File: STriangle_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use STriangle_8hpp__dep__incl.pdf>
-Package pdftex.def Info: STriangle_8hpp__dep__incl.pdf  used on input line 24.
-(pdftex.def)             Requested size: 350.0pt x 130.82437pt.
- [68 <./STriangle_8hpp__incl.pdf> <./STriangle_8hpp__dep__incl.pdf
+) (./C__Objective_8hpp.tex
+<C__Objective_8hpp__incl.pdf, id=3631, 574.145pt x 269.005pt>
+File: C__Objective_8hpp__incl.pdf Graphic file (type pdf)
+<use C__Objective_8hpp__incl.pdf>
+Package pdftex.def Info: C__Objective_8hpp__incl.pdf  used on input line 16.
+(pdftex.def)             Requested size: 350.0pt x 163.99019pt.
+<C__Objective_8hpp__dep__incl.pdf, id=3632, 435.6275pt x 269.005pt>
+File: C__Objective_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__Objective_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__Objective_8hpp__dep__incl.pdf  used on input line 2
+3.
+(pdftex.def)             Requested size: 350.0pt x 216.12784pt.
+ [101 <./C__Objective_8hpp__incl.pdf> <./C__Objective_8hpp__dep__incl.pdf
 
-pdfTeX warning: pdflatex (file ./STriangle_8hpp__dep__incl.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) detected at line 37
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 40
-[][][]
- []
-
-) (./Point_8hpp.tex
-<Point_8hpp__incl.pdf, id=2421, 193.72375pt x 156.585pt>
-File: Point_8hpp__incl.pdf Graphic file (type pdf)
-<use Point_8hpp__incl.pdf>
-Package pdftex.def Info: Point_8hpp__incl.pdf  used on input line 13.
-(pdftex.def)             Requested size: 193.0pt x 156.00162pt.
-<Point_8hpp__dep__incl.pdf, id=2422, 1136.245pt x 381.425pt>
-File: Point_8hpp__dep__incl.pdf Graphic file (type pdf)
-<use Point_8hpp__dep__incl.pdf>
-Package pdftex.def Info: Point_8hpp__dep__incl.pdf  used on input line 21.
-(pdftex.def)             Requested size: 350.0pt x 117.48973pt.
- [69 <./Point_8hpp__incl.pdf> <./Point_8hpp__dep__incl.pdf
-
-pdfTeX warning: pdflatex (file ./Point_8hpp__dep__incl.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./C__Objective_8hpp__dep__incl.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
 >]
 Underfull \hbox (badness 10000) detected at line 36
 [][][]
@@ -1666,35 +1880,351 @@ Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
-) [70] (./refman.ind [71
+) (./C__Loader_8hpp.tex
+<C__Loader_8hpp__incl.pdf, id=3653, 1348.03625pt x 437.635pt>
+File: C__Loader_8hpp__incl.pdf Graphic file (type pdf)
+<use C__Loader_8hpp__incl.pdf>
+Package pdftex.def Info: C__Loader_8hpp__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 113.62215pt.
+<C__Loader_8hpp__dep__incl.pdf, id=3654, 297.11pt x 156.585pt>
+File: C__Loader_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__Loader_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__Loader_8hpp__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 296.0pt x 156.0064pt.
+ [102 <./C__Loader_8hpp__incl.pdf> <./C__Loader_8hpp__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./C__Loader_8hpp__dep__incl.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
 
 
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
 
-] [72])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
+) (./C__Save_8hpp.tex
+<C__Save_8hpp__incl.pdf, id=3676, 477.785pt x 269.005pt>
+File: C__Save_8hpp__incl.pdf Graphic file (type pdf)
+<use C__Save_8hpp__incl.pdf>
+Package pdftex.def Info: C__Save_8hpp__incl.pdf  used on input line 17.
+(pdftex.def)             Requested size: 350.0pt x 197.0575pt.
+<C__Save_8hpp__dep__incl.pdf, id=3677, 335.2525pt x 156.585pt>
+File: C__Save_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__Save_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__Save_8hpp__dep__incl.pdf  used on input line 24.
+(pdftex.def)             Requested size: 334.0pt x 155.99922pt.
+ [103 <./C__Save_8hpp__incl.pdf>]
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+) (./C__GTriangle_8hpp.tex
+<C__GTriangle_8hpp__incl.pdf, id=3695, 514.92375pt x 325.215pt>
+File: C__GTriangle_8hpp__incl.pdf Graphic file (type pdf)
+<use C__GTriangle_8hpp__incl.pdf>
+Package pdftex.def Info: C__GTriangle_8hpp__incl.pdf  used on input line 16.
+(pdftex.def)             Requested size: 350.0pt x 221.05891pt.
+ [104 <./C__Save_8hpp__dep__incl.pdf>]
+<C__GTriangle_8hpp__dep__incl.pdf, id=3708, 720.6925pt x 269.005pt>
+File: C__GTriangle_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__GTriangle_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__GTriangle_8hpp__dep__incl.pdf  used on input line 2
+3.
+(pdftex.def)             Requested size: 350.0pt x 130.63965pt.
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+) (./C__MTriangle_8hpp.tex [105 <./C__GTriangle_8hpp__incl.pdf> <./C__GTriangle
+_8hpp__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./C__GTriangle_8hpp__dep__incl.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]
+<C__MTriangle_8hpp__incl.pdf, id=3731, 514.92375pt x 325.215pt>
+File: C__MTriangle_8hpp__incl.pdf Graphic file (type pdf)
+<use C__MTriangle_8hpp__incl.pdf>
+Package pdftex.def Info: C__MTriangle_8hpp__incl.pdf  used on input line 16.
+(pdftex.def)             Requested size: 350.0pt x 221.05891pt.
+<C__MTriangle_8hpp__dep__incl.pdf, id=3732, 720.6925pt x 269.005pt>
+File: C__MTriangle_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__MTriangle_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__MTriangle_8hpp__dep__incl.pdf  used on input line 2
+3.
+(pdftex.def)             Requested size: 350.0pt x 130.63965pt.
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+[106 <./C__MTriangle_8hpp__incl.pdf> <./C__MTriangle_8hpp__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./C__MTriangle_8hpp__dep__incl.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+) (./C__Parallelogram_8hpp.tex
+<C__Parallelogram_8hpp__incl.pdf, id=3756, 514.92375pt x 325.215pt>
+File: C__Parallelogram_8hpp__incl.pdf Graphic file (type pdf)
+<use C__Parallelogram_8hpp__incl.pdf>
+Package pdftex.def Info: C__Parallelogram_8hpp__incl.pdf  used on input line 16
+.
+(pdftex.def)             Requested size: 350.0pt x 221.05891pt.
+<C__Parallelogram_8hpp__dep__incl.pdf, id=3757, 736.7525pt x 269.005pt>
+File: C__Parallelogram_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__Parallelogram_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__Parallelogram_8hpp__dep__incl.pdf  used on input li
+ne 23.
+(pdftex.def)             Requested size: 350.0pt x 127.791pt.
+ [107 <./C__Parallelogram_8hpp__incl.pdf> <./C__Parallelogram_8hpp__dep__incl.p
+df
+
+pdfTeX warning: pdflatex (file ./C__Parallelogram_8hpp__dep__incl.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+) (./C__Square_8hpp.tex
+<C__Square_8hpp__incl.pdf, id=3780, 514.92375pt x 325.215pt>
+File: C__Square_8hpp__incl.pdf Graphic file (type pdf)
+<use C__Square_8hpp__incl.pdf>
+Package pdftex.def Info: C__Square_8hpp__incl.pdf  used on input line 16.
+(pdftex.def)             Requested size: 350.0pt x 221.05891pt.
+<C__Square_8hpp__dep__incl.pdf, id=3781, 708.6475pt x 269.005pt>
+File: C__Square_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__Square_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__Square_8hpp__dep__incl.pdf  used on input line 23.
+(pdftex.def)             Requested size: 350.0pt x 132.8644pt.
+ [108 <./C__Square_8hpp__incl.pdf>]
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+) (./C__STriangle_8hpp.tex
+<C__STriangle_8hpp__incl.pdf, id=3799, 485.815pt x 269.005pt>
+File: C__STriangle_8hpp__incl.pdf Graphic file (type pdf)
+<use C__STriangle_8hpp__incl.pdf>
+Package pdftex.def Info: C__STriangle_8hpp__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 193.79837pt.
+<C__STriangle_8hpp__dep__incl.pdf, id=3800, 1341.01pt x 325.215pt>
+File: C__STriangle_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use C__STriangle_8hpp__dep__incl.pdf>
+Package pdftex.def Info: C__STriangle_8hpp__dep__incl.pdf  used on input line 2
+2.
+(pdftex.def)             Requested size: 350.0pt x 84.87645pt.
+ [109 <./C__Square_8hpp__dep__incl.pdf> <./C__STriangle_8hpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./C__STriangle_8hpp__incl.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+) (./T__Point_8hpp.tex
+<T__Point_8hpp__incl.pdf, id=3824, 260.975pt x 156.585pt>
+File: T__Point_8hpp__incl.pdf Graphic file (type pdf)
+<use T__Point_8hpp__incl.pdf>
+Package pdftex.def Info: T__Point_8hpp__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 260.0pt x 156.00162pt.
+<T__Point_8hpp__dep__incl.pdf, id=3825, 1941.2525pt x 459.7175pt>
+File: T__Point_8hpp__dep__incl.pdf Graphic file (type pdf)
+<use T__Point_8hpp__dep__incl.pdf>
+Package pdftex.def Info: T__Point_8hpp__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 82.88586pt.
+ [110 <./C__STriangle_8hpp__dep__incl.pdf> <./T__Point_8hpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./T__Point_8hpp__incl.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+) (./README_8md.tex) (./A__Shape_8cpp.tex
+<A__Shape_8cpp__incl.pdf, id=3848, 576.1525pt x 269.005pt>
+File: A__Shape_8cpp__incl.pdf Graphic file (type pdf)
+<use A__Shape_8cpp__incl.pdf>
+Package pdftex.def Info: A__Shape_8cpp__incl.pdf  used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 163.41963pt.
+) (./C__Button_8cpp.tex
+<C__Button_8cpp__incl.pdf, id=3849, 525.965pt x 269.005pt>
+File: C__Button_8cpp__incl.pdf Graphic file (type pdf)
+<use C__Button_8cpp__incl.pdf>
+Package pdftex.def Info: C__Button_8cpp__incl.pdf  used on input line 12.
+(pdftex.def)             Requested size: 350.0pt x 179.0133pt.
+ [111 <./T__Point_8hpp__dep__incl.pdf> <./A__Shape_8cpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./A__Shape_8cpp__incl.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]) (./C__Menu_8cpp.tex
+<C__Menu_8cpp__incl.pdf, id=3869, 414.54875pt x 325.215pt>
+File: C__Menu_8cpp__incl.pdf Graphic file (type pdf)
+<use C__Menu_8cpp__incl.pdf>
+Package pdftex.def Info: C__Menu_8cpp__incl.pdf  used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 274.58308pt.
+) (./I__Drawable_8cpp.tex [112 <./C__Button_8cpp__incl.pdf> <./C__Menu_8cpp__in
+cl.pdf
+
+pdfTeX warning: pdflatex (file ./C__Menu_8cpp__incl.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]) (./C__Game_8cpp.tex
+<C__Game_8cpp__incl.pdf, id=3887, 1359.0775pt x 437.635pt>
+File: C__Game_8cpp__incl.pdf Graphic file (type pdf)
+<use C__Game_8cpp__incl.pdf>
+Package pdftex.def Info: C__Game_8cpp__incl.pdf  used on input line 11.
+(pdftex.def)             Requested size: 350.0pt x 112.7006pt.
+) (./C__Objective_8cpp.tex
+<C__Objective_8cpp__incl.pdf, id=3888, 1076.02pt x 381.425pt>
+File: C__Objective_8cpp__incl.pdf Graphic file (type pdf)
+<use C__Objective_8cpp__incl.pdf>
+Package pdftex.def Info: C__Objective_8cpp__incl.pdf  used on input line 17.
+(pdftex.def)             Requested size: 350.0pt x 124.0664pt.
+) (./Main_8cpp.tex
+<Main_8cpp__incl.pdf, id=3889, 1425.325pt x 493.845pt>
+File: Main_8cpp__incl.pdf Graphic file (type pdf)
+<use Main_8cpp__incl.pdf>
+Package pdftex.def Info: Main_8cpp__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 121.26811pt.
+ [113 <./C__Game_8cpp__incl.pdf> <./C__Objective_8cpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./C__Objective_8cpp__incl.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>]) (./C__Loader_8cpp.tex
+<C__Loader_8cpp__incl.pdf, id=3910, 1396.21625pt x 493.845pt>
+File: C__Loader_8cpp__incl.pdf Graphic file (type pdf)
+<use C__Loader_8cpp__incl.pdf>
+Package pdftex.def Info: C__Loader_8cpp__incl.pdf  used on input line 16.
+(pdftex.def)             Requested size: 350.0pt x 123.7925pt.
+ [114 <./Main_8cpp__incl.pdf>]) (./C__Save_8cpp.tex
+<C__Save_8cpp__incl.pdf, id=3926, 477.785pt x 325.215pt>
+File: C__Save_8cpp__incl.pdf Graphic file (type pdf)
+<use C__Save_8cpp__incl.pdf>
+Package pdftex.def Info: C__Save_8cpp__incl.pdf  used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 238.23369pt.
+)
+(./C__GTriangle_8cpp.tex
+<C__GTriangle_8cpp__incl.pdf, id=3927, 494.84875pt x 381.425pt>
+File: C__GTriangle_8cpp__incl.pdf Graphic file (type pdf)
+<use C__GTriangle_8cpp__incl.pdf>
+Package pdftex.def Info: C__GTriangle_8cpp__incl.pdf  used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 269.77766pt.
+ [115 <./C__Loader_8cpp__incl.pdf> <./C__Save_8cpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./C__Save_8cpp__incl.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]) (./C__MTriangle_8cpp.tex
+<C__MTriangle_8cpp__incl.pdf, id=3946, 495.8525pt x 381.425pt>
+File: C__MTriangle_8cpp__incl.pdf Graphic file (type pdf)
+<use C__MTriangle_8cpp__incl.pdf>
+Package pdftex.def Info: C__MTriangle_8cpp__incl.pdf  used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 269.23058pt.
+) (./C__Parallelogram_8cpp.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [116 <./C__GTriangle_8cpp__incl.pdf>]
+<C__Parallelogram_8cpp__incl.pdf, id=3958, 503.8825pt x 381.425pt>
+File: C__Parallelogram_8cpp__incl.pdf Graphic file (type pdf)
+<use C__Parallelogram_8cpp__incl.pdf>
+Package pdftex.def Info: C__Parallelogram_8cpp__incl.pdf  used on input line 10
+.
+(pdftex.def)             Requested size: 350.0pt x 264.94118pt.
+) (./C__Square_8cpp.tex [117 <./C__MTriangle_8cpp__incl.pdf> <./C__Parallelogra
+m_8cpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./C__Parallelogram_8cpp__incl.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>]
+<C__Square_8cpp__incl.pdf, id=3976, 492.84125pt x 381.425pt>
+File: C__Square_8cpp__incl.pdf Graphic file (type pdf)
+<use C__Square_8cpp__incl.pdf>
+Package pdftex.def Info: C__Square_8cpp__incl.pdf  used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 270.8893pt.
+) (./C__STriangle_8cpp.tex
+<C__STriangle_8cpp__incl.pdf, id=3977, 498.86375pt x 325.215pt>
+File: C__STriangle_8cpp__incl.pdf Graphic file (type pdf)
+<use C__STriangle_8cpp__incl.pdf>
+Package pdftex.def Info: C__STriangle_8cpp__incl.pdf  used on input line 12.
+(pdftex.def)             Requested size: 350.0pt x 228.17496pt.
+) (./T__Point_8cpp.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [118 <./C__Square_8cpp__incl.pdf>]
+<T__Point_8cpp__incl.pdf, id=3989, 260.975pt x 212.795pt>
+File: T__Point_8cpp__incl.pdf Graphic file (type pdf)
+<use T__Point_8cpp__incl.pdf>
+Package pdftex.def Info: T__Point_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 260.0pt x 212.0022pt.
+) [119 <./C__STriangle_8cpp__incl.pdf> <./T__Point_8cpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./T__Point_8cpp__incl.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>] [120
+
+] (./refman.ind [121
+
+
+] [122] [123] [124])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 6B59ABF24346FA52984171EE31EF766D;35646.
+(rerunfilecheck)             Checksum: 61FE80B6DA4DB73FA62308E369352F62;62564.
 
 
-LaTeX Font Warning: Some font mShapes were not available, defaults substituted.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
- 15994 strings out of 494553
- 240843 string characters out of 6177378
- 323490 words of memory out of 5000000
- 18793 multiletter control sequences out of 15000+600000
- 70873 words of font info for 99 fonts, out of 8000000 for 9000
+ 16766 strings out of 494553
+ 263150 string characters out of 6177378
+ 340349 words of memory out of 5000000
+ 19167 multiletter control sequences out of 15000+600000
+ 71517 words of font info for 101 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,16n,92p,853b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,1081b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -1702,16 +2232,17 @@ f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
 type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (80 pages, 381224 bytes).
+s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
+tic/uhvro8a.pfb>
+Output written on refman.pdf (136 pages, 588793 bytes).
 PDF statistics:
- 2785 PDF objects out of 2984 (max. 8388607)
- 2528 compressed objects within 26 object streams
- 530 named destinations out of 1000 (max. 500000)
- 1552 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4624 PDF objects out of 5155 (max. 8388607)
+ 4231 compressed objects within 43 object streams
+ 857 named destinations out of 1000 (max. 500000)
+ 2723 words of extra memory for PDF output out of 10000 (max. 10000000)
 

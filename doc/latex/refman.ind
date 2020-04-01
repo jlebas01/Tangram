@@ -1,237 +1,475 @@
 \begin{theindex}
 
-  \item {add\+\_\+button}
-    \subitem {C_Menu}, \hyperpage{21}
-  \item {add\+\_\+shape}
-    \subitem {C_Game}, \hyperpage{13}
+  \item {$\sim$\+A\+\_\+\+Shape}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{13}
+  \item {$\sim$\+C\+\_\+\+Button}
+    \subitem {C\+\_\+\+Button}, \hyperpage{19}
+  \item {$\sim$\+C\+\_\+\+G\+Triangle}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{27}
+  \item {$\sim$\+C\+\_\+\+Game}
+    \subitem {C\+\_\+\+Game}, \hyperpage{23}
+  \item {$\sim$\+C\+\_\+\+M\+Triangle}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{39}
+  \item {$\sim$\+C\+\_\+\+Menu}
+    \subitem {C\+\_\+\+Menu}, \hyperpage{35}
+  \item {$\sim$\+C\+\_\+\+Objective}
+    \subitem {C\+\_\+\+Objective}, \hyperpage{47}
+  \item {$\sim$\+C\+\_\+\+Parallelogram}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{52}
+  \item {$\sim$\+C\+\_\+\+S\+Triangle}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{73}
+  \item {$\sim$\+C\+\_\+\+Square}
+    \subitem {C\+\_\+\+Square}, \hyperpage{63}
+  \item {$\sim$\+I\+\_\+\+Drawable}
+    \subitem {I\+\_\+\+Drawable}, \hyperpage{85}
+  \item {$\sim$\+T\+\_\+\+Point}
+    \subitem {T\+\_\+\+Point}, \hyperpage{90}
 
   \indexspace
 
-  \item {board\+Completed}
-    \subitem {C_Objective}, \hyperpage{27}
-  \item {C_Button}, \hyperpage{9}
-    \subitem {C_Button}, \hyperpage{9, 10}
-    \subitem {click}, \hyperpage{10}
-    \subitem {click\+\_\+in\+\_\+button}, \hyperpage{10}
-    \subitem {set\+\_\+callback}, \hyperpage{11}
+  \item {A\+\_\+\+Shape}, \hyperpage{11}
+    \subitem {$\sim$\+A\+\_\+\+Shape}, \hyperpage{13}
+    \subitem {a\+Current\+Angular}, \hyperpage{13}
+    \subitem {a\+Get\+Area}, \hyperpage{14}
+    \subitem {a\+Get\+Color}, \hyperpage{14}
+    \subitem {a\+Get\+Points}, \hyperpage{14}
+    \subitem {a\+Get\+Shape}, \hyperpage{14}
+    \subitem {a\+Get\+Status\+Reverse}, \hyperpage{15}
+    \subitem {a\+Is\+In\+Shape}, \hyperpage{15}
+    \subitem {a\+Left\+Corner}, \hyperpage{15}
+    \subitem {a\+Left\+Flip}, \hyperpage{16}
+    \subitem {a\+Move}, \hyperpage{16}
+    \subitem {a\+Reverse}, \hyperpage{16}
+    \subitem {a\+Right\+Flip}, \hyperpage{16}
+    \subitem {a\+Rotate}, \hyperpage{17}
+    \subitem {a\+Set\+Points}, \hyperpage{17}
+    \subitem {a\+To\+String}, \hyperpage{17}
+    \subitem {compute\+Distance}, \hyperpage{17}
+  \item {a\+Current\+Angular}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{13}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{29}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{41}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{54}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{74}
+    \subitem {C\+\_\+\+Square}, \hyperpage{65}
+  \item {a\+Get\+Area}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{14}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{29}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{41}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{54}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{75}
+    \subitem {C\+\_\+\+Square}, \hyperpage{65}
+  \item {a\+Get\+Color}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{14}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{29}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{41}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{54}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{75}
+    \subitem {C\+\_\+\+Square}, \hyperpage{65}
+  \item {a\+Get\+Points}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{14}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{29}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{41}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{54}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{75}
+    \subitem {C\+\_\+\+Square}, \hyperpage{65}
+  \item {a\+Get\+Shape}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{14}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{30}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{42}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{55}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{75}
+    \subitem {C\+\_\+\+Square}, \hyperpage{66}
+  \item {a\+Get\+Status\+Reverse}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{15}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{30}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{42}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{55}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{76}
+    \subitem {C\+\_\+\+Square}, \hyperpage{66}
+  \item {a\+Is\+In\+Shape}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{15}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{30}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{42}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{55}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{76}
+    \subitem {C\+\_\+\+Square}, \hyperpage{66}
+  \item {a\+Left\+Corner}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{15}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{31}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{43}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{56}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{76}
+    \subitem {C\+\_\+\+Square}, \hyperpage{67}
+  \item {a\+Left\+Flip}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{16}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{31}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{43}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{56}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{77}
+    \subitem {C\+\_\+\+Square}, \hyperpage{67}
+  \item {a\+Move}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{16}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{31}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{43}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{56}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{77}
+    \subitem {C\+\_\+\+Square}, \hyperpage{67}
+  \item {a\+Reverse}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{16}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{32}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{44}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{57}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{77}
+    \subitem {C\+\_\+\+Square}, \hyperpage{68}
+  \item {a\+Right\+Flip}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{16}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{32}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{44}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{57}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{77}
+    \subitem {C\+\_\+\+Square}, \hyperpage{68}
+  \item {a\+Rotate}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{17}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{32}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{44}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{57}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{78}
+    \subitem {C\+\_\+\+Square}, \hyperpage{68}
+  \item {a\+Set\+Points}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{17}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{32}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{44}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{57}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{78}
+    \subitem {C\+\_\+\+Square}, \hyperpage{68}
+  \item {a\+To\+String}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{17}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{32}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{45}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{58}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{78}
+    \subitem {C\+\_\+\+Square}, \hyperpage{69}
+  \item {Add\+Button}
+    \subitem {C\+\_\+\+Menu}, \hyperpage{36}
+  \item {add\+Shape}
+    \subitem {C\+\_\+\+Game}, \hyperpage{23}
 
   \indexspace
 
-  \item {center\+\_\+point}
-    \subitem {S\+Triangle}, \hyperpage{50}
-  \item {click}
-    \subitem {C_Button}, \hyperpage{10}
-  \item {Click\+\_\+in\+\_\+button}
-    \subitem {C_Button}, \hyperpage{10}
+  \item {Board\+Completed}
+    \subitem {C\+\_\+\+Objective}, \hyperpage{48}
+
+  \indexspace
+
+  \item {C\+\_\+\+Button}, \hyperpage{18}
+    \subitem {$\sim$\+C\+\_\+\+Button}, \hyperpage{19}
+    \subitem {C\+\_\+\+Button}, \hyperpage{19, 20}
+    \subitem {Click}, \hyperpage{20}
+    \subitem {Click\+In\+Button}, \hyperpage{20}
+    \subitem {Draw}, \hyperpage{21}
+    \subitem {Set\+Call\+Back}, \hyperpage{21}
+  \item {C\+\_\+\+G\+Triangle}, \hyperpage{24}
+    \subitem {$\sim$\+C\+\_\+\+G\+Triangle}, \hyperpage{27}
+    \subitem {a\+Current\+Angular}, \hyperpage{29}
+    \subitem {a\+Get\+Area}, \hyperpage{29}
+    \subitem {a\+Get\+Color}, \hyperpage{29}
+    \subitem {a\+Get\+Points}, \hyperpage{29}
+    \subitem {a\+Get\+Shape}, \hyperpage{30}
+    \subitem {a\+Get\+Status\+Reverse}, \hyperpage{30}
+    \subitem {a\+Is\+In\+Shape}, \hyperpage{30}
+    \subitem {a\+Left\+Corner}, \hyperpage{31}
+    \subitem {a\+Left\+Flip}, \hyperpage{31}
+    \subitem {a\+Move}, \hyperpage{31}
+    \subitem {a\+Reverse}, \hyperpage{32}
+    \subitem {a\+Right\+Flip}, \hyperpage{32}
+    \subitem {a\+Rotate}, \hyperpage{32}
+    \subitem {a\+Set\+Points}, \hyperpage{32}
+    \subitem {a\+To\+String}, \hyperpage{32}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{28}
+    \subitem {i\+Draw}, \hyperpage{33}
+  \item {C\+\_\+\+Game}, \hyperpage{22}
+    \subitem {$\sim$\+C\+\_\+\+Game}, \hyperpage{23}
+    \subitem {add\+Shape}, \hyperpage{23}
+    \subitem {C\+\_\+\+Game}, \hyperpage{23}
+    \subitem {Clear}, \hyperpage{23}
+    \subitem {Get\+Objective\+Color}, \hyperpage{24}
+    \subitem {Main\+Loop}, \hyperpage{24}
+    \subitem {Set\+Objective}, \hyperpage{24}
+  \item {C\+\_\+\+Loader}, \hyperpage{33}
+    \subitem {Parse\+File}, \hyperpage{34}
+  \item {C\+\_\+\+M\+Triangle}, \hyperpage{36}
+    \subitem {$\sim$\+C\+\_\+\+M\+Triangle}, \hyperpage{39}
+    \subitem {a\+Current\+Angular}, \hyperpage{41}
+    \subitem {a\+Get\+Area}, \hyperpage{41}
+    \subitem {a\+Get\+Color}, \hyperpage{41}
+    \subitem {a\+Get\+Points}, \hyperpage{41}
+    \subitem {a\+Get\+Shape}, \hyperpage{42}
+    \subitem {a\+Get\+Status\+Reverse}, \hyperpage{42}
+    \subitem {a\+Is\+In\+Shape}, \hyperpage{42}
+    \subitem {a\+Left\+Corner}, \hyperpage{43}
+    \subitem {a\+Left\+Flip}, \hyperpage{43}
+    \subitem {a\+Move}, \hyperpage{43}
+    \subitem {a\+Reverse}, \hyperpage{44}
+    \subitem {a\+Right\+Flip}, \hyperpage{44}
+    \subitem {a\+Rotate}, \hyperpage{44}
+    \subitem {a\+Set\+Points}, \hyperpage{44}
+    \subitem {a\+To\+String}, \hyperpage{45}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{40}
+    \subitem {i\+Draw}, \hyperpage{45}
+  \item {C\+\_\+\+Menu}, \hyperpage{35}
+    \subitem {$\sim$\+C\+\_\+\+Menu}, \hyperpage{35}
+    \subitem {Add\+Button}, \hyperpage{36}
+    \subitem {Main\+Loop}, \hyperpage{36}
+  \item {C\+\_\+\+Objective}, \hyperpage{46}
+    \subitem {$\sim$\+C\+\_\+\+Objective}, \hyperpage{47}
+    \subitem {Board\+Completed}, \hyperpage{48}
+    \subitem {C\+\_\+\+Objective}, \hyperpage{47}
+    \subitem {Clear}, \hyperpage{48}
+    \subitem {Get\+Color}, \hyperpage{48}
+    \subitem {Get\+Completed}, \hyperpage{48}
+    \subitem {Get\+Objective}, \hyperpage{49}
+    \subitem {Set\+Objective}, \hyperpage{49}
+  \item {C\+\_\+\+Parallelogram}, \hyperpage{49}
+    \subitem {$\sim$\+C\+\_\+\+Parallelogram}, \hyperpage{52}
+    \subitem {a\+Current\+Angular}, \hyperpage{54}
+    \subitem {a\+Get\+Area}, \hyperpage{54}
+    \subitem {a\+Get\+Color}, \hyperpage{54}
+    \subitem {a\+Get\+Points}, \hyperpage{54}
+    \subitem {a\+Get\+Shape}, \hyperpage{55}
+    \subitem {a\+Get\+Status\+Reverse}, \hyperpage{55}
+    \subitem {a\+Is\+In\+Shape}, \hyperpage{55}
+    \subitem {a\+Left\+Corner}, \hyperpage{56}
+    \subitem {a\+Left\+Flip}, \hyperpage{56}
+    \subitem {a\+Move}, \hyperpage{56}
+    \subitem {a\+Reverse}, \hyperpage{57}
+    \subitem {a\+Right\+Flip}, \hyperpage{57}
+    \subitem {a\+Rotate}, \hyperpage{57}
+    \subitem {a\+Set\+Points}, \hyperpage{57}
+    \subitem {a\+To\+String}, \hyperpage{58}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{53}
+    \subitem {i\+Draw}, \hyperpage{58}
+  \item {C\+\_\+\+S\+Triangle}, \hyperpage{70}
+    \subitem {$\sim$\+C\+\_\+\+S\+Triangle}, \hyperpage{73}
+    \subitem {a\+Current\+Angular}, \hyperpage{74}
+    \subitem {a\+Get\+Area}, \hyperpage{75}
+    \subitem {a\+Get\+Color}, \hyperpage{75}
+    \subitem {a\+Get\+Points}, \hyperpage{75}
+    \subitem {a\+Get\+Shape}, \hyperpage{75}
+    \subitem {a\+Get\+Status\+Reverse}, \hyperpage{76}
+    \subitem {a\+Is\+In\+Shape}, \hyperpage{76}
+    \subitem {a\+Left\+Corner}, \hyperpage{76}
+    \subitem {a\+Left\+Flip}, \hyperpage{77}
+    \subitem {a\+Move}, \hyperpage{77}
+    \subitem {a\+Reverse}, \hyperpage{77}
+    \subitem {a\+Right\+Flip}, \hyperpage{77}
+    \subitem {a\+Rotate}, \hyperpage{78}
+    \subitem {a\+Set\+Points}, \hyperpage{78}
+    \subitem {a\+To\+String}, \hyperpage{78}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{73, 74}
+    \subitem {Center\+Point}, \hyperpage{79}
+    \subitem {Get\+Center\+Point}, \hyperpage{79}
+    \subitem {Get\+Flip}, \hyperpage{79}
+    \subitem {i\+Draw}, \hyperpage{79, 80}
+    \subitem {Is\+In\+S\+Triangle}, \hyperpage{80}
+    \subitem {Left\+Flip}, \hyperpage{80}
+    \subitem {Reverse}, \hyperpage{81}
+    \subitem {Right\+Flip}, \hyperpage{81}
+    \subitem {Rotate}, \hyperpage{81}
+  \item {C\+\_\+\+Save}, \hyperpage{59}
+    \subitem {C\+\_\+\+Save}, \hyperpage{59}
+    \subitem {Save}, \hyperpage{59}
+  \item {C\+\_\+\+Square}, \hyperpage{60}
+    \subitem {$\sim$\+C\+\_\+\+Square}, \hyperpage{63}
+    \subitem {a\+Current\+Angular}, \hyperpage{65}
+    \subitem {a\+Get\+Area}, \hyperpage{65}
+    \subitem {a\+Get\+Color}, \hyperpage{65}
+    \subitem {a\+Get\+Points}, \hyperpage{65}
+    \subitem {a\+Get\+Shape}, \hyperpage{66}
+    \subitem {a\+Get\+Status\+Reverse}, \hyperpage{66}
+    \subitem {a\+Is\+In\+Shape}, \hyperpage{66}
+    \subitem {a\+Left\+Corner}, \hyperpage{67}
+    \subitem {a\+Left\+Flip}, \hyperpage{67}
+    \subitem {a\+Move}, \hyperpage{67}
+    \subitem {a\+Reverse}, \hyperpage{68}
+    \subitem {a\+Right\+Flip}, \hyperpage{68}
+    \subitem {a\+Rotate}, \hyperpage{68}
+    \subitem {a\+Set\+Points}, \hyperpage{68}
+    \subitem {a\+To\+String}, \hyperpage{69}
+    \subitem {C\+\_\+\+Square}, \hyperpage{64}
+    \subitem {i\+Draw}, \hyperpage{69}
+  \item {Center\+Point}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{79}
+  \item {Clear}
+    \subitem {C\+\_\+\+Game}, \hyperpage{23}
+    \subitem {C\+\_\+\+Objective}, \hyperpage{48}
+  \item {Click}
+    \subitem {C\+\_\+\+Button}, \hyperpage{20}
+  \item {Click\+In\+Button}
+    \subitem {C\+\_\+\+Button}, \hyperpage{20}
   \item {compute\+Distance}
-    \subitem {A_Shape}, \hyperpage{39}
+    \subitem {A\+\_\+\+Shape}, \hyperpage{17}
 
   \indexspace
 
-  \item {iDraw}
-    \subitem {S\+Triangle}, \hyperpage{51}
-  \item {I_Drawable}, \hyperpage{11}
+  \item {Draw}
+    \subitem {C\+\_\+\+Button}, \hyperpage{21}
 
   \indexspace
 
-  \item {G\+Triangle}, \hyperpage{15}
-    \subitem {G\+Triangle}, \hyperpage{16, 17}
-    \subitem {get\+\_\+\+Points}, \hyperpage{17}
-    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{18}
-    \subitem {move}, \hyperpage{18}
-    \subitem {rotate}, \hyperpage{18}
-    \subitem {set\+\_\+\+Points}, \hyperpage{19}
-    \subitem {to\+String}, \hyperpage{19}
-  \item {C_Game}, \hyperpage{12}
-    \subitem {add\+\_\+shape}, \hyperpage{13}
-    \subitem {C_Game}, \hyperpage{13}
-    \subitem {get\+\_\+\+C_Objective\+\_\+\+Color}, \hyperpage{14}
-    \subitem {set\+\_\+\+C_Objective}, \hyperpage{14}
-    \subitem {stick}, \hyperpage{14}
-  \item {get\+\_\+\+Color}
-    \subitem {C_Objective}, \hyperpage{28}
-  \item {get\+\_\+\+C_Objective}
-    \subitem {C_Objective}, \hyperpage{28}
-  \item {get\+\_\+\+C_Objective\+\_\+\+Color}
-    \subitem {C_Game}, \hyperpage{14}
-  \item {get\+\_\+\+Points}
-    \subitem {G\+Triangle}, \hyperpage{17}
-    \subitem {M\+Triangle}, \hyperpage{24}
-    \subitem {C_Parallelogram}, \hyperpage{31}
-    \subitem {S\+Triangle}, \hyperpage{51}
-    \subitem {A_Shape}, \hyperpage{39}
-    \subitem {C_Square}, \hyperpage{44}
-  \item {get\+\_\+center\+\_\+point}
-    \subitem {S\+Triangle}, \hyperpage{51}
+  \item {Get\+Center\+Point}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{79}
+  \item {Get\+Color}
+    \subitem {C\+\_\+\+Objective}, \hyperpage{48}
+  \item {Get\+Completed}
+    \subitem {C\+\_\+\+Objective}, \hyperpage{48}
+  \item {Get\+Flip}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{79}
+  \item {Get\+Objective}
+    \subitem {C\+\_\+\+Objective}, \hyperpage{49}
+  \item {Get\+Objective\+Color}
+    \subitem {C\+\_\+\+Game}, \hyperpage{24}
 
   \indexspace
 
-  \item {include/drawable/\+C_Button.\+hpp}, \hyperpage{55}
-  \item {include/drawable/\+C_Menu.\+hpp}, \hyperpage{56}
-  \item {include/drawable/\+A_Shape.\+hpp}, \hyperpage{57}
-  \item {include/game/\+C_Game.\+hpp}, \hyperpage{59}
-  \item {include/game/\+C_Objective.\+hpp}, \hyperpage{60}
-  \item {include/parser/\+C_Loader.\+hpp}, \hyperpage{61}
-  \item {include/parser/\+C_Save.\+hpp}, \hyperpage{62}
-  \item {include/shape/\+G\+Triangle.\+hpp}, \hyperpage{62}
-  \item {include/shape/\+M\+Triangle.\+hpp}, \hyperpage{63}
-  \item {include/shape/\+C_Parallelogram.\+hpp}, \hyperpage{65}
-  \item {include/shape/\+S\+Triangle.\+hpp}, \hyperpage{68}
-  \item {include/shape/\+C_Square.\+hpp}, \hyperpage{66}
-  \item {include/utils/\+T_Point.\+hpp}, \hyperpage{69}
-  \item {is\+\_\+in\+\_\+shape}
-    \subitem {G\+Triangle}, \hyperpage{18}
-    \subitem {M\+Triangle}, \hyperpage{24}
-    \subitem {C_Parallelogram}, \hyperpage{32}
-    \subitem {S\+Triangle}, \hyperpage{51}
-    \subitem {A_Shape}, \hyperpage{40}
-    \subitem {C_Square}, \hyperpage{44}
-  \item {is\+\_\+in\+\_\+mTriangles}
-    \subitem {S\+Triangle}, \hyperpage{52}
+  \item {I\+\_\+\+Drawable}, \hyperpage{83}
+    \subitem {$\sim$\+I\+\_\+\+Drawable}, \hyperpage{85}
+    \subitem {i\+Draw}, \hyperpage{85}
+  \item {i\+Draw}
+    \subitem {C\+\_\+\+G\+Triangle}, \hyperpage{33}
+    \subitem {C\+\_\+\+M\+Triangle}, \hyperpage{45}
+    \subitem {C\+\_\+\+Parallelogram}, \hyperpage{58}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{79, 80}
+    \subitem {C\+\_\+\+Square}, \hyperpage{69}
+    \subitem {I\+\_\+\+Drawable}, \hyperpage{85}
+  \item {include/drawable/\+A\+\_\+\+Shape.\+hpp}, \hyperpage{95}
+  \item {include/drawable/\+C\+\_\+\+Button.\+hpp}, \hyperpage{96}
+  \item {include/drawable/\+C\+\_\+\+Menu.\+hpp}, \hyperpage{97}
+  \item {include/drawable/\+I\+\_\+\+Drawable.\+h}, \hyperpage{99}
+  \item {include/game/\+C\+\_\+\+Game.\+hpp}, \hyperpage{100}
+  \item {include/game/\+C\+\_\+\+Objective.\+hpp}, \hyperpage{101}
+  \item {include/parser/\+C\+\_\+\+Loader.\+hpp}, \hyperpage{102}
+  \item {include/parser/\+C\+\_\+\+Save.\+hpp}, \hyperpage{103}
+  \item {include/shape/\+C\+\_\+\+G\+Triangle.\+hpp}, \hyperpage{104}
+  \item {include/shape/\+C\+\_\+\+M\+Triangle.\+hpp}, \hyperpage{106}
+  \item {include/shape/\+C\+\_\+\+Parallelogram.\+hpp}, \hyperpage{107}
+  \item {include/shape/\+C\+\_\+\+S\+Triangle.\+hpp}, \hyperpage{109}
+  \item {include/shape/\+C\+\_\+\+Square.\+hpp}, \hyperpage{108}
+  \item {include/utils/\+T\+\_\+\+Point.\+hpp}, \hyperpage{110}
+  \item {Is\+In\+S\+Triangle}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{80}
 
   \indexspace
 
-  \item {C_Loader}, \hyperpage{20}
-    \subitem {parse\+\_\+file}, \hyperpage{20}
+  \item {Left\+Flip}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{80}
 
   \indexspace
 
-  \item {M\+Triangle}, \hyperpage{21}
-    \subitem {get\+\_\+\+Points}, \hyperpage{24}
-    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{24}
-    \subitem {M\+Triangle}, \hyperpage{23, 24}
-    \subitem {move}, \hyperpage{25}
-    \subitem {rotate}, \hyperpage{25}
-    \subitem {set\+\_\+\+Points}, \hyperpage{25}
-    \subitem {to\+String}, \hyperpage{26}
-  \item {C_Menu}, \hyperpage{20}
-    \subitem {add\+\_\+button}, \hyperpage{21}
-  \item {move}
-    \subitem {G\+Triangle}, \hyperpage{18}
-    \subitem {M\+Triangle}, \hyperpage{25}
-    \subitem {C_Parallelogram}, \hyperpage{32}
-    \subitem {S\+Triangle}, \hyperpage{52}
-    \subitem {A_Shape}, \hyperpage{40}
-    \subitem {C_Square}, \hyperpage{46}
+  \item {main}
+    \subitem {Main.\+cpp}, \hyperpage{114}
+  \item {Main.\+cpp}
+    \subitem {main}, \hyperpage{114}
+    \subitem {page}, \hyperpage{114}
+  \item {Main\+Loop}
+    \subitem {C\+\_\+\+Game}, \hyperpage{24}
+    \subitem {C\+\_\+\+Menu}, \hyperpage{36}
 
   \indexspace
 
-  \item {C_Objective}, \hyperpage{26}
-    \subitem {board\+Completed}, \hyperpage{27}
-    \subitem {get\+\_\+\+Color}, \hyperpage{28}
-    \subitem {get\+\_\+\+C_Objective}, \hyperpage{28}
-    \subitem {C_Objective}, \hyperpage{27}
-    \subitem {set\+\_\+\+C_Objective}, \hyperpage{28}
   \item {operator!=}
-    \subitem {T_Point}, \hyperpage{35}
+    \subitem {T\+\_\+\+Point}, \hyperpage{90}
   \item {operator$<$}
-    \subitem {T_Point}, \hyperpage{35}
+    \subitem {T\+\_\+\+Point}, \hyperpage{92}
   \item {operator$>$}
-    \subitem {T_Point}, \hyperpage{36}
+    \subitem {T\+\_\+\+Point}, \hyperpage{93}
+  \item {operator()}
+    \subitem {T\+\_\+\+Point\+::hash\+\_\+point}, \hyperpage{82, 83}
+  \item {operator+}
+    \subitem {T\+\_\+\+Point}, \hyperpage{91}
+  \item {operator+=}
+    \subitem {T\+\_\+\+Point}, \hyperpage{91}
+  \item {operator-\/}
+    \subitem {T\+\_\+\+Point}, \hyperpage{91}
+  \item {operator-\/=}
+    \subitem {T\+\_\+\+Point}, \hyperpage{92}
   \item {operator=}
-    \subitem {T_Point}, \hyperpage{36}
+    \subitem {T\+\_\+\+Point}, \hyperpage{93}
   \item {operator==}
-    \subitem {T_Point}, \hyperpage{36}
+    \subitem {T\+\_\+\+Point}, \hyperpage{93}
 
   \indexspace
 
-  \item {C_Parallelogram}, \hyperpage{29}
-    \subitem {get\+\_\+\+Points}, \hyperpage{31}
-    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{32}
-    \subitem {move}, \hyperpage{32}
-    \subitem {C_Parallelogram}, \hyperpage{30, 31}
-    \subitem {rotate}, \hyperpage{32}
-    \subitem {set\+\_\+\+Points}, \hyperpage{33}
-    \subitem {to\+String}, \hyperpage{33}
-  \item {parse\+\_\+file}
-    \subitem {C_Loader}, \hyperpage{20}
-  \item {T_Point}
-    \subitem {operator!=}, \hyperpage{35}
-    \subitem {operator$<$}, \hyperpage{35}
-    \subitem {operator$>$}, \hyperpage{36}
-    \subitem {operator=}, \hyperpage{36}
-    \subitem {operator==}, \hyperpage{36}
-    \subitem {T_Point}, \hyperpage{34}
-    \subitem {x}, \hyperpage{37}
-    \subitem {y}, \hyperpage{37}
-  \item {T_Point$<$ T $>$}, \hyperpage{33}
-  \item {T_Point$<$ T $>$\+::hash\+\_\+point}, \hyperpage{19}
+  \item {page}
+    \subitem {Main.\+cpp}, \hyperpage{114}
+  \item {Parse\+File}
+    \subitem {C\+\_\+\+Loader}, \hyperpage{34}
 
   \indexspace
 
-  \item {rotate}
-    \subitem {G\+Triangle}, \hyperpage{18}
-    \subitem {M\+Triangle}, \hyperpage{25}
-    \subitem {C_Parallelogram}, \hyperpage{32}
-    \subitem {S\+Triangle}, \hyperpage{52}
-    \subitem {A_Shape}, \hyperpage{40}
-    \subitem {C_Square}, \hyperpage{46}
+  \item {R\+E\+A\+D\+M\+E.\+md}, \hyperpage{111}
+  \item {Reverse}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{81}
+  \item {Right\+Flip}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{81}
+  \item {Rotate}
+    \subitem {C\+\_\+\+S\+Triangle}, \hyperpage{81}
 
   \indexspace
 
-  \item {S\+Triangle}, \hyperpage{47}
-    \subitem {center\+\_\+point}, \hyperpage{50}
-    \subitem {iDraw}, \hyperpage{51}
-    \subitem {get\+\_\+\+Points}, \hyperpage{51}
-    \subitem {get\+\_\+center\+\_\+point}, \hyperpage{51}
-    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{51}
-    \subitem {is\+\_\+in\+\_\+mTriangles}, \hyperpage{52}
-    \subitem {move}, \hyperpage{52}
-    \subitem {rotate}, \hyperpage{52}
-    \subitem {S\+Triangle}, \hyperpage{49, 50}
-    \subitem {set\+\_\+\+Points}, \hyperpage{53}
-    \subitem {to\+String}, \hyperpage{53}
-  \item {C_Save}, \hyperpage{37}
-  \item {set\+\_\+\+C_Objective}
-    \subitem {C_Game}, \hyperpage{14}
-    \subitem {C_Objective}, \hyperpage{28}
-  \item {set\+\_\+\+Points}
-    \subitem {G\+Triangle}, \hyperpage{19}
-    \subitem {M\+Triangle}, \hyperpage{25}
-    \subitem {C_Parallelogram}, \hyperpage{33}
-    \subitem {S\+Triangle}, \hyperpage{53}
-    \subitem {A_Shape}, \hyperpage{41}
-    \subitem {C_Square}, \hyperpage{46}
-  \item {set\+\_\+callback}
-    \subitem {C_Button}, \hyperpage{11}
-  \item {A_Shape}, \hyperpage{38}
-    \subitem {compute\+Distance}, \hyperpage{39}
-    \subitem {get\+\_\+\+Points}, \hyperpage{39}
-    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{40}
-    \subitem {move}, \hyperpage{40}
-    \subitem {Rotate}, \hyperpage{40}
-    \subitem {set\+\_\+\+Points}, \hyperpage{41}
-    \subitem {to\+String}, \hyperpage{41}
-  \item {C_Square}, \hyperpage{42}
-    \subitem {get\+\_\+\+Points}, \hyperpage{44}
-    \subitem {is\+\_\+in\+\_\+shape}, \hyperpage{44}
-    \subitem {aMove}, \hyperpage{46}
-    \subitem {aRotate}, \hyperpage{46}
-    \subitem {set\+\_\+\+Points}, \hyperpage{46}
-    \subitem {C_Square}, \hyperpage{43, 44}
-    \subitem {to\+String}, \hyperpage{47}
-  \item {__Stick}
-    \subitem {C_Game}, \hyperpage{14}
-  \item {Struct}, \hyperpage{53}
+  \item {Save}
+    \subitem {C\+\_\+\+Save}, \hyperpage{59}
+  \item {Set\+Call\+Back}
+    \subitem {C\+\_\+\+Button}, \hyperpage{21}
+  \item {Set\+Objective}
+    \subitem {C\+\_\+\+Game}, \hyperpage{24}
+    \subitem {C\+\_\+\+Objective}, \hyperpage{49}
+  \item {src/\+Main.\+cpp}, \hyperpage{113}
+  \item {src/drawable/\+A\+\_\+\+Shape.\+cpp}, \hyperpage{111}
+  \item {src/drawable/\+C\+\_\+\+Button.\+cpp}, \hyperpage{112}
+  \item {src/drawable/\+C\+\_\+\+Menu.\+cpp}, \hyperpage{112}
+  \item {src/drawable/\+I\+\_\+\+Drawable.\+cpp}, \hyperpage{113}
+  \item {src/game/\+C\+\_\+\+Game.\+cpp}, \hyperpage{113}
+  \item {src/game/\+C\+\_\+\+Objective.\+cpp}, \hyperpage{113}
+  \item {src/parser/\+C\+\_\+\+Loader.\+cpp}, \hyperpage{115}
+  \item {src/parser/\+C\+\_\+\+Save.\+cpp}, \hyperpage{115}
+  \item {src/shape/\+C\+\_\+\+G\+Triangle.\+cpp}, \hyperpage{116}
+  \item {src/shape/\+C\+\_\+\+M\+Triangle.\+cpp}, \hyperpage{116}
+  \item {src/shape/\+C\+\_\+\+Parallelogram.\+cpp}, \hyperpage{117}
+  \item {src/shape/\+C\+\_\+\+S\+Triangle.\+cpp}, \hyperpage{118}
+  \item {src/shape/\+C\+\_\+\+Square.\+cpp}, \hyperpage{118}
+  \item {src/utils/\+T\+\_\+\+Point.\+cpp}, \hyperpage{119}
+  \item {Struct}, \hyperpage{86}
 
   \indexspace
 
-  \item {to\+String}
-    \subitem {G\+Triangle}, \hyperpage{19}
-    \subitem {M\+Triangle}, \hyperpage{26}
-    \subitem {C_Parallelogram}, \hyperpage{33}
-    \subitem {S\+Triangle}, \hyperpage{53}
-    \subitem {A_Shape}, \hyperpage{41}
-    \subitem {C_Square}, \hyperpage{47}
+  \item {T\+\_\+\+Point}
+    \subitem {$\sim$\+T\+\_\+\+Point}, \hyperpage{90}
+    \subitem {operator!=}, \hyperpage{90}
+    \subitem {operator$<$}, \hyperpage{92}
+    \subitem {operator$>$}, \hyperpage{93}
+    \subitem {operator+}, \hyperpage{91}
+    \subitem {operator+=}, \hyperpage{91}
+    \subitem {operator-\/}, \hyperpage{91}
+    \subitem {operator-\/=}, \hyperpage{92}
+    \subitem {operator=}, \hyperpage{93}
+    \subitem {operator==}, \hyperpage{93}
+    \subitem {T\+\_\+\+Point}, \hyperpage{89, 90}
+    \subitem {x}, \hyperpage{94}
+    \subitem {y}, \hyperpage{94}
+  \item {T\+\_\+\+Point$<$ T $>$}, \hyperpage{86}
+  \item {T\+\_\+\+Point$<$ T $>$\+::hash\+\_\+point}, \hyperpage{82}
+  \item {T\+\_\+\+Point\+::hash\+\_\+point}
+    \subitem {operator()}, \hyperpage{82, 83}
 
   \indexspace
 
   \item {x}
-    \subitem {T_Point}, \hyperpage{37}
+    \subitem {T\+\_\+\+Point}, \hyperpage{94}
 
   \indexspace
 
   \item {y}
-    \subitem {T_Point}, \hyperpage{37}
+    \subitem {T\+\_\+\+Point}, \hyperpage{94}
 
 \end{theindex}
