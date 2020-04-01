@@ -36,7 +36,7 @@ following commands :
 >
 >`press 'Esc'` to exit this mode.
 >
-> press 's' to save the current board as puzzle.
+> `press 's'` to save the current board as puzzle.
 >
 >`press 'd'` on a shape mouseovered to rotate it 45° anti clockwise.
 >
