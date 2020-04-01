@@ -100,7 +100,7 @@ If you want customize the documentation generated, you could also configurate th
 following file :
 >$ gedit config-file
 
-## Generate LaTeX Documentation
+## Generate PDF Documentation
 To generate the PDF documentation, execute the following commands :
 >$ cd doc/latex
 >
